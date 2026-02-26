@@ -24,7 +24,7 @@ export const socialProofSections = [
                                 text: "Loved by Users Worldwide",
                                 tag: "h2",
                                 align: "center",
-                                color: "var(--theme-text, #1f2937)",
+                                color: "var(--theme-text, var(--theme-text))",
                                 fontWeight: "700"
                             }
                         },
@@ -51,7 +51,7 @@ export const socialProofSections = [
                                         totalReviews: "2500+",
                                         ratingColor: "#fbbf24",
                                         backgroundColor: "#fefcf0",
-                                        textColor: "#1f2937",
+                                        textColor: "var(--theme-text)",
                                         breakdownVisible: true
                                     }
                                 },
@@ -61,9 +61,9 @@ export const socialProofSections = [
                                     props: {
                                         rating: "4.8",
                                         totalReviews: "1800+",
-                                        ratingColor: "#06b6d4",
+                                        ratingColor: "var(--theme-primary)",
                                         backgroundColor: "#ecf9ff",
-                                        textColor: "#1f2937",
+                                        textColor: "var(--theme-text)",
                                         breakdownVisible: true
                                     }
                                 },
@@ -75,7 +75,7 @@ export const socialProofSections = [
                                         totalReviews: "3000+",
                                         ratingColor: "#34d399",
                                         backgroundColor: "#ecfff5",
-                                        textColor: "#1f2937",
+                                        textColor: "var(--theme-text)",
                                         breakdownVisible: true
                                     }
                                 }
@@ -110,7 +110,7 @@ export const socialProofSections = [
                                 text: "Trusted by Industry Leaders",
                                 tag: "h2",
                                 align: "center",
-                                color: "var(--theme-text, #1f2937)",
+                                color: "var(--theme-text, var(--theme-text))",
                                 fontWeight: "700"
                             }
                         },
@@ -127,8 +127,8 @@ export const socialProofSections = [
                                 layout: "horizontal",
                                 iconSize: "48",
                                 backgroundColor: "rgba(99, 102, 241, 0.05)",
-                                textColor: "var(--theme-text, #1f2937)",
-                                accentColor: "var(--theme-primary, #6366f1)"
+                                textColor: "var(--theme-text, var(--theme-text))",
+                                accentColor: "var(--theme-primary, var(--theme-primary))"
                             }
                         }
                     ]
@@ -159,7 +159,7 @@ export const socialProofSections = [
                                 text: "Customer Success Stories by Role",
                                 tag: "h2",
                                 align: "center",
-                                color: "var(--theme-text, #1f2937)",
+                                color: "var(--theme-text, var(--theme-text))",
                                 fontWeight: "700"
                             }
                         },
@@ -188,9 +188,9 @@ export const socialProofSections = [
                                         author: "Alex Rivera",
                                         company: "StartupXYZ",
                                         image: "",
-                                        backgroundColor: "#ffffff",
+                                        backgroundColor: "var(--theme-background)",
                                         roleColor: "#ec4899",
-                                        textColor: "#1f2937"
+                                        textColor: "var(--theme-text)"
                                     }
                                 },
                                 {
@@ -203,9 +203,9 @@ export const socialProofSections = [
                                         author: "Jordan Kim",
                                         company: "TechFlow Inc",
                                         image: "",
-                                        backgroundColor: "#ffffff",
-                                        roleColor: "#3b82f6",
-                                        textColor: "#1f2937"
+                                        backgroundColor: "var(--theme-background)",
+                                        roleColor: "var(--theme-primary)",
+                                        textColor: "var(--theme-text)"
                                     }
                                 },
                                 {
@@ -218,9 +218,9 @@ export const socialProofSections = [
                                         author: "Priya Patel",
                                         company: "Marketing Pro",
                                         image: "",
-                                        backgroundColor: "#ffffff",
-                                        roleColor: "#f59e0b",
-                                        textColor: "#1f2937"
+                                        backgroundColor: "var(--theme-background)",
+                                        roleColor: "var(--theme-primary)",
+                                        textColor: "var(--theme-text)"
                                     }
                                 },
                                 {
@@ -233,9 +233,9 @@ export const socialProofSections = [
                                         author: "Michael Chang",
                                         company: "OptiFlow",
                                         image: "",
-                                        backgroundColor: "#ffffff",
-                                        roleColor: "#10b981",
-                                        textColor: "#1f2937"
+                                        backgroundColor: "var(--theme-background)",
+                                        roleColor: "var(--theme-primary)",
+                                        textColor: "var(--theme-text)"
                                     }
                                 },
                                 {
@@ -248,9 +248,9 @@ export const socialProofSections = [
                                         author: "Lisa Anderson",
                                         company: "FinanceHub",
                                         image: "",
-                                        backgroundColor: "#ffffff",
-                                        roleColor: "#8b5cf6",
-                                        textColor: "#1f2937"
+                                        backgroundColor: "var(--theme-background)",
+                                        roleColor: "var(--theme-primary)",
+                                        textColor: "var(--theme-text)"
                                     }
                                 },
                                 {
@@ -263,9 +263,9 @@ export const socialProofSections = [
                                         author: "David Park",
                                         company: "Global Enterprises",
                                         image: "",
-                                        backgroundColor: "#ffffff",
-                                        roleColor: "#dc2626",
-                                        textColor: "#1f2937"
+                                        backgroundColor: "var(--theme-background)",
+                                        roleColor: "var(--theme-primary)",
+                                        textColor: "var(--theme-text)"
                                     }
                                 }
                             ]
@@ -299,7 +299,7 @@ export const socialProofSections = [
                                 text: "What Users Love About Our Features",
                                 tag: "h2",
                                 align: "center",
-                                color: "var(--theme-text, #1f2937)",
+                                color: "var(--theme-text, var(--theme-text))",
                                 fontWeight: "700"
                             }
                         },
@@ -328,8 +328,8 @@ export const socialProofSections = [
                                         author: "Emma Watson",
                                         title: "Product Manager at Scale Corp",
                                         backgroundColor: "#f0f4ff",
-                                        textColor: "#1f2937",
-                                        accentColor: "#6366f1"
+                                        textColor: "var(--theme-text)",
+                                        accentColor: "var(--theme-primary)"
                                     }
                                 },
                                 {
@@ -342,8 +342,8 @@ export const socialProofSections = [
                                         author: "Marcus Johnson",
                                         title: "Design Lead at Creative Studio",
                                         backgroundColor: "#fef3f0",
-                                        textColor: "#1f2937",
-                                        accentColor: "#ef4444"
+                                        textColor: "var(--theme-text)",
+                                        accentColor: "var(--theme-primary)"
                                     }
                                 },
                                 {
@@ -356,8 +356,8 @@ export const socialProofSections = [
                                         author: "Catherine Lee",
                                         title: "Security Officer at SecureNet",
                                         backgroundColor: "#f0fef9",
-                                        textColor: "#1f2937",
-                                        accentColor: "#10b981"
+                                        textColor: "var(--theme-text)",
+                                        accentColor: "var(--theme-primary)"
                                     }
                                 },
                                 {
@@ -369,9 +369,9 @@ export const socialProofSections = [
                                         testimonial: "Works flawlessly on all devices. Perfect for our remote-first team.",
                                         author: "Kevin Park",
                                         title: "CTO at Mobile First Corp",
-                                        backgroundColor: "#f0f9ff",
-                                        textColor: "#1f2937",
-                                        accentColor: "#3b82f6"
+                                        backgroundColor: "var(--theme-background)",
+                                        textColor: "var(--theme-text)",
+                                        accentColor: "var(--theme-primary)"
                                     }
                                 }
                             ]
@@ -405,7 +405,7 @@ export const socialProofSections = [
                                 text: "Security & Compliance",
                                 tag: "h2",
                                 align: "center",
-                                color: "var(--theme-text, #1f2937)",
+                                color: "var(--theme-text, var(--theme-text))",
                                 fontWeight: "700"
                             }
                         },
@@ -466,7 +466,7 @@ export const socialProofSections = [
                                         title: "GDPR Compliant",
                                         description: "Data privacy regulations",
                                         backgroundColor: "linear-gradient(135deg, #fde2e4 0%, #fecdd3 100%)",
-                                        borderColor: "#dc2626",
+                                        borderColor: "var(--theme-primary)",
                                         textColor: "#7f1d1d"
                                     }
                                 },
@@ -537,7 +537,7 @@ export const socialProofSections = [
                                 text: "What Our Customers Say",
                                 tag: "h2",
                                 align: "center",
-                                color: "var(--theme-text, #1f2937)",
+                                color: "var(--theme-text, var(--theme-text))",
                                 fontWeight: "700"
                             }
                         },
@@ -600,7 +600,7 @@ export const socialProofSections = [
                                 text: "Trusted by 500+ Organizations",
                                 tag: "h2",
                                 align: "center",
-                                color: "var(--theme-text, #1f2937)",
+                                color: "var(--theme-text, var(--theme-text))",
                                 fontWeight: "700"
                             }
                         },
@@ -660,7 +660,7 @@ export const socialProofSections = [
                                 text: "How We Help Businesses Win",
                                 tag: "h2",
                                 align: "center",
-                                color: "var(--theme-text, #1f2937)",
+                                color: "var(--theme-text, var(--theme-text))",
                                 fontWeight: "700"
                             }
                         },
@@ -691,9 +691,9 @@ export const socialProofSections = [
                                         resultHighlight: "+300%",
                                         highlightLabel: "Revenue",
                                         link: "#",
-                                        backgroundColor: "#ffffff",
-                                        textColor: "#1f2937",
-                                        accentColor: "#6366f1"
+                                        backgroundColor: "var(--theme-background)",
+                                        textColor: "var(--theme-text)",
+                                        accentColor: "var(--theme-primary)"
                                     }
                                 },
                                 {
@@ -708,9 +708,9 @@ export const socialProofSections = [
                                         resultHighlight: "+250%",
                                         highlightLabel: "Users",
                                         link: "#",
-                                        backgroundColor: "#ffffff",
-                                        textColor: "#1f2937",
-                                        accentColor: "#3b82f6"
+                                        backgroundColor: "var(--theme-background)",
+                                        textColor: "var(--theme-text)",
+                                        accentColor: "var(--theme-primary)"
                                     }
                                 },
                                 {
@@ -725,9 +725,9 @@ export const socialProofSections = [
                                         resultHighlight: "+500%",
                                         highlightLabel: "ROI",
                                         link: "#",
-                                        backgroundColor: "#ffffff",
-                                        textColor: "#1f2937",
-                                        accentColor: "#10b981"
+                                        backgroundColor: "var(--theme-background)",
+                                        textColor: "var(--theme-text)",
+                                        accentColor: "var(--theme-primary)"
                                     }
                                 }
                             ]
@@ -761,7 +761,7 @@ export const socialProofSections = [
                                 text: "Customer Success Stories",
                                 tag: "h2",
                                 align: "center",
-                                color: "var(--theme-text, #1f2937)",
+                                color: "var(--theme-text, var(--theme-text))",
                                 fontWeight: "700"
                             }
                         },
@@ -791,9 +791,9 @@ export const socialProofSections = [
                                         quote: "Went from 0 to $1M ARR in just 8 months using this platform.",
                                         metric: "+1000%",
                                         metricLabel: "Revenue Growth",
-                                        backgroundColor: "#f0f9ff",
-                                        textColor: "#1f2937",
-                                        accentColor: "#3b82f6"
+                                        backgroundColor: "var(--theme-background)",
+                                        textColor: "var(--theme-text)",
+                                        accentColor: "var(--theme-primary)"
                                     }
                                 },
                                 {
@@ -808,8 +808,8 @@ export const socialProofSections = [
                                         metric: "+400%",
                                         metricLabel: "Lead Conversion",
                                         backgroundColor: "#fef3f0",
-                                        textColor: "#1f2937",
-                                        accentColor: "#ef4444"
+                                        textColor: "var(--theme-text)",
+                                        accentColor: "var(--theme-primary)"
                                     }
                                 }
                             ]
@@ -843,7 +843,7 @@ export const socialProofSections = [
                                 text: "See The Transformation",
                                 tag: "h2",
                                 align: "center",
-                                color: "var(--theme-text, #1f2937)",
+                                color: "var(--theme-text, var(--theme-text))",
                                 fontWeight: "700"
                             }
                         },
@@ -863,9 +863,9 @@ export const socialProofSections = [
                                 height: 400,
                                 borderRadius: 12,
                                 showLabels: true,
-                                backgroundColor: "#f9fafb",
+                                backgroundColor: "var(--theme-background)",
                                 labelBg: "rgba(0,0,0,0.5)",
-                                labelColor: "#ffffff"
+                                labelColor: "var(--theme-background)"
                             }
                         }
                     ]
@@ -896,7 +896,7 @@ export const socialProofSections = [
                                 text: "Industry Recognition",
                                 tag: "h2",
                                 align: "center",
-                                color: "var(--theme-text, #1f2937)",
+                                color: "var(--theme-text, var(--theme-text))",
                                 fontWeight: "700"
                             }
                         },
@@ -923,7 +923,7 @@ export const socialProofSections = [
                                         totalReviews: "1000+",
                                         ratingColor: "#fbbf24",
                                         backgroundColor: "#fefcf0",
-                                        textColor: "#1f2937",
+                                        textColor: "var(--theme-text)",
                                         breakdownVisible: false
                                     }
                                 },
@@ -933,9 +933,9 @@ export const socialProofSections = [
                                     props: {
                                         rating: "5.0",
                                         totalReviews: "500+",
-                                        ratingColor: "#10b981",
+                                        ratingColor: "var(--theme-primary)",
                                         backgroundColor: "#ecfff5",
-                                        textColor: "#1f2937",
+                                        textColor: "var(--theme-text)",
                                         breakdownVisible: false
                                     }
                                 },
@@ -945,9 +945,9 @@ export const socialProofSections = [
                                     props: {
                                         rating: "4.8",
                                         totalReviews: "750+",
-                                        ratingColor: "#06b6d4",
+                                        ratingColor: "var(--theme-primary)",
                                         backgroundColor: "#ecf9ff",
-                                        textColor: "#1f2937",
+                                        textColor: "var(--theme-text)",
                                         breakdownVisible: false
                                     }
                                 },
@@ -957,9 +957,9 @@ export const socialProofSections = [
                                     props: {
                                         rating: "4.9",
                                         totalReviews: "2000+",
-                                        ratingColor: "#8b5cf6",
+                                        ratingColor: "var(--theme-primary)",
                                         backgroundColor: "#f5f3ff",
-                                        textColor: "#1f2937",
+                                        textColor: "var(--theme-text)",
                                         breakdownVisible: false
                                     }
                                 }
@@ -994,7 +994,7 @@ export const socialProofSections = [
                                 text: "Awards & Recognition",
                                 tag: "h2",
                                 align: "center",
-                                color: "var(--theme-text, #1f2937)",
+                                color: "var(--theme-text, var(--theme-text))",
                                 fontWeight: "700"
                             }
                         },
@@ -1010,7 +1010,7 @@ export const socialProofSections = [
                                 text: "Recent Awards",
                                 tag: "h3",
                                 align: "left",
-                                color: "var(--theme-text, #1f2937)",
+                                color: "var(--theme-text, var(--theme-text))",
                                 fontWeight: "600"
                             }
                         },
@@ -1031,8 +1031,8 @@ export const socialProofSections = [
                                         icon: "🏆",
                                         title: "Best Innovation",
                                         year: "2024",
-                                        backgroundColor: "linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%)",
-                                        textColor: "#ffffff",
+                                        backgroundColor: "linear-gradient(135deg, #fbbf24 0%, var(--theme-primary) 100%)",
+                                        textColor: "var(--theme-text)",
                                         borderRadius: 12,
                                         shadow: "lg"
                                     }
@@ -1044,8 +1044,8 @@ export const socialProofSections = [
                                         icon: "⭐",
                                         title: "Excellent Service",
                                         year: "2024",
-                                        backgroundColor: "linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%)",
-                                        textColor: "#ffffff",
+                                        backgroundColor: "linear-gradient(135deg, #60a5fa 0%, var(--theme-primary) 100%)",
+                                        textColor: "var(--theme-text)",
                                         borderRadius: 12,
                                         shadow: "lg"
                                     }
@@ -1057,8 +1057,8 @@ export const socialProofSections = [
                                         icon: "🎯",
                                         title: "Top Performer",
                                         year: "2024",
-                                        backgroundColor: "linear-gradient(135deg, #34d399 0%, #10b981 100%)",
-                                        textColor: "#ffffff",
+                                        backgroundColor: "linear-gradient(135deg, #34d399 0%, var(--theme-primary) 100%)",
+                                        textColor: "var(--theme-text)",
                                         borderRadius: 12,
                                         shadow: "lg"
                                     }
@@ -1078,7 +1078,7 @@ export const socialProofSections = [
                                 text: "Featured In",
                                 tag: "h3",
                                 align: "left",
-                                color: "var(--theme-text, #1f2937)",
+                                color: "var(--theme-text, var(--theme-text))",
                                 fontWeight: "600"
                             }
                         },
@@ -1101,9 +1101,9 @@ export const socialProofSections = [
                                         date: "Jan 2024",
                                         excerpt: "Series A raises $10M for innovative platform...",
                                         link: "#",
-                                        backgroundColor: "#ffffff",
-                                        borderColor: "var(--theme-border, #e5e7eb)",
-                                        textColor: "#1f2937"
+                                        backgroundColor: "var(--theme-background)",
+                                        borderColor: "var(--theme-border, var(--theme-border))",
+                                        textColor: "var(--theme-text)"
                                     }
                                 },
                                 {
@@ -1115,9 +1115,9 @@ export const socialProofSections = [
                                         date: "Dec 2023",
                                         excerpt: "30 under 30: Founders changing tech industry...",
                                         link: "#",
-                                        backgroundColor: "#ffffff",
-                                        borderColor: "var(--theme-border, #e5e7eb)",
-                                        textColor: "#1f2937"
+                                        backgroundColor: "var(--theme-background)",
+                                        borderColor: "var(--theme-border, var(--theme-border))",
+                                        textColor: "var(--theme-text)"
                                     }
                                 }
                             ]

@@ -16,7 +16,7 @@ export const heroTemplates = [
     //         props: {
     //             paddingTop: 160,
     //             paddingBottom: 160,
-    //             backgroundColor: "#030712",
+    //             backgroundColor: "var(--theme-text)",
     //             layoutType: "asymmetric",
     //             fullWidth: true,
     //             flexDirection: "row",
@@ -24,8 +24,8 @@ export const heroTemplates = [
     //             justifyContent: "center",
     //             decorativeElements: [
     //                 { type: "mesh", size: "40px 40px" },
-    //                 { type: "blob", color: "#3B82F6", width: "600px", height: "600px", top: "20%", left: "10%", opacity: 0.15 },
-    //                 { type: "blob", color: "#A855F7", width: "500px", height: "500px", top: "80%", left: "90%", opacity: 0.15 }
+    //                 { type: "blob", color: "var(--theme-primary)", width: "600px", height: "600px", top: "20%", left: "10%", opacity: 0.15 },
+    //                 { type: "blob", color: "var(--theme-primary)", width: "500px", height: "500px", top: "80%", left: "90%", opacity: 0.15 }
     //             ]
     //         },
     //         columns: [
@@ -39,10 +39,10 @@ export const heroTemplates = [
     //                     justifyContent: "center"
     //                 },
     //                 elements: [
-    //                     { id: "vsaas-badge", type: "Badge", props: { text: "v4.0 IS HERE", color: "#3B82F6", backgroundColor: "rgba(59, 130, 246, 0.1)", borderRadius: 20 } },
-    //                     { id: "vsaas-title", type: "Headline", props: { text: "SCALE [FASTER](linear-gradient(to right, #3B82F6, #A855F7, #EC4899) THAN EVER", align: "left", color: "#ffffff" } },
+    //                     { id: "vsaas-badge", type: "Badge", props: { text: "v4.0 IS HERE", color: "var(--theme-primary)", backgroundColor: "rgba(59, 130, 246, 0.1)", borderRadius: 20 } },
+    //                     { id: "vsaas-title", type: "Headline", props: { text: "SCALE [FASTER](linear-gradient(to right, var(--theme-primary), var(--theme-primary), #EC4899) THAN EVER", align: "left", color: "var(--theme-background)" } },
     //                     { id: "vsaas-para", type: "Paragraph", props: { text: "The next-generation analytics engine designed for hyper-growth teams. Experience the speed of thought with our real-time processing layer.", align: "left", color: "rgba(255, 255, 255, 0.7)", size: "xl" } },
-    //                     { id: "vsaas-btns", type: "ButtonGroup", props: { primaryText: "Get Started Free", secondaryText: "Live Demo", primaryBg: "linear-gradient(to right, #3B82F6, #A855F7)" } },
+    //                     { id: "vsaas-btns", type: "ButtonGroup", props: { primaryText: "Get Started Free", secondaryText: "Live Demo", primaryBg: "linear-gradient(to right, var(--theme-primary), var(--theme-primary))" } },
     //                     { id: "vsaas-proof", type: "SocialProof", props: { text: "Trusted by 2,000+ top-tier engineering teams" } }
     //                 ]
     //             },
@@ -56,7 +56,7 @@ export const heroTemplates = [
     //                     justifyContent: "center"
     //                 },
     //                 elements: [
-    //                     { id: "vsaas-dashboard", type: "Dashboard", props: { title: "Production Cluster Alpha", accentColor: "#3B82F6", secondaryColor: "#A855F7", align: "center" } }
+    //                     { id: "vsaas-dashboard", type: "Dashboard", props: { title: "Production Cluster Alpha", accentColor: "var(--theme-primary)", secondaryColor: "var(--theme-primary)", align: "center" } }
     //                 ]
     //             }
     //         ]
@@ -74,7 +74,7 @@ export const heroTemplates = [
             props: {
                 paddingTop: 180,
                 paddingBottom: 180,
-                backgroundColor: "#000000",
+                backgroundColor: "var(--theme-text)",
                 backgroundImage: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=1600&auto=format&fit=crop&q=60",
                 backgroundSize: "cover",
                 backgroundOverlay: "rgba(255, 255, 255, 0.9)",
@@ -89,11 +89,11 @@ export const heroTemplates = [
                     id: "hglory-col-1",
                     width: "100%",
                     elements: [
-                        { id: "hglory-badge", type: "Badge", props: { text: "The Future of Infrastructure", color: "#4f46e5", backgroundColor: "#eef2ff", showPing: true } },
-                        { id: "hglory-title", type: "Headline", props: { text: "Deploy at the speed of light.", align: "center", color: "#000000" } },
+                        { id: "hglory-badge", type: "Badge", props: { text: "The Future of Infrastructure", color: "var(--theme-primary)", backgroundColor: "#eef2ff", showPing: true } },
+                        { id: "hglory-title", type: "Headline", props: { text: "Deploy at the speed of light.", align: "center", color: "var(--theme-text)" } },
                         { id: "hglory-para", type: "Paragraph", props: { text: "The world's first edge-native platform that combines security, speed, and simplicity. Ship globally in seconds.", align: "center", size: "lg", color: "#475569" } },
                         { id: "hglory-spacer", type: "Spacer", props: { height: "sm" } },
-                        { id: "hglory-btn", type: "Button", props: { text: "Start Shipping Free", align: "center", variant: "primary", size: "lg", backgroundColor: "#111827", borderRadius: 16 } }
+                        { id: "hglory-btn", type: "Button", props: { text: "Start Shipping Free", align: "center", variant: "primary", size: "lg", backgroundColor: "var(--theme-text)", borderRadius: 16 } }
                     ]
                 }
             ]
@@ -116,7 +116,7 @@ export const heroTemplates = [
                 backgroundOverlay: "rgba(0, 0, 0, 0.6)",
                 decorativeElements: [
                     { type: "mesh", size: "60px 60px" },
-                    { type: "blob", color: "#3b82f6", width: "1000px", height: "1000px", top: "50%", left: "50%", opacity: 0.2 }
+                    { type: "blob", color: "var(--theme-primary)", width: "1000px", height: "1000px", top: "50%", left: "50%", opacity: 0.2 }
                 ]
             },
             columns: [
@@ -124,9 +124,9 @@ export const heroTemplates = [
                     id: "hwide-col-1",
                     width: "100%",
                     elements: [
-                        { id: "hwide-heading", type: "Headline", props: { text: "LIMITLESS POSSIBILITIES", align: "center", color: "#ffffff" } },
+                        { id: "hwide-heading", type: "Headline", props: { text: "LIMITLESS POSSIBILITIES", align: "center", color: "var(--theme-background)" } },
                         { id: "hwide-para", type: "Paragraph", props: { text: "We build digital foundations for companies that dominate their markets.", align: "center", color: "rgba(255, 255, 255, 0.8)", size: "xl" } },
-                        { id: "hwide-btn", type: "Button", props: { text: "Our Philosophy", align: "center", variant: "outline", backgroundColor: "#ffffff", borderRadius: 0, textColor: "#ffffff" } }
+                        { id: "hwide-btn", type: "Button", props: { text: "Our Philosophy", align: "center", variant: "outline", backgroundColor: "var(--theme-background)", borderRadius: 0, textColor: "var(--theme-text)" } }
                     ]
                 }
             ]
@@ -144,7 +144,7 @@ export const heroTemplates = [
             props: {
                 paddingTop: 80,
                 paddingBottom: 80,
-                backgroundColor: "#0A0A0A",
+                backgroundColor: "var(--theme-text)",
                 backgroundImage: "https://img.freepik.com/free-photo/studio-portrait-serious-modern-male-white-shirt-business-jacket-grey-background_613910-13385.jpg?semt=ais_hybrid&w=740&q=80",
                 backgroundOverlay: "linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.7) 100%)",
                 backgroundSize: "cover",
@@ -170,7 +170,7 @@ export const heroTemplates = [
                             type: "Badge", 
                             props: { 
                                 text: "The New Standard", 
-                                color: "#FFFFFF", 
+                                color: "var(--theme-background)", 
                                 backgroundColor: "transparent", 
                                 showPing: false,
                                 borderRadius: 0
@@ -193,7 +193,7 @@ export const heroTemplates = [
                                 text: "Pure\nAesthetic", 
                                 tag: "h1",
                                 align: "center", 
-                                color: "#FFFFFF",
+                                color: "var(--theme-background)",
                                 fontWeight: "300"
                             } 
                         },
@@ -218,8 +218,8 @@ export const heroTemplates = [
                             props: { 
                                 primaryText: "View Collection",
                                 secondaryText: "Enter Studio",
-                                primaryBg: "#FFFFFF",
-                                primaryColor: "#0A0A0A",
+                                primaryBg: "var(--theme-background)",
+                                primaryColor: "var(--theme-text)",
                                 primaryBorderRadius: "0",
                                 secondaryBg: "transparent",
                                 secondaryColor: "rgba(255, 255, 255, 0.4)",
@@ -257,7 +257,7 @@ export const heroTemplates = [
                 justifyContent: "center",
                 decorativeElements: [
                     { type: "blob", color: "#1e3a8a", width: "800px", height: "800px", top: "-10%", left: "25%", opacity: 0.1 },
-                    { type: "blob", color: "#1e293b", width: "600px", height: "600px", top: "100%", left: "75%", opacity: 0.3 },
+                    { type: "blob", color: "var(--theme-text)", width: "600px", height: "600px", top: "100%", left: "75%", opacity: 0.3 },
                     { type: "mesh", size: "60px 60px" }
                 ]
             },
@@ -278,8 +278,8 @@ export const heroTemplates = [
                             type: "Badge",
                             props: {
                                 text: "SentinelCap",
-                                color: "#FFFFFF",
-                                backgroundColor: "#3b82f6",
+                                color: "var(--theme-background)",
+                                backgroundColor: "var(--theme-primary)",
                                 showPing: false,
                                 borderRadius: 4
                             }
@@ -289,7 +289,7 @@ export const heroTemplates = [
                             type: "Badge",
                             props: {
                                 text: "Institutional Asset Management",
-                                color: "#cbd5e1",
+                                color: "var(--theme-border)",
                                 backgroundColor: "rgba(15, 23, 42, 0.5)",
                                 showPing: true,
                                 borderRadius: 0
@@ -302,7 +302,7 @@ export const heroTemplates = [
                                 text: "Secure the Future of your Capital.",
                                 tag: "h1",
                                 align: "left",
-                                color: "#FFFFFF",
+                                color: "var(--theme-background)",
                                 fontWeight: "900"
                             }
                         },
@@ -312,7 +312,7 @@ export const heroTemplates = [
                             props: {
                                 text: "A centralized platform for sophisticated liquidity management, real-time risk mitigation, and enterprise-grade portfolio security.",
                                 align: "left",
-                                color: "#94a3b8",
+                                color: "var(--theme-border)",
                                 size: "lg"
                             }
                         },
@@ -330,17 +330,17 @@ export const heroTemplates = [
                                 sectorOptions: "Asset Management,FinTech Startup,Investment Banking,Venture Capital",
                                 submitText: "Begin Onboarding",
                                 disclaimerText: "By proceeding, you agree to our Terms of Service and Privacy Policy.",
-                                backgroundColor: "#0f172a",
+                                backgroundColor: "var(--theme-text)",
                                 borderRadius: 8,
                                 shadow: "xl",
-                                titleColor: "#FFFFFF",
-                                descriptionColor: "#94a3b8",
-                                labelColor: "#64748b",
+                                titleColor: "var(--theme-background)",
+                                descriptionColor: "var(--theme-border)",
+                                labelColor: "var(--theme-border)",
                                 inputBgColor: "#020617",
                                 inputBorderColor: "#334155",
-                                inputTextColor: "#FFFFFF",
-                                buttonBgColor: "#3b82f6",
-                                buttonTextColor: "#FFFFFF"
+                                inputTextColor: "var(--theme-background)",
+                                buttonBgColor: "var(--theme-primary)",
+                                buttonTextColor: "var(--theme-background)"
                             }
                         }
                     ]
@@ -391,7 +391,7 @@ export const heroTemplates = [
                             type: "Badge",
                             props: {
                                 text: "2024 Autumn Impact Fund",
-                                color: "#F59E0B",
+                                color: "var(--theme-primary)",
                                 backgroundColor: "rgba(217, 72, 15, 0.2)",
                                 borderRadius: 20,
                                 showPing: true
@@ -404,7 +404,7 @@ export const heroTemplates = [
                                 text: "Gathering Hope,\nGrowing Together.",
                                 tag: "h1",
                                 align: "left",
-                                color: "#FFFFFF",
+                                color: "var(--theme-background)",
                                 fontWeight: "900"
                             }
                         },
@@ -425,9 +425,9 @@ export const heroTemplates = [
                                 avatarUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuDX2pANZHrZMJH6Kly3wkuq3zOEWt4Exf9m5qHO0sjL1UZ2_jQiVP1aVfeCFzBObKPqWWQUIU8-_tQy4vfVNnkpeaApuDXpFXAi2q0ynKyFHvb0NgXgozmskHTS6ELx-t8jXM5nrpTt0Nh4-kUyMbBewvsaYG2IDqpIt2DF7g_9chlbDl0Js8kt82roXLRfGadtdIx6sdM3yJauWwO2jg15Dd4GgPIP3YWB5OkyvGBIpnejVzrc4wlXp4bCDlTaqd6_-CWXBIUwrOI",
                                 countText: "+5k",
                                 countBg: "#9A3412",
-                                countColor: "#FFFFFF",
+                                countColor: "var(--theme-background)",
                                 supportText: "Joined by 5,400+ active community heroes",
-                                textColor: "#FFFFFF",
+                                textColor: "var(--theme-text)",
                                 textOpacity: "70"
                             }
                         }
@@ -449,23 +449,23 @@ export const heroTemplates = [
                             type: "DonationCard",
                             props: {
                                 title: "Make an Impact",
-                                titleColor: "#FFFFFF",
+                                titleColor: "var(--theme-background)",
                                 titleIcon: "volunteer_activism",
                                 amounts: "25,50,100",
                                 selectedAmount: "50",
                                 amountColor: "#D9480F",
-                                amountTextColor: "#FFFFFF",
+                                amountTextColor: "var(--theme-background)",
                                 customPlaceholder: "Custom Amount",
-                                customInputBg: "#ffffff",
+                                customInputBg: "var(--theme-background)",
                                 customInputOpacity: "5",
                                 buttonText: "Donate Now",
                                 buttonBg: "#D9480F",
                                 buttonHoverBg: "#B83A0A",
-                                buttonTextColor: "#FFFFFF",
+                                buttonTextColor: "var(--theme-background)",
                                 securityText: "Secure payment powered by Stripe",
                                 campaignGoalText: "Campaign Goal",
                                 campaignAmount: "$500,000",
-                                campaignAmountColor: "#F59E0B",
+                                campaignAmountColor: "var(--theme-primary)",
                                 goalProgressPercent: 72,
                                 progressBarBg: "rgba(255, 255, 255, 0.05)",
                                 progressBarFill: "#D9480F",
@@ -500,12 +500,12 @@ export const heroTemplates = [
                                 iconColor: "#D9480F",
                                 iconBg: "rgba(217, 72, 15, 0.2)",
                                 badge: "+12k",
-                                badgeColor: "#F59E0B",
+                                badgeColor: "var(--theme-primary)",
                                 badgeBg: "rgba(245, 158, 11, 0.1)",
                                 statLabel: "Lives Touched",
                                 labelColor: "rgba(255, 255, 255, 0.5)",
                                 statValue: "50k+",
-                                statValueColor: "#FFFFFF",
+                                statValueColor: "var(--theme-background)",
                                 backgroundColor: "rgba(154, 52, 18, 0.2)",
                                 borderColor: "rgba(255, 255, 255, 0.1)",
                                 borderRadius: "12"
@@ -519,12 +519,12 @@ export const heroTemplates = [
                                 iconColor: "#D9480F",
                                 iconBg: "rgba(217, 72, 15, 0.2)",
                                 badge: "Harvest",
-                                badgeColor: "#F59E0B",
+                                badgeColor: "var(--theme-primary)",
                                 badgeBg: "rgba(245, 158, 11, 0.1)",
                                 statLabel: "Sustainable Farms",
                                 labelColor: "rgba(255, 255, 255, 0.5)",
                                 statValue: "1,200",
-                                statValueColor: "#FFFFFF",
+                                statValueColor: "var(--theme-background)",
                                 backgroundColor: "rgba(154, 52, 18, 0.2)",
                                 borderColor: "rgba(255, 255, 255, 0.1)",
                                 borderRadius: "12"
@@ -538,12 +538,12 @@ export const heroTemplates = [
                                 iconColor: "#D9480F",
                                 iconBg: "rgba(217, 72, 15, 0.2)",
                                 badge: "Active",
-                                badgeColor: "#F59E0B",
+                                badgeColor: "var(--theme-primary)",
                                 badgeBg: "rgba(245, 158, 11, 0.1)",
                                 statLabel: "Community Heroes",
                                 labelColor: "rgba(255, 255, 255, 0.5)",
                                 statValue: "5,400",
-                                statValueColor: "#FFFFFF",
+                                statValueColor: "var(--theme-background)",
                                 backgroundColor: "rgba(154, 52, 18, 0.2)",
                                 borderColor: "rgba(255, 255, 255, 0.1)",
                                 borderRadius: "12"
@@ -609,7 +609,7 @@ export const heroTemplates = [
                                 text: "ETHEREAL\nESTATES",
                                 tag: "h1",
                                 align: "center",
-                                color: "#FFFFFF",
+                                color: "var(--theme-background)",
                                 fontWeight: "900",
                                 fontSize: "96",
                                 lineHeight: "1"

@@ -18,7 +18,7 @@ export const serviceSectionTemplates = [
             id: "services-overview-1",
             type: "Section",
             props: {
-                backgroundColor: "var(--theme-background, #ffffff)",
+                backgroundColor: "var(--theme-background, var(--theme-background))",
                 paddingTop: 60,
                 paddingBottom: 60,
             },
@@ -40,8 +40,8 @@ export const serviceSectionTemplates = [
                             type: "Badge",
                             props: {
                                 text: "OUR SERVICES",
-                                color: "var(--theme-secondary, #8b5cf6)",
-                                bgColor: "var(--theme-secondary-light, #faf5ff)",
+                                color: "var(--theme-secondary, var(--theme-primary))",
+                                bgColor: "var(--theme-secondary-light, var(--theme-background))",
                                 showPing: false
                             }
                         },
@@ -52,7 +52,7 @@ export const serviceSectionTemplates = [
                                 text: "Professional Services for Your Success",
                                 tag: "h2",
                                 align: "center",
-                                color: "var(--theme-text, #1f2937)",
+                                color: "var(--theme-text, var(--theme-text))",
                                 fontWeight: "700",
                                 size: "2xl"
                             }
@@ -110,7 +110,7 @@ export const serviceSectionTemplates = [
             id: "service-cards-1",
             type: "Section",
             props: {
-                backgroundColor: "var(--theme-background-alt, #f9fafb)",
+                backgroundColor: "var(--theme-background-alt, var(--theme-background))",
                 paddingTop: 60,
                 paddingBottom: 60,
             },
@@ -134,7 +134,7 @@ export const serviceSectionTemplates = [
                                 text: "Our Service Offerings",
                                 tag: "h2",
                                 align: "center",
-                                color: "var(--theme-text, #1f2937)",
+                                color: "var(--theme-text, var(--theme-text))",
                                 fontWeight: "700",
                                 size: "2xl"
                             }
@@ -162,9 +162,9 @@ export const serviceSectionTemplates = [
                                 title: "Implementation",
                                 description: "End-to-end implementation services with expert guidance",
                                 features: ["Setup and configuration", "Data migration", "Team training"],
-                                backgroundColor: "var(--theme-background, #ffffff)",
-                                textColor: "var(--theme-text, #1f2937)",
-                                accentColor: "var(--theme-primary, #6366f1)",
+                                backgroundColor: "var(--theme-background, var(--theme-background))",
+                                textColor: "var(--theme-text, var(--theme-text))",
+                                accentColor: "var(--theme-primary, var(--theme-primary))",
                                 borderRadius: "12",
                                 shadow: "md"
                             }
@@ -192,9 +192,9 @@ export const serviceSectionTemplates = [
                                 title: "Consulting",
                                 description: "Strategic consulting to optimize your operations",
                                 features: ["Process analysis", "Best practices", "Custom solutions"],
-                                backgroundColor: "var(--theme-background, #ffffff)",
-                                textColor: "var(--theme-text, #1f2937)",
-                                accentColor: "var(--theme-secondary, #8b5cf6)",
+                                backgroundColor: "var(--theme-background, var(--theme-background))",
+                                textColor: "var(--theme-text, var(--theme-text))",
+                                accentColor: "var(--theme-secondary, var(--theme-primary))",
                                 borderRadius: "12",
                                 shadow: "md"
                             }
@@ -222,9 +222,9 @@ export const serviceSectionTemplates = [
                                 title: "Training",
                                 description: "Comprehensive training programs for your team",
                                 features: ["Online courses", "Workshops", "Certification"],
-                                backgroundColor: "var(--theme-background, #ffffff)",
-                                textColor: "var(--theme-text, #1f2937)",
-                                accentColor: "var(--theme-accent, #f59e0b)",
+                                backgroundColor: "var(--theme-background, var(--theme-background))",
+                                textColor: "var(--theme-text, var(--theme-text))",
+                                accentColor: "var(--theme-accent, var(--theme-primary))",
                                 borderRadius: "12",
                                 shadow: "md"
                             }
@@ -248,7 +248,7 @@ export const serviceSectionTemplates = [
             id: "service-details-1",
             type: "Section",
             props: {
-                backgroundColor: "var(--theme-background, #ffffff)",
+                backgroundColor: "var(--theme-background, var(--theme-background))",
                 paddingTop: 60,
                 paddingBottom: 60,
             },
@@ -272,7 +272,7 @@ export const serviceSectionTemplates = [
                                 text: "Detailed Service Descriptions",
                                 tag: "h2",
                                 align: "center",
-                                color: "var(--theme-text, #1f2937)",
+                                color: "var(--theme-text, var(--theme-text))",
                                 fontWeight: "700",
                                 size: "2xl"
                             }
@@ -297,9 +297,9 @@ export const serviceSectionTemplates = [
                             props: {
                                 title: "Premium Support",
                                 content: "24/7 technical support with dedicated account managers, priority response times, and proactive monitoring to ensure smooth operations.",
-                                backgroundColor: "var(--theme-background-alt, #f9fafb)",
-                                borderLeftColor: "var(--theme-primary, #6366f1)",
-                                titleColor: "var(--theme-text, #1f2937)",
+                                backgroundColor: "var(--theme-background-alt, var(--theme-background))",
+                                borderLeftColor: "var(--theme-primary, var(--theme-primary))",
+                                titleColor: "var(--theme-text, var(--theme-text))",
                                 textColor: "var(--theme-text-secondary, #6b7280)",
                                 borderRadius: "12"
                             }
@@ -310,9 +310,9 @@ export const serviceSectionTemplates = [
                             props: {
                                 title: "Custom Development",
                                 content: "Tailored development services to extend functionality, integrate with your existing systems, and build custom solutions for unique requirements.",
-                                backgroundColor: "var(--theme-background-alt, #f9fafb)",
-                                borderLeftColor: "var(--theme-secondary, #8b5cf6)",
-                                titleColor: "var(--theme-text, #1f2937)",
+                                backgroundColor: "var(--theme-background-alt, var(--theme-background))",
+                                borderLeftColor: "var(--theme-secondary, var(--theme-primary))",
+                                titleColor: "var(--theme-text, var(--theme-text))",
                                 textColor: "var(--theme-text-secondary, #6b7280)",
                                 borderRadius: "12"
                             }
@@ -336,7 +336,7 @@ export const serviceSectionTemplates = [
             id: "pricing-per-service-1",
             type: "Section",
             props: {
-                backgroundColor: "var(--theme-background-alt, #f9fafb)",
+                backgroundColor: "var(--theme-background-alt, var(--theme-background))",
                 paddingTop: 60,
                 paddingBottom: 60,
             },
@@ -360,7 +360,7 @@ export const serviceSectionTemplates = [
                                 text: "Service Pricing",
                                 tag: "h2",
                                 align: "center",
-                                color: "var(--theme-text, #1f2937)",
+                                color: "var(--theme-text, var(--theme-text))",
                                 fontWeight: "700",
                                 size: "2xl"
                             }
@@ -390,11 +390,11 @@ export const serviceSectionTemplates = [
                                 features: ["Basic setup", "Email support", "2 hours training", "30-day onboarding"],
                                 buttonText: "Get Started",
                                 buttonColor: "white",
-                                buttonBgColor: "var(--theme-primary, #6366f1)",
-                                backgroundColor: "var(--theme-background, #ffffff)",
-                                textColor: "var(--theme-text, #1f2937)",
+                                buttonBgColor: "var(--theme-primary, var(--theme-primary))",
+                                backgroundColor: "var(--theme-background, var(--theme-background))",
+                                textColor: "var(--theme-text, var(--theme-text))",
                                 highlightBorder: false,
-                                highlightColor: "var(--theme-primary, #6366f1)",
+                                highlightColor: "var(--theme-primary, var(--theme-primary))",
                                 borderRadius: "12"
                             }
                         }
@@ -423,11 +423,11 @@ export const serviceSectionTemplates = [
                                 features: ["Full implementation", "Priority support", "8 hours training", "Custom configuration"],
                                 buttonText: "Choose Plan",
                                 buttonColor: "white",
-                                buttonBgColor: "var(--theme-secondary, #8b5cf6)",
-                                backgroundColor: "var(--theme-background, #ffffff)",
-                                textColor: "var(--theme-text, #1f2937)",
+                                buttonBgColor: "var(--theme-secondary, var(--theme-primary))",
+                                backgroundColor: "var(--theme-background, var(--theme-background))",
+                                textColor: "var(--theme-text, var(--theme-text))",
                                 highlightBorder: true,
-                                highlightColor: "var(--theme-secondary, #8b5cf6)",
+                                highlightColor: "var(--theme-secondary, var(--theme-primary))",
                                 borderRadius: "12"
                             }
                         }
@@ -456,11 +456,11 @@ export const serviceSectionTemplates = [
                                 features: ["Full customization", "24/7 support", "Unlimited training", "Dedicated manager"],
                                 buttonText: "Contact Sales",
                                 buttonColor: "white",
-                                buttonBgColor: "var(--theme-accent, #f59e0b)",
-                                backgroundColor: "var(--theme-background, #ffffff)",
-                                textColor: "var(--theme-text, #1f2937)",
+                                buttonBgColor: "var(--theme-accent, var(--theme-primary))",
+                                backgroundColor: "var(--theme-background, var(--theme-background))",
+                                textColor: "var(--theme-text, var(--theme-text))",
                                 highlightBorder: false,
-                                highlightColor: "var(--theme-accent, #f59e0b)",
+                                highlightColor: "var(--theme-accent, var(--theme-primary))",
                                 borderRadius: "12"
                             }
                         }
@@ -483,7 +483,7 @@ export const serviceSectionTemplates = [
             id: "consulting-section-1",
             type: "Section",
             props: {
-                backgroundColor: "var(--theme-background, #ffffff)",
+                backgroundColor: "var(--theme-background, var(--theme-background))",
                 paddingTop: 60,
                 paddingBottom: 60,
             },
@@ -505,7 +505,7 @@ export const serviceSectionTemplates = [
                             type: "Badge",
                             props: {
                                 text: "CONSULTING",
-                                color: "var(--theme-primary, #6366f1)",
+                                color: "var(--theme-primary, var(--theme-primary))",
                                 bgColor: "var(--theme-primary-light, #eef2ff)",
                                 showPing: false
                             }
@@ -517,7 +517,7 @@ export const serviceSectionTemplates = [
                                 text: "Strategic Business Consulting",
                                 tag: "h2",
                                 align: "center",
-                                color: "var(--theme-text, #1f2937)",
+                                color: "var(--theme-text, var(--theme-text))",
                                 fontWeight: "700",
                                 size: "2xl"
                             }
@@ -544,7 +544,7 @@ export const serviceSectionTemplates = [
                                 icon: "🎯",
                                 title: "Strategy",
                                 description: "Develop data-driven strategies for digital transformation",
-                                backgroundColor: "var(--theme-background-alt, #f9fafb)",
+                                backgroundColor: "var(--theme-background-alt, var(--theme-background))",
                                 borderRadius: "12",
                                 shadow: "sm",
                                 iconBgColor: "var(--theme-primary-light, #eef2ff)",
@@ -573,10 +573,10 @@ export const serviceSectionTemplates = [
                                 icon: "📈",
                                 title: "Optimization",
                                 description: "Improve processes and maximize operational efficiency",
-                                backgroundColor: "var(--theme-background-alt, #f9fafb)",
+                                backgroundColor: "var(--theme-background-alt, var(--theme-background))",
                                 borderRadius: "12",
                                 shadow: "sm",
-                                iconBgColor: "var(--theme-secondary-light, #faf5ff)",
+                                iconBgColor: "var(--theme-secondary-light, var(--theme-background))",
                                 iconSize: "40"
                             }
                         }
@@ -602,7 +602,7 @@ export const serviceSectionTemplates = [
                                 icon: "🚀",
                                 title: "Growth",
                                 description: "Accelerate growth with proven frameworks and tactics",
-                                backgroundColor: "var(--theme-background-alt, #f9fafb)",
+                                backgroundColor: "var(--theme-background-alt, var(--theme-background))",
                                 borderRadius: "12",
                                 shadow: "sm",
                                 iconBgColor: "var(--theme-accent-light, #fffbeb)",
@@ -628,7 +628,7 @@ export const serviceSectionTemplates = [
             id: "support-services-1",
             type: "Section",
             props: {
-                backgroundColor: "var(--theme-background-alt, #f9fafb)",
+                backgroundColor: "var(--theme-background-alt, var(--theme-background))",
                 paddingTop: 60,
                 paddingBottom: 60,
             },
@@ -652,7 +652,7 @@ export const serviceSectionTemplates = [
                                 text: "Support Services",
                                 tag: "h2",
                                 align: "center",
-                                color: "var(--theme-text, #1f2937)",
+                                color: "var(--theme-text, var(--theme-text))",
                                 fontWeight: "700",
                                 size: "2xl"
                             }
@@ -688,10 +688,10 @@ export const serviceSectionTemplates = [
                             props: {
                                 title: "Incident Management",
                                 features: "24/7 monitoring • Rapid response • Issue tracking • Resolution reporting",
-                                backgroundColor: "var(--theme-background, #ffffff)",
-                                borderLeftColor: "var(--theme-primary, #6366f1)",
+                                backgroundColor: "var(--theme-background, var(--theme-background))",
+                                borderLeftColor: "var(--theme-primary, var(--theme-primary))",
                                 borderLeftWidth: "3",
-                                titleColor: "var(--theme-primary, #6366f1)",
+                                titleColor: "var(--theme-primary, var(--theme-primary))",
                                 textColor: "var(--theme-text-secondary, #6b7280)",
                                 borderRadius: "12"
                             }
@@ -717,10 +717,10 @@ export const serviceSectionTemplates = [
                             props: {
                                 title: "Technical Support",
                                 features: "Expert guidance • Troubleshooting • Configuration help • Best practices",
-                                backgroundColor: "var(--theme-background, #ffffff)",
-                                borderLeftColor: "var(--theme-secondary, #8b5cf6)",
+                                backgroundColor: "var(--theme-background, var(--theme-background))",
+                                borderLeftColor: "var(--theme-secondary, var(--theme-primary))",
                                 borderLeftWidth: "3",
-                                titleColor: "var(--theme-secondary, #8b5cf6)",
+                                titleColor: "var(--theme-secondary, var(--theme-primary))",
                                 textColor: "var(--theme-text-secondary, #6b7280)",
                                 borderRadius: "12"
                             }
@@ -746,10 +746,10 @@ export const serviceSectionTemplates = [
                             props: {
                                 title: "Preventive Support",
                                 features: "Performance monitoring • Health checks • Preventive maintenance • Upgrades",
-                                backgroundColor: "var(--theme-background, #ffffff)",
-                                borderLeftColor: "var(--theme-accent, #f59e0b)",
+                                backgroundColor: "var(--theme-background, var(--theme-background))",
+                                borderLeftColor: "var(--theme-accent, var(--theme-primary))",
                                 borderLeftWidth: "3",
-                                titleColor: "var(--theme-accent, #f59e0b)",
+                                titleColor: "var(--theme-accent, var(--theme-primary))",
                                 textColor: "var(--theme-text-secondary, #6b7280)",
                                 borderRadius: "12"
                             }
@@ -773,7 +773,7 @@ export const serviceSectionTemplates = [
             id: "maintenance-plans-1",
             type: "Section",
             props: {
-                backgroundColor: "var(--theme-background, #ffffff)",
+                backgroundColor: "var(--theme-background, var(--theme-background))",
                 paddingTop: 60,
                 paddingBottom: 60,
             },
@@ -795,8 +795,8 @@ export const serviceSectionTemplates = [
                             type: "Badge",
                             props: {
                                 text: "MAINTENANCE",
-                                color: "var(--theme-secondary, #8b5cf6)",
-                                bgColor: "var(--theme-secondary-light, #faf5ff)",
+                                color: "var(--theme-secondary, var(--theme-primary))",
+                                bgColor: "var(--theme-secondary-light, var(--theme-background))",
                                 showPing: false
                             }
                         },
@@ -807,7 +807,7 @@ export const serviceSectionTemplates = [
                                 text: "Maintenance & Support Plans",
                                 tag: "h2",
                                 align: "center",
-                                color: "var(--theme-text, #1f2937)",
+                                color: "var(--theme-text, var(--theme-text))",
                                 fontWeight: "700",
                                 size: "2xl"
                             }
@@ -837,11 +837,11 @@ export const serviceSectionTemplates = [
                                 features: ["Monthly updates", "Security patches", "Performance tuning", "Email support"],
                                 buttonText: "Select Plan",
                                 buttonColor: "white",
-                                buttonBgColor: "var(--theme-primary, #6366f1)",
-                                backgroundColor: "var(--theme-background-alt, #f9fafb)",
-                                textColor: "var(--theme-text, #1f2937)",
+                                buttonBgColor: "var(--theme-primary, var(--theme-primary))",
+                                backgroundColor: "var(--theme-background-alt, var(--theme-background))",
+                                textColor: "var(--theme-text, var(--theme-text))",
                                 highlightBorder: false,
-                                highlightColor: "var(--theme-primary, #6366f1)",
+                                highlightColor: "var(--theme-primary, var(--theme-primary))",
                                 borderRadius: "12"
                             }
                         }
@@ -870,11 +870,11 @@ export const serviceSectionTemplates = [
                                 features: ["Weekly updates", "24/7 monitoring", "Priority response", "Phone support"],
                                 buttonText: "Select Plan",
                                 buttonColor: "white",
-                                buttonBgColor: "var(--theme-secondary, #8b5cf6)",
-                                backgroundColor: "var(--theme-background-alt, #f9fafb)",
-                                textColor: "var(--theme-text, #1f2937)",
+                                buttonBgColor: "var(--theme-secondary, var(--theme-primary))",
+                                backgroundColor: "var(--theme-background-alt, var(--theme-background))",
+                                textColor: "var(--theme-text, var(--theme-text))",
                                 highlightBorder: true,
-                                highlightColor: "var(--theme-secondary, #8b5cf6)",
+                                highlightColor: "var(--theme-secondary, var(--theme-primary))",
                                 borderRadius: "12"
                             }
                         }
@@ -903,11 +903,11 @@ export const serviceSectionTemplates = [
                                 features: ["Continuous updates", "Dedicated engineer", "Custom reports", "SLA guarantee"],
                                 buttonText: "Select Plan",
                                 buttonColor: "white",
-                                buttonBgColor: "var(--theme-accent, #f59e0b)",
-                                backgroundColor: "var(--theme-background-alt, #f9fafb)",
-                                textColor: "var(--theme-text, #1f2937)",
+                                buttonBgColor: "var(--theme-accent, var(--theme-primary))",
+                                backgroundColor: "var(--theme-background-alt, var(--theme-background))",
+                                textColor: "var(--theme-text, var(--theme-text))",
                                 highlightBorder: false,
-                                highlightColor: "var(--theme-accent, #f59e0b)",
+                                highlightColor: "var(--theme-accent, var(--theme-primary))",
                                 borderRadius: "12"
                             }
                         }

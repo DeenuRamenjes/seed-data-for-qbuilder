@@ -1,0 +1,590 @@
+/**
+ * Real Estate Template - Home Page
+ * Theme: Apex Estates – Minimalist Luxury, Brutalist
+ * Colors: Light (#f7f7f7), Dark (var(--theme-text)), Accents (var(--theme-background))
+ * Font: Manrope
+ */
+
+const realEstateHome = {
+  // ============================================================================
+  // HEADER - NAVBAR
+  // ============================================================================
+  header: {
+    key: "real-estate-header",
+    name: "Apex Header",
+    structure: {
+      type: "Navbar",
+      defaultProps: {
+        sticky: true,
+        backgroundColor: "rgba(255, 255, 255, 0.8)",
+        backdropFilter: "blur(12px)",
+        paddingY: 0,
+        paddingX: 0,
+        fontFamily: "Outfit",
+        showBorder: true,
+        borderColor: "#e5e5e5",
+        height: "80px"
+      },
+      props: {
+        logo: {
+          text: "Apex Estates",
+          icon: "architecture",
+          logoColor: "var(--theme-text)",
+          iconColor: "var(--theme-background)",
+          iconBg: "var(--theme-text)",
+          fontWeight: "extrabold",
+          letterSpacing: "tighter",
+          textTransform: "uppercase"
+        },
+        links: [
+          { label: "Buy", href: "#" },
+          { label: "Rent", href: "#" },
+          { label: "Sell", href: "#" },
+          { label: "About", href: "#" }
+        ],
+        ctaButton: {
+          text: "Contact Us",
+          href: "#",
+          variant: "primary",
+          backgroundColor: "var(--theme-text)",
+          textColor: "var(--theme-text)",
+          borderRadius: "lg",
+          height: "42px"
+        }
+      }
+    }
+  },
+
+  // ============================================================================
+  // PAGE SECTIONS
+  // ============================================================================
+  sections: [
+    // --------------------------------------------------------------------------
+    // HERO SECTION
+    // --------------------------------------------------------------------------
+    {
+      key: "real-estate-hero",
+      name: "Luxury Hero",
+      structure: {
+        type: "Section",
+        defaultProps: {
+          fullWidth: true,
+          fontFamily: "Outfit",
+          paddingY: 0,
+          paddingX: 0,
+          overflow: "hidden"
+        },
+        columns: [{
+          id: "hero-col",
+          width: "100%",
+          elements: [
+            {
+              type: "IndustrialHero",
+              props: {
+                backgroundImage: "https://lh3.googleusercontent.com/aida-public/AB6AXuCQ3hU0bgyukegwaqImejYYEMQJ3GGrR97qt7sL2sBJzMVhI0dU3-raTNRBhznaa0mcioHuecNWzwOLg6TIz7ljZeANXZjYsJnNl-efBKvARUA52bYJpjOyGzxciRZZiJsAUKYzLDhvbz1URzPk4i7yQ_r09FPgVSFUIiCMB_UANH5dgNCvgrH2YL_QvvCjGnfHhWLleyiVKZE55Xp-62FFGmC93IgsBbwCsgtARcHIp4XRHZj3DItsh3W4XW5uecpc_Y8v1dxOLxI",
+                backgroundOverlay: "rgba(0,0,0,0.3)",
+                minHeight: "90vh",
+                maxWidth: "100%",
+                badgeText: "Luxury Real Estate",
+                badgeColor: "#ffe39b",
+                badgeBackgroundColor: "rgba(255,255,255,0.15)",
+                badgeShowPing: false,
+                align: "center",
+                headlineText: "Architecture\nFor [Living.](linear-gradient(to right, #aa8135, #ffe39b)",
+                headlineColor: "var(--theme-background)",
+                headlineTag: "h1",
+                paragraphText: "Experience the pinnacle of luxury real estate with our curated collection of elite properties globally.",
+                paragraphColor: "rgba(255, 255, 255, 0.9)",
+                paragraphSize: "xl",
+                statusItems: [
+                  { text: "500+", subtext: "Elite Properties", color: "var(--theme-background)", subtextColor: "#a1a1aa", size: "lg", fontWeight: "700", marginTop: 12 }
+                ]
+              }
+            }
+          ]
+        }]
+      }
+    },
+
+    // --------------------------------------------------------------------------
+    // FEATURED PROPERTIES GRID
+    // --------------------------------------------------------------------------
+    {
+      key: "real-estate-properties",
+      name: "Featured Properties",
+      structure: {
+        type: "Section",
+        props: {
+          backgroundColor: "#f7f7f7",
+          fullWidth: true,
+          fontFamily: "Outfit",
+          paddingY: 100,
+          paddingX: 48,
+          layout: "flex",
+          flexDirection: "row",
+          flexWrap: "wrap",
+          gap: 48,
+          "@media (max-width: 768px)": {
+            paddingY: 60,
+            paddingX: 24,
+            gap: 24
+          }
+        },
+        columns: [
+          // Header
+          {
+            id: "prop-header",
+            width: "100%",
+            elements: [
+              { id: "prop-badge", type: "Paragraph", props: { text: "CURATED", size: "xs", fontWeight: "bold", color: "var(--theme-border)", letterSpacing: 3, marginBottom: 12, width: "100%" } },
+              { id: "prop-heading", type: "Heading", props: { text: "The Collection", tag: "h2", size: "4xl", fontWeight: "bold", color: "#59184C", marginBottom: 0, width: "100%" } }
+            ]
+          },
+          // Property 1
+          {
+            id: "prop-1",
+            width: "calc(33.33% - 32px)",
+            props: {
+              "@media (max-width: 1024px)": { width: "calc(50% - 24px)" },
+              "@media (max-width: 768px)": { width: "100%" }
+            },
+            elements: [{
+              id: "prop-card-1",
+              type: "FeaturedCard2",
+              props: {
+                image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDWyUouTIsGu-qL5IxzlU1N7uBgdhmhyafUOXX7YF8muOy6rq7UjkUj1uqLlqDQzGLFerkamcnVYjy7GSKkvT9ZqXz07zlVJyt5A6P4wjFjwxZ-CktRLpA9FDy6UVlzutk6fBTdUQ9ap7amFMlXjT929yNvDL7CpUdTrozooY4p7UGW7RKiajMJAg7mTEnQMEUg-hddM_2S_65_SDR7gzptUTG42-jFeRcr-cyQt_3D233JLBiZC8bCvvf_-IUeHYr5ibfhPh0wa-4",
+                imageAspectRatio: "4/5",
+                badge: "Residential",
+                title: "The Glass Pavilion",
+                description: "Los Angeles, CA — $12,500,000",
+                badgeColor: "#ffe39b",
+                badgeBg: "rgba(89,24,76,0.7)",
+                titleColor: "var(--theme-background)",
+                descriptionColor: "#6B7280",
+                backgroundColor: "transparent",
+                borderRadius: "16px",
+                showArrow: true,
+                textAlign: "left"
+              }
+            }]
+          },
+          // Property 2
+          {
+            id: "prop-2",
+            width: "calc(33.33% - 32px)",
+            props: {
+              "@media (max-width: 1024px)": { width: "calc(50% - 24px)" },
+              "@media (max-width: 768px)": { width: "100%" }
+            },
+            elements: [{
+              id: "prop-card-2",
+              type: "FeaturedCard2",
+              props: {
+                image: "https://lh3.googleusercontent.com/aida-public/AB6AXuB3QSWYbVPb1RkF3szHAQf1fyJ4uPPvIGQMs98R5EBEw00trZay9GLACFxdAdVKKw53x9jq5oqGMDCG9DfUhV0Vv0LwbTDI28HpnAqIxVWWffLWbLw1xySuncreXG0QxVZwy5HhkeScgqHSx9xbd3TkSY7yUvf687lUMdqS2CtQR89NeBvom1v8DvGx4kN51_lJ3zZZOIOPJg6yTJcWdDDMjDiHrH_oej-csIH5099vqKbfKx5o0iKNl8odBJHFRrtIHbzIf1HoSrw",
+                imageAspectRatio: "4/5",
+                badge: "Waterfront",
+                title: "Azure Waterfront",
+                description: "Miami, FL — $8,200,000",
+                badgeColor: "#ffe39b",
+                badgeBg: "rgba(89,24,76,0.7)",
+                titleColor: "var(--theme-background)",
+                descriptionColor: "#6B7280",
+                backgroundColor: "transparent",
+                borderRadius: "16px",
+                showArrow: true,
+                textAlign: "left"
+              }
+            }]
+          },
+          // Property 3
+          {
+            id: "prop-3",
+            width: "calc(33.33% - 32px)",
+            props: {
+              "@media (max-width: 1024px)": { width: "calc(50% - 24px)" },
+              "@media (max-width: 768px)": { width: "100%" }
+            },
+            elements: [{
+              id: "prop-card-3",
+              type: "FeaturedCard2",
+              props: {
+                image: "https://lh3.googleusercontent.com/aida-public/AB6AXuCXf91hmu4UBAHVF_7z9GGZ-XeCMVxtO5fozgB7Z1hWsOFVSsjXDqWCbcI-zgY83498Zfq4PVFZeIGdzxyLws3HITMOszcs25jagHBvgg9jMW9f1oBLA5eZv1oVZHfULQcWJ5N1JbS_W5bNh5xMEjInfHGLcHvBK7wN_ufiVHkKhiRgRRKgK0-ZQ7IFhvrmSKfQChPaJuMs_XGMppEGnuZqJ35whdTSJ_iFv8fc3o2IWqD-DucyvUQ1L_nmMOxNOXenWIr1ZtZtt7Y",
+                imageAspectRatio: "4/5",
+                badge: "Modern",
+                title: "Minimalist Manor",
+                description: "Austin, TX — $4,800,000",
+                badgeColor: "#ffe39b",
+                badgeBg: "rgba(89,24,76,0.7)",
+                titleColor: "var(--theme-background)",
+                descriptionColor: "#6B7280",
+                backgroundColor: "transparent",
+                borderRadius: "16px",
+                showArrow: true,
+                textAlign: "left"
+              }
+            }]
+          },
+          // Property 4
+          {
+            id: "prop-4",
+            width: "calc(33.33% - 32px)",
+            props: {
+              "@media (max-width: 1024px)": { width: "calc(50% - 24px)" },
+              "@media (max-width: 768px)": { width: "100%" }
+            },
+            elements: [{
+              id: "prop-card-4",
+              type: "FeaturedCard2",
+              props: {
+                image: "https://lh3.googleusercontent.com/aida-public/AB6AXuCQ3hU0bgyukegwaqImejYYEMQJ3GGrR97qt7sL2sBJzMVhI0dU3-raTNRBhznaa0mcioHuecNWzwOLg6TIz7ljZeANXZjYsJnNl-efBKvARUA52bYJpjOyGzxciRZZiJsAUKYzLDhvbz1URzPk4i7yQ_r09FPgVSFUIiCMB_UANH5dgNCvgrH2YL_QvvCjGnfHhWLleyiVKZE55Xp-62FFGmC93IgsBbwCsgtARcHIp4XRHZj3DItsh3W4XW5uecpc_Y8v1dxOLxI",
+                imageAspectRatio: "4/5",
+                badge: "Mountain",
+                title: "Obsidian Retreat",
+                description: "Aspen, CO — $18,900,000",
+                badgeColor: "#ffe39b",
+                badgeBg: "rgba(89,24,76,0.7)",
+                titleColor: "var(--theme-background)",
+                descriptionColor: "#6B7280",
+                backgroundColor: "transparent",
+                borderRadius: "16px",
+                showArrow: true,
+                textAlign: "left"
+              }
+            }]
+          },
+          // Property 5
+          {
+            id: "prop-5",
+            width: "calc(33.33% - 32px)",
+            props: {
+              "@media (max-width: 1024px)": { width: "calc(50% - 24px)" },
+              "@media (max-width: 768px)": { width: "100%" }
+            },
+            elements: [{
+              id: "prop-card-5",
+              type: "FeaturedCard2",
+              props: {
+                image: "https://lh3.googleusercontent.com/aida-public/AB6AXuAa4f9-NXnMj-GFdFl5BYvbNMlvwpvZIKH2YQHRGCsmMqW0beGizPmqmzm1hjhpUpiThP9gB8OYVcfqqzgf2uaq2nXdvrzRue1YRgjF9h4MYXGmWfbm0pvKjeiQKHmAVdEiP3rMKVNjiyluT7TWIIDVw2qaXE-MlICvSgAQgePvwCleB4TvD-WpjMUVqmeyuNs6rpTQ-qzd-WF3vg_m6zGSOVkr7Lu_hwMi8rkIIFDygSnJ5YEimWmH-UHVwMTMzMN3ZaOV8tBhCbM",
+                imageAspectRatio: "4/5",
+                badge: "Skyline",
+                title: "Emerald Skygarden",
+                description: "Singapore — $24,500,000",
+                badgeColor: "#ffe39b",
+                badgeBg: "rgba(89,24,76,0.7)",
+                titleColor: "var(--theme-background)",
+                descriptionColor: "#6B7280",
+                backgroundColor: "transparent",
+                borderRadius: "16px",
+                showArrow: true,
+                textAlign: "left"
+              }
+            }]
+          },
+          // Property 6
+          {
+            id: "prop-6",
+            width: "calc(33.33% - 32px)",
+            props: {
+              "@media (max-width: 1024px)": { width: "calc(50% - 24px)" },
+              "@media (max-width: 768px)": { width: "100%" }
+            },
+            elements: [{
+              id: "prop-card-6",
+              type: "FeaturedCard2",
+              props: {
+                image: "https://lh3.googleusercontent.com/aida-public/AB6AXuAsCfSySrCxzme8RtykErRAKIFCO19ELElx4XeSqAeo1fln3B49B_qqbtU4EygU-RHX9NOHvsHG0dOw1wnvpw_HStplRhY8E7DrhNCKYG-cGAH1kOiLq3xiCrO30nNpnyDpQGz1g4vbAGe7pyAxR9GZzZP0PdBGKD5-GrPghrGwl3kMsMdz0BDScaHiWToY52bEg5lRkRbCjp4OzaiF1YO-EiPZ0K0WP4aoJrTutwAjB3dzny6cXKF6Nh0U3q_d3j76F6qMMUogCHE",
+                imageAspectRatio: "4/5",
+                badge: "Urban",
+                title: "The Ivory Loft",
+                description: "New York, NY — $9,200,000",
+                badgeColor: "#ffe39b",
+                badgeBg: "rgba(89,24,76,0.7)",
+                titleColor: "var(--theme-background)",
+                descriptionColor: "#6B7280",
+                backgroundColor: "transparent",
+                borderRadius: "16px",
+                showArrow: true,
+                textAlign: "left"
+              }
+            }]
+          }
+        ]
+      }
+    },
+
+    // --------------------------------------------------------------------------
+    // THE APEX STANDARD – FEATURES
+    // --------------------------------------------------------------------------
+    {
+      key: "real-estate-features",
+      name: "The Apex Standard",
+      structure: {
+        type: "Section",
+        props: {
+          backgroundColor: "var(--theme-background)",
+          fullWidth: true,
+          fontFamily: "Outfit",
+          paddingY: 100,
+          paddingX: 48,
+          layout: "flex",
+          flexDirection: "row",
+          flexWrap: "wrap",
+          gap: 24,
+          "@media (max-width: 768px)": {
+            paddingY: 60,
+            paddingX: 24,
+            gap: 16
+          }
+        },
+        columns: [
+          // Header
+          {
+            id: "feat-header",
+            width: "100%",
+            elements: [
+              { id: "feat-heading", type: "Heading", props: { text: "The Apex Standard", tag: "h2", size: "4xl", fontWeight: "bold", color: "#59184C", marginBottom: 16, align: "center", width: "100%" } },
+              { id: "feat-desc", type: "Paragraph", props: { text: "Excellence in every detail, discretion in every transaction. We redefine the luxury real estate experience.", size: "lg", color: "#6B7280", lineHeight: 1.7, marginBottom: 48, align: "center", width: "100%" } }
+            ]
+          },
+          // Feature 1
+          {
+            id: "feat-1",
+            width: "calc(33.33% - 16px)",
+            props: {
+              "@media (max-width: 1024px)": { width: "calc(50% - 12px)" },
+              "@media (max-width: 768px)": { width: "100%" }
+            },
+            elements: [{
+              id: "feat-card-1",
+              type: "ServiceCardV2",
+              props: {
+                number: "01",
+                title: "Discretion",
+                description: "We prioritize your privacy above all else through confidential consultations and private listings.",
+                backgroundColor: "#f7f7f7",
+                textColor: "#59184C",
+                accentColor: "#59184C",
+                descriptionColor: "var(--theme-border)",
+                variant: "light",
+                showDivider: true,
+                borderRadius: "8px"
+              }
+            }]
+          },
+          // Feature 2
+          {
+            id: "feat-2",
+            width: "calc(33.33% - 16px)",
+            props: {
+              "@media (max-width: 1024px)": { width: "calc(50% - 12px)" },
+              "@media (max-width: 768px)": { width: "100%" }
+            },
+            elements: [{
+              id: "feat-card-2",
+              type: "ServiceCardV2",
+              props: {
+                number: "02",
+                title: "Exclusivity",
+                description: "Gain access to off-market listings and the most sought-after zip codes worldwide.",
+                backgroundColor: "#f7f7f7",
+                textColor: "#59184C",
+                accentColor: "#59184C",
+                descriptionColor: "var(--theme-border)",
+                variant: "light",
+                showDivider: true,
+                borderRadius: "8px"
+              }
+            }]
+          },
+          // Feature 3
+          {
+            id: "feat-3",
+            width: "calc(33.33% - 16px)",
+            props: {
+              "@media (max-width: 1024px)": { width: "calc(50% - 12px)" },
+              "@media (max-width: 768px)": { width: "100%" }
+            },
+            elements: [{
+              id: "feat-card-3",
+              type: "ServiceCardV2",
+              props: {
+                number: "03",
+                title: "Architectural Integrity",
+                description: "Every property in our collection is hand-selected for its design excellence and craftsmanship.",
+                backgroundColor: "#f7f7f7",
+                textColor: "#59184C",
+                accentColor: "#59184C",
+                descriptionColor: "var(--theme-border)",
+                variant: "light",
+                showDivider: true,
+                borderRadius: "8px"
+              }
+            }]
+          },
+          
+        ]
+      }
+    },
+
+    // --------------------------------------------------------------------------
+    // NEWSLETTER – INNER CIRCLE
+    // --------------------------------------------------------------------------
+    {
+      key: "real-estate-newsletter",
+      name: "Inner Circle Newsletter",
+      structure: {
+        type: "Section",
+        defaultProps: {
+          backgroundColor: "#59184C",
+          fontFamily: "Outfit",
+          paddingY: 120,
+          paddingX: 48,
+          fullWidth: true,
+          layout: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
+          "@media (max-width: 768px)": {
+            paddingY: 80,
+            paddingX: 24
+          }
+        },
+        columns: [{
+          id: "newsletter-col",
+          width: "100%",
+          props: { maxWidth: "600px", textAlign: "center" },
+          elements: [
+            {
+              id: "nl-heading",
+              type: "Heading",
+              props: { text: "Join the Inner Circle", tag: "h2", size: "4xl", fontWeight: "bold", color: "#b0903e", marginBottom: 16, align: "center", width: "100%" }
+            },
+            {
+              id: "nl-desc",
+              type: "Paragraph",
+              props: { text: "Get early access to off-market properties and global real estate insights delivered bi-weekly.", size: "lg", color: "#b0903e", lineHeight: 1.7, marginBottom: 32, align: "center", width: "100%" }
+            },
+            {
+              id: "nl-button",
+              type: "ButtonGroup",
+              props: {
+                primaryText: "Subscribe Now",
+                primaryBg: "#b0903e",
+                primaryColor: "var(--theme-text)",
+                primaryBorderRadius: 8,
+                gap: "gap-4",
+                layout: "horizontal",
+                justifyContent: "center"
+              }
+            }
+          ]
+        }]
+      }
+    }
+  ],
+
+  // ============================================================================
+  // FOOTER
+  // ============================================================================
+  footer: {
+    key: "real-estate-footer",
+    name: "Apex Footer",
+    structure: {
+      type: "Footer",
+      defaultProps: {
+        backgroundColor: "#f7f7f7",
+        paddingY: 80,
+        paddingX: 80,
+        fontFamily: "Outfit",
+        fullWidth: true
+      },
+      columns: [
+        {
+          id: "footer-brand",
+          width: "50%",
+          elements: [
+            {
+              id: "footer-logo",
+              type: "Heading",
+              props: {
+                text: "Apex Estates",
+                tag: "h4",
+                color: "#59184C",
+                marginBottom: "24px"
+              }
+            },
+            {
+              id: "footer-desc",
+              type: "Paragraph",
+              props: {
+                text: "Defining luxury through architectural excellence. Your partner in elite real estate transactions.",
+                color: "#6B7280",
+                maxWidth: "400px",
+                marginBottom: "32px"
+              }
+            },
+            {
+              id: "footer-social",
+              type: "SocialLinks",
+              props: {
+                links: [
+                  { platform: "linkedin", url: "#" },
+                  { platform: "twitter", url: "#" },
+                  { platform: "instagram", url: "#" }
+                ],
+                iconColor: "var(--theme-text)",
+                size: "md"
+              }
+            }
+          ]
+        },
+        {
+          id: "footer-explore",
+          width: "25%",
+          elements: [
+            {
+              id: "links-explore",
+              type: "LinkList",
+              props: {
+                title: "Explore",
+                titleColor: "#59184C",
+                textColor: "#6B7280",
+                hoverColor: "var(--theme-text)",
+                items: [
+                  { label: "Residential", href: "#" },
+                  { label: "Commercial", href: "#" },
+                  { label: "Developments", href: "#" },
+                  { label: "Investment", href: "#" }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          id: "footer-company",
+          width: "25%",
+          elements: [
+            {
+              id: "links-company",
+              type: "LinkList",
+              props: {
+                title: "Company",
+                titleColor: "#59184C",
+                textColor: "#6B7280",
+                hoverColor: "var(--theme-text)",
+                items: [
+                  { label: "Our Story", href: "#" },
+                  { label: "Global Network", href: "#" },
+                  { label: "Careers", href: "#" },
+                  { label: "Contact", href: "#" }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+};
+
+module.exports = realEstateHome;

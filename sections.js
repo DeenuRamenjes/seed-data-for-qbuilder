@@ -20,7 +20,7 @@ export const sectionTemplates = [
                 sticky: true,
                 glassmorphism: true,
                 fullWidth: true,
-                backgroundColor: "#ffffff",
+                backgroundColor: "var(--theme-background)",
                 paddingY: 0,
             },
             columns: [
@@ -41,7 +41,7 @@ export const sectionTemplates = [
                                     { label: "Pricing", href: "/pricing", isMegaMenu: false },
                                     { label: "Company", href: "#", isMegaMenu: true, megaMenuType: "simple" }
                                 ],
-                                accentColor: "#ef4444"
+                                accentColor: "var(--theme-primary)"
                             }
                         }
                     ]
@@ -129,7 +129,7 @@ export const sectionTemplates = [
         structure: {
             type: "Footer",
             defaultProps: {
-                backgroundColor: "#f9fafb",
+                backgroundColor: "var(--theme-background)",
                 paddingTop: 64,
                 paddingBottom: 32,
             },
@@ -162,8 +162,8 @@ export const sectionTemplates = [
                             props: {
                                 links: "twitter:https://twitter.com:Twitter,linkedin:https://linkedin.com:LinkedIn,github:https://github.com:GitHub",
                                 iconSize: 18,
-                                iconColor: "#9ca3af",
-                                iconHoverColor: "#ef4444"
+                                iconColor: "var(--theme-border)",
+                                iconHoverColor: "var(--theme-primary)"
                             }
                         }
                     ]
@@ -233,7 +233,7 @@ export const sectionTemplates = [
                             id: "footer-divider",
                             type: "Divider",
                             props: {
-                                color: "#e5e7eb",
+                                color: "var(--theme-border)",
                                 spacing: "sm"
                             }
                         },
@@ -243,7 +243,7 @@ export const sectionTemplates = [
                             props: {
                                 text: "© 2026 BrandHub Inc. All rights reserved.",
                                 size: "sm",
-                                color: "#9ca3af",
+                                color: "var(--theme-border)",
                                 align: "center"
                             }
                         }
@@ -265,7 +265,7 @@ export const sectionTemplates = [
                 sticky: true,
                 glassmorphism: false,
                 fullWidth: true,
-                backgroundColor: "#ffffff",
+                backgroundColor: "var(--theme-background)",
                 paddingY: 0,
             },
             columns: [{
@@ -277,16 +277,16 @@ export const sectionTemplates = [
                     props: {
                         logoType: "text",
                         logoText: "MINIMAL.",
-                        logoTextColor: "#111827", // Gray 900
+                        logoTextColor: "var(--theme-text)", // Gray 900
                         links: [
                             { label: "Work", href: "/work" },
                             { label: "Studio", href: "/studio" },
                             { label: "Contact", href: "/contact" }
                         ],
                         linkColor: "#374151", // Gray 700
-                        linkHoverColor: "#000000",
-                        backgroundColor: "#ffffff",
-                        accentColor: "#000000",
+                        linkHoverColor: "var(--theme-text)",
+                        backgroundColor: "var(--theme-background)",
+                        accentColor: "var(--theme-text)",
                         showButton: false
                     }
                 }]
@@ -305,7 +305,7 @@ export const sectionTemplates = [
                 sticky: true,
                 glassmorphism: true,
                 fullWidth: true,
-                backgroundColor: "#0f172a", // Slate 900
+                backgroundColor: "var(--theme-text)", // Slate 900
                 paddingY: 0,
             },
             columns: [{
@@ -318,19 +318,19 @@ export const sectionTemplates = [
                         logoType: "text",
                         logoText: "NEXUS",
                         logoAccent: "IO",
-                        logoTextColor: "#f1f5f9", // Slate 100
+                        logoTextColor: "var(--theme-border)", // Slate 100
                         logoAccentColor: "#38bdf8", // Sky 400
                         links: [
                             { label: "Platform", href: "/platform", isMegaMenu: true, megaMenuType: "sections" },
                             { label: "Developers", href: "/devs" },
                             { label: "Pricing", href: "/pricing" }
                         ],
-                        linkColor: "#cbd5e1", // Slate 300
-                        linkHoverColor: "#f8fafc", // Slate 50
-                        backgroundColor: "#0f172a",
+                        linkColor: "var(--theme-border)", // Slate 300
+                        linkHoverColor: "var(--theme-border)", // Slate 50
+                        backgroundColor: "var(--theme-text)",
                         accentColor: "#38bdf8",
-                        megaMenuBgColor: "#1e293b",
-                        megaMenuTextColor: "#e2e8f0",
+                        megaMenuBgColor: "var(--theme-text)",
+                        megaMenuTextColor: "var(--theme-border)",
                         showButton: true,
                         buttonText: "Get Access",
                         buttonStyle: "solid",
@@ -395,7 +395,7 @@ export const sectionTemplates = [
                 sticky: true,
                 glassmorphism: true,
                 fullWidth: true,
-                backgroundColor: "linear-gradient(to right, #4f46e5, #9333ea)", // Indigo to Purple
+                backgroundColor: "linear-gradient(to right, var(--theme-primary), #9333ea)", // Indigo to Purple
                 paddingY: 0,
             },
             columns: [{
@@ -407,16 +407,16 @@ export const sectionTemplates = [
                     props: {
                         logoType: "text",
                         logoText: "VIBE",
-                        logoTextColor: "#000000ff", // Violet 50
+                        logoTextColor: "var(--theme-text)", // Violet 50
                         links: [
                             { label: "Explore", href: "/explore" },
                             { label: "Create", href: "/create" },
                             { label: "Community", href: "/community" }
                         ],
-                        linkColor: "#000000ff", // Violet 100
-                        linkHoverColor: "#000000ff",
+                        linkColor: "var(--theme-text)", // Violet 100
+                        linkHoverColor: "var(--theme-text)",
                         backgroundColor: "transparent",
-                        accentColor: "#000000ff",
+                        accentColor: "var(--theme-text)",
                         showButton: true,
                         buttonText: "Join",
                         buttonStyle: "outline",
@@ -457,7 +457,7 @@ export const sectionTemplates = [
                             { label: "Insights", href: "/insights" }
                         ],
                         linkColor: "#bfdbfe", // Blue 200
-                        linkHoverColor: "#ffffff",
+                        linkHoverColor: "var(--theme-background)",
                         backgroundColor: "#1e3a8a",
                         accentColor: "#60a5fa",
                         showButton: true,
@@ -481,7 +481,7 @@ export const sectionTemplates = [
             defaultProps: {
                 paddingTop: 40,
                 paddingBottom: 40,
-                backgroundColor: "#ffffff",
+                backgroundColor: "var(--theme-background)",
             },
             columns: [{
                 id: "f-min-col",
@@ -504,7 +504,7 @@ export const sectionTemplates = [
                         text: "© 2026 Minimal Footer. All rights reserved.",
                         size: "sm",
                         align: "center",
-                        color: "#4b5563"
+                        color: "var(--theme-border)"
                     }
                 }]
             }]
@@ -521,38 +521,38 @@ export const sectionTemplates = [
             defaultProps: {
                 paddingTop: 64,
                 paddingBottom: 24,
-                backgroundColor: "#111827", // Gray 900
+                backgroundColor: "var(--theme-text)", // Gray 900
             },
             columns: [
                 {
                     id: "f-md-col1", width: "25%",
                     elements: [{
                         id: "f-md-logo", type: "Logo",
-                        props: { logoType: "text", text: "MEGA", accent: "HUB", size: "lg", color: "#f9fafb", accentColor: "#f59e0b" }
+                        props: { logoType: "text", text: "MEGA", accent: "HUB", size: "lg", color: "var(--theme-background)", accentColor: "var(--theme-primary)" }
                     }, {
                         id: "f-md-desc", type: "Paragraph",
-                        props: { text: "Building the future of web design, one pixel at a time.", color: "#d1d5db", size: "sm" }
+                        props: { text: "Building the future of web design, one pixel at a time.", color: "var(--theme-border)", size: "sm" }
                     }]
                 },
                 {
                     id: "f-md-col2", width: "25%",
                     elements: [{
                         id: "f-md-links1", type: "LinkList",
-                        props: { title: "Product", textColor: "#d1d5db", titleColor: "#9ca3af", items: [{ label: "Features", href: "#" }, { label: "Pricing", href: "#" }, { label: "Releases", href: "#" }] }
+                        props: { title: "Product", textColor: "var(--theme-border)", titleColor: "var(--theme-border)", items: [{ label: "Features", href: "#" }, { label: "Pricing", href: "#" }, { label: "Releases", href: "#" }] }
                     }]
                 },
                 {
                     id: "f-md-col3", width: "25%",
                     elements: [{
                         id: "f-md-links2", type: "LinkList",
-                        props: { title: "Company", textColor: "#d1d5db", titleColor: "#9ca3af", items: [{ label: "About", href: "#" }, { label: "Careers", href: "#" }, { label: "Legal", href: "#" }] }
+                        props: { title: "Company", textColor: "var(--theme-border)", titleColor: "var(--theme-border)", items: [{ label: "About", href: "#" }, { label: "Careers", href: "#" }, { label: "Legal", href: "#" }] }
                     }]
                 },
                 {
                     id: "f-md-col4", width: "25%",
                     elements: [{
                         id: "f-md-social", type: "SocialLinks",
-                        props: { align: "left", iconColor: "#9ca3af", facebook: "#", twitter: "#", github: "#" }
+                        props: { align: "left", iconColor: "var(--theme-border)", facebook: "#", twitter: "#", github: "#" }
                     }]
                 }
             ]
@@ -569,14 +569,14 @@ export const sectionTemplates = [
             defaultProps: {
                 paddingTop: 80,
                 paddingBottom: 40,
-                backgroundColor: "#f3f4f6", // Gray 100
+                backgroundColor: "var(--theme-border)", // Gray 100
             },
             columns: [
                 {
                     id: "f-news-col1", width: "40%",
                     elements: [{
                         id: "f-news-head", type: "Paragraph",
-                        props: { text: "Stay updated", size: "lg", align: "left", color: "#111827" }
+                        props: { text: "Stay updated", size: "lg", align: "left", color: "var(--theme-text)" }
                     }, {
                         id: "f-news-desc", type: "Paragraph",
                         props: { text: "Join 10,000+ designers getting our weekly insights.", size: "sm", color: "#374151" }
@@ -586,7 +586,7 @@ export const sectionTemplates = [
                     id: "f-news-col2", width: "60%",
                     elements: [{
                         id: "f-news-social", type: "SocialLinks",
-                        props: { align: "right", iconStyle: "solid", iconColor: "#4f46e5", twitter: "#", linkedin: "#" }
+                        props: { align: "right", iconStyle: "solid", iconColor: "var(--theme-primary)", twitter: "#", linkedin: "#" }
                     }, {
                         id: "f-news-copy", type: "Paragraph",
                         props: { text: "© 2026 Newsletter Inc.", align: "right", size: "xs", color: "#6b7280" }
@@ -606,7 +606,7 @@ export const sectionTemplates = [
             defaultProps: {
                 paddingTop: 60,
                 paddingBottom: 60,
-                backgroundColor: "linear-gradient(to right, #ec4899, #8b5cf6)", // Pink to Violet
+                backgroundColor: "linear-gradient(to right, #ec4899, var(--theme-primary))", // Pink to Violet
             },
             columns: [{
                 id: "f-grad-col", width: "100%",
@@ -637,31 +637,31 @@ export const sectionTemplates = [
             defaultProps: {
                 paddingTop: 100,
                 paddingBottom: 40,
-                backgroundColor: "#000000",
+                backgroundColor: "var(--theme-text)",
             },
             columns: [
                 {
                     id: "f-ag-col1", width: "60%",
                     elements: [{
                         id: "f-ag-cta", type: "Paragraph",
-                        props: { text: "LET'S WORK TOGETHER.", size: "xl", color: "#f3f4f6" }
+                        props: { text: "LET'S WORK TOGETHER.", size: "xl", color: "var(--theme-border)" }
                     }, {
                         id: "f-ag-mail", type: "Paragraph",
-                        props: { text: "hello@agency.design", size: "lg", color: "#d1d5db" }
+                        props: { text: "hello@agency.design", size: "lg", color: "var(--theme-border)" }
                     }]
                 },
                 {
                     id: "f-ag-col2", width: "20%",
                     elements: [{
                         id: "f-ag-links", type: "LinkList",
-                        props: { title: "Sitemap", items: [{ label: "Home", href: "/" }, { label: "Work", href: "/work" }], textColor: "#d1d5db", titleColor: "#9ca3af" }
+                        props: { title: "Sitemap", items: [{ label: "Home", href: "/" }, { label: "Work", href: "/work" }], textColor: "var(--theme-border)", titleColor: "var(--theme-border)" }
                     }]
                 },
                 {
                     id: "f-ag-col3", width: "20%",
                     elements: [{
                         id: "f-ag-social", type: "SocialLinks",
-                        props: { title: "Socials", align: "left", iconColor: "#f3f4f6", instagram: "#", behance: "#" }
+                        props: { title: "Socials", align: "left", iconColor: "var(--theme-border)", instagram: "#", behance: "#" }
                     }]
                 }
             ]

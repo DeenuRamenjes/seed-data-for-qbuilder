@@ -129,6 +129,42 @@ const foodCareers = foodCareersModule;
 import foodTestimonialsModule from './templates/food/food-testimonials.cjs';
 const foodTestimonials = foodTestimonialsModule;
 
+import ecommerceHomeModule from './templates/e-commerce/ecommerce-home.cjs';
+const ecommerceHome = ecommerceHomeModule;
+import ecommerceContactModule from './templates/e-commerce/ecommerce-contact.cjs';
+const ecommerceContact = ecommerceContactModule;
+import ecommerceAboutModule from './templates/e-commerce/ecommerce-about.cjs';
+const ecommerceAbout = ecommerceAboutModule;
+import ecommerceProductsModule from './templates/e-commerce/ecommerce-products.cjs';
+const ecommerceProducts = ecommerceProductsModule;
+
+
+
+import realEstateHomeModule from './templates/real-estate/real-estate-home.cjs';
+const realEstateHome = realEstateHomeModule;
+import realEstateAboutModule from './templates/real-estate/real-estate-about.cjs';
+const realEstateAbout = realEstateAboutModule;
+import realEstateContactModule from './templates/real-estate/real-estate-contact.cjs';
+const realEstateContact = realEstateContactModule;
+import realEstateBlogsModule from './templates/real-estate/real-estate-blogs.cjs';
+const realEstateBlogs = realEstateBlogsModule;
+
+import constructionHomeModule from './templates/construction/construction-home.cjs';
+const constructionHome = constructionHomeModule;
+import constructionAboutModule from './templates/construction/construction-about.cjs';
+const constructionAbout = constructionAboutModule;
+import constructionGalleryModule from './templates/construction/construction-gallery.cjs';
+const constructionGallery = constructionGalleryModule;
+import constructionContactModule from './templates/construction/construction-contact.cjs';
+const constructionContact = constructionContactModule;
+import constructionClientsModule from './templates/construction/construction-clients.cjs';
+const constructionClients = constructionClientsModule;
+
+import { businessHome } from './templates/business/business-home.js';
+import { businessAbout } from './templates/business/business-about.js';
+import { businessServices } from './templates/business/business-services.js';
+import { businessContact } from './templates/business/business-contact.js';
+
 // ============================================================================
 // HELPERS
 // ============================================================================
@@ -141,6 +177,72 @@ const getStructure = (key) => {
 };
 
 // ============================================================================
+// ALL 6 STANDARD THEMES
+// ============================================================================
+const ALL_THEMES = [
+    {
+        name: "Ocean Blue",
+        colors: {
+            primary: "#3b82f6",
+            secondary: "#1e3a5f",
+            accent: "#0ea5e9",
+            background: "#f0f9ff",
+            text: "#0f172a"
+        }
+    },
+    {
+        name: "Default Red",
+        colors: {
+            primary: "#ef4444",
+            secondary: "#1f2937",
+            accent: "#dc2626",
+            background: "#ffffff",
+            text: "#111827"
+        }
+    },
+    {
+        name: "Forest Green",
+        colors: {
+            primary: "#22c55e",
+            secondary: "#15803d",
+            accent: "#4ade80",
+            background: "#f0fdf4",
+            text: "#14532d"
+        }
+    },
+    {
+        name: "Purple Dream",
+        colors: {
+            primary: "#8b5cf6",
+            secondary: "#6d28d9",
+            accent: "#a78bfa",
+            background: "#faf5ff",
+            text: "#3f0f64"
+        }
+    },
+    {
+        name: "Sunset Orange",
+        colors: {
+            primary: "#f97316",
+            secondary: "#c2410c",
+            accent: "#fb923c",
+            background: "#fff7ed",
+            text: "#431407"
+        }
+    },
+    {
+        name: "Dark Mode",
+        colors: {
+            primary: "#6366f1",
+            secondary: "#4f46e5",
+            accent: "#818cf8",
+            background: "#0f172a",
+            text: "#f8fafc"
+        }
+    }
+];
+
+// ============================================================================
 // FULL WEBSITE TEMPLATES
 // ============================================================================
 export const websiteTemplates = [
@@ -151,20 +253,7 @@ export const websiteTemplates = [
         category: "saas",
         thumbnail: "assets/templates/modern-saas.png",
         siteSchema: {
-            theme: {
-                name: "Modern SaaS",
-                colors: {
-                    primary: "#3B82F6",
-                    secondary: "#A855F7",
-                    accent: "#EC4899",
-                    background: "#030712",
-                    text: "#FFFFFF"
-                },
-                fonts: {
-                    heading: "Inter",
-                    body: "Inter"
-                }
-            },
+            themes: ALL_THEMES,
             globalSections: {
                 header: modernSaaSTemplate.header?.structure || {},
                 footer: modernSaaSTemplate.footer?.structure || {}
@@ -222,20 +311,7 @@ export const websiteTemplates = [
         category: "portfolio",
         thumbnail: "assets/templates/portfolio.png",
         siteSchema: {
-            theme: {
-                name: "Portfolio",
-                colors: {
-                    primary: "#3B82F6",
-                    accent: "#EFF6FF",
-                    background: "#FFFFFF",
-                    border: "#F1F5F9",
-                    text: "#1E293B"
-                },
-                fonts: {
-                    heading: "Inter",
-                    body: "Inter"
-                }
-            },
+            themes: ALL_THEMES,
             globalSections: {
                 header: portfolioHome?.header?.structure || {},
                 footer: portfolioHome?.footer?.structure || {}
@@ -258,22 +334,7 @@ export const websiteTemplates = [
         category: "tech-innovation",
         thumbnail: "assets/templates/tech-innovation.png",
         siteSchema: {
-            theme: {
-                name: "TechNova",
-                colors: {
-                    primary: "#ec1313",
-                    background: "#f8f6f6",
-                    backgroundDark: "#221010",
-                    deepGray: "#1b0d0d",
-                    accentRed: "#9a4c4c",
-                    textLight: "#1e293b",
-                    textDark: "#ffffff"
-                },
-                fonts: {
-                    heading: "Space Grotesk",
-                    body: "Space Grotesk"
-                }
-            },
+            themes: ALL_THEMES,
             globalSections: {
                 header: techInnovationTemplate.header?.structure || {},
                 footer: techInnovationTemplate.footer?.structure || {}
@@ -323,30 +384,12 @@ export const websiteTemplates = [
         industry: 'Creative / Design',
         thumbnail: 'assets/templates/design-studio.png',
         siteSchema: {
-            theme: {
-                name: 'Design Studio',
-                colors: {
-                    primary: '#1F6AE1',
-                    background: '#ffffff',
-                    text: '#000000'
-                },
-                fonts: {
-                    heading: 'Space Grotesk',
-                    body: 'Space Grotesk'
-                }
-            },
+            themes: ALL_THEMES,
             globalSections: {
                 header: designStudioHome.header?.structure || {},
                 footer: designStudioHome.footer?.structure || {}
             },
             pages: [
-                {
-                    title: "Home",
-                    path: "/",
-                    name: "Home",
-                    isHomePage: true,
-                    blocks: designStudioHome.sections?.map(s => s.structure) || []
-                },
                 {
                     title: "Services",
                     path: "/services",
@@ -389,22 +432,8 @@ export const websiteTemplates = [
         description: 'Professional agriculture and agri-tech template for farms, supply chain, and sustainability',
         category: 'agriculture',
         industry: 'Agriculture / Agri-Tech',
-        thumbnail: 'assets/templates/green-harvest.png',
         siteSchema: {
-            theme: {
-                name: 'GreenHarvest',
-                colors: {
-                    primary: '#16a34a',
-                    background: '#ffffff',
-                    backgroundDark: '#0a0a0a',
-                    text: '#101912',
-                    border: '#e9f1eb'
-                },
-                fonts: {
-                    heading: 'Inter',
-                    body: 'Inter'
-                }
-            },
+            themes: ALL_THEMES,
             globalSections: {
                 header: greenHarvestHome.header?.structure || {},
                 footer: greenHarvestHome.footer?.structure || {}
@@ -454,20 +483,7 @@ export const websiteTemplates = [
         industry: 'Organic Agriculture / Sustainability',
         thumbnail: 'assets/templates/agri-ecosystem.png',
         siteSchema: {
-            theme: {
-                name: 'AgriEcosystem',
-                colors: {
-                    primary: '#13ec49',
-                    background: '#ffffff',
-                    backgroundDark: '#102215',
-                    text: '#1b4332',
-                    border: '#e9f1eb'
-                },
-                fonts: {
-                    heading: 'Space Grotesk',
-                    body: 'Space Grotesk'
-                }
-            },
+            themes: ALL_THEMES,
             globalSections: {
                 header: agriEcosystemHome.header?.structure || {},
                 footer: agriEcosystemHome.footer?.structure || {}
@@ -513,21 +529,7 @@ export const websiteTemplates = [
         industry: 'Healthcare / Medical',
         thumbnail: 'assets/templates/careplus.png',
         siteSchema: {
-            theme: {
-                name: 'CarePlus',
-                colors: {
-                    primary: '#008080', // Teal-600
-                    secondary: '#004D4D', // Teal-900
-                    background: '#ffffff',
-                    backgroundDark: '#0F172A',
-                    text: '#0F172A',
-                    border: '#E2E8F0'
-                },
-                fonts: {
-                    heading: 'Plus Jakarta Sans',
-                    body: 'Inter'
-                }
-            },
+            themes: ALL_THEMES,
             globalSections: {
                 header: careplusHome.header?.structure || {},
                 footer: careplusHome.footer?.structure || {}
@@ -570,21 +572,7 @@ export const websiteTemplates = [
         industry: 'Transportation / Logistics',
         thumbnail: 'assets/templates/swiftlogix.png',
         siteSchema: {
-            theme: {
-                name: 'SwiftLogix',
-                colors: {
-                    primary: '#ed2626',
-                    secondary: '#0f0f0f',
-                    background: '#ffffff',
-                    backgroundDark: '#0f0f0f',
-                    text: '#0f0f0f',
-                    border: '#f1f5f9'
-                },
-                fonts: {
-                    heading: 'Manrope',
-                    body: 'Manrope'
-                }
-            },
+            themes: ALL_THEMES,
             globalSections: {
                 header: swiftlogixHome.header?.structure || {},
                 footer: swiftlogixHome.footer?.structure || {}
@@ -632,23 +620,8 @@ export const websiteTemplates = [
         description: 'Modern online learning platform template with professional design and course showcase.',
         category: 'education',
         industry: 'Education / EdTech',
-        thumbnail: 'assets/templates/academiq.png',
         siteSchema: {
-            theme: {
-                name: 'Academiq',
-                colors: {
-                    primary: '#0048B3',
-                    secondary: '#E0F2FE',
-                    background: '#F8FAFC',
-                    backgroundDark: '#0F172A',
-                    text: '#0f172a',
-                    border: '#e2e8f0'
-                },
-                fonts: {
-                    heading: 'Plus Jakarta Sans',
-                    body: 'Inter'
-                }
-            },
+            themes: ALL_THEMES,
             globalSections: {
                 header: academiqHome.header?.structure || {},
                 footer: academiqHome.footer?.structure || {}
@@ -698,22 +671,7 @@ export const websiteTemplates = [
         industry: 'Technology / IT Solutions',
         thumbnail: 'assets/templates/tech-company.png',
         siteSchema: {
-            theme: {
-                name: 'Tech Company',
-                colors: {
-                    primary: '#D4F01E',
-                    secondary: '#000000',
-                    background: '#F8F8F6',
-                    backgroundDark: '#0F0F0F',
-                    text: '#000000',
-                    textLight: '#FFFFFF',
-                    border: '#F0F0F0'
-                },
-                fonts: {
-                    heading: 'Plus Jakarta Sans',
-                    body: 'Plus Jakarta Sans'
-                }
-            },
+            themes: ALL_THEMES,
             globalSections: {
                 header: techCompanyHome.header?.structure || {},
                 footer: techCompanyHome.footer?.structure || {}
@@ -767,24 +725,8 @@ export const websiteTemplates = [
         description: 'Futuristic AI tech company template featuring cutting-edge design, portfolio showcase, and ecosystem services.',
         category: 'tech-innovation',
         industry: 'Technology / AI Solutions',
-        thumbnail: 'assets/templates/tech-nova.png',
         siteSchema: {
-            theme: {
-                name: 'TechNova Solutions',
-                colors: {
-                    primary: '#6366f1',
-                    secondary: '#a855f7',
-                    background: '#ffffff',
-                    backgroundDark: '#0a0a0c',
-                    text: '#1f2937',
-                    textLight: '#ffffff',
-                    border: '#e5e7eb'
-                },
-                fonts: {
-                    heading: 'Plus Jakarta Sans',
-                    body: 'Plus Jakarta Sans'
-                }
-            },
+            themes: ALL_THEMES,
             globalSections: {
                 header: techNova.header?.structure || {},
                 footer: techNova.footer?.structure || {}
@@ -828,24 +770,8 @@ export const websiteTemplates = [
         description: 'Architectural excellence template featuring smart living ecosystems, sustainable infrastructure, and luxury developments.',
         category: 'architecture',
         industry: 'Real Estate / Architecture',
-        thumbnail: 'assets/templates/urban-nest.png',
         siteSchema: {
-            theme: {
-                name: 'UrbanNest',
-                colors: {
-                    primary: '#ecb613',
-                    secondary: '#1e293b',
-                    background: '#f8f8f6',
-                    backgroundDark: '#1a1410',
-                    text: '#1e293b',
-                    textLight: '#f8f8f6',
-                    border: '#e5e5e0'
-                },
-                fonts: {
-                    heading: 'Space Grotesk',
-                    body: 'Space Grotesk'
-                }
-            },
+            themes: ALL_THEMES,
             globalSections: {
                 header: urbanNestHome.header?.structure || {},
                 footer: urbanNestHome.footer?.structure || {}
@@ -876,26 +802,11 @@ export const websiteTemplates = [
         id: 'edupremium',
         name: 'EduPremium',
         slug: 'edupremium',
-        description: 'Elite education template with high-contrast design for institutions and masterclasses.',
+        description: 'Elite education template with premium purple design for institutions and masterclasses.',
         category: 'education',
         industry: 'Education / eLearning',
-        thumbnail: 'assets/templates/education.png', // Placeholder
         siteSchema: {
-            theme: {
-                name: 'EduPremium',
-                colors: {
-                    primary: '#FF4500', // Orange/Red
-                    secondary: '#000000',
-                    background: '#ffffff',
-                    backgroundDark: '#000000',
-                    text: '#000000',
-                    border: '#000000'
-                },
-                fonts: {
-                    heading: 'Lexend',
-                    body: 'Lexend'
-                }
-            },
+            themes: ALL_THEMES,
             globalSections: {
                 header: educationHome.header?.structure || {},
                 footer: educationHome.footer?.structure || {}
@@ -943,23 +854,8 @@ export const websiteTemplates = [
         description: 'Premium financial institution template representing trust, heritage, and stability.',
         category: 'finance',
         industry: 'Finance / Banking',
-        thumbnail: 'assets/templates/finance.png', // Placeholder
         siteSchema: {
-            theme: {
-                name: 'FinancePro',
-                colors: {
-                    primary: '#0F766E', // Teal-700
-                    secondary: '#101817', // Dark
-                    background: '#ffffff',
-                    backgroundDark: '#0f172a',
-                    text: '#101817',
-                    border: '#e2e8f0'
-                },
-                fonts: {
-                    heading: 'Inter',
-                    body: 'Inter'
-                }
-            },
+            themes: ALL_THEMES,
             globalSections: {
                 header: financeHero.header?.structure || {},
                 footer: financeHero.footer?.structure || {}
@@ -1004,27 +900,11 @@ export const websiteTemplates = [
         id: 'wanderlust-travel',
         name: 'Wanderlust Travel',
         slug: 'wanderlust-travel',
-        description: 'Premium travel and tourism template with warm amber and navy blue theme.',
+        description: 'Premium travel and tourism template with oceanic blue theme.',
         category: 'travel',
         industry: 'Travel / Tourism',
-        thumbnail: 'assets/templates/travel.png',
         siteSchema: {
-            theme: {
-                name: 'Wanderlust Travel',
-                colors: {
-                    primary: '#E07C24',
-                    secondary: '#1B4965',
-                    accent: '#F4A261',
-                    background: '#ffffff',
-                    backgroundDark: '#1B4965',
-                    text: '#1B4965',
-                    border: '#e2e8f0'
-                },
-                fonts: {
-                    heading: 'Poppins',
-                    body: 'Poppins'
-                }
-            },
+            themes: ALL_THEMES,
             globalSections: {
                 header: travelHome.header?.structure || {},
                 footer: travelHome.footer?.structure || {}
@@ -1079,23 +959,8 @@ export const websiteTemplates = [
         description: 'Luxury culinary editorial template with deep purple and gold accents for premium food brands.',
         category: 'food',
         industry: 'Food / Culinary',
-        thumbnail: 'assets/templates/food.png',
         siteSchema: {
-            theme: {
-                name: 'Epilogue Culinary',
-                colors: {
-                    primary: '#2e0057',
-                    accent: '#ebd800',
-                    background: '#f7f5f8',
-                    backgroundDark: '#1a0f23',
-                    text: '#2e0057',
-                    border: 'rgba(46, 0, 87, 0.1)'
-                },
-                fonts: {
-                    heading: 'Playfair Display',
-                    body: 'Playfair Display'
-                }
-            },
+            themes: ALL_THEMES,
             globalSections: {
                 header: foodHome.header?.structure || {},
                 footer: foodHome.footer?.structure || {}
@@ -1135,6 +1000,209 @@ export const websiteTemplates = [
                     name: "Testimonials",
                     isHomePage: false,
                     blocks: foodTestimonials.sections?.map(s => s.structure) || []
+                }
+            ]
+        }
+    },
+
+    // =========================================================================
+    // TECH-STREET E-COMMERCE TEMPLATE
+    // =========================================================================
+    {
+        id: 'tech-street',
+        name: 'Tech-Street',
+        slug: 'tech-street',
+        description: 'Premium streetwear e-commerce template with dark futuristic aesthetics.',
+        category: 'ecommerce',
+        industry: 'Fashion / E-Commerce',
+        siteSchema: {
+            themes: ALL_THEMES,
+            globalSections: {
+                header: ecommerceHome.header?.structure || {},
+                footer: ecommerceHome.footer?.structure || {}
+            },
+            pages: [
+                {
+                    title: "Home",
+                    path: "/",
+                    name: "Home",
+                    isHomePage: true,
+                    blocks: ecommerceHome.sections?.map(s => s.structure) || []
+                },
+                {
+                    title: "About",
+                    path: "/about",
+                    name: "About",
+                    isHomePage: false,
+                    blocks: ecommerceAbout.sections?.map(s => s.structure) || []
+                },
+                {
+                    title: "Products",
+                    path: "/products",
+                    name: "Products",
+                    isHomePage: false,
+                    blocks: ecommerceProducts.sections?.map(s => s.structure) || []
+                },
+                {
+                    title: "Contact",
+                    path: "/contact",
+                    name: "Contact",
+                    isHomePage: false,
+                    blocks: ecommerceContact.sections?.map(s => s.structure) || []
+                }
+            ]
+        }
+    },
+
+    // =========================================================================
+    // APEX ESTATES REAL ESTATE TEMPLATE
+    // =========================================================================
+    {
+        id: 'apex-estates',
+        name: 'Apex Estates',
+        slug: 'real-estate',
+        description: 'Ultra-luxury real estate template featuring architectural elegance with modern dark sophistication.',
+        category: 'real-estate',
+        industry: 'Real Estate / Architecture',
+        siteSchema: {
+            themes: ALL_THEMES,
+            globalSections: {
+                header: realEstateHome.header?.structure || {},
+                footer: realEstateHome.footer?.structure || {}
+            },
+            pages: [
+                {
+                    title: "Home",
+                    path: "/",
+                    name: "Home",
+                    isHomePage: true,
+                    blocks: realEstateHome.sections?.map(s => s.structure) || []
+                },
+                {
+                    title: "About",
+                    path: "/about",
+                    name: "About",
+                    isHomePage: false,
+                    blocks: realEstateAbout.sections?.map(s => s.structure) || []
+                },
+                {
+                    title: "Journal",
+                    path: "/journal",
+                    name: "Journal",
+                    isHomePage: false,
+                    blocks: realEstateBlogs.sections?.map(s => s.structure) || []
+                },
+                {
+                    title: "Contact",
+                    path: "/contact",
+                    name: "Contact",
+                    isHomePage: false,
+                    blocks: realEstateContact.sections?.map(s => s.structure) || []
+                }
+            ]
+        }
+    },
+    // =========================================================================
+    // APEX STRUCTURES CONSTRUCTION TEMPLATE
+    // =========================================================================
+    {
+        id: 'apex-structures',
+        name: 'Apex Structures',
+        slug: 'construction',
+        description: 'Industrial-grade template for construction and architecture firms with warm orange authority.',
+        category: 'construction',
+        industry: 'Construction / Architecture',
+        thumbnail: 'assets/templates/construction.png', // Placeholder
+        siteSchema: {
+            themes: ALL_THEMES,
+            globalSections: {
+                header: constructionHome.header?.structure || {},
+                footer: constructionHome.footer?.structure || {}
+            },
+            pages: [
+                {
+                    title: "Home",
+                    path: "/",
+                    name: "Home",
+                    isHomePage: true,
+                    blocks: constructionHome.sections?.map(s => s.structure) || []
+                },
+                {
+                    title: "About Us",
+                    path: "/about",
+                    name: "About Us",
+                    isHomePage: false,
+                    blocks: constructionAbout.sections?.map(s => s.structure) || []
+                },
+                {
+                    title: "Gallery",
+                    path: "/gallery",
+                    name: "Gallery",
+                    isHomePage: false,
+                    blocks: constructionGallery.sections?.map(s => s.structure) || []
+                },
+                {
+                    title: "Contact",
+                    path: "/contact",
+                    name: "Contact",
+                    isHomePage: false,
+                    blocks: constructionContact.sections?.map(s => s.structure) || []
+                },
+                {
+                    title: "Our Clients",
+                    path: "/clients",
+                    name: "Our Clients",
+                    isHomePage: false,
+                    blocks: constructionClients.sections?.map(s => s.structure) || []
+                }
+            ]
+        }
+    },
+
+    // ==========================================================================
+    // Elite Business Template
+    // ==========================================================================
+    {
+        id: genId('business-tpl'),
+        name: 'Elite Business',
+        slug: 'business',
+        description: 'Premium service business template for high-end professional services with dark mode sophistication.',
+        category: 'business',
+        industry: 'Services / Construction',
+        siteSchema: {
+            themes: ALL_THEMES,
+            globalSections: {
+                header: businessHome.header?.structure || {},
+                footer: businessHome.footer?.structure || {}
+            },
+            pages: [
+                {
+                    title: "Home",
+                    path: "/",
+                    name: "Home",
+                    isHomePage: true,
+                    blocks: businessHome.sections?.map(s => s.structure) || []
+                },
+                {
+                    title: "About Us",
+                    path: "/about",
+                    name: "About",
+                    isHomePage: false,
+                    blocks: businessAbout.sections?.map(s => s.structure) || []
+                },
+                {
+                    title: "Our Services",
+                    path: "/services",
+                    name: "Services",
+                    isHomePage: false,
+                    blocks: businessServices.sections?.map(s => s.structure) || []
+                },
+                {
+                    title: "Contact",
+                    path: "/contact",
+                    name: "Contact",
+                    isHomePage: false,
+                    blocks: businessContact.sections?.map(s => s.structure) || []
                 }
             ]
         }

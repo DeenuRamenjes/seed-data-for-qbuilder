@@ -18,7 +18,7 @@ export const mediaSectionTemplates = [
             id: "gallery-grid-3-1",
             type: "Section",
             props: {
-                backgroundColor: "var(--theme-background, #ffffff)",
+                backgroundColor: "var(--theme-background, var(--theme-background))",
                 paddingTop: 60,
                 paddingBottom: 60,
             },
@@ -40,7 +40,7 @@ export const mediaSectionTemplates = [
                             type: "Badge",
                             props: {
                                 text: "GALLERY",
-                                color: "var(--theme-primary, #6366f1)",
+                                color: "var(--theme-primary, var(--theme-primary))",
                                 bgColor: "var(--theme-primary-light, #eef2ff)",
                                 showPing: false
                             }
@@ -52,7 +52,7 @@ export const mediaSectionTemplates = [
                                 text: "Our Work & Portfolio",
                                 tag: "h2",
                                 align: "center",
-                                color: "var(--theme-text, #1f2937)",
+                                color: "var(--theme-text, var(--theme-text))",
                                 fontWeight: "700",
                                 size: "2xl"
                             }
@@ -89,7 +89,7 @@ export const mediaSectionTemplates = [
                                 text: "Project Alpha",
                                 tag: "h4",
                                 align: "center",
-                                color: "var(--theme-text, #1f2937)",
+                                color: "var(--theme-text, var(--theme-text))",
                                 fontWeight: "600",
                                 size: "lg"
                             }
@@ -126,7 +126,7 @@ export const mediaSectionTemplates = [
                                 text: "Project Beta",
                                 tag: "h4",
                                 align: "center",
-                                color: "var(--theme-text, #1f2937)",
+                                color: "var(--theme-text, var(--theme-text))",
                                 fontWeight: "600",
                                 size: "lg"
                             }
@@ -163,7 +163,7 @@ export const mediaSectionTemplates = [
                                 text: "Project Gamma",
                                 tag: "h4",
                                 align: "center",
-                                color: "var(--theme-text, #1f2937)",
+                                color: "var(--theme-text, var(--theme-text))",
                                 fontWeight: "600",
                                 size: "lg"
                             }
@@ -188,7 +188,7 @@ export const mediaSectionTemplates = [
             id: "gallery-lightbox-1",
             type: "Section",
             props: {
-                backgroundColor: "var(--theme-background-alt, #f9fafb)",
+                backgroundColor: "var(--theme-background-alt, var(--theme-background))",
                 paddingTop: 60,
                 paddingBottom: 60,
             },
@@ -210,8 +210,8 @@ export const mediaSectionTemplates = [
                             type: "Badge",
                             props: {
                                 text: "PHOTO GALLERY",
-                                color: "var(--theme-secondary, #8b5cf6)",
-                                bgColor: "var(--theme-secondary-light, #faf5ff)",
+                                color: "var(--theme-secondary, var(--theme-primary))",
+                                bgColor: "var(--theme-secondary-light, var(--theme-background))",
                                 showPing: false
                             }
                         },
@@ -222,7 +222,7 @@ export const mediaSectionTemplates = [
                                 text: "Click to Expand Photos",
                                 tag: "h2",
                                 align: "center",
-                                color: "var(--theme-text, #1f2937)",
+                                color: "var(--theme-text, var(--theme-text))",
                                 fontWeight: "700",
                                 size: "2xl"
                             }
@@ -331,7 +331,7 @@ export const mediaSectionTemplates = [
             id: "video-section-1",
             type: "Section",
             props: {
-                backgroundColor: "var(--theme-background, #ffffff)",
+                backgroundColor: "var(--theme-background, var(--theme-background))",
                 paddingTop: 60,
                 paddingBottom: 60,
             },
@@ -353,7 +353,7 @@ export const mediaSectionTemplates = [
                             type: "Badge",
                             props: {
                                 text: "FEATURED VIDEO",
-                                color: "var(--theme-accent, #f59e0b)",
+                                color: "var(--theme-accent, var(--theme-primary))",
                                 bgColor: "var(--theme-accent-light, #fffbeb)",
                                 showPing: true
                             }
@@ -365,7 +365,7 @@ export const mediaSectionTemplates = [
                                 text: "See How It Works",
                                 tag: "h2",
                                 align: "center",
-                                color: "var(--theme-text, #1f2937)",
+                                color: "var(--theme-text, var(--theme-text))",
                                 fontWeight: "700",
                                 size: "2xl"
                             }
@@ -425,7 +425,7 @@ export const mediaSectionTemplates = [
             id: "video-embed-hero-1",
             type: "Section",
             props: {
-                backgroundColor: "#000000",
+                backgroundColor: "var(--theme-text)",
                 paddingTop: 80,
                 paddingBottom: 80,
                 backgroundImage: "https://images.unsplash.com/photo-1633356122544-f134324ef6f2?w=1600&fit=crop",
@@ -451,7 +451,7 @@ export const mediaSectionTemplates = [
                                 text: "Experience Innovation",
                                 tag: "h1",
                                 align: "center",
-                                color: "#ffffff",
+                                color: "var(--theme-background)",
                                 fontWeight: "700",
                                 size: "2xl"
                             }
@@ -488,7 +488,7 @@ export const mediaSectionTemplates = [
             id: "audio-section-1",
             type: "Section",
             props: {
-                backgroundColor: "var(--theme-background-alt, #f9fafb)",
+                backgroundColor: "var(--theme-background-alt, var(--theme-background))",
                 paddingTop: 60,
                 paddingBottom: 60,
             },
@@ -510,7 +510,7 @@ export const mediaSectionTemplates = [
                             type: "Badge",
                             props: {
                                 text: "PODCASTS & AUDIO",
-                                color: "var(--theme-primary, #6366f1)",
+                                color: "var(--theme-primary, var(--theme-primary))",
                                 bgColor: "var(--theme-primary-light, #eef2ff)",
                                 showPing: false
                             }
@@ -522,7 +522,7 @@ export const mediaSectionTemplates = [
                                 text: "Listen to Our Latest Episodes",
                                 tag: "h2",
                                 align: "center",
-                                color: "var(--theme-text, #1f2937)",
+                                color: "var(--theme-text, var(--theme-text))",
                                 fontWeight: "700",
                                 size: "2xl"
                             }
@@ -549,8 +549,8 @@ export const mediaSectionTemplates = [
                                 description: "In this episode, we explore the fundamentals and best practices.",
                                 audioUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
                                 duration: "45:30",
-                                backgroundColor: "var(--theme-background, #ffffff)",
-                                accentColor: "var(--theme-primary, #6366f1)",
+                                backgroundColor: "var(--theme-background, var(--theme-background))",
+                                accentColor: "var(--theme-primary, var(--theme-primary))",
                                 borderRadius: "12",
                                 shadow: "md",
                                 width: "100%"
@@ -564,8 +564,8 @@ export const mediaSectionTemplates = [
                                 description: "Deep dive into advanced strategies and methodologies.",
                                 audioUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3",
                                 duration: "52:15",
-                                backgroundColor: "var(--theme-background, #ffffff)",
-                                accentColor: "var(--theme-secondary, #8b5cf6)",
+                                backgroundColor: "var(--theme-background, var(--theme-background))",
+                                accentColor: "var(--theme-secondary, var(--theme-primary))",
                                 borderRadius: "12",
                                 shadow: "md",
                                 width: "100%"

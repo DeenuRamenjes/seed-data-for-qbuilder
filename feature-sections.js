@@ -20,7 +20,7 @@ export const featureSectionTemplates = [
             id: "features-grid-1",
             type: "Section",
             props: {
-                backgroundColor: "var(--theme-background, #ffffff)",
+                backgroundColor: "var(--theme-background, var(--theme-background))",
                 paddingTop: 60,
                 paddingBottom: 60,
             },
@@ -42,7 +42,7 @@ export const featureSectionTemplates = [
                             type: "Badge",
                             props: {
                                 text: "OUR FEATURES",
-                                color: "var(--theme-primary, #6366f1)",
+                                color: "var(--theme-primary, var(--theme-primary))",
                                 bgColor: "var(--theme-primary-light, #eef2ff)",
                                 showPing: false
                             }
@@ -54,7 +54,7 @@ export const featureSectionTemplates = [
                                 text: "Powerful Features for Modern Teams",
                                 tag: "h2",
                                 align: "center",
-                                color: "var(--theme-text, #1f2937)",
+                                color: "var(--theme-text, var(--theme-text))",
                                 fontWeight: "700",
                                 size: "2xl"
                             }
@@ -91,9 +91,9 @@ export const featureSectionTemplates = [
                                 icon: "⚡",
                                 title: "Lightning Speed",
                                 description: "Optimized for performance with sub-100ms load times, real-time sync, and zero lag interactions across all devices",
-                                backgroundColor: "var(--theme-background-alt, #f9fafb)",
-                                borderColor: "var(--theme-border, #e5e7eb)",
-                                accentColor: "var(--theme-primary, #6366f1)",
+                                backgroundColor: "var(--theme-background-alt, var(--theme-background))",
+                                borderColor: "var(--theme-border, var(--theme-border))",
+                                accentColor: "var(--theme-primary, var(--theme-primary))",
                                 borderRadius: "12",
                                 shadow: "md"
                             }
@@ -120,9 +120,9 @@ export const featureSectionTemplates = [
                                 icon: "🔒",
                                 title: "Enterprise Security",
                                 description: "Bank-level encryption, SOC 2 certified, GDPR compliant with 99.99% uptime SLA and automatic disaster recovery",
-                                backgroundColor: "var(--theme-background-alt, #f9fafb)",
-                                borderColor: "var(--theme-border, #e5e7eb)",
-                                accentColor: "var(--theme-secondary, #8b5cf6)",
+                                backgroundColor: "var(--theme-background-alt, var(--theme-background))",
+                                borderColor: "var(--theme-border, var(--theme-border))",
+                                accentColor: "var(--theme-secondary, var(--theme-primary))",
                                 borderRadius: "12",
                                 shadow: "md"
                             }
@@ -149,9 +149,9 @@ export const featureSectionTemplates = [
                                 icon: "🎨",
                                 title: "Total Customization",
                                 description: "White-label design system with 500+ components, custom themes, branded widgets, and pixel-perfect control over every element",
-                                backgroundColor: "var(--theme-background-alt, #f9fafb)",
-                                borderColor: "var(--theme-border, #e5e7eb)",
-                                accentColor: "var(--theme-accent, #f59e0b)",
+                                backgroundColor: "var(--theme-background-alt, var(--theme-background))",
+                                borderColor: "var(--theme-border, var(--theme-border))",
+                                accentColor: "var(--theme-accent, var(--theme-primary))",
                                 borderRadius: "12",
                                 shadow: "md"
                             }
@@ -175,7 +175,7 @@ export const featureSectionTemplates = [
             id: "features-list-1",
             type: "Section",
             props: {
-                backgroundColor: "var(--theme-background-alt, #f9fafb)",
+                backgroundColor: "var(--theme-background-alt, var(--theme-background))",
                 paddingTop: 60,
                 paddingBottom: 60,
             },
@@ -199,7 +199,7 @@ export const featureSectionTemplates = [
                                 text: "Everything You Need",
                                 tag: "h2",
                                 align: "center",
-                                color: "var(--theme-text, #1f2937)",
+                                color: "var(--theme-text, var(--theme-text))",
                                 fontWeight: "700",
                                 size: "2xl"
                             }
@@ -224,7 +224,7 @@ export const featureSectionTemplates = [
                             props: {
                                 heading: "✓ Intuitive Interface",
                                 content: "Easy to use dashboard designed for all skill levels",
-                                headingColor: "var(--theme-primary, #6366f1)",
+                                headingColor: "var(--theme-primary, var(--theme-primary))",
                                 contentColor: "var(--theme-text-secondary, #6b7280)",
                             }
                         },
@@ -234,7 +234,7 @@ export const featureSectionTemplates = [
                             props: {
                                 heading: "✓ Real-time Analytics",
                                 content: "Track performance with live dashboards and detailed reports",
-                                headingColor: "var(--theme-primary, #6366f1)",
+                                headingColor: "var(--theme-primary, var(--theme-primary))",
                                 contentColor: "var(--theme-text-secondary, #6b7280)",
                             }
                         },
@@ -244,7 +244,7 @@ export const featureSectionTemplates = [
                             props: {
                                 heading: "✓ API Integration",
                                 content: "Connect with 500+ popular apps and services",
-                                headingColor: "var(--theme-primary, #6366f1)",
+                                headingColor: "var(--theme-primary, var(--theme-primary))",
                                 contentColor: "var(--theme-text-secondary, #6b7280)",
                             }
                         },
@@ -254,7 +254,7 @@ export const featureSectionTemplates = [
                             props: {
                                 heading: "✓ 24/7 Support",
                                 content: "Dedicated support team ready to help anytime",
-                                headingColor: "var(--theme-primary, #6366f1)",
+                                headingColor: "var(--theme-primary, var(--theme-primary))",
                                 contentColor: "var(--theme-text-secondary, #6b7280)",
                             }
                         }
@@ -278,7 +278,7 @@ export const featureSectionTemplates = [
             id: "use-cases-1",
             type: "Section",
             props: {
-                backgroundColor: "var(--theme-background, #ffffff)",
+                backgroundColor: "var(--theme-background, var(--theme-background))",
                 paddingTop: 60,
                 paddingBottom: 60,
             },
@@ -300,8 +300,8 @@ export const featureSectionTemplates = [
                             type: "Badge",
                             props: {
                                 text: "PROVEN USE CASES",
-                                color: "var(--theme-secondary, #8b5cf6)",
-                                bgColor: "var(--theme-secondary-light, #faf5ff)",
+                                color: "var(--theme-secondary, var(--theme-primary))",
+                                bgColor: "var(--theme-secondary-light, var(--theme-background))",
                                 showPing: false
                             }
                         },
@@ -312,7 +312,7 @@ export const featureSectionTemplates = [
                                 text: "Solutions Built for Every Industry",
                                 tag: "h2",
                                 align: "center",
-                                color: "var(--theme-text, #1f2937)",
+                                color: "var(--theme-text, var(--theme-text))",
                                 fontWeight: "700",
                                 size: "2xl"
                             }
@@ -348,10 +348,10 @@ export const featureSectionTemplates = [
                             props: {
                                 title: "E-Commerce & Retail",
                                 description: "Multi-channel inventory sync, real-time order tracking, customer analytics dashboards, and automated fulfillment workflows across all sales channels",
-                                backgroundColor: "var(--theme-background-alt, #f9fafb)",
-                                borderLeftColor: "var(--theme-primary, #6366f1)",
+                                backgroundColor: "var(--theme-background-alt, var(--theme-background))",
+                                borderLeftColor: "var(--theme-primary, var(--theme-primary))",
                                 borderLeftWidth: "4",
-                                titleColor: "var(--theme-primary, #6366f1)",
+                                titleColor: "var(--theme-primary, var(--theme-primary))",
                                 textColor: "var(--theme-text-secondary, #6b7280)",
                                 borderRadius: "12"
                             }
@@ -377,10 +377,10 @@ export const featureSectionTemplates = [
                             props: {
                                 title: "SaaS Platforms",
                                 description: "Subscription billing automation, usage-based metering, customer lifecycle management, churn prediction, and revenue analytics dashboards",
-                                backgroundColor: "var(--theme-background-alt, #f9fafb)",
-                                borderLeftColor: "var(--theme-secondary, #8b5cf6)",
+                                backgroundColor: "var(--theme-background-alt, var(--theme-background))",
+                                borderLeftColor: "var(--theme-secondary, var(--theme-primary))",
                                 borderLeftWidth: "4",
-                                titleColor: "var(--theme-secondary, #8b5cf6)",
+                                titleColor: "var(--theme-secondary, var(--theme-primary))",
                                 textColor: "var(--theme-text-secondary, #6b7280)",
                                 borderRadius: "12"
                             }
@@ -406,10 +406,10 @@ export const featureSectionTemplates = [
                             props: {
                                 title: "Enterprise Growth",
                                 description: "Distributed team collaboration, global compliance management, multi-region deployment, white-label solutions, and dedicated infrastructure",
-                                backgroundColor: "var(--theme-background-alt, #f9fafb)",
-                                borderLeftColor: "var(--theme-accent, #f59e0b)",
+                                backgroundColor: "var(--theme-background-alt, var(--theme-background))",
+                                borderLeftColor: "var(--theme-accent, var(--theme-primary))",
                                 borderLeftWidth: "4",
-                                titleColor: "var(--theme-accent, #f59e0b)",
+                                titleColor: "var(--theme-accent, var(--theme-primary))",
                                 textColor: "var(--theme-text-secondary, #6b7280)",
                                 borderRadius: "12"
                             }
@@ -434,7 +434,7 @@ export const featureSectionTemplates = [
             id: "benefits-section-1",
             type: "Section",
             props: {
-                backgroundColor: "var(--theme-background-alt, #f9fafb)",
+                backgroundColor: "var(--theme-background-alt, var(--theme-background))",
                 paddingTop: 60,
                 paddingBottom: 60,
             },
@@ -456,7 +456,7 @@ export const featureSectionTemplates = [
                             type: "Badge",
                             props: {
                                 text: "KEY BENEFITS",
-                                color: "var(--theme-accent, #f59e0b)",
+                                color: "var(--theme-accent, var(--theme-primary))",
                                 bgColor: "var(--theme-accent-light, #fffbeb)",
                                 showPing: true
                             }
@@ -468,7 +468,7 @@ export const featureSectionTemplates = [
                                 text: "Measurable Impact on Your Business",
                                 tag: "h2",
                                 align: "center",
-                                color: "var(--theme-text, #1f2937)",
+                                color: "var(--theme-text, var(--theme-text))",
                                 fontWeight: "700",
                                 size: "2xl"
                             }
@@ -505,7 +505,7 @@ export const featureSectionTemplates = [
                                 icon: "💰",
                                 title: "70% Cost Reduction",
                                 description: "Save significant operational expenses with automation, reduced staffing needs, and optimized resource allocation",
-                                backgroundColor: "var(--theme-background, #ffffff)",
+                                backgroundColor: "var(--theme-background, var(--theme-background))",
                                 borderRadius: "12",
                                 shadow: "sm",
                                 iconBgColor: "var(--theme-accent-light, #fffbeb)",
@@ -534,7 +534,7 @@ export const featureSectionTemplates = [
                                 icon: "⚡",
                                 title: "3x Faster Deployment",
                                 description: "Go live in days instead of months with pre-built workflows, templates, and intelligent automation that adapts to your needs",
-                                backgroundColor: "var(--theme-background, #ffffff)",
+                                backgroundColor: "var(--theme-background, var(--theme-background))",
                                 borderRadius: "12",
                                 shadow: "sm",
                                 iconBgColor: "var(--theme-primary-light, #eef2ff)",
@@ -563,10 +563,10 @@ export const featureSectionTemplates = [
                                 icon: "🌍",
                                 title: "Global 24/7 Support",
                                 description: "Access our expert team round-the-clock across all time zones with 15-minute response times and dedicated account managers",
-                                backgroundColor: "var(--theme-background, #ffffff)",
+                                backgroundColor: "var(--theme-background, var(--theme-background))",
                                 borderRadius: "12",
                                 shadow: "sm",
-                                iconBgColor: "var(--theme-secondary-light, #faf5ff)",
+                                iconBgColor: "var(--theme-secondary-light, var(--theme-background))",
                                 iconSize: "40"
                             }
                         }
@@ -589,7 +589,7 @@ export const featureSectionTemplates = [
             id: "capabilities-section-1",
             type: "Section",
             props: {
-                backgroundColor: "var(--theme-background, #ffffff)",
+                backgroundColor: "var(--theme-background, var(--theme-background))",
                 paddingTop: 60,
                 paddingBottom: 60,
             },
@@ -611,7 +611,7 @@ export const featureSectionTemplates = [
                             type: "Badge",
                             props: {
                                 text: "ENTERPRISE CAPABILITIES",
-                                color: "var(--theme-primary, #6366f1)",
+                                color: "var(--theme-primary, var(--theme-primary))",
                                 bgColor: "var(--theme-primary-light, #eef2ff)",
                                 showPing: false
                             }
@@ -623,7 +623,7 @@ export const featureSectionTemplates = [
                                 text: "Powerful Tools at Your Fingertips",
                                 tag: "h2",
                                 align: "center",
-                                color: "var(--theme-text, #1f2937)",
+                                color: "var(--theme-text, var(--theme-text))",
                                 fontWeight: "700",
                                 size: "2xl"
                             }
@@ -659,10 +659,10 @@ export const featureSectionTemplates = [
                             props: {
                                 title: "Advanced Analytics",
                                 features: "Real-time dashboards • Custom reports • Predictive AI models • Geospatial analysis • Export to any format",
-                                backgroundColor: "var(--theme-background-alt, #f9fafb)",
-                                borderLeftColor: "var(--theme-primary, #6366f1)",
+                                backgroundColor: "var(--theme-background-alt, var(--theme-background))",
+                                borderLeftColor: "var(--theme-primary, var(--theme-primary))",
                                 borderLeftWidth: "3",
-                                titleColor: "var(--theme-primary, #6366f1)",
+                                titleColor: "var(--theme-primary, var(--theme-primary))",
                                 textColor: "var(--theme-text-secondary, #6b7280)",
                                 borderRadius: "12"
                             }
@@ -688,10 +688,10 @@ export const featureSectionTemplates = [
                             props: {
                                 title: "Security & Compliance",
                                 features: "End-to-end AES-256 encryption • GDPR/CCPA compliant • SOC 2 Type II • HIPAA ready • Role-based access control",
-                                backgroundColor: "var(--theme-background-alt, #f9fafb)",
-                                borderLeftColor: "var(--theme-secondary, #8b5cf6)",
+                                backgroundColor: "var(--theme-background-alt, var(--theme-background))",
+                                borderLeftColor: "var(--theme-secondary, var(--theme-primary))",
                                 borderLeftWidth: "3",
-                                titleColor: "var(--theme-secondary, #8b5cf6)",
+                                titleColor: "var(--theme-secondary, var(--theme-primary))",
                                 textColor: "var(--theme-text-secondary, #6b7280)",
                                 borderRadius: "12"
                             }
@@ -717,10 +717,10 @@ export const featureSectionTemplates = [
                             props: {
                                 title: "Integration & API",
                                 features: "500+ pre-built integrations • GraphQL & REST APIs • Webhooks & real-time sync • SDKs for all platforms • Developer console",
-                                backgroundColor: "var(--theme-background-alt, #f9fafb)",
-                                borderLeftColor: "var(--theme-accent, #f59e0b)",
+                                backgroundColor: "var(--theme-background-alt, var(--theme-background))",
+                                borderLeftColor: "var(--theme-accent, var(--theme-primary))",
                                 borderLeftWidth: "3",
-                                titleColor: "var(--theme-accent, #f59e0b)",
+                                titleColor: "var(--theme-accent, var(--theme-primary))",
                                 textColor: "var(--theme-text-secondary, #6b7280)",
                                 borderRadius: "12"
                             }
@@ -744,7 +744,7 @@ export const featureSectionTemplates = [
             id: "solutions-section-1",
             type: "Section",
             props: {
-                backgroundColor: "var(--theme-background-alt, #f9fafb)",
+                backgroundColor: "var(--theme-background-alt, var(--theme-background))",
                 paddingTop: 60,
                 paddingBottom: 60,
             },
@@ -768,7 +768,7 @@ export const featureSectionTemplates = [
                                 text: "Solutions for Every Challenge",
                                 tag: "h2",
                                 align: "center",
-                                color: "var(--theme-text, #1f2937)",
+                                color: "var(--theme-text, var(--theme-text))",
                                 fontWeight: "700",
                                 size: "2xl"
                             }
@@ -794,10 +794,10 @@ export const featureSectionTemplates = [
                                 problem: "Manual Workflows",
                                 solution: "Full Automation",
                                 description: "Eliminate repetitive tasks and focus on strategic work",
-                                backgroundColor: "var(--theme-background, #ffffff)",
-                                problemColor: "var(--theme-text, #1f2937)",
-                                solutionColor: "var(--theme-primary, #6366f1)",
-                                arrowColor: "var(--theme-primary, #6366f1)",
+                                backgroundColor: "var(--theme-background, var(--theme-background))",
+                                problemColor: "var(--theme-text, var(--theme-text))",
+                                solutionColor: "var(--theme-primary, var(--theme-primary))",
+                                arrowColor: "var(--theme-primary, var(--theme-primary))",
                                 shadow: "md",
                                 borderRadius: "12"
                             }
@@ -823,10 +823,10 @@ export const featureSectionTemplates = [
                                 problem: "Data Silos",
                                 solution: "Unified Platform",
                                 description: "Single source of truth for all your business data",
-                                backgroundColor: "var(--theme-background, #ffffff)",
-                                problemColor: "var(--theme-text, #1f2937)",
-                                solutionColor: "var(--theme-secondary, #8b5cf6)",
-                                arrowColor: "var(--theme-secondary, #8b5cf6)",
+                                backgroundColor: "var(--theme-background, var(--theme-background))",
+                                problemColor: "var(--theme-text, var(--theme-text))",
+                                solutionColor: "var(--theme-secondary, var(--theme-primary))",
+                                arrowColor: "var(--theme-secondary, var(--theme-primary))",
                                 shadow: "md",
                                 borderRadius: "12"
                             }
@@ -852,10 +852,10 @@ export const featureSectionTemplates = [
                                 problem: "Limited Scalability",
                                 solution: "Cloud Infrastructure",
                                 description: "Grow without limits with elastic, cloud-native architecture",
-                                backgroundColor: "var(--theme-background, #ffffff)",
-                                problemColor: "var(--theme-text, #1f2937)",
-                                solutionColor: "var(--theme-accent, #f59e0b)",
-                                arrowColor: "var(--theme-accent, #f59e0b)",
+                                backgroundColor: "var(--theme-background, var(--theme-background))",
+                                problemColor: "var(--theme-text, var(--theme-text))",
+                                solutionColor: "var(--theme-accent, var(--theme-primary))",
+                                arrowColor: "var(--theme-accent, var(--theme-primary))",
                                 shadow: "md",
                                 borderRadius: "12"
                             }
@@ -880,7 +880,7 @@ export const featureSectionTemplates = [
             id: "industry-solutions-1",
             type: "Section",
             props: {
-                backgroundColor: "var(--theme-background, #ffffff)",
+                backgroundColor: "var(--theme-background, var(--theme-background))",
                 paddingTop: 60,
                 paddingBottom: 60,
             },
@@ -902,8 +902,8 @@ export const featureSectionTemplates = [
                             type: "Badge",
                             props: {
                                 text: "INDUSTRY SOLUTIONS",
-                                color: "var(--theme-secondary, #8b5cf6)",
-                                bgColor: "var(--theme-secondary-light, #faf5ff)",
+                                color: "var(--theme-secondary, var(--theme-primary))",
+                                bgColor: "var(--theme-secondary-light, var(--theme-background))",
                                 showPing: false
                             }
                         },
@@ -914,7 +914,7 @@ export const featureSectionTemplates = [
                                 text: "Purpose-Built for Your Industry",
                                 tag: "h2",
                                 align: "center",
-                                color: "var(--theme-text, #1f2937)",
+                                color: "var(--theme-text, var(--theme-text))",
                                 fontWeight: "700",
                                 size: "2xl"
                             }
@@ -951,8 +951,8 @@ export const featureSectionTemplates = [
                                 icon: "🛒",
                                 industry: "Retail & E-Commerce",
                                 description: "Omnichannel management, inventory sync, POS integration, customer loyalty programs, and unified analytics",
-                                backgroundColor: "var(--theme-background-alt, #f9fafb)",
-                                textColor: "var(--theme-text, #1f2937)",
+                                backgroundColor: "var(--theme-background-alt, var(--theme-background))",
+                                textColor: "var(--theme-text, var(--theme-text))",
                                 descColor: "var(--theme-text-secondary, #6b7280)",
                                 iconSize: "40",
                                 borderRadius: "12",
@@ -981,8 +981,8 @@ export const featureSectionTemplates = [
                                 icon: "🏥",
                                 industry: "Healthcare",
                                 description: "HIPAA-compliant patient records, EHR integration, telehealth scheduling, clinical workflows, and secure data analytics",
-                                backgroundColor: "var(--theme-background-alt, #f9fafb)",
-                                textColor: "var(--theme-text, #1f2937)",
+                                backgroundColor: "var(--theme-background-alt, var(--theme-background))",
+                                textColor: "var(--theme-text, var(--theme-text))",
                                 descColor: "var(--theme-text-secondary, #6b7280)",
                                 iconSize: "40",
                                 borderRadius: "12",
@@ -1011,8 +1011,8 @@ export const featureSectionTemplates = [
                                 icon: "🏦",
                                 industry: "Finance",
                                 description: "PCI-DSS payments, real-time reconciliation, compliance reporting, fraud detection, and transaction analytics",
-                                backgroundColor: "var(--theme-background-alt, #f9fafb)",
-                                textColor: "var(--theme-text, #1f2937)",
+                                backgroundColor: "var(--theme-background-alt, var(--theme-background))",
+                                textColor: "var(--theme-text, var(--theme-text))",
                                 descColor: "var(--theme-text-secondary, #6b7280)",
                                 iconSize: "40",
                                 borderRadius: "12",
@@ -1041,8 +1041,8 @@ export const featureSectionTemplates = [
                                 icon: "🎓",
                                 industry: "Education",
                                 description: "Learning management system, student engagement tracking, grade management, parent portals, and institutional reporting",
-                                backgroundColor: "var(--theme-background-alt, #f9fafb)",
-                                textColor: "var(--theme-text, #1f2937)",
+                                backgroundColor: "var(--theme-background-alt, var(--theme-background))",
+                                textColor: "var(--theme-text, var(--theme-text))",
                                 descColor: "var(--theme-text-secondary, #6b7280)",
                                 iconSize: "40",
                                 borderRadius: "12",
@@ -1071,8 +1071,8 @@ export const featureSectionTemplates = [
                                 icon: "🏭",
                                 industry: "Manufacturing",
                                 description: "Production planning, supply chain visibility, equipment tracking, maintenance scheduling, and quality assurance workflows",
-                                backgroundColor: "var(--theme-background-alt, #f9fafb)",
-                                textColor: "var(--theme-text, #1f2937)",
+                                backgroundColor: "var(--theme-background-alt, var(--theme-background))",
+                                textColor: "var(--theme-text, var(--theme-text))",
                                 descColor: "var(--theme-text-secondary, #6b7280)",
                                 iconSize: "40",
                                 borderRadius: "12",
@@ -1101,8 +1101,8 @@ export const featureSectionTemplates = [
                                 icon: "🏨",
                                 industry: "Hospitality",
                                 description: "Guest management, booking system integration, POS integration, housekeeping workflows, and customer loyalty programs",
-                                backgroundColor: "var(--theme-background-alt, #f9fafb)",
-                                textColor: "var(--theme-text, #1f2937)",
+                                backgroundColor: "var(--theme-background-alt, var(--theme-background))",
+                                textColor: "var(--theme-text, var(--theme-text))",
                                 descColor: "var(--theme-text-secondary, #6b7280)",
                                 iconSize: "40",
                                 borderRadius: "12",

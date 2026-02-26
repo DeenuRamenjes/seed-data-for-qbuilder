@@ -18,7 +18,7 @@ export const productSectionTemplates = [
             id: "product-listing-1",
             type: "Section",
             props: {
-                backgroundColor: "var(--theme-background, #ffffff)",
+                backgroundColor: "var(--theme-background, var(--theme-background))",
                 paddingTop: 60,
                 paddingBottom: 60,
             },
@@ -40,7 +40,7 @@ export const productSectionTemplates = [
                             type: "Badge",
                             props: {
                                 text: "OUR PRODUCTS",
-                                color: "var(--theme-primary, #6366f1)",
+                                color: "var(--theme-primary, var(--theme-primary))",
                                 bgColor: "var(--theme-primary-light, #eef2ff)",
                                 showPing: false
                             }
@@ -52,7 +52,7 @@ export const productSectionTemplates = [
                                 text: "Comprehensive Product Lineup",
                                 tag: "h2",
                                 align: "center",
-                                color: "var(--theme-text, #1f2937)",
+                                color: "var(--theme-text, var(--theme-text))",
                                 fontWeight: "700",
                                 size: "2xl"
                             }
@@ -87,7 +87,7 @@ export const productSectionTemplates = [
                             props: {
                                 heading: "Professional Suite",
                                 content: "Complete toolkit for enterprise teams with advanced analytics and reporting",
-                                headingColor: "var(--theme-primary, #6366f1)",
+                                headingColor: "var(--theme-primary, var(--theme-primary))",
                                 contentColor: "var(--theme-text-secondary, #6b7280)",
                             }
                         },
@@ -97,7 +97,7 @@ export const productSectionTemplates = [
                             props: {
                                 heading: "Starter Bundle",
                                 content: "Perfect for growing teams looking to streamline operations and improve efficiency",
-                                headingColor: "var(--theme-secondary, #8b5cf6)",
+                                headingColor: "var(--theme-secondary, var(--theme-primary))",
                                 contentColor: "var(--theme-text-secondary, #6b7280)",
                             }
                         },
@@ -107,7 +107,7 @@ export const productSectionTemplates = [
                             props: {
                                 heading: "Enterprise Solution",
                                 content: "Dedicated infrastructure with custom integrations and premium 24/7 support",
-                                headingColor: "var(--theme-accent, #f59e0b)",
+                                headingColor: "var(--theme-accent, var(--theme-primary))",
                                 contentColor: "var(--theme-text-secondary, #6b7280)",
                             }
                         }
@@ -130,7 +130,7 @@ export const productSectionTemplates = [
             id: "product-grid-1",
             type: "Section",
             props: {
-                backgroundColor: "var(--theme-background-alt, #f9fafb)",
+                backgroundColor: "var(--theme-background-alt, var(--theme-background))",
                 paddingTop: 60,
                 paddingBottom: 60,
             },
@@ -154,7 +154,7 @@ export const productSectionTemplates = [
                                 text: "Featured Products",
                                 tag: "h2",
                                 align: "center",
-                                color: "var(--theme-text, #1f2937)",
+                                color: "var(--theme-text, var(--theme-text))",
                                 fontWeight: "700",
                                 size: "2xl"
                             }
@@ -185,11 +185,11 @@ export const productSectionTemplates = [
                                 rating: 4.8,
                                 reviews: 256,
                                 badge: "BESTSELLER",
-                                badgeColor: "var(--theme-primary, #6366f1)",
+                                badgeColor: "var(--theme-primary, var(--theme-primary))",
                                 badgeBgColor: "var(--theme-primary-light, #eef2ff)",
-                                backgroundColor: "var(--theme-background, #ffffff)",
-                                textColor: "var(--theme-text, #1f2937)",
-                                priceColor: "var(--theme-primary, #6366f1)",
+                                backgroundColor: "var(--theme-background, var(--theme-background))",
+                                textColor: "var(--theme-text, var(--theme-text))",
+                                priceColor: "var(--theme-primary, var(--theme-primary))",
                                 borderRadius: "12",
                                 shadow: "md",
                                 hoverEffect: true
@@ -221,11 +221,11 @@ export const productSectionTemplates = [
                                 rating: 4.9,
                                 reviews: 189,
                                 badge: "POPULAR",
-                                badgeColor: "var(--theme-secondary, #8b5cf6)",
-                                badgeBgColor: "var(--theme-secondary-light, #faf5ff)",
-                                backgroundColor: "var(--theme-background, #ffffff)",
-                                textColor: "var(--theme-text, #1f2937)",
-                                priceColor: "var(--theme-secondary, #8b5cf6)",
+                                badgeColor: "var(--theme-secondary, var(--theme-primary))",
+                                badgeBgColor: "var(--theme-secondary-light, var(--theme-background))",
+                                backgroundColor: "var(--theme-background, var(--theme-background))",
+                                textColor: "var(--theme-text, var(--theme-text))",
+                                priceColor: "var(--theme-secondary, var(--theme-primary))",
                                 borderRadius: "12",
                                 shadow: "md",
                                 hoverEffect: true
@@ -257,11 +257,11 @@ export const productSectionTemplates = [
                                 rating: 5.0,
                                 reviews: 142,
                                 badge: "PREMIUM",
-                                badgeColor: "var(--theme-accent, #f59e0b)",
+                                badgeColor: "var(--theme-accent, var(--theme-primary))",
                                 badgeBgColor: "var(--theme-accent-light, #fffbeb)",
-                                backgroundColor: "var(--theme-background, #ffffff)",
-                                textColor: "var(--theme-text, #1f2937)",
-                                priceColor: "var(--theme-accent, #f59e0b)",
+                                backgroundColor: "var(--theme-background, var(--theme-background))",
+                                textColor: "var(--theme-text, var(--theme-text))",
+                                priceColor: "var(--theme-accent, var(--theme-primary))",
                                 borderRadius: "12",
                                 shadow: "md",
                                 hoverEffect: true
@@ -286,7 +286,7 @@ export const productSectionTemplates = [
             id: "product-highlights-1",
             type: "Section",
             props: {
-                backgroundColor: "var(--theme-background, #ffffff)",
+                backgroundColor: "var(--theme-background, var(--theme-background))",
                 paddingTop: 60,
                 paddingBottom: 60,
             },
@@ -310,7 +310,7 @@ export const productSectionTemplates = [
                                 text: "Why Choose Our Products",
                                 tag: "h2",
                                 align: "center",
-                                color: "var(--theme-text, #1f2937)",
+                                color: "var(--theme-text, var(--theme-text))",
                                 fontWeight: "700",
                                 size: "2xl"
                             }
@@ -337,7 +337,7 @@ export const productSectionTemplates = [
                                 icon: "🚀",
                                 title: "Fast Performance",
                                 description: "Lightning-fast load times and seamless user experience",
-                                backgroundColor: "var(--theme-background-alt, #f9fafb)",
+                                backgroundColor: "var(--theme-background-alt, var(--theme-background))",
                                 borderRadius: "12",
                                 shadow: "sm",
                                 iconBgColor: "var(--theme-primary-light, #eef2ff)",
@@ -366,10 +366,10 @@ export const productSectionTemplates = [
                                 icon: "🔒",
                                 title: "Secure & Reliable",
                                 description: "Enterprise-grade security with 99.99% uptime guarantee",
-                                backgroundColor: "var(--theme-background-alt, #f9fafb)",
+                                backgroundColor: "var(--theme-background-alt, var(--theme-background))",
                                 borderRadius: "12",
                                 shadow: "sm",
-                                iconBgColor: "var(--theme-secondary-light, #faf5ff)",
+                                iconBgColor: "var(--theme-secondary-light, var(--theme-background))",
                                 iconSize: "40"
                             }
                         }
@@ -395,7 +395,7 @@ export const productSectionTemplates = [
                                 icon: "👥",
                                 title: "Expert Support",
                                 description: "Dedicated support team available 24/7 for assistance",
-                                backgroundColor: "var(--theme-background-alt, #f9fafb)",
+                                backgroundColor: "var(--theme-background-alt, var(--theme-background))",
                                 borderRadius: "12",
                                 shadow: "sm",
                                 iconBgColor: "var(--theme-accent-light, #fffbeb)",
@@ -421,7 +421,7 @@ export const productSectionTemplates = [
             id: "product-details-1",
             type: "Section",
             props: {
-                backgroundColor: "var(--theme-background-alt, #f9fafb)",
+                backgroundColor: "var(--theme-background-alt, var(--theme-background))",
                 paddingTop: 60,
                 paddingBottom: 60,
             },
@@ -445,7 +445,7 @@ export const productSectionTemplates = [
                                 text: "Product Details",
                                 tag: "h2",
                                 align: "center",
-                                color: "var(--theme-text, #1f2937)",
+                                color: "var(--theme-text, var(--theme-text))",
                                 fontWeight: "700",
                                 size: "2xl"
                             }
@@ -480,9 +480,9 @@ export const productSectionTemplates = [
                             props: {
                                 title: "Core Capabilities",
                                 content: "Our product is built with cutting-edge technology to deliver exceptional performance, reliability, and scalability for organizations of all sizes.",
-                                backgroundColor: "var(--theme-background, #ffffff)",
-                                borderLeftColor: "var(--theme-primary, #6366f1)",
-                                titleColor: "var(--theme-text, #1f2937)",
+                                backgroundColor: "var(--theme-background, var(--theme-background))",
+                                borderLeftColor: "var(--theme-primary, var(--theme-primary))",
+                                titleColor: "var(--theme-text, var(--theme-text))",
                                 textColor: "var(--theme-text-secondary, #6b7280)",
                                 borderRadius: "12"
                             }
@@ -493,9 +493,9 @@ export const productSectionTemplates = [
                             props: {
                                 title: "Advanced Features",
                                 content: "Packed with powerful features including real-time analytics, custom reporting, API integrations, and advanced security protocols to meet your business needs.",
-                                backgroundColor: "var(--theme-background, #ffffff)",
-                                borderLeftColor: "var(--theme-secondary, #8b5cf6)",
-                                titleColor: "var(--theme-text, #1f2937)",
+                                backgroundColor: "var(--theme-background, var(--theme-background))",
+                                borderLeftColor: "var(--theme-secondary, var(--theme-primary))",
+                                titleColor: "var(--theme-text, var(--theme-text))",
                                 textColor: "var(--theme-text-secondary, #6b7280)",
                                 borderRadius: "12"
                             }
@@ -519,7 +519,7 @@ export const productSectionTemplates = [
             id: "product-specs-1",
             type: "Section",
             props: {
-                backgroundColor: "var(--theme-background-alt, #f9fafb)",
+                backgroundColor: "var(--theme-background-alt, var(--theme-background))",
                 paddingTop: 60,
                 paddingBottom: 60,
             },
@@ -541,7 +541,7 @@ export const productSectionTemplates = [
                             type: "Badge",
                             props: {
                                 text: "SPECIFICATIONS",
-                                color: "var(--theme-secondary, #8b5cf6)",
+                                color: "var(--theme-secondary, var(--theme-primary))",
                                 bgColor: "var(--theme-secondary-light, #ede9fe)",
                                 showPing: false
                             }
@@ -553,7 +553,7 @@ export const productSectionTemplates = [
                                 text: "Technical Specifications",
                                 tag: "h2",
                                 align: "center",
-                                color: "var(--theme-text, #1f2937)",
+                                color: "var(--theme-text, var(--theme-text))",
                                 fontWeight: "700",
                                 size: "2xl"
                             }
@@ -591,8 +591,8 @@ export const productSectionTemplates = [
                                 title: "High Performance",
                                 description: "Lightning-fast processing",
                                 features: ["99.9% Uptime", "Sub-millisecond Response", "Optimized Caching"],
-                                backgroundColor: "var(--theme-background, #ffffff)",
-                                accentColor: "var(--theme-primary, #6366f1)"
+                                backgroundColor: "var(--theme-background, var(--theme-background))",
+                                accentColor: "var(--theme-primary, var(--theme-primary))"
                             }
                         }
                     ]
@@ -618,7 +618,7 @@ export const productSectionTemplates = [
                                 title: "Enterprise Security",
                                 description: "Bank-level protection",
                                 features: ["AES-256 Encryption", "SOC 2 Compliant", "Regular Audits"],
-                                backgroundColor: "var(--theme-background, #ffffff)",
+                                backgroundColor: "var(--theme-background, var(--theme-background))",
                                 accentColor: "var(--theme-accent, #ec4899)"
                             }
                         }
@@ -645,8 +645,8 @@ export const productSectionTemplates = [
                                 title: "Scalability",
                                 description: "Grows with your business",
                                 features: ["Unlimited Storage", "Auto Scaling", "Load Balancing"],
-                                backgroundColor: "var(--theme-background, #ffffff)",
-                                accentColor: "var(--theme-secondary, #8b5cf6)"
+                                backgroundColor: "var(--theme-background, var(--theme-background))",
+                                accentColor: "var(--theme-secondary, var(--theme-primary))"
                             }
                         }
                     ]
@@ -668,7 +668,7 @@ export const productSectionTemplates = [
             id: "product-gallery-1",
             type: "Section",
             props: {
-                backgroundColor: "var(--theme-background-alt, #f9fafb)",
+                backgroundColor: "var(--theme-background-alt, var(--theme-background))",
                 paddingTop: 60,
                 paddingBottom: 60,
             },
@@ -696,8 +696,8 @@ export const productSectionTemplates = [
                                 ],
                                 title: "Product Gallery",
                                 description: "View our product in action",
-                                backgroundColor: "var(--theme-background-alt, #f9fafb)",
-                                textColor: "var(--theme-text, #1f2937)",
+                                backgroundColor: "var(--theme-background-alt, var(--theme-background))",
+                                textColor: "var(--theme-text, var(--theme-text))",
                                 autoPlay: true,
                                 autoPlayInterval: 4000
                             }
@@ -721,7 +721,7 @@ export const productSectionTemplates = [
             id: "product-comparison-1",
             type: "Section",
             props: {
-                backgroundColor: "var(--theme-background, #ffffff)",
+                backgroundColor: "var(--theme-background, var(--theme-background))",
                 paddingTop: 60,
                 paddingBottom: 60,
             },
@@ -755,7 +755,7 @@ export const productSectionTemplates = [
                                 text: "Why Choose Our Product",
                                 tag: "h2",
                                 align: "center",
-                                color: "var(--theme-text, #1f2937)",
+                                color: "var(--theme-text, var(--theme-text))",
                                 fontWeight: "700",
                                 size: "2xl"
                             }
@@ -795,7 +795,7 @@ export const productSectionTemplates = [
                                 features: ["Basic Support", "10K API Calls", "Single User", "Email Only"],
                                 buttonText: "Learn More",
                                 highlightBorder: false,
-                                highlightColor: "var(--theme-primary, #6366f1)"
+                                highlightColor: "var(--theme-primary, var(--theme-primary))"
                             }
                         }
                     ]
@@ -823,7 +823,7 @@ export const productSectionTemplates = [
                                 features: ["24/7 Chat Support", "Unlimited API Calls", "Team Collaboration", "Priority Support"],
                                 buttonText: "Get Started",
                                 highlightBorder: true,
-                                highlightColor: "var(--theme-secondary, #8b5cf6)"
+                                highlightColor: "var(--theme-secondary, var(--theme-primary))"
                             }
                         }
                     ]
@@ -851,7 +851,7 @@ export const productSectionTemplates = [
                                 features: ["Phone Support", "Unlimited API", "Multi-user", "Complex Setup"],
                                 buttonText: "Learn More",
                                 highlightBorder: false,
-                                highlightColor: "var(--theme-primary, #6366f1)"
+                                highlightColor: "var(--theme-primary, var(--theme-primary))"
                             }
                         }
                     ]
@@ -873,7 +873,7 @@ export const productSectionTemplates = [
             id: "product-roadmap-1",
             type: "Section",
             props: {
-                backgroundColor: "var(--theme-background-alt, #f9fafb)",
+                backgroundColor: "var(--theme-background-alt, var(--theme-background))",
                 paddingTop: 60,
                 paddingBottom: 60,
             },
@@ -897,7 +897,7 @@ export const productSectionTemplates = [
                                 text: "Product Roadmap",
                                 tag: "h2",
                                 align: "center",
-                                color: "var(--theme-text, #1f2937)",
+                                color: "var(--theme-text, var(--theme-text))",
                                 fontWeight: "700",
                                 size: "2xl"
                             }
@@ -951,9 +951,9 @@ export const productSectionTemplates = [
                                         features: ["White-label solution", "Advanced security", "Custom workflows"]
                                     }
                                 ],
-                                backgroundColor: "var(--theme-background, #ffffff)",
-                                textColor: "var(--theme-text, #1f2937)",
-                                accentColor: "var(--theme-primary, #6366f1)"
+                                backgroundColor: "var(--theme-background, var(--theme-background))",
+                                textColor: "var(--theme-text, var(--theme-text))",
+                                accentColor: "var(--theme-primary, var(--theme-primary))"
                             }
                         }
                     ]

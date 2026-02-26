@@ -21,7 +21,7 @@ export const teamSections = [
                         alignItems: "flex-start",
                         justifyContent: "flex-start",
                         padding: "60px 40px",
-                        backgroundColor: "#f9fafb"
+                        backgroundColor: "var(--theme-background)"
                     },
                     elements: [
                         {
@@ -31,7 +31,7 @@ export const teamSections = [
                                 text: "Meet Our Team",
                                 tag: "h2",
                                 align: "center",
-                                color: "var(--theme-text, #1f2937)",
+                                color: "var(--theme-text, var(--theme-text))",
                                 fontWeight: "700"
                             }
                         },
@@ -69,9 +69,9 @@ export const teamSections = [
                                             image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
                                             bio: "10+ years in tech leadership with a passion for innovation and building world-class teams",
                                             socialLinks: "linkedin:https://linkedin.com,twitter:https://twitter.com",
-                                            bgColor: "var(--theme-surface, #ffffff)",
-                                            nameColor: "var(--theme-text, #1f2937)",
-                                            titleColor: "var(--theme-primary, #dc2626)",
+                                            bgColor: "var(--theme-surface, var(--theme-background))",
+                                            nameColor: "var(--theme-text, var(--theme-text))",
+                                            titleColor: "var(--theme-primary, var(--theme-primary))",
                                             bioColor: "var(--theme-secondary-text, #6b7280)"
                                         }
                                     },
@@ -84,9 +84,9 @@ export const teamSections = [
                                             image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
                                             bio: "Full stack engineer & innovator building scalable cloud infrastructure solutions",
                                             socialLinks: "linkedin:https://linkedin.com,github:https://github.com",
-                                            bgColor: "var(--theme-surface, #ffffff)",
-                                            nameColor: "var(--theme-text, #1f2937)",
-                                            titleColor: "var(--theme-primary, #dc2626)",
+                                            bgColor: "var(--theme-surface, var(--theme-background))",
+                                            nameColor: "var(--theme-text, var(--theme-text))",
+                                            titleColor: "var(--theme-primary, var(--theme-primary))",
                                             bioColor: "var(--theme-secondary-text, #6b7280)"
                                         }
                                     },
@@ -99,9 +99,9 @@ export const teamSections = [
                                             image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop",
                                             bio: "UX/UI expert & creative lead designing beautiful digital experiences",
                                             socialLinks: "linkedin:https://linkedin.com,dribbble:https://dribbble.com",
-                                            bgColor: "var(--theme-surface, #ffffff)",
-                                            nameColor: "var(--theme-text, #1f2937)",
-                                            titleColor: "var(--theme-primary, #dc2626)",
+                                            bgColor: "var(--theme-surface, var(--theme-background))",
+                                            nameColor: "var(--theme-text, var(--theme-text))",
+                                            titleColor: "var(--theme-primary, var(--theme-primary))",
                                             bioColor: "var(--theme-secondary-text, #6b7280)"
                                         }
                                     },
@@ -114,9 +114,9 @@ export const teamSections = [
                                             image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop",
                                             bio: "Strategy and growth specialist optimizing operations and scaling the business",
                                             socialLinks: "linkedin:https://linkedin.com",
-                                            bgColor: "var(--theme-surface, #ffffff)",
-                                            nameColor: "var(--theme-text, #1f2937)",
-                                            titleColor: "var(--theme-primary, #dc2626)",
+                                            bgColor: "var(--theme-surface, var(--theme-background))",
+                                            nameColor: "var(--theme-text, var(--theme-text))",
+                                            titleColor: "var(--theme-primary, var(--theme-primary))",
                                             bioColor: "var(--theme-secondary-text, #6b7280)"
                                         }
                                     }
@@ -148,7 +148,7 @@ export const teamSections = [
                         alignItems: "center",
                         justifyContent: "center",
                         padding: "48px 20px md:60px md:40px lg:80px lg:60px",
-                        backgroundColor: "#f8fafc"
+                        backgroundColor: "var(--theme-border)"
                     },
                     elements: [
                         {
@@ -158,7 +158,7 @@ export const teamSections = [
                                 text: "Our Leadership",
                                 tag: "h2",
                                 align: "center",
-                                color: "var(--theme-text, #1f2937)",
+                                color: "var(--theme-text, var(--theme-text))",
                                 fontWeight: "700"
                             }
                         },
@@ -182,7 +182,7 @@ export const teamSections = [
                         alignItems: "flex-start",
                         justifyContent: "flex-start",
                         padding: "48px 20px md:60px md:40px lg:80px lg:60px",
-                        backgroundColor: "#ffffff"
+                        backgroundColor: "var(--theme-background)"
                     },
                     elements: [
                         {
@@ -207,9 +207,9 @@ export const teamSections = [
                                             phone: "+1 (555) 123-4567",
                                             socialLinks: "linkedin:https://linkedin.com,twitter:https://twitter.com",
                                             expertise: "Leadership,Strategy,Innovation,Vision",
-                                            bgColor: "#f0f9ff",
+                                            bgColor: "var(--theme-background)",
                                             accentColor: "#0284c7",
-                                            textColor: "var(--theme-text, #1f2937)",
+                                            textColor: "var(--theme-text, var(--theme-text))",
                                             secondaryTextColor: "var(--theme-secondary-text, #6b7280)"
                                         }
                                     },
@@ -227,7 +227,7 @@ export const teamSections = [
                                             expertise: "Cloud,Architecture,DevOps,AI/ML",
                                             bgColor: "#ecfdf5",
                                             accentColor: "#059669",
-                                            textColor: "var(--theme-text, #1f2937)",
+                                            textColor: "var(--theme-text, var(--theme-text))",
                                             secondaryTextColor: "var(--theme-secondary-text, #6b7280)"
                                         }
                                     },
@@ -245,7 +245,7 @@ export const teamSections = [
                                             expertise: "Product,Design,UX,User Research",
                                             bgColor: "#fef3c7",
                                             accentColor: "#d97706",
-                                            textColor: "var(--theme-text, #1f2937)",
+                                            textColor: "var(--theme-text, var(--theme-text))",
                                             secondaryTextColor: "var(--theme-secondary-text, #6b7280)"
                                         }
                                     },
@@ -262,8 +262,8 @@ export const teamSections = [
                                             socialLinks: "linkedin:https://linkedin.com",
                                             expertise: "Operations,Scaling,Process,Finance",
                                             bgColor: "#f3e8ff",
-                                            accentColor: "#a855f7",
-                                            textColor: "var(--theme-text, #1f2937)",
+                                            accentColor: "var(--theme-primary)",
+                                            textColor: "var(--theme-text, var(--theme-text))",
                                             secondaryTextColor: "var(--theme-secondary-text, #6b7280)"
                                         }
                                     }
@@ -295,7 +295,7 @@ export const teamSections = [
                         alignItems: "center",
                         justifyContent: "center",
                         padding: "60px 40px",
-                        backgroundColor: "#1f2937"
+                        backgroundColor: "var(--theme-text)"
                     },
                     elements: [
                         {
@@ -305,7 +305,7 @@ export const teamSections = [
                                 text: "Executive Leadership",
                                 tag: "h2",
                                 align: "center",
-                                color: "#ffffff",
+                                color: "var(--theme-background)",
                                 fontWeight: "700"
                             }
                         },
@@ -315,7 +315,7 @@ export const teamSections = [
                             props: {
                                 text: "Our experienced leadership team brings decades of combined expertise",
                                 align: "center",
-                                color: "#d1d5db",
+                                color: "var(--theme-border)",
                                 size: "base"
                             }
                         }
@@ -329,7 +329,7 @@ export const teamSections = [
                         alignItems: "flex-start",
                         justifyContent: "flex-start",
                         padding: "60px 40px",
-                        backgroundColor: "#f3f4f6"
+                        backgroundColor: "var(--theme-border)"
                     },
                     elements: [
                         {
@@ -352,10 +352,10 @@ export const teamSections = [
                                             image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
                                             department: "Executive",
                                             yearsInRole: "5",
-                                            bgColor: "var(--theme-surface, #ffffff)",
-                                            borderColor: "var(--theme-primary, #dc2626)",
+                                            bgColor: "var(--theme-surface, var(--theme-background))",
+                                            borderColor: "var(--theme-primary, var(--theme-primary))",
                                             levelBgColor: "var(--theme-primary-light, #fee2e2)",
-                                            levelTextColor: "var(--theme-primary, #dc2626)"
+                                            levelTextColor: "var(--theme-primary, var(--theme-primary))"
                                         }
                                     },
                                     {
@@ -368,10 +368,10 @@ export const teamSections = [
                                             image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
                                             department: "Engineering",
                                             yearsInRole: "4",
-                                            bgColor: "var(--theme-surface, #ffffff)",
-                                            borderColor: "var(--theme-primary, #dc2626)",
+                                            bgColor: "var(--theme-surface, var(--theme-background))",
+                                            borderColor: "var(--theme-primary, var(--theme-primary))",
                                             levelBgColor: "var(--theme-primary-light, #fee2e2)",
-                                            levelTextColor: "var(--theme-primary, #dc2626)"
+                                            levelTextColor: "var(--theme-primary, var(--theme-primary))"
                                         }
                                     },
                                     {
@@ -384,10 +384,10 @@ export const teamSections = [
                                             image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop",
                                             department: "Finance",
                                             yearsInRole: "3",
-                                            bgColor: "var(--theme-surface, #ffffff)",
-                                            borderColor: "var(--theme-primary, #dc2626)",
+                                            bgColor: "var(--theme-surface, var(--theme-background))",
+                                            borderColor: "var(--theme-primary, var(--theme-primary))",
                                             levelBgColor: "var(--theme-primary-light, #fee2e2)",
-                                            levelTextColor: "var(--theme-primary, #dc2626)"
+                                            levelTextColor: "var(--theme-primary, var(--theme-primary))"
                                         }
                                     }
                                 ]
@@ -405,7 +405,7 @@ export const teamSections = [
                                 text: "Department Heads",
                                 tag: "h3",
                                 align: "left",
-                                color: "var(--theme-text, #1f2937)",
+                                color: "var(--theme-text, var(--theme-text))",
                                 fontWeight: "600"
                             }
                         },
@@ -434,10 +434,10 @@ export const teamSections = [
                                             image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop",
                                             department: "Product",
                                             yearsInRole: "3",
-                                            bgColor: "var(--theme-surface, #ffffff)",
-                                            borderColor: "#10b981",
+                                            bgColor: "var(--theme-surface, var(--theme-background))",
+                                            borderColor: "var(--theme-primary)",
                                             levelBgColor: "#ecfdf5",
-                                            levelTextColor: "#10b981"
+                                            levelTextColor: "var(--theme-primary)"
                                         }
                                     },
                                     {
@@ -450,10 +450,10 @@ export const teamSections = [
                                             image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop",
                                             department: "Operations",
                                             yearsInRole: "2",
-                                            bgColor: "var(--theme-surface, #ffffff)",
-                                            borderColor: "#10b981",
+                                            bgColor: "var(--theme-surface, var(--theme-background))",
+                                            borderColor: "var(--theme-primary)",
                                             levelBgColor: "#ecfdf5",
-                                            levelTextColor: "#10b981"
+                                            levelTextColor: "var(--theme-primary)"
                                         }
                                     },
                                     {
@@ -466,10 +466,10 @@ export const teamSections = [
                                             image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
                                             department: "Sales",
                                             yearsInRole: "4",
-                                            bgColor: "var(--theme-surface, #ffffff)",
-                                            borderColor: "#10b981",
+                                            bgColor: "var(--theme-surface, var(--theme-background))",
+                                            borderColor: "var(--theme-primary)",
                                             levelBgColor: "#ecfdf5",
-                                            levelTextColor: "#10b981"
+                                            levelTextColor: "var(--theme-primary)"
                                         }
                                     },
                                     {
@@ -482,10 +482,10 @@ export const teamSections = [
                                             image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
                                             department: "Marketing",
                                             yearsInRole: "3",
-                                            bgColor: "var(--theme-surface, #ffffff)",
-                                            borderColor: "#10b981",
+                                            bgColor: "var(--theme-surface, var(--theme-background))",
+                                            borderColor: "var(--theme-primary)",
                                             levelBgColor: "#ecfdf5",
-                                            levelTextColor: "#10b981"
+                                            levelTextColor: "var(--theme-primary)"
                                         }
                                     }
                                 ]
@@ -516,7 +516,7 @@ export const teamSections = [
                         alignItems: "flex-start",
                         justifyContent: "flex-start",
                         padding: "60px 40px",
-                        backgroundColor: "#faf5ff"
+                        backgroundColor: "var(--theme-background)"
                     },
                     elements: [
                         {
@@ -526,7 +526,7 @@ export const teamSections = [
                                 text: "Board of Directors",
                                 tag: "h2",
                                 align: "center",
-                                color: "var(--theme-text, #1f2937)",
+                                color: "var(--theme-text, var(--theme-text))",
                                 fontWeight: "700"
                             }
                         },
@@ -565,9 +565,9 @@ export const teamSections = [
                                             specialization: "Finance & Investment",
                                             company: "Global Capital Partners",
                                             bio: "30+ years in venture capital and investment banking, having led multiple successful exits and IPOs",
-                                            bgColor: "var(--theme-surface, #ffffff)",
+                                            bgColor: "var(--theme-surface, var(--theme-background))",
                                             accentColor: "#7c3aed",
-                                            textColor: "var(--theme-text, #1f2937)"
+                                            textColor: "var(--theme-text, var(--theme-text))"
                                         }
                                     },
                                     {
@@ -580,9 +580,9 @@ export const teamSections = [
                                             specialization: "Technology",
                                             company: "Tech Innovations Inc",
                                             bio: "Former CTO at Fortune 500 tech companies, visionary in cloud infrastructure and AI",
-                                            bgColor: "var(--theme-surface, #ffffff)",
+                                            bgColor: "var(--theme-surface, var(--theme-background))",
                                             accentColor: "#7c3aed",
-                                            textColor: "var(--theme-text, #1f2937)"
+                                            textColor: "var(--theme-text, var(--theme-text))"
                                         }
                                     },
                                     {
@@ -595,9 +595,9 @@ export const teamSections = [
                                             specialization: "Operations",
                                             company: "Global Supply Solutions",
                                             bio: "25+ years in operations and supply chain management, expert in scaling global enterprises",
-                                            bgColor: "var(--theme-surface, #ffffff)",
+                                            bgColor: "var(--theme-surface, var(--theme-background))",
                                             accentColor: "#7c3aed",
-                                            textColor: "var(--theme-text, #1f2937)"
+                                            textColor: "var(--theme-text, var(--theme-text))"
                                         }
                                     }
                                 ]
@@ -628,7 +628,7 @@ export const teamSections = [
                         alignItems: "flex-start",
                         justifyContent: "flex-start",
                         padding: "60px 40px",
-                        backgroundColor: "#ffffff"
+                        backgroundColor: "var(--theme-background)"
                     },
                     elements: [
                         {
@@ -638,7 +638,7 @@ export const teamSections = [
                                 text: "Advisory Board",
                                 tag: "h2",
                                 align: "center",
-                                color: "var(--theme-text, #1f2937)",
+                                color: "var(--theme-text, var(--theme-text))",
                                 fontWeight: "700"
                             }
                         },
@@ -676,8 +676,8 @@ export const teamSections = [
                                             image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
                                             expertise: "AI/ML Strategy, Advanced Technology Architecture",
                                             bgColor: "#eff6ff",
-                                            accentColor: "#3b82f6",
-                                            textColor: "var(--theme-text, #1f2937)"
+                                            accentColor: "var(--theme-primary)",
+                                            textColor: "var(--theme-text, var(--theme-text))"
                                         }
                                     },
                                     {
@@ -689,8 +689,8 @@ export const teamSections = [
                                             image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
                                             expertise: "R&D, Product Innovation, Research Direction",
                                             bgColor: "#ecfdf5",
-                                            accentColor: "#10b981",
-                                            textColor: "var(--theme-text, #1f2937)"
+                                            accentColor: "var(--theme-primary)",
+                                            textColor: "var(--theme-text, var(--theme-text))"
                                         }
                                     },
                                     {
@@ -702,8 +702,8 @@ export const teamSections = [
                                             image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop",
                                             expertise: "Go-to-Market, Sales Strategy, Market Expansion",
                                             bgColor: "#fef3c7",
-                                            accentColor: "#f59e0b",
-                                            textColor: "var(--theme-text, #1f2937)"
+                                            accentColor: "var(--theme-primary)",
+                                            textColor: "var(--theme-text, var(--theme-text))"
                                         }
                                     },
                                     {
@@ -716,7 +716,7 @@ export const teamSections = [
                                             expertise: "Finance, Fundraising, Growth Planning",
                                             bgColor: "#fce7f3",
                                             accentColor: "#ec4899",
-                                            textColor: "var(--theme-text, #1f2937)"
+                                            textColor: "var(--theme-text, var(--theme-text))"
                                         }
                                     },
                                     {
@@ -727,9 +727,9 @@ export const teamSections = [
                                             title: "Operations",
                                             image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
                                             expertise: "Operations, Organizational Design, HR Strategy",
-                                            bgColor: "#f0fdf4",
-                                            accentColor: "#16a34a",
-                                            textColor: "var(--theme-text, #1f2937)"
+                                            bgColor: "var(--theme-background)",
+                                            accentColor: "var(--theme-primary)",
+                                            textColor: "var(--theme-text, var(--theme-text))"
                                         }
                                     }
                                 ]
@@ -761,7 +761,7 @@ export const teamSections = [
                         justifyContent: "center",
                         padding: "60px 40px",
                         backgroundColor: "#fef2f2",
-                        borderBottom: "4px solid #dc2626"
+                        borderBottom: "4px solid var(--theme-primary)"
                     },
                     elements: [
                         {
@@ -771,7 +771,7 @@ export const teamSections = [
                                 text: "We're Hiring!",
                                 tag: "h2",
                                 align: "center",
-                                color: "var(--theme-primary, #dc2626)",
+                                color: "var(--theme-primary, var(--theme-primary))",
                                 fontWeight: "700"
                             }
                         },
@@ -795,7 +795,7 @@ export const teamSections = [
                         alignItems: "flex-start",
                         justifyContent: "flex-start",
                         padding: "60px 40px",
-                        backgroundColor: "#ffffff"
+                        backgroundColor: "var(--theme-background)"
                     },
                     elements: [
                         {
@@ -819,9 +819,9 @@ export const teamSections = [
                                             description: "We're looking for experienced engineers to build our next-gen platform with modern tech stack. You'll work on scalable systems serving millions of users.",
                                             btnText: "Apply Now",
                                             btnLink: "/careers/senior-engineer",
-                                            bgColor: "var(--theme-surface, #ffffff)",
-                                            accentColor: "var(--theme-primary, #dc2626)",
-                                            textColor: "var(--theme-text, #1f2937)"
+                                            bgColor: "var(--theme-surface, var(--theme-background))",
+                                            accentColor: "var(--theme-primary, var(--theme-primary))",
+                                            textColor: "var(--theme-text, var(--theme-text))"
                                         }
                                     },
                                     {
@@ -835,9 +835,9 @@ export const teamSections = [
                                             description: "Lead product strategy and drive innovation across our platform. Shape the direction of our products and impact millions of customers.",
                                             btnText: "Apply Now",
                                             btnLink: "/careers/product-manager",
-                                            bgColor: "var(--theme-surface, #ffffff)",
-                                            accentColor: "var(--theme-primary, #dc2626)",
-                                            textColor: "var(--theme-text, #1f2937)"
+                                            bgColor: "var(--theme-surface, var(--theme-background))",
+                                            accentColor: "var(--theme-primary, var(--theme-primary))",
+                                            textColor: "var(--theme-text, var(--theme-text))"
                                         }
                                     },
                                     {
@@ -851,9 +851,9 @@ export const teamSections = [
                                             description: "Design beautiful and intuitive user experiences for our products. You'll collaborate with product and engineering to create delightful interfaces.",
                                             btnText: "Apply Now",
                                             btnLink: "/careers/designer",
-                                            bgColor: "var(--theme-surface, #ffffff)",
-                                            accentColor: "var(--theme-primary, #dc2626)",
-                                            textColor: "var(--theme-text, #1f2937)"
+                                            bgColor: "var(--theme-surface, var(--theme-background))",
+                                            accentColor: "var(--theme-primary, var(--theme-primary))",
+                                            textColor: "var(--theme-text, var(--theme-text))"
                                         }
                                     }
                                 ]
@@ -884,7 +884,7 @@ export const teamSections = [
                         alignItems: "flex-start",
                         justifyContent: "flex-start",
                         padding: "60px 40px",
-                        backgroundColor: "#f0fdf4"
+                        backgroundColor: "var(--theme-background)"
                     },
                     elements: [
                         {
@@ -894,7 +894,7 @@ export const teamSections = [
                                 text: "Our Culture",
                                 tag: "h2",
                                 align: "center",
-                                color: "var(--theme-text, #1f2937)",
+                                color: "var(--theme-text, var(--theme-text))",
                                 fontWeight: "700"
                             }
                         },
@@ -931,8 +931,8 @@ export const teamSections = [
                                             title: "Innovation",
                                             description: "We encourage bold ideas and creative solutions to complex problems",
                                             bgColor: "#ecfdf5",
-                                            accentColor: "#10b981",
-                                            textColor: "var(--theme-text, #1f2937)"
+                                            accentColor: "var(--theme-primary)",
+                                            textColor: "var(--theme-text, var(--theme-text))"
                                         }
                                     },
                                     {
@@ -943,8 +943,8 @@ export const teamSections = [
                                             title: "Collaboration",
                                             description: "Teamwork makes the dream work. We work together to achieve great results",
                                             bgColor: "#eff6ff",
-                                            accentColor: "#3b82f6",
-                                            textColor: "var(--theme-text, #1f2937)"
+                                            accentColor: "var(--theme-primary)",
+                                            textColor: "var(--theme-text, var(--theme-text))"
                                         }
                                     },
                                     {
@@ -955,8 +955,8 @@ export const teamSections = [
                                             title: "Excellence",
                                             description: "We set high standards and deliver quality in everything we do",
                                             bgColor: "#fef3c7",
-                                            accentColor: "#f59e0b",
-                                            textColor: "var(--theme-text, #1f2937)"
+                                            accentColor: "var(--theme-primary)",
+                                            textColor: "var(--theme-text, var(--theme-text))"
                                         }
                                     },
                                     {
@@ -968,7 +968,7 @@ export const teamSections = [
                                             description: "We act with honesty and transparency in all our dealings",
                                             bgColor: "#fce7f3",
                                             accentColor: "#ec4899",
-                                            textColor: "var(--theme-text, #1f2937)"
+                                            textColor: "var(--theme-text, var(--theme-text))"
                                         }
                                     }
                                 ]
@@ -999,7 +999,7 @@ export const teamSections = [
                         alignItems: "flex-start",
                         justifyContent: "flex-start",
                         padding: "60px 40px",
-                        backgroundColor: "#ffffff"
+                        backgroundColor: "var(--theme-background)"
                     },
                     elements: [
                         {
@@ -1009,7 +1009,7 @@ export const teamSections = [
                                 text: "Life at Our Company",
                                 tag: "h2",
                                 align: "center",
-                                color: "var(--theme-text, #1f2937)",
+                                color: "var(--theme-text, var(--theme-text))",
                                 fontWeight: "700"
                             }
                         },

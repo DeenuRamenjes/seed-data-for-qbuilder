@@ -17,7 +17,7 @@ export const textualSectionTemplates = [
             id: "about-std-1",
             type: "Section",
             props: {
-                backgroundColor: "var(--theme-background, #ffffff)",
+                backgroundColor: "var(--theme-background, var(--theme-background))",
                 paddingTop: "60px",
                 paddingBottom: "60px",
             },
@@ -38,7 +38,7 @@ export const textualSectionTemplates = [
                             type: "Badge",
                             props: {
                                 text: "WHO WE ARE",
-                                color: "var(--theme-primary, #6366f1)",
+                                color: "var(--theme-primary, var(--theme-primary))",
                                 bgColor: "var(--theme-primary-light, #eef2ff)",
                                 showPing: false
                             }
@@ -50,7 +50,7 @@ export const textualSectionTemplates = [
                                 text: "About Our Company",
                                 tag: "h2",
                                 align: "left",
-                                color: "var(--theme-text, #1f2937)",
+                                color: "var(--theme-text, var(--theme-text))",
                                 fontWeight: "700"
                             }
                         }
@@ -118,8 +118,8 @@ export const textualSectionTemplates = [
                                 link: "#",
                                 variant: "primary",
                                 size: "md",
-                                backgroundColor: "var(--theme-primary, #6366f1)",
-                                textColor: "#ffffff",
+                                backgroundColor: "var(--theme-primary, var(--theme-primary))",
+                                textColor: "var(--theme-text)",
                                 borderRadius: "8"
                             }
                         }
@@ -142,7 +142,7 @@ export const textualSectionTemplates = [
             id: "mission-vision-1",
             type: "Section",
             props: {
-                backgroundColor: "var(--theme-background-alt, #f9fafb)",
+                backgroundColor: "var(--theme-background-alt, var(--theme-background))",
                 paddingTop: "80px",
                 paddingBottom: "80px",
             },
@@ -163,7 +163,7 @@ export const textualSectionTemplates = [
                             type: "Badge",
                             props: {
                                 text: "OUR PURPOSE",
-                                color: "var(--theme-primary, #6366f1)",
+                                color: "var(--theme-primary, var(--theme-primary))",
                                 bgColor: "var(--theme-primary-light, #eef2ff)",
                                 showPing: false
                             }
@@ -175,7 +175,7 @@ export const textualSectionTemplates = [
                                 text: "Mission & Vision",
                                 tag: "h2",
                                 align: "center",
-                                color: "var(--theme-text, #1f2937)",
+                                color: "var(--theme-text, var(--theme-text))",
                                 fontWeight: "700"
                             }
                         }
@@ -190,7 +190,7 @@ export const textualSectionTemplates = [
                         justifyContent: "flex-start",
                         padding: "40px",
                         gap: "16px",
-                        backgroundColor: "var(--theme-background, #ffffff)",
+                        backgroundColor: "var(--theme-background, var(--theme-background))",
                         borderRadius: "12px",
                         marginBottom: "20px",
                         boxShadow: "0 1px 3px rgba(0,0,0,0.1)"
@@ -214,7 +214,7 @@ export const textualSectionTemplates = [
                                 text: "Our Mission",
                                 tag: "h3",
                                 align: "center",
-                                color: "var(--theme-text, #1f2937)",
+                                color: "var(--theme-text, var(--theme-text))",
                                 fontWeight: "700"
                             }
                         },
@@ -239,7 +239,7 @@ export const textualSectionTemplates = [
                         justifyContent: "flex-start",
                         padding: "40px",
                         gap: "16px",
-                        backgroundColor: "var(--theme-background, #ffffff)",
+                        backgroundColor: "var(--theme-background, var(--theme-background))",
                         borderRadius: "12px",
                         boxShadow: "0 1px 3px rgba(0,0,0,0.1)"
                     },
@@ -262,7 +262,7 @@ export const textualSectionTemplates = [
                                 text: "Our Vision",
                                 tag: "h3",
                                 align: "center",
-                                color: "var(--theme-text, #1f2937)",
+                                color: "var(--theme-text, var(--theme-text))",
                                 fontWeight: "700"
                             }
                         },
@@ -295,7 +295,7 @@ export const textualSectionTemplates = [
             id: "values-grid-1",
             type: "Section",
             props: {
-                backgroundColor: "var(--theme-background, #ffffff)",
+                backgroundColor: "var(--theme-background, var(--theme-background))",
                 paddingTop: "80px",
                 paddingBottom: "80px",
             },
@@ -316,7 +316,7 @@ export const textualSectionTemplates = [
                             type: "Badge",
                             props: {
                                 text: "CORE VALUES",
-                                color: "var(--theme-accent, #f59e0b)",
+                                color: "var(--theme-accent, var(--theme-primary))",
                                 bgColor: "var(--theme-accent-light, #fffbeb)",
                                 showPing: false
                             }
@@ -328,7 +328,7 @@ export const textualSectionTemplates = [
                                 text: "What Drives Us",
                                 tag: "h2",
                                 align: "center",
-                                color: "var(--theme-text, #1f2937)",
+                                color: "var(--theme-text, var(--theme-text))",
                                 fontWeight: "700"
                             }
                         },
@@ -376,7 +376,7 @@ export const textualSectionTemplates = [
                                 text: "Excellence",
                                 tag: "h4",
                                 align: "center",
-                                color: "var(--theme-text, #1f2937)",
+                                color: "var(--theme-text, var(--theme-text))",
                                 fontWeight: "700"
                             }
                         },
@@ -401,7 +401,7 @@ export const textualSectionTemplates = [
                         justifyContent: "flex-start",
                         padding: "32px 40px",
                         gap: "12px",
-                        backgroundColor: "var(--theme-secondary-light, #faf5ff)",
+                        backgroundColor: "var(--theme-secondary-light, var(--theme-background))",
                         borderRadius: "12px",
                         marginBottom: "16px",
                     },
@@ -424,7 +424,7 @@ export const textualSectionTemplates = [
                                 text: "Integrity",
                                 tag: "h4",
                                 align: "center",
-                                color: "var(--theme-text, #1f2937)",
+                                color: "var(--theme-text, var(--theme-text))",
                                 fontWeight: "700"
                             }
                         },
@@ -471,7 +471,7 @@ export const textualSectionTemplates = [
                                 text: "Innovation",
                                 tag: "h4",
                                 align: "center",
-                                color: "var(--theme-text, #1f2937)",
+                                color: "var(--theme-text, var(--theme-text))",
                                 fontWeight: "700"
                             }
                         },
@@ -504,7 +504,7 @@ export const textualSectionTemplates = [
             id: "story-timeline-1",
             type: "Section",
             props: {
-                backgroundColor: "var(--theme-background-alt, #f9fafb)",
+                backgroundColor: "var(--theme-background-alt, var(--theme-background))",
                 paddingTop: "80px",
                 paddingBottom: "80px",
             },
@@ -525,7 +525,7 @@ export const textualSectionTemplates = [
                             type: "Badge",
                             props: {
                                 text: "OUR JOURNEY",
-                                color: "var(--theme-primary, #6366f1)",
+                                color: "var(--theme-primary, var(--theme-primary))",
                                 bgColor: "var(--theme-primary-light, #eef2ff)",
                                 showPing: false
                             }
@@ -537,7 +537,7 @@ export const textualSectionTemplates = [
                                 text: "Our Story Over Time",
                                 tag: "h2",
                                 align: "center",
-                                color: "var(--theme-text, #1f2937)",
+                                color: "var(--theme-text, var(--theme-text))",
                                 fontWeight: "700"
                             }
                         }
@@ -552,7 +552,7 @@ export const textualSectionTemplates = [
                         justifyContent: "flex-start",
                         padding: "32px 40px",
                         marginBottom: "20px",
-                        borderLeft: "4px solid var(--theme-primary, #6366f1)",
+                        borderLeft: "4px solid var(--theme-primary, var(--theme-primary))",
                         gap: "8px",
                     },
                     elements: [
@@ -562,7 +562,7 @@ export const textualSectionTemplates = [
                             props: {
                                 text: "2020",
                                 color: "#fff",
-                                bgColor: "var(--theme-primary, #6366f1)",
+                                bgColor: "var(--theme-primary, var(--theme-primary))",
                                 showPing: false
                             }
                         },
@@ -573,7 +573,7 @@ export const textualSectionTemplates = [
                                 text: "Company Founded",
                                 tag: "h4",
                                 align: "left",
-                                color: "var(--theme-text, #1f2937)",
+                                color: "var(--theme-text, var(--theme-text))",
                                 fontWeight: "700"
                             }
                         },
@@ -598,7 +598,7 @@ export const textualSectionTemplates = [
                         justifyContent: "flex-start",
                         padding: "32px 40px",
                         marginBottom: "20px",
-                        borderLeft: "4px solid var(--theme-secondary, #8b5cf6)",
+                        borderLeft: "4px solid var(--theme-secondary, var(--theme-primary))",
                         gap: "8px",
                     },
                     elements: [
@@ -608,7 +608,7 @@ export const textualSectionTemplates = [
                             props: {
                                 text: "2022",
                                 color: "#fff",
-                                bgColor: "var(--theme-secondary, #8b5cf6)",
+                                bgColor: "var(--theme-secondary, var(--theme-primary))",
                                 showPing: false
                             }
                         },
@@ -619,7 +619,7 @@ export const textualSectionTemplates = [
                                 text: "Series A Funding",
                                 tag: "h4",
                                 align: "left",
-                                color: "var(--theme-text, #1f2937)",
+                                color: "var(--theme-text, var(--theme-text))",
                                 fontWeight: "700"
                             }
                         },
@@ -643,7 +643,7 @@ export const textualSectionTemplates = [
                         alignItems: "flex-start",
                         justifyContent: "flex-start",
                         padding: "32px 40px",
-                        borderLeft: "4px solid var(--theme-accent, #f59e0b)",
+                        borderLeft: "4px solid var(--theme-accent, var(--theme-primary))",
                         gap: "8px",
                     },
                     elements: [
@@ -653,7 +653,7 @@ export const textualSectionTemplates = [
                             props: {
                                 text: "2024",
                                 color: "#000",
-                                bgColor: "var(--theme-accent, #f59e0b)",
+                                bgColor: "var(--theme-accent, var(--theme-primary))",
                                 showPing: false
                             }
                         },
@@ -664,7 +664,7 @@ export const textualSectionTemplates = [
                                 text: "Market Leadership",
                                 tag: "h4",
                                 align: "left",
-                                color: "var(--theme-text, #1f2937)",
+                                color: "var(--theme-text, var(--theme-text))",
                                 fontWeight: "700"
                             }
                         },
@@ -697,7 +697,7 @@ export const textualSectionTemplates = [
             id: "founders-message-1",
             type: "Section",
             props: {
-                backgroundColor: "var(--theme-background, #ffffff)",
+                backgroundColor: "var(--theme-background, var(--theme-background))",
                 paddingTop: "80px",
                 paddingBottom: "80px",
             },
@@ -718,7 +718,7 @@ export const textualSectionTemplates = [
                             type: "Badge",
                             props: {
                                 text: "LEADERSHIP",
-                                color: "var(--theme-primary, #6366f1)",
+                                color: "var(--theme-primary, var(--theme-primary))",
                                 bgColor: "var(--theme-primary-light, #eef2ff)",
                                 showPing: false
                             }
@@ -730,7 +730,7 @@ export const textualSectionTemplates = [
                                 text: "A Message From Our Founder",
                                 tag: "h2",
                                 align: "center",
-                                color: "var(--theme-text, #1f2937)",
+                                color: "var(--theme-text, var(--theme-text))",
                                 fontWeight: "700"
                             }
                         }
@@ -780,7 +780,7 @@ export const textualSectionTemplates = [
                                 text: "Sarah Johnson, CEO & Founder",
                                 tag: "h3",
                                 align: "left",
-                                color: "var(--theme-text, #1f2937)",
+                                color: "var(--theme-text, var(--theme-text))",
                                 fontWeight: "700"
                             }
                         },
@@ -790,7 +790,7 @@ export const textualSectionTemplates = [
                             props: {
                                 text: "When I founded this company in 2020, I had a simple vision: to create solutions that make a real difference in people's lives. What started as a small team with big dreams has evolved into something far greater than I ever imagined.",
                                 align: "left",
-                                color: "var(--theme-text, #1f2937)",
+                                color: "var(--theme-text, var(--theme-text))",
                                 size: "base"
                             }
                         },
@@ -800,7 +800,7 @@ export const textualSectionTemplates = [
                             props: {
                                 text: "Every day, I'm humbled by the dedication of our team and the trust our customers place in us. We believe that success isn't just about growth metrics—it's about the positive impact we create. That philosophy guides every decision we make.",
                                 align: "left",
-                                color: "var(--theme-text, #1f2937)",
+                                color: "var(--theme-text, var(--theme-text))",
                                 size: "base"
                             }
                         },
@@ -822,8 +822,8 @@ export const textualSectionTemplates = [
                                 text: "Learn Our Story",
                                 variant: "primary",
                                 color: "#fff",
-                                bgColor: "var(--theme-primary, #6366f1)",
-                                hoverBgColor: "var(--theme-primary-dark, #4f46e5)",
+                                bgColor: "var(--theme-primary, var(--theme-primary))",
+                                hoverBgColor: "var(--theme-primary-dark, var(--theme-primary))",
                                 paddingX: 24,
                                 paddingY: 12,
                                 borderRadius: 8,
@@ -849,7 +849,7 @@ export const textualSectionTemplates = [
             id: "rich-text-1",
             type: "Section",
             props: {
-                backgroundColor: "var(--theme-background, #ffffff)",
+                backgroundColor: "var(--theme-background, var(--theme-background))",
                 paddingTop: "80px",
                 paddingBottom: "80px",
             },
@@ -870,8 +870,8 @@ export const textualSectionTemplates = [
                             type: "Badge",
                             props: {
                                 text: "INSIGHTS & ANALYSIS",
-                                color: "var(--theme-secondary, #8b5cf6)",
-                                bgColor: "var(--theme-secondary-light, #faf5ff)",
+                                color: "var(--theme-secondary, var(--theme-primary))",
+                                bgColor: "var(--theme-secondary-light, var(--theme-background))",
                                 showPing: false
                             }
                         },
@@ -882,7 +882,7 @@ export const textualSectionTemplates = [
                                 text: "Key Insights for Growth",
                                 tag: "h2",
                                 align: "center",
-                                color: "var(--theme-text, #1f2937)",
+                                color: "var(--theme-text, var(--theme-text))",
                                 fontWeight: "700"
                             }
                         }
@@ -905,7 +905,7 @@ export const textualSectionTemplates = [
                             props: {
                                 text: "The landscape of our industry is shifting rapidly. New technologies, changing consumer expectations, and global connectivity are reshaping how we operate, innovate, and deliver value.",
                                 align: "left",
-                                color: "var(--theme-text, #1f2937)",
+                                color: "var(--theme-text, var(--theme-text))",
                                 size: "lg",
                                 fontWeight: "600"
                             }
@@ -916,7 +916,7 @@ export const textualSectionTemplates = [
                             props: {
                                 text: "To stay ahead, businesses must embrace continuous learning and adaptation. Companies that prioritize innovation while maintaining customer focus will define the next era of success. Our research identifies three critical areas: technological advancement, human-centered design, and sustainable practices.",
                                 align: "left",
-                                color: "var(--theme-text, #1f2937)",
+                                color: "var(--theme-text, var(--theme-text))",
                                 size: "base"
                             }
                         },
@@ -925,7 +925,7 @@ export const textualSectionTemplates = [
                             type: "HighlightedBox",
                             props: {
                                 backgroundColor: "var(--theme-primary-light, #eef2ff)",
-                                borderLeftColor: "var(--theme-primary, #6366f1)",
+                                borderLeftColor: "var(--theme-primary, var(--theme-primary))",
                                 borderLeftWidth: "4px",
                                 padding: "32px",
                                 borderRadius: "8px",
@@ -938,7 +938,7 @@ export const textualSectionTemplates = [
                             props: {
                                 text: "The future belongs to those who can balance innovation with responsibility, ambition with empathy, and growth with sustainability. By understanding these key insights and taking decisive action, organizations can navigate uncertainty and unlock unprecedented opportunities.",
                                 align: "left",
-                                color: "var(--theme-text, #1f2937)",
+                                color: "var(--theme-text, var(--theme-text))",
                                 size: "base"
                             }
                         }
@@ -961,7 +961,7 @@ export const textualSectionTemplates = [
             id: "highlight-blocks-1",
             type: "Section",
             props: {
-                backgroundColor: "var(--theme-background-alt, #f9fafb)",
+                backgroundColor: "var(--theme-background-alt, var(--theme-background))",
                 paddingTop: "80px",
                 paddingBottom: "80px",
             },
@@ -982,7 +982,7 @@ export const textualSectionTemplates = [
                             type: "Badge",
                             props: {
                                 text: "KEY TAKEAWAYS",
-                                color: "var(--theme-accent, #f59e0b)",
+                                color: "var(--theme-accent, var(--theme-primary))",
                                 bgColor: "var(--theme-accent-light, #fffbeb)",
                                 showPing: false
                             }
@@ -994,7 +994,7 @@ export const textualSectionTemplates = [
                                 text: "What Makes Us Different",
                                 tag: "h2",
                                 align: "center",
-                                color: "var(--theme-text, #1f2937)",
+                                color: "var(--theme-text, var(--theme-text))",
                                 fontWeight: "700"
                             }
                         }
@@ -1011,7 +1011,7 @@ export const textualSectionTemplates = [
                         marginBottom: "20px",
                         backgroundColor: "var(--theme-primary-light, #eef2ff)",
                         borderLeftWidth: "4px",
-                        borderLeftColor: "var(--theme-primary, #6366f1)",
+                        borderLeftColor: "var(--theme-primary, var(--theme-primary))",
                         borderRadius: "8px",
                         gap: "12px",
                     },
@@ -1023,7 +1023,7 @@ export const textualSectionTemplates = [
                                 text: "Innovation First",
                                 tag: "h4",
                                 align: "left",
-                                color: "var(--theme-text, #1f2937)",
+                                color: "var(--theme-text, var(--theme-text))",
                                 fontWeight: "700"
                             }
                         },
@@ -1048,9 +1048,9 @@ export const textualSectionTemplates = [
                         justifyContent: "flex-start",
                         padding: "32px 40px",
                         marginBottom: "20px",
-                        backgroundColor: "var(--theme-secondary-light, #faf5ff)",
+                        backgroundColor: "var(--theme-secondary-light, var(--theme-background))",
                         borderLeftWidth: "4px",
-                        borderLeftColor: "var(--theme-secondary, #8b5cf6)",
+                        borderLeftColor: "var(--theme-secondary, var(--theme-primary))",
                         borderRadius: "8px",
                         gap: "12px",
                     },
@@ -1062,7 +1062,7 @@ export const textualSectionTemplates = [
                                 text: "Customer Obsessed",
                                 tag: "h4",
                                 align: "left",
-                                color: "var(--theme-text, #1f2937)",
+                                color: "var(--theme-text, var(--theme-text))",
                                 fontWeight: "700"
                             }
                         },
@@ -1088,7 +1088,7 @@ export const textualSectionTemplates = [
                         padding: "32px 40px",
                         backgroundColor: "var(--theme-accent-light, #fffbeb)",
                         borderLeftWidth: "4px",
-                        borderLeftColor: "var(--theme-accent, #f59e0b)",
+                        borderLeftColor: "var(--theme-accent, var(--theme-primary))",
                         borderRadius: "8px",
                         gap: "12px",
                     },
@@ -1100,7 +1100,7 @@ export const textualSectionTemplates = [
                                 text: "Impact Driven",
                                 tag: "h4",
                                 align: "left",
-                                color: "var(--theme-text, #1f2937)",
+                                color: "var(--theme-text, var(--theme-text))",
                                 fontWeight: "700"
                             }
                         },
@@ -1133,7 +1133,7 @@ export const textualSectionTemplates = [
             id: "company-overview-1",
             type: "Section",
             props: {
-                backgroundColor: "var(--theme-background, #ffffff)",
+                backgroundColor: "var(--theme-background, var(--theme-background))",
                 paddingTop: "80px",
                 paddingBottom: "80px",
             },
@@ -1154,7 +1154,7 @@ export const textualSectionTemplates = [
                             type: "Badge",
                             props: {
                                 text: "BY THE NUMBERS",
-                                color: "var(--theme-primary, #6366f1)",
+                                color: "var(--theme-primary, var(--theme-primary))",
                                 bgColor: "var(--theme-primary-light, #eef2ff)",
                                 showPing: false
                             }
@@ -1166,7 +1166,7 @@ export const textualSectionTemplates = [
                                 text: "Meet Our Organization",
                                 tag: "h2",
                                 align: "center",
-                                color: "var(--theme-text, #1f2937)",
+                                color: "var(--theme-text, var(--theme-text))",
                                 fontWeight: "700"
                             }
                         },
@@ -1191,7 +1191,7 @@ export const textualSectionTemplates = [
                         justifyContent: "center",
                         padding: "32px 40px",
                         marginBottom: "16px",
-                        backgroundColor: "var(--theme-background-alt, #f9fafb)",
+                        backgroundColor: "var(--theme-background-alt, var(--theme-background))",
                         borderRadius: "8px",
                         gap: "12px",
                     },
@@ -1203,7 +1203,7 @@ export const textualSectionTemplates = [
                                 text: "500+",
                                 tag: "h3",
                                 align: "center",
-                                color: "var(--theme-primary, #6366f1)",
+                                color: "var(--theme-primary, var(--theme-primary))",
                                 fontWeight: "700"
                             }
                         },
@@ -1213,7 +1213,7 @@ export const textualSectionTemplates = [
                             props: {
                                 text: "Talented Team Members",
                                 align: "center",
-                                color: "var(--theme-text, #1f2937)",
+                                color: "var(--theme-text, var(--theme-text))",
                                 size: "base",
                                 fontWeight: "600"
                             }
@@ -1229,7 +1229,7 @@ export const textualSectionTemplates = [
                         justifyContent: "center",
                         padding: "32px 40px",
                         marginBottom: "16px",
-                        backgroundColor: "var(--theme-background-alt, #f9fafb)",
+                        backgroundColor: "var(--theme-background-alt, var(--theme-background))",
                         borderRadius: "8px",
                         gap: "12px",
                     },
@@ -1241,7 +1241,7 @@ export const textualSectionTemplates = [
                                 text: "50+",
                                 tag: "h3",
                                 align: "center",
-                                color: "var(--theme-secondary, #8b5cf6)",
+                                color: "var(--theme-secondary, var(--theme-primary))",
                                 fontWeight: "700"
                             }
                         },
@@ -1251,7 +1251,7 @@ export const textualSectionTemplates = [
                             props: {
                                 text: "Countries Served",
                                 align: "center",
-                                color: "var(--theme-text, #1f2937)",
+                                color: "var(--theme-text, var(--theme-text))",
                                 size: "base",
                                 fontWeight: "600"
                             }
@@ -1267,7 +1267,7 @@ export const textualSectionTemplates = [
                         justifyContent: "center",
                         padding: "32px 40px",
                         marginBottom: "16px",
-                        backgroundColor: "var(--theme-background-alt, #f9fafb)",
+                        backgroundColor: "var(--theme-background-alt, var(--theme-background))",
                         borderRadius: "8px",
                         gap: "12px",
                     },
@@ -1279,7 +1279,7 @@ export const textualSectionTemplates = [
                                 text: "10,000+",
                                 tag: "h3",
                                 align: "center",
-                                color: "var(--theme-accent, #f59e0b)",
+                                color: "var(--theme-accent, var(--theme-primary))",
                                 fontWeight: "700"
                             }
                         },
@@ -1289,7 +1289,7 @@ export const textualSectionTemplates = [
                             props: {
                                 text: "Happy Customers",
                                 align: "center",
-                                color: "var(--theme-text, #1f2937)",
+                                color: "var(--theme-text, var(--theme-text))",
                                 size: "base",
                                 fontWeight: "600"
                             }
@@ -1304,7 +1304,7 @@ export const textualSectionTemplates = [
                         alignItems: "center",
                         justifyContent: "center",
                         padding: "32px 40px",
-                        backgroundColor: "var(--theme-background-alt, #f9fafb)",
+                        backgroundColor: "var(--theme-background-alt, var(--theme-background))",
                         borderRadius: "8px",
                         gap: "12px",
                     },
@@ -1316,7 +1316,7 @@ export const textualSectionTemplates = [
                                 text: "6+",
                                 tag: "h3",
                                 align: "center",
-                                color: "var(--theme-primary, #6366f1)",
+                                color: "var(--theme-primary, var(--theme-primary))",
                                 fontWeight: "700"
                             }
                         },
@@ -1326,7 +1326,7 @@ export const textualSectionTemplates = [
                             props: {
                                 text: "Years in Business",
                                 align: "center",
-                                color: "var(--theme-text, #1f2937)",
+                                color: "var(--theme-text, var(--theme-text))",
                                 size: "base",
                                 fontWeight: "600"
                             }

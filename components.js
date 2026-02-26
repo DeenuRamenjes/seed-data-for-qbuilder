@@ -7,7 +7,7 @@ const navbarComponent = {
         logoType: "text",
         logoText: "Red",
         logoAccent: "Scale",
-        accentColor: "#dc2626",
+        accentColor: "var(--theme-primary)",
         links: "Home|#home,Services|#services",
         ctaText: "Get Audit"
     },
@@ -38,8 +38,8 @@ const floatingNavbarComponent = {
         logoType: "text",
         logoText: "Tech",
         logoAccent: "Hub",
-        accentColor: "#D4F01E",
-        backgroundColor: "#FFFFFF",
+        accentColor: "var(--theme-primary)",
+        backgroundColor: "var(--theme-background)",
         floatingPadding: 24,
         borderRadius: 16,
         backdropBlur: true,
@@ -86,7 +86,7 @@ const headingComponent = {
     category: "text",
     name: "Heading",
     description: "Large title text",
-    defaultProps: { text: "Heading Text", tag: "h2", align: "left", color: "#1f2937", fontWeight: "700" },
+    defaultProps: { text: "Heading Text", tag: "h2", align: "left", color: "var(--theme-text)", fontWeight: "700" },
     editableProps: {
         text: { type: "string", label: "Text" },
         tag: { type: "select", label: "Size", options: ["h1", "h2", "h3", "h4", "h5", "h6"] },
@@ -101,7 +101,7 @@ const paragraphComponent = {
     category: "text",
     name: "Paragraph",
     description: "Multi-line text block",
-    defaultProps: { text: "Enter your paragraph text here.", align: "left", color: "#4b5563", size: "base" },
+    defaultProps: { text: "Enter your paragraph text here.", align: "left", color: "var(--theme-border)", size: "base" },
     editableProps: {
         text: { type: "rich-text", label: "Text" },
         align: { type: "select", label: "Alignment", options: ["left", "center", "right", "justify"] },
@@ -115,7 +115,7 @@ const buttonComponent = {
     category: "interactive",
     name: "Button",
     description: "Call to action button",
-    defaultProps: { text: "Click Me", variant: "primary", size: "md", link: "#", align: "left", backgroundColor: "#dc2626", textColor: "#ffffff", borderRadius: "8" },
+    defaultProps: { text: "Click Me", variant: "primary", size: "md", link: "#", align: "left", backgroundColor: "var(--theme-primary)", textColor: "var(--theme-text)", borderRadius: "8" },
     editableProps: {
         text: { type: "string", label: "Text" },
         link: { type: "link", label: "Link" },
@@ -178,7 +178,7 @@ const boxComponent = {
 //     category: "layout",
 //     name: "Feature Card",
 //     description: "Icon, title, and description card",
-//     defaultProps: { title: "Feature", description: "Detail...", iconName: "Zap", iconColor: "#dc2626" },
+//     defaultProps: { title: "Feature", description: "Detail...", iconName: "Zap", iconColor: "var(--theme-primary)" },
 //     editableProps: {
 //         title: { type: "string", label: "Title" },
 //         description: { type: "rich-text", label: "Description" },
@@ -209,7 +209,7 @@ const trackingInputComponent = {
         placeholder: "ENTER TRACKING ID",
         buttonText: "TRACK",
         accentColor: "#ed2626",
-        textColor: "#ffffff",
+        textColor: "var(--theme-text)",
         borderColor: "rgba(255,255,255,0.2)",
         iconName: "Package",
         showHelperText: true
@@ -239,7 +239,7 @@ const dividerComponent = {
     category: "layout",
     name: "Divider",
     description: "Horizontal line",
-    defaultProps: { style: "solid", color: "#e5e7eb", width: "100%", thickness: 1 },
+    defaultProps: { style: "solid", color: "var(--theme-border)", width: "100%", thickness: 1 },
     editableProps: {
         style: { type: "select", label: "Style", options: ["solid", "dashed", "dotted"] },
         color: { type: "color", label: "Color" },
@@ -257,7 +257,7 @@ const headlineComponent = {
         text: "THE HEADLINE",
         tag: "h1",
         align: "left",
-        color: "#111827",
+        color: "var(--theme-text)",
         gradient: ""
     },
     editableProps: {
@@ -274,7 +274,7 @@ const dashboardComponent = {
     category: "media",
     name: "Dashboard",
     description: "Interactive analytics dashboard visual",
-    defaultProps: { title: "Analytics Engine v4.0", accentColor: "#3B82F6", secondaryColor: "#A855F7" },
+    defaultProps: { title: "Analytics Engine v4.0", accentColor: "var(--theme-primary)", secondaryColor: "var(--theme-primary)" },
     editableProps: {
         title: { type: "string", label: "Title" },
         accentColor: { type: "color", label: "Accent Color" },
@@ -289,7 +289,7 @@ const socialProofComponent = {
     description: "Avatar stack with trust rating",
     defaultProps: {
         text: "Trusted by 2,000+ teams",
-        textColor: "#4b5563",
+        textColor: "var(--theme-border)",
         textSize: "sm",
         fontWeight: "600",
         showAvatars: true,
@@ -299,7 +299,7 @@ const socialProofComponent = {
     },
     editableProps: {
         text: { type: "string", label: "Text", default: "Trusted by 2,000+ teams", category: "content" },
-        textColor: { type: "color", label: "Text Color", default: "#4b5563", category: "styles" },
+        textColor: { type: "color", label: "Text Color", default: "var(--theme-border)", category: "styles" },
         textSize: { type: "select", label: "Text Size", options: ["xs", "sm", "base", "lg", "xl"], default: "sm", category: "styles" },
         fontWeight: { type: "select", label: "Font Weight", options: ["400", "500", "600", "700", "800"], default: "600", category: "styles" },
         showAvatars: { type: "boolean", label: "Show Avatars", default: true, category: "content" },
@@ -325,17 +325,17 @@ const createAccountComponent = {
         sectorOptions: "Asset Management,FinTech Startup,Investment Banking,Venture Capital",
         submitText: "Begin Onboarding",
         disclaimerText: "By proceeding, you agree to our Terms of Service and Privacy Policy.",
-        backgroundColor: "#0f172a",
+        backgroundColor: "var(--theme-text)",
         borderRadius: 8,
         shadow: "xl",
-        titleColor: "#FFFFFF",
-        descriptionColor: "#94a3b8",
-        labelColor: "#64748b",
+        titleColor: "var(--theme-background)",
+        descriptionColor: "var(--theme-border)",
+        labelColor: "var(--theme-border)",
         inputBgColor: "#020617",
         inputBorderColor: "#334155",
-        inputTextColor: "#FFFFFF",
-        buttonBgColor: "#3b82f6",
-        buttonTextColor: "#FFFFFF"
+        inputTextColor: "var(--theme-background)",
+        buttonBgColor: "var(--theme-primary)",
+        buttonTextColor: "var(--theme-background)"
     },
     editableProps: {
         title: { type: "string", label: "Form Title", default: "Create an Account", category: "content" },
@@ -348,15 +348,15 @@ const createAccountComponent = {
         sectorOptions: { type: "string", label: "Sector Options (comma-separated)", default: "Asset Management,FinTech Startup,Investment Banking,Venture Capital", category: "content" },
         submitText: { type: "string", label: "Submit Button Text", default: "Begin Onboarding", category: "content" },
         disclaimerText: { type: "string", label: "Disclaimer Text", default: "By proceeding, you agree to our Terms of Service and Privacy Policy.", category: "content" },
-        titleColor: { type: "color", label: "Title Color", default: "#FFFFFF", category: "styles" },
-        descriptionColor: { type: "color", label: "Description Color", default: "#94a3b8", category: "styles" },
-        labelColor: { type: "color", label: "Label Color", default: "#64748b", category: "styles" },
+        titleColor: { type: "color", label: "Title Color", default: "var(--theme-background)", category: "styles" },
+        descriptionColor: { type: "color", label: "Description Color", default: "var(--theme-border)", category: "styles" },
+        labelColor: { type: "color", label: "Label Color", default: "var(--theme-border)", category: "styles" },
         inputBgColor: { type: "color", label: "Input Background", default: "#020617", category: "styles" },
         inputBorderColor: { type: "color", label: "Input Border Color", default: "#334155", category: "styles" },
-        inputTextColor: { type: "color", label: "Input Text Color", default: "#FFFFFF", category: "styles" },
-        buttonBgColor: { type: "color", label: "Button Background", default: "#3b82f6", category: "styles" },
-        buttonTextColor: { type: "color", label: "Button Text Color", default: "#FFFFFF", category: "styles" },
-        backgroundColor: { type: "color", label: "Form Background", default: "#0f172a", category: "styles" },
+        inputTextColor: { type: "color", label: "Input Text Color", default: "var(--theme-background)", category: "styles" },
+        buttonBgColor: { type: "color", label: "Button Background", default: "var(--theme-primary)", category: "styles" },
+        buttonTextColor: { type: "color", label: "Button Text Color", default: "var(--theme-background)", category: "styles" },
+        backgroundColor: { type: "color", label: "Form Background", default: "var(--theme-text)", category: "styles" },
         borderRadius: { type: "number", label: "Border Radius", default: 8, category: "styles" },
         shadow: { type: "select", label: "Shadow", options: ["none", "sm", "md", "lg", "xl", "2xl"], default: "xl", category: "styles" }
     }
@@ -371,9 +371,9 @@ const sidebarCardsComponent = {
         sidebarTitle: "Components",
         sidebarDescription: "Hover over each card to reveal more details.",
         sidebarImage: "",
-        primaryColor: "#6366f1",
+        primaryColor: "var(--theme-primary)",
         textColor: "#0f0f12",
-        darkTextColor: "#ffffff",
+        darkTextColor: "var(--theme-background)",
         subtextColor: "#333333",
         darkSubtextColor: "#cccccc",
         cards: [
@@ -418,10 +418,10 @@ const imageWithFeaturesComponent = {
         title: "Main",
         titleHighlight: "Section",
         description: "Description text goes here.",
-        primaryColor: "#6366f1",
+        primaryColor: "var(--theme-primary)",
         accentLightColor: "rgba(99, 102, 241, 0.1)",
         textColor: "#0f0f12",
-        darkTextColor: "#ffffff",
+        darkTextColor: "var(--theme-background)",
         subtextColor: "#333333",
         darkSubtextColor: "#cccccc",
         features: [
@@ -463,9 +463,9 @@ const horizontalCarouselComponent = {
     description: "Horizontally scrolling carousel with navigation arrows and overlay text",
     defaultProps: {
         title: "Featured Items",
-        primaryColor: "#6366f1",
+        primaryColor: "var(--theme-primary)",
         textColor: "#0f0f12",
-        darkTextColor: "#ffffff",
+        darkTextColor: "var(--theme-background)",
         subtextColor: "#333333",
         darkSubtextColor: "#cccccc",
         items: [
@@ -476,7 +476,8 @@ const horizontalCarouselComponent = {
                 description: "Item description goes here."
             }
         ],
-        showNavigation: true
+        showNavigation: true,
+        backgroundColor: "var(--theme-background)"
     },
     editableProps: {
         title: { type: "string", label: "Section Title", category: "content" },
@@ -485,6 +486,7 @@ const horizontalCarouselComponent = {
         darkTextColor: { type: "color", label: "Dark Text Color", category: "styles" },
         subtextColor: { type: "color", label: "Subtext Color", category: "styles" },
         darkSubtextColor: { type: "color", label: "Dark Subtext Color", category: "styles" },
+        backgroundColor: { type: "color", label: "Background Color", category: "styles" },
         items: {
             type: "array-of-objects",
             label: "Carousel Items",
@@ -507,7 +509,7 @@ const techNovaContactFormComponent = {
     description: "Full-featured contact section with left side info and right side contact form",
     defaultProps: {
         // Section
-        backgroundColor: "#ffffff",
+        backgroundColor: "var(--theme-background)",
         darkBackgroundColor: "#0a0a0c",
         paddingY: 80,
         paddingX: 48,
@@ -516,9 +518,9 @@ const techNovaContactFormComponent = {
         leftTitle: "Direct Access",
         leftTitleHighlight: "To Experts",
         leftDescription: "Get immediate assistance from our support team. Our experts are ready to help you build something amazing.",
-        leftBgColor: "#000000",
-        leftTextColor: "#ffffff",
-        leftSubtextColor: "#ffffff",
+        leftBgColor: "var(--theme-text)",
+        leftTextColor: "var(--theme-background)",
+        leftSubtextColor: "var(--theme-text)",
         cardBgColor: "rgba(0, 0, 0, 0.6)",
         cardBorderColor: "rgba(255, 255, 255, 0.15)",
 
@@ -555,10 +557,10 @@ const techNovaContactFormComponent = {
         // Form
         formBgColor: "#f8f9fa",
         darkFormBgColor: "#1a1a2e",
-        primaryColor: "#6366f1",
-        textColor: "#000000",
-        darkTextColor: "#ffffff",
-        borderColor: "#e2e8f0",
+        primaryColor: "var(--theme-primary)",
+        textColor: "var(--theme-text)",
+        darkTextColor: "var(--theme-background)",
+        borderColor: "var(--theme-border)",
         darkBorderColor: "#404060",
 
         // Form content
@@ -570,11 +572,7 @@ const techNovaContactFormComponent = {
         namePlaceholder: "John Doe",
         emailPlaceholder: "john@example.com",
         messagePlaceholder: "Tell us about your project...",
-        submitButtonText: "Send Message",
-        apiEndpoint: "",
-        googleSheetUrl: "",
-        successMessage: "Your message has been sent. We'll be in touch soon!",
-        errorMessage: "Something went wrong. Please try again."
+        submitButtonText: "Send Message"
     },
     editableProps: {
         // Section styling
@@ -636,11 +634,7 @@ const techNovaContactFormComponent = {
         namePlaceholder: { type: "string", label: "Name Placeholder", category: "content" },
         emailPlaceholder: { type: "string", label: "Email Placeholder", category: "content" },
         messagePlaceholder: { type: "string", label: "Message Placeholder", category: "content" },
-        submitButtonText: { type: "string", label: "Submit Button Text", category: "content" },
-        apiEndpoint: { type: "url", label: "API Endpoint URL", category: "content" },
-        googleSheetUrl: { type: "url", label: "Google Sheet URL", category: "content" },
-        successMessage: { type: "string", label: "Success Message", category: "content", typography: false },
-        errorMessage: { type: "string", label: "Error Message", category: "content", typography: false }
+        submitButtonText: { type: "string", label: "Submit Button Text", category: "content" }
     }
 };
 
@@ -670,10 +664,10 @@ export const components = [
             secondaryText: "Live Demo",
             primaryLink: "",
             secondaryLink: "",
-            primaryBg: "linear-gradient(to right, #3B82F6, #A855F7)",
-            primaryColor: "#ffffff",
-            secondaryBg: "#ffffff",
-            secondaryColor: "#000000",
+            primaryBg: "linear-gradient(to right, var(--theme-primary), var(--theme-primary))",
+            primaryColor: "var(--theme-background)",
+            secondaryBg: "var(--theme-background)",
+            secondaryColor: "var(--theme-text)",
             primaryBorderRadius: "16",
             secondaryBorderRadius: "16",
             fontSize: "base",
@@ -688,11 +682,11 @@ export const components = [
             secondaryText: { type: "string", label: "Secondary Button Text", default: "Live Demo", category: "content" },
             primaryLink: { type: "link", label: "Primary Button Link", category: "content" },
             secondaryLink: { type: "link", label: "Secondary Button Link", category: "content" },
-            primaryBg: { type: "color", label: "Primary Button Background", default: "#3B82F6", category: "styles" },
-            primaryColor: { type: "color", label: "Primary Button Text Color", default: "#ffffff", category: "styles" },
+            primaryBg: { type: "color", label: "Primary Button Background", default: "var(--theme-primary)", category: "styles" },
+            primaryColor: { type: "color", label: "Primary Button Text Color", default: "var(--theme-background)", category: "styles" },
             primaryBorderRadius: { type: "select", label: "Primary Border Radius", options: ["0", "4", "8", "12", "16", "20", "24", "9999"], default: "16", category: "styles" },
-            secondaryBg: { type: "color", label: "Secondary Button Background", default: "#ffffff", category: "styles" },
-            secondaryColor: { type: "color", label: "Secondary Button Text Color", default: "#000000", category: "styles" },
+            secondaryBg: { type: "color", label: "Secondary Button Background", default: "var(--theme-background)", category: "styles" },
+            secondaryColor: { type: "color", label: "Secondary Button Text Color", default: "var(--theme-text)", category: "styles" },
             secondaryBorderRadius: { type: "select", label: "Secondary Border Radius", options: ["0", "4", "8", "12", "16", "20", "24", "9999"], default: "16", category: "styles" },
             fontSize: { type: "select", label: "Font Size", options: ["xs", "sm", "base", "lg", "xl", "2xl"], default: "base", category: "styles" },
             fontWeight: { type: "select", label: "Font Weight", options: ["400", "500", "600", "700", "800", "900"], default: "700", category: "styles" },
@@ -712,11 +706,11 @@ export const components = [
         defaultProps: {
             title: "Comparison Title",
             features: [
-                { icon: "CheckCircle", title: "Feature 1", description: "Description 1", iconColor: "#10b981" }
+                { icon: "CheckCircle", title: "Feature 1", description: "Description 1", iconColor: "var(--theme-primary)" }
             ],
-            backgroundColor: "#ffffff",
+            backgroundColor: "var(--theme-background)",
             borderTopWidth: 4,
-            borderTopColor: "#10b981",
+            borderTopColor: "var(--theme-primary)",
             borderRadius: 24,
             shadow: "md"
         },
@@ -749,18 +743,18 @@ export const components = [
             avatarUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuDX2pANZHrZMJH6Kly3wkuq3zOEWt4Exf9m5qHO0sjL1UZ2_jQiVP1aVfeCFzBObKPqWWQUIU8-_tQy4vfVNnkpeaApuDXpFXAi2q0ynKyFHvb0NgXgozmskHTS6ELx-t8jXM5nrpTt0Nh4-kUyMbBewvsaYG2IDqpIt2DF7g_9chlbDl0Js8kt82roXLRfGadtdIx6sdM3yJauWwO2jg15Dd4GgPIP3YWB5OkyvGBIpnejVzrc4wlXp4bCDlTaqd6_-CWXBIUwrOI",
             countText: "+5k",
             countBg: "#9A3412",
-            countColor: "#FFFFFF",
+            countColor: "var(--theme-background)",
             supportText: "Joined by 5,400+ active community heroes",
-            textColor: "#FFFFFF",
+            textColor: "var(--theme-text)",
             textOpacity: "70"
         },
         editableProps: {
             avatarUrl: { type: "url", label: "Avatar Image URL", default: "", category: "content" },
             countText: { type: "string", label: "Count Badge Text", default: "+5k", category: "content" },
             countBg: { type: "color", label: "Count Badge Background", default: "#9A3412", category: "styles" },
-            countColor: { type: "color", label: "Count Badge Text Color", default: "#FFFFFF", category: "styles" },
+            countColor: { type: "color", label: "Count Badge Text Color", default: "var(--theme-background)", category: "styles" },
             supportText: { type: "string", label: "Support Text", default: "Joined by 5,400+ active community heroes", category: "content" },
-            textColor: { type: "color", label: "Text Color", default: "#FFFFFF", category: "styles" },
+            textColor: { type: "color", label: "Text Color", default: "var(--theme-background)", category: "styles" },
             textOpacity: { type: "select", label: "Text Opacity", options: ["50", "60", "70", "80", "90"], default: "70", category: "styles" }
         }
     },
@@ -771,28 +765,28 @@ export const components = [
         description: "Donation form with amount selection, custom input, and progress tracking",
         defaultProps: {
             title: "Make an Impact",
-            titleColor: "#FFFFFF",
+            titleColor: "var(--theme-background)",
             titleIcon: "volunteer_activism",
             amounts: "25,50,100",
             selectedAmount: "50",
             amountColor: "#D9480F",
-            amountTextColor: "#FFFFFF",
+            amountTextColor: "var(--theme-background)",
             amountHoverBg: "rgba(217, 72, 15, 0.2)",
             customPlaceholder: "Custom Amount",
-            customInputBg: "#ffffff",
+            customInputBg: "var(--theme-background)",
             customInputOpacity: "5",
-            customInputBorderColor: "#ffffff",
-            customInputTextColor: "#FFFFFF",
+            customInputBorderColor: "var(--theme-background)",
+            customInputTextColor: "var(--theme-background)",
             customInputBorderOpacity: "10",
             buttonText: "Donate Now",
             buttonBg: "#D9480F",
             buttonHoverBg: "#B83A0A",
-            buttonTextColor: "#FFFFFF",
+            buttonTextColor: "var(--theme-background)",
             buttonIcon: "arrow_forward",
             securityText: "Secure payment powered by Stripe",
             campaignGoalText: "Campaign Goal",
             campaignAmount: "$500,000",
-            campaignAmountColor: "#F59E0B",
+            campaignAmountColor: "var(--theme-primary)",
             goalProgressPercent: 72,
             progressBarBg: "rgba(255, 255, 255, 0.05)",
             progressBarFill: "#D9480F",
@@ -804,23 +798,23 @@ export const components = [
         },
         editableProps: {
             title: { type: "string", label: "Form Title", default: "Make an Impact", category: "content" },
-            titleColor: { type: "color", label: "Title Color", default: "#FFFFFF", category: "styles" },
+            titleColor: { type: "color", label: "Title Color", default: "var(--theme-background)", category: "styles" },
             titleIcon: { type: "string", label: "Title Icon (Material Symbol)", default: "volunteer_activism", category: "content" },
             amounts: { type: "string", label: "Amount Options (comma-separated)", default: "25,50,100", category: "content" },
             selectedAmount: { type: "string", label: "Default Selected Amount", default: "50", category: "content" },
             amountColor: { type: "color", label: "Amount Button Color", default: "#D9480F", category: "styles" },
-            amountTextColor: { type: "color", label: "Amount Button Text Color", default: "#FFFFFF", category: "styles" },
+            amountTextColor: { type: "color", label: "Amount Button Text Color", default: "var(--theme-background)", category: "styles" },
             customPlaceholder: { type: "string", label: "Custom Amount Placeholder", default: "Custom Amount", category: "content" },
-            customInputBg: { type: "color", label: "Input Background", default: "#ffffff", category: "styles" },
+            customInputBg: { type: "color", label: "Input Background", default: "var(--theme-background)", category: "styles" },
             customInputOpacity: { type: "select", label: "Input Opacity %", options: ["5", "10", "15", "20"], default: "5", category: "styles" },
             buttonText: { type: "string", label: "Button Text", default: "Donate Now", category: "content" },
             buttonBg: { type: "color", label: "Button Background", default: "#D9480F", category: "styles" },
             buttonHoverBg: { type: "color", label: "Button Hover Background", default: "#B83A0A", category: "styles" },
-            buttonTextColor: { type: "color", label: "Button Text Color", default: "#FFFFFF", category: "styles" },
+            buttonTextColor: { type: "color", label: "Button Text Color", default: "var(--theme-background)", category: "styles" },
             securityText: { type: "string", label: "Security Text", default: "Secure payment powered by Stripe", category: "content" },
             campaignGoalText: { type: "string", label: "Goal Label", default: "Campaign Goal", category: "content" },
             campaignAmount: { type: "string", label: "Campaign Amount", default: "$500,000", category: "content" },
-            campaignAmountColor: { type: "color", label: "Amount Text Color", default: "#F59E0B", category: "styles" },
+            campaignAmountColor: { type: "color", label: "Amount Text Color", default: "var(--theme-primary)", category: "styles" },
             goalProgressPercent: { type: "number", label: "Progress Percent", default: 72, category: "content" },
             goalProgressText: { type: "string", label: "Progress Text", default: "72% of our harvest goal reached. Help us bridge the gap.", category: "content" },
             backgroundColor: { type: "color", label: "Card Background", default: "rgba(45, 27, 20, 0.85)", category: "styles" },
@@ -837,12 +831,12 @@ export const components = [
     //         iconColor: "#D9480F",
     //         iconBg: "rgba(217, 72, 15, 0.2)",
     //         badge: "+12k",
-    //         badgeColor: "#F59E0B",
+    //         badgeColor: "var(--theme-primary)",
     //         badgeBg: "rgba(245, 158, 11, 0.1)",
     //         statLabel: "Lives Touched",
     //         labelColor: "rgba(255, 255, 255, 0.5)",
     //         statValue: "50k+",
-    //         statValueColor: "#FFFFFF",
+    //         statValueColor: "var(--theme-background)",
     //         backgroundColor: "rgba(154, 52, 18, 0.2)",
     //         borderColor: "rgba(255, 255, 255, 0.1)",
     //         borderRadius: "12"
@@ -852,12 +846,12 @@ export const components = [
     //         iconColor: { type: "color", label: "Icon Color", default: "#D9480F", category: "styles" },
     //         iconBg: { type: "color", label: "Icon Background", default: "rgba(217, 72, 15, 0.2)", category: "styles" },
     //         badge: { type: "string", label: "Badge Text", default: "+12k", category: "content" },
-    //         badgeColor: { type: "color", label: "Badge Text Color", default: "#F59E0B", category: "styles" },
+    //         badgeColor: { type: "color", label: "Badge Text Color", default: "var(--theme-primary)", category: "styles" },
     //         badgeBg: { type: "color", label: "Badge Background", default: "rgba(245, 158, 11, 0.1)", category: "styles" },
     //         statLabel: { type: "string", label: "Stat Label", default: "Lives Touched", category: "content" },
     //         labelColor: { type: "color", label: "Label Color", default: "rgba(255, 255, 255, 0.5)", category: "styles" },
     //         statValue: { type: "string", label: "Stat Value", default: "50k+", category: "content" },
-    //         statValueColor: { type: "color", label: "Value Color", default: "#FFFFFF", category: "styles" },
+    //         statValueColor: { type: "color", label: "Value Color", default: "var(--theme-background)", category: "styles" },
     //         backgroundColor: { type: "color", label: "Card Background", default: "rgba(154, 52, 18, 0.2)", category: "styles" },
     //         borderColor: { type: "color", label: "Border Color", default: "rgba(255, 255, 255, 0.1)", category: "styles" },
     //         borderRadius: { type: "select", label: "Border Radius", options: ["8", "12", "16", "20", "24", "32"], default: "12", category: "styles" }
@@ -985,8 +979,8 @@ export const components = [
             description: "Audio description",
             audioUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
             duration: "0:00",
-            backgroundColor: "#ffffff",
-            accentColor: "#6366f1",
+            backgroundColor: "var(--theme-background)",
+            accentColor: "var(--theme-primary)",
             borderRadius: "12",
             shadow: "md"
         },
@@ -1014,7 +1008,7 @@ export const components = [
             heading: "",
             text: "Your rich text content here...",
             align: "left",
-            color: "#1f2937",
+            color: "var(--theme-text)",
             fontSize: "base",
             fontWeight: "400",
             lineHeight: "1.6"
@@ -1041,11 +1035,11 @@ export const components = [
         defaultProps: {
             content: "Highlighted content goes here",
             backgroundColor: "#eef2ff",
-            borderColor: "#6366f1",
+            borderColor: "var(--theme-primary)",
             borderWidth: 2,
             borderRadius: 12,
             padding: 32,
-            accentColor: "#6366f1",
+            accentColor: "var(--theme-primary)",
             showLeftAccent: true
         },
         editableProps: {
@@ -1073,9 +1067,9 @@ export const components = [
             author: "Steve Jobs",
             role: "Founder",
             image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop",
-            backgroundColor: "#f9fafb",
-            textColor: "#1f2937",
-            accentColor: "#6366f1"
+            backgroundColor: "var(--theme-background)",
+            textColor: "var(--theme-text)",
+            accentColor: "var(--theme-primary)"
         },
         editableProps: {
             text: { type: "rich-text", label: "Quote Text", category: "content" },
@@ -1103,9 +1097,9 @@ export const components = [
             company: "Tech Corp",
             image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop",
             rating: 5,
-            backgroundColor: "#ffffff",
-            textColor: "#1f2937",
-            accentColor: "#f59e0b"
+            backgroundColor: "var(--theme-background)",
+            textColor: "var(--theme-text)",
+            accentColor: "var(--theme-primary)"
         },
         editableProps: {
             text: { type: "rich-text", label: "Testimonial Text", category: "content" },
@@ -1133,9 +1127,9 @@ export const components = [
             title: "Major Milestone",
             description: "Description of what happened in this year",
             icon: "Star",
-            backgroundColor: "#ffffff",
-            borderColor: "#6366f1",
-            accentColor: "#6366f1"
+            backgroundColor: "var(--theme-background)",
+            borderColor: "var(--theme-primary)",
+            accentColor: "var(--theme-primary)"
         },
         editableProps: {
             year: { type: "string", label: "Year", category: "content" },
@@ -1160,16 +1154,16 @@ export const components = [
             iconName: "Zap",
             title: "Feature Title",
             description: "Feature description and benefits",
-            backgroundColor: "var(--theme-background-alt, #f9fafb)",
-            borderColor: "var(--theme-border, #e5e7eb)",
-            accentColor: "var(--theme-primary, #6366f1)",
+            backgroundColor: "var(--theme-background-alt, var(--theme-background))",
+            borderColor: "var(--theme-border, var(--theme-border))",
+            accentColor: "var(--theme-primary, var(--theme-primary))",
             borderRadius: "12",
             shadow: "md",
-            iconColor: "#dc2626",
+            iconColor: "var(--theme-primary)",
             image: "",
             imageAspectRatio: "16/9",
-            titleColor: "#111827",
-            descriptionColor: "#4b5563",
+            titleColor: "var(--theme-text)",
+            descriptionColor: "var(--theme-border)",
             backgroundColor: "transparent",
             borderRadius: "12px",
             padding: "0",
@@ -1210,11 +1204,11 @@ export const components = [
         defaultProps: {
             label: "Feature Name",
             included: true,
-            backgroundColor: "#ffffff",
-            textColor: "var(--theme-text, #1f2937)",
-            checkColor: "var(--theme-primary, #6366f1)",
-            crossColor: "#ef4444",
-            borderColor: "var(--theme-border, #e5e7eb)"
+            backgroundColor: "var(--theme-background)",
+            textColor: "var(--theme-text, var(--theme-text))",
+            checkColor: "var(--theme-primary, var(--theme-primary))",
+            crossColor: "var(--theme-primary)",
+            borderColor: "var(--theme-border, var(--theme-border))"
         },
         editableProps: {
             label: { type: "string", label: "Feature Label", category: "content" },
@@ -1239,7 +1233,7 @@ export const components = [
             icon: "💡",
             title: "Benefit Title",
             description: "Brief description of the benefit",
-            backgroundColor: "var(--theme-background, #ffffff)",
+            backgroundColor: "var(--theme-background, var(--theme-background))",
             borderRadius: "12",
             shadow: "sm",
             iconBgColor: "transparent",
@@ -1276,9 +1270,9 @@ export const components = [
                 { title: "Deployments", description: "One-click deployments and CI.", iconSrc: "", cardSrc: "", link: "#" },
                 { title: "Support", description: "24/7 dedicated support.", iconSrc: "", cardSrc: "", link: "#" }
             ],
-            backgroundColor: "#ffffff",
-            cardBg: "#f8fafc",
-            cardAccent: "#6366f1",
+            backgroundColor: "var(--theme-background)",
+            cardBg: "var(--theme-border)",
+            cardAccent: "var(--theme-primary)",
             columns: 3
         },
         editableProps: {
@@ -1303,10 +1297,10 @@ export const components = [
         defaultProps: {
             title: "Capability Name",
             features: "Feature 1 • Feature 2 • Feature 3",
-            backgroundColor: "var(--theme-background-alt, #f9fafb)",
-            borderLeftColor: "var(--theme-primary, #6366f1)",
+            backgroundColor: "var(--theme-background-alt, var(--theme-background))",
+            borderLeftColor: "var(--theme-primary, var(--theme-primary))",
             borderLeftWidth: "3",
-            titleColor: "var(--theme-primary, #6366f1)",
+            titleColor: "var(--theme-primary, var(--theme-primary))",
             textColor: "var(--theme-text-secondary, #6b7280)",
             borderRadius: "12"
         },
@@ -1333,10 +1327,10 @@ export const components = [
         defaultProps: {
             title: "Industry/Use Case",
             description: "Description of the use case and benefits",
-            backgroundColor: "var(--theme-background-alt, #f9fafb)",
-            borderLeftColor: "var(--theme-primary, #6366f1)",
+            backgroundColor: "var(--theme-background-alt, var(--theme-background))",
+            borderLeftColor: "var(--theme-primary, var(--theme-primary))",
             borderLeftWidth: "4",
-            titleColor: "var(--theme-primary, #6366f1)",
+            titleColor: "var(--theme-primary, var(--theme-primary))",
             textColor: "var(--theme-text-secondary, #6b7280)",
             borderRadius: "12"
         },
@@ -1364,10 +1358,10 @@ export const components = [
             problem: "Problem: Manual Processes",
             solution: "Solution: Full Automation",
             description: "Benefits and improvements",
-            backgroundColor: "var(--theme-background, #ffffff)",
-            problemColor: "var(--theme-text, #1f2937)",
-            solutionColor: "var(--theme-primary, #6366f1)",
-            arrowColor: "var(--theme-primary, #6366f1)",
+            backgroundColor: "var(--theme-background, var(--theme-background))",
+            problemColor: "var(--theme-text, var(--theme-text))",
+            solutionColor: "var(--theme-primary, var(--theme-primary))",
+            arrowColor: "var(--theme-primary, var(--theme-primary))",
             shadow: "md",
             borderRadius: "12"
         },
@@ -1396,8 +1390,8 @@ export const components = [
             icon: "🏢",
             industry: "Industry Name",
             description: "Solution for this industry",
-            backgroundColor: "var(--theme-background-alt, #f9fafb)",
-            textColor: "var(--theme-text, #1f2937)",
+            backgroundColor: "var(--theme-background-alt, var(--theme-background))",
+            textColor: "var(--theme-text, var(--theme-text))",
             descColor: "var(--theme-text-secondary, #6b7280)",
             iconSize: "40",
             borderRadius: "12",
@@ -1432,11 +1426,11 @@ export const components = [
             rating: 4.5,
             reviews: 128,
             badge: "NEW",
-            badgeColor: "var(--theme-primary, #6366f1)",
+            badgeColor: "var(--theme-primary, var(--theme-primary))",
             badgeBgColor: "var(--theme-primary-light, #eef2ff)",
-            backgroundColor: "var(--theme-background, #ffffff)",
-            textColor: "var(--theme-text, #1f2937)",
-            priceColor: "var(--theme-primary, #6366f1)",
+            backgroundColor: "var(--theme-background, var(--theme-background))",
+            textColor: "var(--theme-text, var(--theme-text))",
+            priceColor: "var(--theme-primary, var(--theme-primary))",
             borderRadius: "12",
             shadow: "md",
             hoverEffect: true
@@ -1470,9 +1464,9 @@ export const components = [
             title: "Service Name",
             description: "Service description",
             features: ["Feature 1", "Feature 2", "Feature 3"],
-            backgroundColor: "var(--theme-background, #ffffff)",
-            textColor: "var(--theme-text, #1f2937)",
-            accentColor: "var(--theme-primary, #6366f1)",
+            backgroundColor: "var(--theme-background, var(--theme-background))",
+            textColor: "var(--theme-text, var(--theme-text))",
+            accentColor: "var(--theme-primary, var(--theme-primary))",
             borderRadius: "12",
             shadow: "md"
         },
@@ -1501,11 +1495,11 @@ export const components = [
             features: ["Feature 1", "Feature 2", "Feature 3"],
             buttonText: "Get Started",
             buttonColor: "white",
-            buttonBgColor: "var(--theme-primary, #6366f1)",
-            backgroundColor: "var(--theme-background, #ffffff)",
-            textColor: "var(--theme-text, #1f2937)",
+            buttonBgColor: "var(--theme-primary, var(--theme-primary))",
+            backgroundColor: "var(--theme-background, var(--theme-background))",
+            textColor: "var(--theme-text, var(--theme-text))",
             highlightBorder: false,
-            highlightColor: "var(--theme-primary, #6366f1)",
+            highlightColor: "var(--theme-primary, var(--theme-primary))",
             borderRadius: "12"
         },
         editableProps: {
@@ -1533,8 +1527,8 @@ export const components = [
             images: ["", "", ""],
             title: "Product Gallery",
             description: "View all product images",
-            backgroundColor: "var(--theme-background-alt, #f9fafb)",
-            textColor: "var(--theme-text, #1f2937)",
+            backgroundColor: "var(--theme-background-alt, var(--theme-background))",
+            textColor: "var(--theme-text, var(--theme-text))",
             autoPlay: true,
             autoPlayInterval: 4000,
             mainImageHeight: "384",
@@ -1544,7 +1538,7 @@ export const components = [
             gap: "12",
             padding: "0",
             showThumbnails: true,
-            accentColor: "var(--theme-primary, #6366f1)"
+            accentColor: "var(--theme-primary, var(--theme-primary))"
         },
         editableProps: {
             images: { type: "image-array", label: "Gallery Images", category: "content" },
@@ -1573,9 +1567,9 @@ export const components = [
         defaultProps: {
             items: [{ name: "Option A" }, { name: "Option B" }],
             features: ["Feature 1", "Feature 2", "Feature 3"],
-            backgroundColor: "var(--theme-background, #ffffff)",
-            textColor: "var(--theme-text, #1f2937)",
-            accentColor: "var(--theme-primary, #6366f1)"
+            backgroundColor: "var(--theme-background, var(--theme-background))",
+            textColor: "var(--theme-text, var(--theme-text))",
+            accentColor: "var(--theme-primary, var(--theme-primary))"
         },
         editableProps: {
             items: { type: "object-array", label: "Items to Compare", category: "content" },
@@ -1595,9 +1589,9 @@ export const components = [
             items: [
                 { phase: "Phase 1", title: "Foundation", description: "Core features", features: ["Feature 1", "Feature 2"] }
             ],
-            backgroundColor: "var(--theme-background, #ffffff)",
-            textColor: "var(--theme-text, #1f2937)",
-            accentColor: "var(--theme-primary, #6366f1)",
+            backgroundColor: "var(--theme-background, var(--theme-background))",
+            textColor: "var(--theme-text, var(--theme-text))",
+            accentColor: "var(--theme-primary, var(--theme-primary))",
             markerSize: "40",
             lineWidth: "4",
             lineColor: "40",
@@ -1634,8 +1628,8 @@ export const components = [
                 { label: "Link 2", href: "#" },
                 { label: "Link 3", href: "#" }
             ],
-            titleColor: "#9ca3af",
-            textColor: "#111827"
+            titleColor: "var(--theme-border)",
+            textColor: "var(--theme-text)"
         },
         editableProps: {
             title: { type: "string", label: "Section Title", category: "content" },
@@ -1656,9 +1650,9 @@ export const components = [
             accent: "Scale",
             logoImage: "",
             logoImageWidth: 32,
-            color: "#1f2937",
+            color: "var(--theme-text)",
             gradient: "",
-            accentColor: "#ef4444"
+            accentColor: "var(--theme-primary)"
         },
         editableProps: {
             logoType: { type: "select", label: "Logo Type", options: ["text", "image", "both"], category: "content" },
@@ -1680,8 +1674,8 @@ export const components = [
         defaultProps: {
             links: "twitter:https://twitter.com:Twitter,linkedin:https://linkedin.com:LinkedIn,github:https://github.com:GitHub",
             iconSize: 20,
-            iconColor: "#4b5563",
-            iconHoverColor: "#111827",
+            iconColor: "var(--theme-border)",
+            iconHoverColor: "var(--theme-text)",
             spacing: 16,
             align: "left"
         },
@@ -1740,9 +1734,9 @@ export const components = [
             resultHighlight: "+150%",
             highlightLabel: "Growth",
             link: "#",
-            backgroundColor: "var(--theme-background, #ffffff)",
-            textColor: "var(--theme-text, #1f2937)",
-            accentColor: "var(--theme-primary, #6366f1)"
+            backgroundColor: "var(--theme-background, var(--theme-background))",
+            textColor: "var(--theme-text, var(--theme-text))",
+            accentColor: "var(--theme-primary, var(--theme-primary))"
         },
         editableProps: {
             image: { type: "image", label: "Case Study Image", category: "content" },
@@ -1772,9 +1766,9 @@ export const components = [
             quote: "This is an amazing testimonial about the service...",
             metric: "+200%",
             metricLabel: "Performance Increase",
-            backgroundColor: "var(--theme-background, #ffffff)",
-            textColor: "var(--theme-text, #1f2937)",
-            accentColor: "var(--theme-primary, #6366f1)"
+            backgroundColor: "var(--theme-background, var(--theme-background))",
+            textColor: "var(--theme-text, var(--theme-text))",
+            accentColor: "var(--theme-primary, var(--theme-primary))"
         },
         editableProps: {
             image: { type: "image", label: "Avatar Image", category: "content" },
@@ -1803,9 +1797,9 @@ export const components = [
             height: 400,
             borderRadius: 12,
             showLabels: true,
-            backgroundColor: "#f9fafb",
+            backgroundColor: "var(--theme-background)",
             labelBg: "rgba(0,0,0,0.5)",
-            labelColor: "#ffffff"
+            labelColor: "var(--theme-background)"
         },
         editableProps: {
             beforeImage: { type: "image", label: "Before Image", category: "content" },
@@ -1831,10 +1825,10 @@ export const components = [
             title: "Certified",
             issuer: "Authority Name",
             year: "2024",
-            backgroundColor: "var(--theme-background, #f9fafb)",
-            borderColor: "var(--theme-primary, #6366f1)",
-            textColor: "var(--theme-text, #1f2937)",
-            accentColor: "var(--theme-primary, #6366f1)"
+            backgroundColor: "var(--theme-background, var(--theme-background))",
+            borderColor: "var(--theme-primary, var(--theme-primary))",
+            textColor: "var(--theme-text, var(--theme-text))",
+            accentColor: "var(--theme-primary, var(--theme-primary))"
         },
         editableProps: {
             icon: { type: "string", label: "Icon (emoji)", category: "content" },
@@ -1857,8 +1851,8 @@ export const components = [
             icon: "🏆",
             title: "Award Title",
             year: "2024",
-            backgroundColor: "linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%)",
-            textColor: "#ffffff",
+            backgroundColor: "linear-gradient(135deg, #fbbf24 0%, var(--theme-primary) 100%)",
+            textColor: "var(--theme-text)",
             borderRadius: 12,
             shadow: "lg"
         },
@@ -1884,9 +1878,9 @@ export const components = [
             date: "Jan 2024",
             excerpt: "Featured in...",
             link: "#",
-            backgroundColor: "var(--theme-background, #ffffff)",
-            borderColor: "var(--theme-border, #e5e7eb)",
-            textColor: "var(--theme-text, #1f2937)"
+            backgroundColor: "var(--theme-background, var(--theme-background))",
+            borderColor: "var(--theme-border, var(--theme-border))",
+            textColor: "var(--theme-text, var(--theme-text))"
         },
         editableProps: {
             logo: { type: "image", label: "Publication Logo", category: "content" },
@@ -1909,8 +1903,8 @@ export const components = [
             rating: "4.9",
             totalReviews: "1000+",
             ratingColor: "#fbbf24",
-            backgroundColor: "#ffffff",
-            textColor: "#1f2937",
+            backgroundColor: "var(--theme-background)",
+            textColor: "var(--theme-text)",
             breakdownVisible: true
         },
         editableProps: {
@@ -1936,8 +1930,8 @@ export const components = [
             layout: "horizontal",
             iconSize: "32",
             backgroundColor: "transparent",
-            textColor: "#1f2937",
-            accentColor: "#6366f1"
+            textColor: "var(--theme-text)",
+            accentColor: "var(--theme-primary)"
         },
         editableProps: {
             signals: { type: "array", label: "Signals", category: "content" },
@@ -1976,9 +1970,9 @@ export const components = [
             testimonial: "Setting up was incredibly fast!",
             author: "Alex Johnson",
             title: "Product Manager",
-            backgroundColor: "#f9fafb",
-            textColor: "#1f2937",
-            accentColor: "#6366f1"
+            backgroundColor: "var(--theme-background)",
+            textColor: "var(--theme-text)",
+            accentColor: "var(--theme-primary)"
         },
         editableProps: {
             icon: { type: "string", label: "Icon (emoji)", category: "content" },
@@ -2027,9 +2021,9 @@ export const components = [
             author: "Sarah Williams",
             company: "Tech Corp",
             image: "",
-            backgroundColor: "#ffffff",
-            roleColor: "#6366f1",
-            textColor: "#1f2937"
+            backgroundColor: "var(--theme-background)",
+            roleColor: "var(--theme-primary)",
+            textColor: "var(--theme-text)"
         },
         editableProps: {
             role: { type: "string", label: "Role", category: "content" },
@@ -2080,9 +2074,9 @@ export const components = [
             image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
             bio: "Brief bio",
             socialLinks: "linkedin:,twitter:",
-            bgColor: "var(--theme-surface, #ffffff)",
-            nameColor: "var(--theme-text, #1f2937)",
-            titleColor: "var(--theme-primary, #dc2626)",
+            bgColor: "var(--theme-surface, var(--theme-background))",
+            nameColor: "var(--theme-text, var(--theme-text))",
+            titleColor: "var(--theme-primary, var(--theme-primary))",
             bioColor: "var(--theme-secondary-text, #6b7280)"
         },
         editableProps: {
@@ -2112,9 +2106,9 @@ export const components = [
             phone: "+1 (555) 000-0000",
             socialLinks: "linkedin:,twitter:",
             expertise: "Expertise 1, Expertise 2",
-            bgColor: "var(--theme-surface, #ffffff)",
-            accentColor: "var(--theme-primary, #dc2626)",
-            textColor: "var(--theme-text, #1f2937)",
+            bgColor: "var(--theme-surface, var(--theme-background))",
+            accentColor: "var(--theme-primary, var(--theme-primary))",
+            textColor: "var(--theme-text, var(--theme-text))",
             secondaryTextColor: "var(--theme-secondary-text, #6b7280)"
         },
         editableProps: {
@@ -2145,10 +2139,10 @@ export const components = [
             image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
             department: "Department",
             yearsInRole: "0",
-            bgColor: "var(--theme-surface, #ffffff)",
-            borderColor: "var(--theme-primary, #dc2626)",
+            bgColor: "var(--theme-surface, var(--theme-background))",
+            borderColor: "var(--theme-primary, var(--theme-primary))",
             levelBgColor: "var(--theme-primary-light, #fee2e2)",
-            levelTextColor: "var(--theme-primary, #dc2626)"
+            levelTextColor: "var(--theme-primary, var(--theme-primary))"
         },
         editableProps: {
             name: { type: "string", label: "Name", category: "content" },
@@ -2176,9 +2170,9 @@ export const components = [
             specialization: "Specialization",
             company: "Company Name",
             bio: "Bio text",
-            bgColor: "var(--theme-surface, #ffffff)",
-            accentColor: "var(--theme-primary, #dc2626)",
-            textColor: "var(--theme-text, #1f2937)"
+            bgColor: "var(--theme-surface, var(--theme-background))",
+            accentColor: "var(--theme-primary, var(--theme-primary))",
+            textColor: "var(--theme-text, var(--theme-text))"
         },
         editableProps: {
             name: { type: "string", label: "Name", category: "content" },
@@ -2203,9 +2197,9 @@ export const components = [
             title: "Role",
             image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
             expertise: "Expertise areas",
-            bgColor: "var(--theme-surface, #ffffff)",
-            accentColor: "#3b82f6",
-            textColor: "var(--theme-text, #1f2937)"
+            bgColor: "var(--theme-surface, var(--theme-background))",
+            accentColor: "var(--theme-primary)",
+            textColor: "var(--theme-text, var(--theme-text))"
         },
         editableProps: {
             name: { type: "string", label: "Name", category: "content" },
@@ -2231,9 +2225,9 @@ export const components = [
             description: "Job description",
             btnText: "Apply Now",
             btnLink: "/careers",
-            bgColor: "var(--theme-surface, #ffffff)",
-            accentColor: "var(--theme-primary, #dc2626)",
-            textColor: "var(--theme-text, #1f2937)"
+            bgColor: "var(--theme-surface, var(--theme-background))",
+            accentColor: "var(--theme-primary, var(--theme-primary))",
+            textColor: "var(--theme-text, var(--theme-text))"
         },
         editableProps: {
             title: { type: "string", label: "Job Title", category: "content" },
@@ -2259,8 +2253,8 @@ export const components = [
             title: "Value Title",
             description: "Value description",
             bgColor: "#eff6ff",
-            accentColor: "#3b82f6",
-            textColor: "var(--theme-text, #1f2937)"
+            accentColor: "var(--theme-primary)",
+            textColor: "var(--theme-text, var(--theme-text))"
         },
         editableProps: {
             icon: { type: "string", label: "Icon (emoji)", category: "content" },
@@ -2310,9 +2304,9 @@ export const components = [
             readTime: "5 min read",
             category: "Tutorial",
             image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&h=300&fit=crop",
-            bgColor: "#ffffff",
-            accentColor: "#dc2626",
-            textColor: "#1f2937",
+            bgColor: "var(--theme-background)",
+            accentColor: "var(--theme-primary)",
+            textColor: "var(--theme-text)",
             secondaryTextColor: "#6b7280"
         },
         editableProps: {
@@ -2343,9 +2337,9 @@ export const components = [
             readTime: "5 min read",
             category: "Development",
             image: "https://images.unsplash.com/photo-1633356122544-f134324ef6db?w=500&h=400&fit=crop",
-            bgColor: "#ffffff",
+            bgColor: "var(--theme-background)",
             accentColor: "#0284c7",
-            textColor: "#1f2937",
+            textColor: "var(--theme-text)",
             secondaryTextColor: "#6b7280"
         },
         editableProps: {
@@ -2377,9 +2371,9 @@ export const components = [
             category: "Trends",
             image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&h=500&fit=crop",
             bgColor: "#374151",
-            accentColor: "#3b82f6",
-            textColor: "#ffffff",
-            secondaryTextColor: "#d1d5db"
+            accentColor: "var(--theme-primary)",
+            textColor: "var(--theme-text)",
+            secondaryTextColor: "var(--theme-border)"
         },
         editableProps: {
             title: { type: "string", label: "Title", category: "content" },
@@ -2406,8 +2400,8 @@ export const components = [
             count: 32,
             icon: "🚀",
             bgColor: "#eff6ff",
-            accentColor: "#3b82f6",
-            textColor: "#1f2937"
+            accentColor: "var(--theme-primary)",
+            textColor: "var(--theme-text)"
         },
         editableProps: {
             name: { type: "string", label: "Category Name", category: "content" },
@@ -2427,9 +2421,9 @@ export const components = [
         defaultProps: {
             name: "React",
             count: 15,
-            bgColor: "#f0f9ff",
+            bgColor: "var(--theme-background)",
             accentColor: "#0284c7",
-            textColor: "#1f2937"
+            textColor: "var(--theme-text)"
         },
         editableProps: {
             name: { type: "string", label: "Tag Name", category: "content" },
@@ -2455,9 +2449,9 @@ export const components = [
                 { platform: "linkedin", url: "https://linkedin.com", icon: "in" },
                 { platform: "github", url: "https://github.com", icon: "⚙️" }
             ],
-            bgColor: "#f8fafc",
-            accentColor: "#3b82f6",
-            textColor: "#1f2937",
+            bgColor: "var(--theme-border)",
+            accentColor: "var(--theme-primary)",
+            textColor: "var(--theme-text)",
             secondaryTextColor: "#6b7280"
         },
         editableProps: {
@@ -2483,9 +2477,9 @@ export const components = [
             image: "https://images.unsplash.com/photo-1633356122544-f134324ef6db?w=300&h=200&fit=crop",
             date: "Jan 15, 2026",
             category: "Related",
-            bgColor: "#ffffff",
+            bgColor: "var(--theme-background)",
             accentColor: "#059669",
-            textColor: "#1f2937",
+            textColor: "var(--theme-text)",
             secondaryTextColor: "#6b7280"
         },
         editableProps: {
@@ -2511,8 +2505,8 @@ export const components = [
             placeholder: "Enter your email address",
             buttonText: "Subscribe Now",
             bgColor: "#eff6ff",
-            accentColor: "#3b82f6",
-            textColor: "#1f2937"
+            accentColor: "var(--theme-primary)",
+            textColor: "var(--theme-text)"
         },
         editableProps: {
             title: { type: "string", label: "Title", category: "content" },
@@ -2535,9 +2529,9 @@ export const components = [
             description: "Whitepaper description and summary.",
             image: "https://images.unsplash.com/photo-1555066931-bf19f8fd1085?w=400&h=300&fit=crop",
             downloadText: "Download PDF",
-            bgColor: "#faf5ff",
-            accentColor: "#a855f7",
-            textColor: "#1f2937",
+            bgColor: "var(--theme-background)",
+            accentColor: "var(--theme-primary)",
+            textColor: "var(--theme-text)",
             secondaryTextColor: "#6b7280"
         },
         editableProps: {
@@ -2564,8 +2558,8 @@ export const components = [
             result: "Result and impact metrics",
             image: "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?w=500&h=400&fit=crop",
             bgColor: "#fef2f2",
-            accentColor: "#dc2626",
-            textColor: "#1f2937",
+            accentColor: "var(--theme-primary)",
+            textColor: "var(--theme-text)",
             secondaryTextColor: "#6b7280"
         },
         editableProps: {
@@ -2592,7 +2586,7 @@ export const components = [
             icon: "📖",
             bgColor: "#ecfdf5",
             accentColor: "#059669",
-            textColor: "#1f2937",
+            textColor: "var(--theme-text)",
             secondaryTextColor: "#6b7280"
         },
         editableProps: {
@@ -2617,10 +2611,10 @@ export const components = [
             difficulty: "Beginner",
             views: 1250,
             helpful: 892,
-            bgColor: "#f9fafb",
+            bgColor: "var(--theme-background)",
             accentColor: "#6b7280",
-            textColor: "#1f2937",
-            secondaryTextColor: "#9ca3af"
+            textColor: "var(--theme-text)",
+            secondaryTextColor: "var(--theme-border)"
         },
         editableProps: {
             title: { type: "string", label: "Title", category: "content" },
@@ -2643,7 +2637,7 @@ export const components = [
         category: "utility",
         name: "FAQ Item",
         description: "Frequently asked question with expandable answer",
-        defaultProps: { question: "What is your product?", answer: "Our product helps businesses automate their workflows.", bgColor: "#ffffff", accentColor: "#dc2626", textColor: "#1f2937", secondaryTextColor: "#6b7280" },
+        defaultProps: { question: "What is your product?", answer: "Our product helps businesses automate their workflows.", bgColor: "var(--theme-background)", accentColor: "var(--theme-primary)", textColor: "var(--theme-text)", secondaryTextColor: "#6b7280" },
         editableProps: {
             question: { type: "string", label: "Question", category: "content" },
             answer: { type: "rich-text", label: "Answer", category: "content" },
@@ -2658,7 +2652,7 @@ export const components = [
         category: "utility",
         name: "Accordion Item",
         description: "Collapsible accordion section",
-        defaultProps: { title: "Accordion Section", content: "Content details go here.", bgColor: "#f9fafb", accentColor: "#dc2626", textColor: "#1f2937", secondaryTextColor: "#6b7280" },
+        defaultProps: { title: "Accordion Section", content: "Content details go here.", bgColor: "var(--theme-background)", accentColor: "var(--theme-primary)", textColor: "var(--theme-text)", secondaryTextColor: "#6b7280" },
         editableProps: {
             title: { type: "string", label: "Title", category: "content" },
             content: { type: "rich-text", label: "Content", category: "content" },
@@ -2673,7 +2667,7 @@ export const components = [
         category: "utility",
         name: "Tabs",
         description: "Tab navigation with content panels",
-        defaultProps: { tabs: [{ label: "Tab 1", content: "Content 1" }, { label: "Tab 2", content: "Content 2" }], bgColor: "#ffffff", accentColor: "#dc2626", textColor: "#1f2937", secondaryTextColor: "#6b7280" },
+        defaultProps: { tabs: [{ label: "Tab 1", content: "Content 1" }, { label: "Tab 2", content: "Content 2" }], bgColor: "var(--theme-background)", accentColor: "var(--theme-primary)", textColor: "var(--theme-text)", secondaryTextColor: "#6b7280" },
         editableProps: {
             tabs: { type: "array-of-objects", label: "Tabs", category: "content", fields: { label: { type: "string", label: "Tab Label" }, content: { type: "string", label: "Tab Content" } } },
             bgColor: { type: "color", label: "Background", category: "styles" },
@@ -2687,7 +2681,7 @@ export const components = [
         category: "utility",
         name: "Timeline Event",
         description: "Timeline event with date and description",
-        defaultProps: { title: "Event Title", date: "Jan 2026", description: "Event description", icon: "🔵", bgColor: "#ffffff", accentColor: "#dc2626", textColor: "#1f2937", secondaryTextColor: "#6b7280" },
+        defaultProps: { title: "Event Title", date: "Jan 2026", description: "Event description", icon: "🔵", bgColor: "var(--theme-background)", accentColor: "var(--theme-primary)", textColor: "var(--theme-text)", secondaryTextColor: "#6b7280" },
         editableProps: {
             title: { type: "string", label: "Event Title", category: "content" },
             date: { type: "string", label: "Date", category: "content" },
@@ -2704,7 +2698,7 @@ export const components = [
         category: "utility",
         name: "Roadmap Item",
         description: "Product roadmap quarter with status",
-        defaultProps: { quarter: "Q1 2026", status: "In Progress", items: ["Feature 1", "Feature 2"], bgColor: "#f0fdf4", accentColor: "#10b981", textColor: "#1f2937", secondaryTextColor: "#6b7280" },
+        defaultProps: { quarter: "Q1 2026", status: "In Progress", items: ["Feature 1", "Feature 2"], bgColor: "var(--theme-background)", accentColor: "var(--theme-primary)", textColor: "var(--theme-text)", secondaryTextColor: "#6b7280" },
         editableProps: {
             quarter: { type: "string", label: "Quarter", category: "content" },
             status: { type: "select", label: "Status", options: ["Completed", "In Progress", "Planned"], category: "content" },
@@ -2720,7 +2714,7 @@ export const components = [
         category: "utility",
         name: "Comparison Feature",
         description: "Feature comparison row for pricing tables",
-        defaultProps: { feature: "Feature", basic: "✓", pro: "✓", enterprise: "✓", bgColor: "#ffffff", accentColor: "#dc2626", textColor: "#1f2937", secondaryTextColor: "#6b7280" },
+        defaultProps: { feature: "Feature", basic: "✓", pro: "✓", enterprise: "✓", bgColor: "var(--theme-background)", accentColor: "var(--theme-primary)", textColor: "var(--theme-text)", secondaryTextColor: "#6b7280" },
         editableProps: {
             feature: { type: "string", label: "Feature Name", category: "content" },
             basic: { type: "string", label: "Basic Plan", category: "content" },
@@ -2737,7 +2731,7 @@ export const components = [
         category: "utility",
         name: "Stat Counter",
         description: "Statistics counter card",
-        defaultProps: { number: "1000+", label: "Customers", icon: "👥", bgColor: "#f0fdf4", accentColor: "#10b981", textColor: "#1f2937", secondaryTextColor: "#6b7280" },
+        defaultProps: { number: "1000+", label: "Customers", icon: "👥", bgColor: "var(--theme-background)", accentColor: "var(--theme-primary)", textColor: "var(--theme-text)", secondaryTextColor: "#6b7280" },
         editableProps: {
             number: { type: "string", label: "Number/Value", category: "content" },
             label: { type: "string", label: "Label", category: "content" },
@@ -2753,7 +2747,7 @@ export const components = [
     //     category: "utility",
     //     name: "Progress Bar",
     //     description: "Progress bar with percentage",
-    //     defaultProps: { label: "Progress", percentage: 65, bgColor: "#f9fafb", accentColor: "#dc2626", textColor: "#1f2937" },
+    //     defaultProps: { label: "Progress", percentage: 65, bgColor: "var(--theme-background)", accentColor: "var(--theme-primary)", textColor: "var(--theme-text)" },
     //     editableProps: {
     //         label: { type: "string", label: "Label", category: "content" },
     //         percentage: { type: "number", label: "Percentage (0-100)", category: "content" },
@@ -2767,7 +2761,7 @@ export const components = [
         category: "utility",
         name: "Maps",
         description: "Location map display",
-        defaultProps: { location: "San Francisco, CA", address: "123 Tech Street, San Francisco, CA 94105", bgColor: "#f9fafb", textColor: "#1f2937", secondaryTextColor: "#6b7280" },
+        defaultProps: { location: "San Francisco, CA", address: "123 Tech Street, San Francisco, CA 94105", bgColor: "var(--theme-background)", textColor: "var(--theme-text)", secondaryTextColor: "#6b7280" },
         editableProps: {
             location: { type: "string", label: "Location Name", category: "content" },
             address: { type: "string", label: "Address", category: "content" },
@@ -2781,7 +2775,7 @@ export const components = [
         category: "utility",
         name: "Location Finder",
         description: "Store/location finder card",
-        defaultProps: { city: "San Francisco", distance: "0.5 mi", status: "Open", bgColor: "#ffffff", accentColor: "#3b82f6", textColor: "#1f2937", secondaryTextColor: "#6b7280" },
+        defaultProps: { city: "San Francisco", distance: "0.5 mi", status: "Open", bgColor: "var(--theme-background)", accentColor: "var(--theme-primary)", textColor: "var(--theme-text)", secondaryTextColor: "#6b7280" },
         editableProps: {
             city: { type: "string", label: "City", category: "content" },
             distance: { type: "string", label: "Distance", category: "content" },
@@ -2797,7 +2791,7 @@ export const components = [
         category: "utility",
         name: "Event Schedule",
         description: "Event with schedule details",
-        defaultProps: { eventName: "Event Name", date: "Jan 15, 2026", time: "2:00 PM", location: "Virtual", bgColor: "#f0f9ff", accentColor: "#0284c7", textColor: "#1f2937", secondaryTextColor: "#6b7280" },
+        defaultProps: { eventName: "Event Name", date: "Jan 15, 2026", time: "2:00 PM", location: "Virtual", bgColor: "var(--theme-background)", accentColor: "#0284c7", textColor: "var(--theme-text)", secondaryTextColor: "#6b7280" },
         editableProps: {
             eventName: { type: "string", label: "Event Name", category: "content" },
             date: { type: "string", label: "Date", category: "content" },
@@ -2814,7 +2808,7 @@ export const components = [
         category: "utility",
         name: "Calendar",
         description: "Interactive calendar display",
-        defaultProps: { month: "January", year: "2026", bgColor: "#ffffff", accentColor: "#dc2626", textColor: "#1f2937", secondaryTextColor: "#6b7280" },
+        defaultProps: { month: "January", year: "2026", bgColor: "var(--theme-background)", accentColor: "var(--theme-primary)", textColor: "var(--theme-text)", secondaryTextColor: "#6b7280" },
         editableProps: {
             month: { type: "string", label: "Month", category: "content" },
             year: { type: "string", label: "Year", category: "content" },
@@ -2829,7 +2823,7 @@ export const components = [
         category: "utility",
         name: "Announcement",
         description: "Alert announcement message",
-        defaultProps: { title: "Important Announcement", message: "This is an important message for our users.", type: "info", bgColor: "#eff6ff", accentColor: "#0284c7", textColor: "#1f2937" },
+        defaultProps: { title: "Important Announcement", message: "This is an important message for our users.", type: "info", bgColor: "#eff6ff", accentColor: "#0284c7", textColor: "var(--theme-text)" },
         editableProps: {
             title: { type: "string", label: "Title", category: "content" },
             message: { type: "rich-text", label: "Message", category: "content" },
@@ -2844,7 +2838,7 @@ export const components = [
         category: "utility",
         name: "Maintenance Mode",
         description: "Maintenance mode page",
-        defaultProps: { title: "Under Maintenance", message: "We're performing scheduled maintenance. We'll be back soon!", estimatedTime: "30 minutes", bgColor: "#1f2937", textColor: "#ffffff" },
+        defaultProps: { title: "Under Maintenance", message: "We're performing scheduled maintenance. We'll be back soon!", estimatedTime: "30 minutes", bgColor: "var(--theme-text)", textColor: "var(--theme-text)" },
         editableProps: {
             title: { type: "string", label: "Title", category: "content" },
             message: { type: "rich-text", label: "Message", category: "content" },
@@ -2858,7 +2852,7 @@ export const components = [
         category: "utility",
         name: "Coming Soon",
         description: "Coming soon landing page",
-        defaultProps: { title: "Coming Soon", subtitle: "Something amazing is on the way", bgColor: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)", textColor: "#ffffff", ctaText: "Notify Me", ctaLink: "#" },
+        defaultProps: { title: "Coming Soon", subtitle: "Something amazing is on the way", bgColor: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)", textColor: "var(--theme-text)", ctaText: "Notify Me", ctaLink: "#" },
         editableProps: {
             title: { type: "string", label: "Title", category: "content" },
             subtitle: { type: "string", label: "Subtitle", category: "content" },
@@ -2876,24 +2870,24 @@ export const components = [
         defaultProps: {
             brandName: "Brand.io",
             badgeText: "B",
-            badgeColor: "#3B82F6",
+            badgeColor: "var(--theme-primary)",
             links: [
                 { label: "Status: 99.9%", url: "#" },
                 { label: "Privacy", url: "#" },
                 { label: "Terms", url: "#" }
             ],
             copyright: "© 2024 Company Inc.",
-            backgroundColor: "#030712",
+            backgroundColor: "var(--theme-text)",
             borderColor: "rgba(255, 255, 255, 0.05)",
             textColor: "rgba(148, 163, 184, 0.8)"
         },
         editableProps: {
             brandName: { type: "string", label: "Brand Name", default: "Brand.io", category: "content" },
             badgeText: { type: "string", label: "Badge Text", default: "B", category: "content" },
-            badgeColor: { type: "color", label: "Badge Color", default: "#3B82F6", category: "styles" },
+            badgeColor: { type: "color", label: "Badge Color", default: "var(--theme-primary)", category: "styles" },
             links: { type: "array-of-objects", label: "Footer Links", category: "content", fields: { label: { type: "string", label: "Link Label" }, url: { type: "string", label: "URL" } } },
             copyright: { type: "string", label: "Copyright Text", default: "© 2024 Company Inc.", category: "content" },
-            backgroundColor: { type: "color", label: "Background Color", default: "#030712", category: "styles" },
+            backgroundColor: { type: "color", label: "Background Color", default: "var(--theme-text)", category: "styles" },
             borderColor: { type: "color", label: "Border Color", default: "rgba(255, 255, 255, 0.05)", category: "styles" },
             textColor: { type: "color", label: "Text Color", default: "rgba(148, 163, 184, 0.8)", category: "styles" }
         }
@@ -2905,21 +2899,21 @@ export const components = [
         description: "Individual stat card with icon, badge, and trend",
         defaultProps: {
             icon: "trophy",
-            iconColor: "#16a34a",
+            iconColor: "var(--theme-primary)",
             iconBg: "rgba(255, 255, 255, 0.0)",
             badge: "Success",
-            badgeColor: "#16a34a",
+            badgeColor: "var(--theme-primary)",
             badgeBg: "rgba(22, 163, 74, 0.1)",
             statLabel: "Total Revenue",
-            labelColor: "#64748b",
+            labelColor: "var(--theme-border)",
             statValue: "$1.2M",
             statValueColor: "#102216",
-            backgroundColor: "#ffffff",
-            borderColor: "#e2e8f0",
+            backgroundColor: "var(--theme-background)",
+            borderColor: "var(--theme-border)",
             borderRadius: "12",
             trend: "+12%",
             trendLabel: "vs LY",
-            trendColor: "#22c55e",
+            trendColor: "var(--theme-primary)",
             trendBackground: "rgba(34, 197, 94, 0.1)",
             trendIcon: "TrendingUp"
         },
@@ -2957,18 +2951,18 @@ export const components = [
                 { number: 1000, label: "Leads in last 6 months", format: "k" },
                 { number: 20000000, label: "Revenue Generated to clients", format: "cr" }
             ],
-            backgroundColor: "#030712",
+            backgroundColor: "var(--theme-text)",
             paddingY: 40,
             paddingX: 40,
-            textColor: "#FFFFFF",
+            textColor: "var(--theme-text)",
             accentColor: "#FF8C00"
         },
         editableProps: {
             stats: { type: "array-of-objects", label: "Statistics", category: "content", fields: { number: { type: "number", label: "Number" }, label: { type: "string", label: "Label" }, format: { type: "select", label: "Format", options: ["default", "k", "cr"] } } },
-            backgroundColor: { type: "color", label: "Background Color", default: "#030712", category: "styles" },
+            backgroundColor: { type: "color", label: "Background Color", default: "var(--theme-text)", category: "styles" },
             paddingY: { type: "number", label: "Vertical Padding (px)", default: 40, category: "styles" },
             paddingX: { type: "number", label: "Horizontal Padding (px)", default: 40, category: "styles" },
-            textColor: { type: "color", label: "Text Color", default: "#FFFFFF", category: "styles" },
+            textColor: { type: "color", label: "Text Color", default: "var(--theme-background)", category: "styles" },
             accentColor: { type: "color", label: "Accent Color", default: "#FF8C00", category: "styles" }
         }
     },
@@ -2987,8 +2981,8 @@ export const components = [
             stat2Value: "0.4ms",
             stat2Label: "Edge Latency",
             borderColor: "rgba(255, 255, 255, 0.05)",
-            textColor: "#FFFFFF",
-            accentColor: "#3B82F6"
+            textColor: "var(--theme-text)",
+            accentColor: "var(--theme-primary)"
         },
         editableProps: {
             imageSrc: { type: "image", label: "Image URL", category: "media" },
@@ -3017,24 +3011,24 @@ export const components = [
                     year: "2021",
                     title: "The Genesis",
                     description: "Founded with a vision to simplify Kubernetes clusters. Secured Seed funding from industry leaders.",
-                    color: "#3B82F6"
+                    color: "var(--theme-primary)"
                 },
                 {
                     year: "2022",
                     title: "V2 Infrastructure Launch",
                     description: "Successfully handled our first billion requests. Expanded the team to 40 globally distributed engineers.",
-                    color: "#A855F7"
+                    color: "var(--theme-primary)"
                 },
                 {
                     year: "2023",
                     title: "Global Expansion",
                     description: "Opened edge regions in 12 new countries. Recognized as the fastest growing dev-tool of the year.",
-                    color: "#06B6D4"
+                    color: "var(--theme-primary)"
                 }
             ],
-            backgroundColor: "#06080C",
-            textColor: "#FFFFFF",
-            subtitleColor: "#64748b"
+            backgroundColor: "var(--theme-background)",
+            textColor: "var(--theme-text)",
+            subtitleColor: "var(--theme-border)"
         },
         editableProps: {
             title: { type: "string", label: "Section Title", category: "content" },
@@ -3071,29 +3065,29 @@ export const components = [
                     name: "Marcus Chen",
                     role: "Founder & CEO",
                     imageSrc: "https://lh3.googleusercontent.com/aida-public/AB6AXuD2xmW7lmkRoXIiiul61ExruNj5-nWfe8cxmBIT_Js4XfyVBui6bx_Haz98NtbH0d6RP4pIJjkUdYG3udpA1Pwv2g1h3BYVtPxCSjXh5uebX0YEDHJk5Id8R6dby6aTbCDvzpLtH6VVugJXLzDDS3lEQW-YQNfMSzrT-k1qlhsQko83KOPo-vROWP4VraNm01T567U9C7E7jvbUIGDsU-WpsDP6_ASkt-xNfIbt61El3tfTdZU5QDsETF9n4lxnA-Q86kEAJgv8mCQ",
-                    accentColor: "#3B82F6"
+                    accentColor: "var(--theme-primary)"
                 },
                 {
                     name: "Elena Rodriguez",
                     role: "Head of Infrastructure",
                     imageSrc: "https://lh3.googleusercontent.com/aida-public/AB6AXuDoqyY4T45lY6cXrHzv4ZOQLp04BJrWHLZA2YyDEDXjn4s44qQnEo6-1t764yfOFI56w3LbEjZPL45Lb30ZaDHtEZZ8_oLffWQPKRd2AsimgiXHwuhHqJRm8CA9q3knXJtmcexOHqMAXhmXBZCNxAVuuiuhu0W1PShatYydTrfQnTEUpdjvTWVgwg1mnBVEpNHIjy-uBnFMx1P_iKwAjg1C-H7xi9Eyx1iKFusXRZ6hDJAS0_t5HgCF0x4ohit49bsLs1eKXF1nvtU",
-                    accentColor: "#A855F7"
+                    accentColor: "var(--theme-primary)"
                 },
                 {
                     name: "Dr. Sarah Jenkins",
                     role: "Lead Systems Architect",
                     imageSrc: "https://lh3.googleusercontent.com/aida-public/AB6AXuCbVVPoAnTJkIYKntlhbwIR7xQsclLVel5wvvimjL_Qj67H2wpNSgdGZbud7m2wSCBslyaRtBgQyzS1lyBES4XE1cFMLDQm6MXt6jAwQolBJOv9bWxkIT2jumfikpD5czEuRMLhE4TWOaieI4GMX5ECGe-c5gqFZmfe1-rqGks9JNSVkf9Ld3VSuvAWlXA4c9w22i_floDdssFKOVDGIIW08TUe5htIhqhpVFgeL5bMdArg2qQLYujvKMhBiYzFqGFxJr0KhpL5AH8",
-                    accentColor: "#06B6D4"
+                    accentColor: "var(--theme-primary)"
                 },
                 {
                     name: "Jordan Smith",
                     role: "VP of Engineering",
                     imageSrc: "https://lh3.googleusercontent.com/aida-public/AB6AXuD2xmW7lmkRoXIiiul61ExruNj5-nWfe8cxmBIT_Js4XfyVBui6bx_Haz98NtbH0d6RP4pIJjkUdYG3udpA1Pwv2g1h3BYVtPxCSjXh5uebX0YEDHJk5Id8R6dby6aTbCDvzpLtH6VVugJXLzDDS3lEQW-YQNfMSzrT-k1qlhsQko83KOPo-vROWP4VraNm01T567U9C7E7jvbUIGDsU-WpsDP6_ASkt-xNfIbt61El3tfTdZU5QDsETF9n4lxnA-Q86kEAJgv8mCQ",
-                    accentColor: "#3B82F6"
+                    accentColor: "var(--theme-primary)"
                 }
             ],
-            backgroundColor: "#030712",
-            textColor: "#FFFFFF"
+            backgroundColor: "var(--theme-text)",
+            textColor: "var(--theme-text)"
         },
         editableProps: {
             title: { type: "string", label: "Section Title", category: "content" },
@@ -3113,10 +3107,10 @@ export const components = [
             badge: "Flexible Pricing",
             title: "Choose your advantage.",
             description: "Scaling your infrastructure shouldn't be complicated.",
-            backgroundColor: "#06080C",
-            textColor: "#FFFFFF",
+            backgroundColor: "var(--theme-background)",
+            textColor: "var(--theme-text)",
             badgeColor: "rgba(255, 255, 255, 0.05)",
-            primaryColor: "#3B82F6"
+            primaryColor: "var(--theme-primary)"
         },
         editableProps: {
             badge: { type: "string", label: "Badge Text", category: "content" },
@@ -3135,11 +3129,11 @@ export const components = [
         description: "Pricing plans with features, pricing, and CTA buttons",
         defaultProps: {
             plans: [],
-            backgroundColor: "#06080C",
-            textColor: "#FFFFFF",
-            primaryColor: "#3B82F6",
-            secondaryColor: "#A855F7",
-            accentColor: "#06B6D4"
+            backgroundColor: "var(--theme-background)",
+            textColor: "var(--theme-text)",
+            primaryColor: "var(--theme-primary)",
+            secondaryColor: "var(--theme-primary)",
+            accentColor: "var(--theme-primary)"
         },
         editableProps: {
             plans: { type: "array-of-objects", label: "Pricing Plans", category: "content", fields: { id: { type: "string", label: "Plan ID" }, name: { type: "string", label: "Plan Name" }, description: { type: "string", label: "Description" }, price: { type: "string", label: "Price" }, period: { type: "string", label: "Billing Period" }, featured: { type: "boolean", label: "Featured" }, ctaText: { type: "string", label: "Button Text" }, features: { type: "array-of-objects", label: "Features", fields: { text: { type: "string", label: "Feature Text" }, included: { type: "boolean", label: "Included" } } } } },
@@ -3159,8 +3153,8 @@ export const components = [
             title: "Frequently Asked Questions",
             subtitle: "Everything you need to know about the product and billing.",
             faqs: [],
-            backgroundColor: "#06080C",
-            textColor: "#FFFFFF"
+            backgroundColor: "var(--theme-background)",
+            textColor: "var(--theme-text)"
         },
         editableProps: {
             title: { type: "string", label: "Section Title", category: "content" },
@@ -3177,11 +3171,11 @@ export const components = [
         description: "Grid of resource cards with images, categories, titles, descriptions, and links",
         defaultProps: {
             cards: [],
-            backgroundColor: "#06080C",
-            textColor: "#FFFFFF",
-            primaryColor: "#3B82F6",
-            secondaryColor: "#A855F7",
-            accentColor: "#06B6D4",
+            backgroundColor: "var(--theme-background)",
+            textColor: "var(--theme-text)",
+            primaryColor: "var(--theme-primary)",
+            secondaryColor: "var(--theme-primary)",
+            accentColor: "var(--theme-primary)",
             loadMoreText: "Load More Articles"
         },
         editableProps: {
@@ -3204,25 +3198,11 @@ export const components = [
             title: "Get in touch.",
             description: "Have questions? Our team of experts is here to help you scale your infrastructure.",
             submitText: "Send Message",
-            firstNameLabel: "First Name",
-            firstNamePlaceholder: "John",
-            lastNameLabel: "Last Name",
-            lastNamePlaceholder: "Doe",
-            emailLabel: "Work Email",
-            emailPlaceholder: "john@company.com",
-            subjectLabel: "Subject",
-            subjectOptions: "General Inquiry,Technical Support,Billing & Subscription,Enterprise Solutions",
-            messageLabel: "Message",
-            messagePlaceholder: "How can we help you?",
-            backgroundColor: "#06080C",
-            textColor: "#FFFFFF",
-            primaryColor: "#3B82F6",
-            secondaryColor: "#A855F7",
-            accentColor: "#06B6D4",
-            apiEndpoint: "",
-            googleSheetUrl: "",
-            successMessage: "Your message has been sent. We'll be in touch soon!",
-            errorMessage: "Something went wrong. Please try again."
+            backgroundColor: "var(--theme-background)",
+            textColor: "var(--theme-text)",
+            primaryColor: "var(--theme-primary)",
+            secondaryColor: "var(--theme-primary)",
+            accentColor: "var(--theme-primary)"
         },
         editableProps: {
             badgeText: { type: "string", label: "Badge Text", category: "content" },
@@ -3239,10 +3219,6 @@ export const components = [
             subjectOptions: { type: "string", label: "Subject Options (comma separated)", category: "content" },
             messageLabel: { type: "string", label: "Message Label", category: "content" },
             messagePlaceholder: { type: "string", label: "Message Placeholder", category: "content" },
-            apiEndpoint: { type: "url", label: "API Endpoint URL", category: "content" },
-            googleSheetUrl: { type: "url", label: "Google Sheet URL", category: "content" },
-            successMessage: { type: "string", label: "Success Message", category: "content", typography: false },
-            errorMessage: { type: "string", label: "Error Message", category: "content", typography: false },
             backgroundColor: { type: "color", label: "Background Color", category: "styles" },
             textColor: { type: "color", label: "Text Color", category: "styles" },
             primaryColor: { type: "color", label: "Primary Color", category: "styles" },
@@ -3296,9 +3272,9 @@ export const components = [
             ],
             trustedByText: "Trusted by industry leaders",
             companies: ["TECHFLOW", "CLOUDCORE", "DATASTRAT"],
-            backgroundColor: "#06080C",
-            textColor: "#FFFFFF",
-            primaryColor: "#3B82F6"
+            backgroundColor: "var(--theme-background)",
+            textColor: "var(--theme-text)",
+            primaryColor: "var(--theme-primary)"
         },
         editableProps: {
             supportPortalTitle: { type: "string", label: "Support Portal Title", category: "content" },
@@ -3332,20 +3308,20 @@ export const components = [
         description: "Portfolio hero section with badge, headline, description, image, and CTA buttons",
         defaultProps: {
             badge: "Available for new projects",
-            badgeColor: "#3B82F6",
+            badgeColor: "var(--theme-primary)",
             badgeBackgroundColor: "#EFF6FF",
             title: "Designing products with clarity and impact.",
             titleHighlightWord: "clarity",
-            titleHighlightColor: "#3B82F6",
+            titleHighlightColor: "var(--theme-primary)",
             description: "I'm Alex, a product designer and developer. I help brands build clean, user-centric digital experiences that scale.",
             primaryButtonText: "View Projects",
             secondaryButtonText: "About Me",
             imageSrc: "",
-            buttonPrimaryColor: "#3B82F6",
-            buttonPrimaryTextColor: "#FFFFFF",
-            buttonSecondaryColor: "#FFFFFF",
-            buttonSecondaryTextColor: "#1E293B",
-            buttonSecondaryBorderColor: "#E2E8F0"
+            buttonPrimaryColor: "var(--theme-primary)",
+            buttonPrimaryTextColor: "var(--theme-background)",
+            buttonSecondaryColor: "var(--theme-background)",
+            buttonSecondaryTextColor: "var(--theme-text)",
+            buttonSecondaryBorderColor: "var(--theme-border)"
         },
         editableProps: {
             badge: { type: "string", label: "Badge Text", category: "content" },
@@ -3376,15 +3352,15 @@ export const components = [
             viewAllText: "View all projects",
             viewAllLink: "#",
             projects: [],
-            categoryBadgeColor: "#3B82F6",
+            categoryBadgeColor: "var(--theme-primary)",
             categoryBadgeBackgroundColor: "#EFF6FF",
-            yearBadgeColor: "#94A3B8",
-            yearBadgeBackgroundColor: "#F1F5F9",
-            projectTitleColor: "#1E293B",
-            projectTitleHoverColor: "#3B82F6",
-            projectDescriptionColor: "#64748B",
-            projectBackgroundColor: "#E2E8F0",
-            hoverOverlayColor: "#3B82F6"
+            yearBadgeColor: "var(--theme-border)",
+            yearBadgeBackgroundColor: "var(--theme-border)",
+            projectTitleColor: "var(--theme-text)",
+            projectTitleHoverColor: "var(--theme-primary)",
+            projectDescriptionColor: "var(--theme-border)",
+            projectBackgroundColor: "var(--theme-border)",
+            hoverOverlayColor: "var(--theme-primary)"
         },
         editableProps: {
             sectionLabel: { type: "string", label: "Section Label", category: "content" },
@@ -3417,10 +3393,10 @@ export const components = [
                 { value: "12", label: "Design Awards" },
                 { value: "99%", label: "Client Satisfaction" }
             ],
-            titleColor: "#1E293B",
-            descriptionColor: "#64748B",
-            statValueColor: "#3B82F6",
-            statLabelColor: "#64748B"
+            titleColor: "var(--theme-text)",
+            descriptionColor: "var(--theme-border)",
+            statValueColor: "var(--theme-primary)",
+            statLabelColor: "var(--theme-border)"
         },
         editableProps: {
             title: { type: "string", label: "Section Title", category: "content" },
@@ -3454,17 +3430,17 @@ export const components = [
                 { id: "exp-1", period: "2021 — Present", title: "Senior Product Designer", company: "Fintech Solutions Inc.", description: "Leading the evolution of the core dashboard product.", isActive: true },
                 { id: "exp-2", period: "2018 — 2021", title: "Lead Frontend Developer", company: "Creative Agency Plus", description: "Developed high-end e-commerce solutions.", isActive: false }
             ],
-            profileImageBorderColor: "#E2E8F0",
-            currentFocusBorderColor: "#E2E8F0",
-            currentFocusBackgroundColor: "#FFFFFF",
-            titleColor: "#1E293B",
-            descriptionColor: "#64748B",
+            profileImageBorderColor: "var(--theme-border)",
+            currentFocusBorderColor: "var(--theme-border)",
+            currentFocusBackgroundColor: "var(--theme-background)",
+            titleColor: "var(--theme-text)",
+            descriptionColor: "var(--theme-border)",
             storyTextColor: "#475569",
-            experiencePeriodColor: "#3B82F6",
-            experienceTitleColor: "#1E293B",
-            experienceCompanyColor: "#64748B",
-            experienceDescriptionColor: "#64748B",
-            primaryColor: "#3B82F6"
+            experiencePeriodColor: "var(--theme-primary)",
+            experienceTitleColor: "var(--theme-text)",
+            experienceCompanyColor: "var(--theme-border)",
+            experienceDescriptionColor: "var(--theme-border)",
+            primaryColor: "var(--theme-primary)"
         },
         editableProps: {
             profileImageSrc: { type: "url", label: "Profile Image URL", category: "content" },
@@ -3503,14 +3479,14 @@ export const components = [
                 { id: "skill-2", name: "React.js", icon: "token" },
                 { id: "skill-3", name: "Tailwind CSS", icon: "css" }
             ],
-            titleColor: "#1E293B",
-            descriptionColor: "#64748B",
+            titleColor: "var(--theme-text)",
+            descriptionColor: "var(--theme-border)",
             skillNameColor: "#475569",
-            skillCardBackgroundColor: "#F8FAFC",
-            skillCardBorderColor: "#E2E8F0",
+            skillCardBackgroundColor: "var(--theme-border)",
+            skillCardBorderColor: "var(--theme-border)",
             skillCardHoverBorderColor: "#EFF6FF",
-            skillIconColor: "#3B82F6",
-            primaryColor: "#3B82F6"
+            skillIconColor: "var(--theme-primary)",
+            primaryColor: "var(--theme-primary)"
         },
         editableProps: {
             sectionTitle: { type: "string", label: "Section Title", category: "content" },
@@ -3535,7 +3511,7 @@ export const components = [
             logoText: "Alex Rivera",
             logoIcon: "blur_on",
             logoBackgroundColor: "#EFF6FF",
-            logoIconColor: "#3B82F6",
+            logoIconColor: "var(--theme-primary)",
             tagline: "Crafting high-quality digital experiences from the Bay Area.",
             copyright: "© 2024 Alex Rivera. All rights reserved.",
             followLabel: "Follow",
@@ -3548,13 +3524,13 @@ export const components = [
                 { text: "Privacy", href: "#" },
                 { text: "Terms", href: "#" }
             ],
-            taglineColor: "#94A3B8",
-            copyrightColor: "#94A3B8",
-            followLabelColor: "#1E293B",
-            socialLinkColor: "#94A3B8",
-            socialLinkHoverColor: "#3B82F6",
-            footerLinkColor: "#94A3B8",
-            footerLinkHoverColor: "#1E293B"
+            taglineColor: "var(--theme-border)",
+            copyrightColor: "var(--theme-border)",
+            followLabelColor: "var(--theme-text)",
+            socialLinkColor: "var(--theme-border)",
+            socialLinkHoverColor: "var(--theme-primary)",
+            footerLinkColor: "var(--theme-border)",
+            footerLinkHoverColor: "var(--theme-text)"
         },
         editableProps: {
             logoText: { type: "string", label: "Logo/Brand Name", category: "content" },
@@ -3608,17 +3584,17 @@ export const components = [
             ],
             ctaText: "Visit Live Site",
             ctaLink: "",
-            sectionLabelColor: "#3B82F6",
-            titleColor: "#1E293B",
-            descriptionColor: "#64748B",
-            challengeIconColor: "#3B82F6",
-            solutionIconColor: "#22C55E",
-            sidebarBackgroundColor: "#F8FAFC",
-            sidebarBorderColor: "#E2E8F0",
-            sidebarLabelColor: "#94A3B8",
-            ctaButtonColor: "#1E293B",
-            ctaButtonTextColor: "#FFFFFF",
-            primaryColor: "#3B82F6"
+            sectionLabelColor: "var(--theme-primary)",
+            titleColor: "var(--theme-text)",
+            descriptionColor: "var(--theme-border)",
+            challengeIconColor: "var(--theme-primary)",
+            solutionIconColor: "var(--theme-primary)",
+            sidebarBackgroundColor: "var(--theme-border)",
+            sidebarBorderColor: "var(--theme-border)",
+            sidebarLabelColor: "var(--theme-border)",
+            ctaButtonColor: "var(--theme-text)",
+            ctaButtonTextColor: "var(--theme-background)",
+            primaryColor: "var(--theme-primary)"
         },
         editableProps: {
             sectionLabel: { type: "string", label: "Section Label", category: "content" },
@@ -3671,22 +3647,22 @@ export const components = [
                 { id: "social-2", icon: "Github", href: "https://github.com", label: "GitHub" },
                 { id: "social-3", icon: "Mail", href: "mailto:hello@example.com", label: "Email" }
             ],
-            titleColor: "#1E293B",
-            descriptionColor: "#64748B",
-            formLabelColor: "#1E293B",
-            formInputBackgroundColor: "#F8FAFC",
-            formInputBorderColor: "#E2E8F0",
-            formInputTextColor: "#1E293B",
-            formInputPlaceholderColor: "#94A3B8",
-            formCardBackgroundColor: "#FFFFFF",
-            formCardBorderColor: "#E2E8F0",
-            submitButtonColor: "#3B82F6",
-            submitButtonTextColor: "#FFFFFF",
-            socialLinkColor: "#64748B",
-            socialLinkHoverColor: "#3B82F6",
-            socialLinkBorderColor: "#E2E8F0",
-            dividerColor: "#F1F5F9",
-            primaryColor: "#3B82F6"
+            titleColor: "var(--theme-text)",
+            descriptionColor: "var(--theme-border)",
+            formLabelColor: "var(--theme-text)",
+            formInputBackgroundColor: "var(--theme-border)",
+            formInputBorderColor: "var(--theme-border)",
+            formInputTextColor: "var(--theme-text)",
+            formInputPlaceholderColor: "var(--theme-border)",
+            formCardBackgroundColor: "var(--theme-background)",
+            formCardBorderColor: "var(--theme-border)",
+            submitButtonColor: "var(--theme-primary)",
+            submitButtonTextColor: "var(--theme-background)",
+            socialLinkColor: "var(--theme-border)",
+            socialLinkHoverColor: "var(--theme-primary)",
+            socialLinkBorderColor: "var(--theme-border)",
+            dividerColor: "var(--theme-border)",
+            primaryColor: "var(--theme-primary)"
         },
         editableProps: {
             sectionTitle: { type: "string", label: "Section Title", category: "content" },
@@ -4543,7 +4519,7 @@ export const components = [
             logoType: "text",
             logoText: "STUDIO.",
             logoAccent: "",
-            primaryColor: "#1F6AE1",
+            primaryColor: "var(--theme-primary)",
             links: [
                 { label: "Work", href: "#work" },
                 { label: "Services", href: "#services" },
@@ -4591,7 +4567,7 @@ export const components = [
             primaryButtonLink: "#work",
             secondaryButtonText: "Our Process",
             secondaryButtonLink: "#process",
-            primaryColor: "#1F6AE1"
+            primaryColor: "var(--theme-primary)"
         },
         editableProps: {
             badge: { type: "string", label: "Badge Text", category: "content" },
@@ -4618,7 +4594,7 @@ export const components = [
                 { number: "02", title: "UI/UX Design", description: "Crafting intuitive digital interfaces that prioritize the human experience." },
                 { number: "03", title: "Motion Design", description: "Bringing static brands to life through fluid, meaningful animation." }
             ],
-            primaryColor: "#1F6AE1"
+            primaryColor: "var(--theme-primary)"
         },
         editableProps: {
             title: { type: "string", label: "Section Title", category: "content" },
@@ -4634,7 +4610,7 @@ export const components = [
         description: "Scrolling text marquee on dark background",
         defaultProps: {
             items: ["Creative Excellence", "Digital Innovation", "Brand Strategy", "User Centered"],
-            primaryColor: "#1F6AE1"
+            primaryColor: "var(--theme-primary)"
         },
         editableProps: {
             items: { type: "string-array", label: "Marquee Items", category: "content" },
@@ -4653,7 +4629,7 @@ export const components = [
             linkText: "Explore Project",
             linkUrl: "#",
             image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDE31ZjJg750eZ_TuymJ5T_of55cBteBvRRx1pnVOPN9A8_-vfU3DFi2dfMSzXrkKQAcf8y8RJcRUx18Eu5JMgEBC-0Z8cD0h-0ifWaqQcjIfri5u5zQt-42ytuVyUWahVoaQfr_MkrGsY1HHTDHbuvcBRxT1c7enxBiIaZ90vDVmLxRfVJnr2Ip3VIPcQekNqHgQpegp_A16Yob9P26pIVNWBZzNuVNr3XtjSJYeBveM-MQI6mBQnA3CwgN6m2JWcmEKVl3_jekCo",
-            primaryColor: "#1F6AE1"
+            primaryColor: "var(--theme-primary)"
         },
         editableProps: {
             label: { type: "string", label: "Label", category: "content" },
@@ -4675,7 +4651,7 @@ export const components = [
             subtitle: "Currently accepting new projects for Q3 2024",
             buttonText: "Get In Touch",
             buttonLink: "#contact",
-            primaryColor: "#1F6AE1"
+            primaryColor: "var(--theme-primary)"
         },
         editableProps: {
             title: { type: "string", label: "Title", category: "content" },
@@ -4708,7 +4684,7 @@ export const components = [
             newsletterPlaceholder: "Email Address",
             copyright: "© 2024 Studio Creative Excellence. All rights reserved.",
             legalLinks: [{ label: "Privacy Policy", href: "#" }, { label: "Terms of Service", href: "#" }],
-            primaryColor: "#1F6AE1"
+            primaryColor: "var(--theme-primary)"
         },
         editableProps: {
             logoText: { type: "string", label: "Logo Text", category: "content" },
@@ -4739,7 +4715,7 @@ export const components = [
             description: "We bridge the gap between complex engineering and elegant design. Delivering high-performance digital solutions for the next generation of industry leaders.",
             buttonText: "Our Portfolio",
             buttonLink: "#portfolio",
-            primaryColor: "#1F6AE1"
+            primaryColor: "var(--theme-primary)"
         },
         editableProps: {
             badge: { type: "string", label: "Badge Text", category: "content" },
@@ -4764,7 +4740,7 @@ export const components = [
                 { icon: "layers", title: "Interface Design", description: "High-contrast, editorial design systems built for scale, accessibility, and visual impact across all devices." },
                 { icon: "terminal", title: "Full-Stack Dev", description: "Robust architecture using modern frameworks. We build performant, secure, and future-proof applications." }
             ],
-            primaryColor: "#1F6AE1"
+            primaryColor: "var(--theme-primary)"
         },
         editableProps: {
             title: { type: "string", label: "Section Title", category: "content" },
@@ -4786,7 +4762,7 @@ export const components = [
                 { number: "02", title: "Iterative Design", description: "Design is a conversation. We build high-fidelity wireframes and interactive prototypes, refining the user journey until every interaction feels intuitive and purposeful.", items: ["UX/UI Prototyping", "Design Systems", "User Testing"] },
                 { number: "03", title: "Agile Engineering", description: "Our developers bring the vision to life using clean, modular code. We work in two-week sprints, providing regular updates and maintaining full transparency throughout the build.", items: ["Front-end Excellence", "API Integration", "Deployment Pipelines"] }
             ],
-            primaryColor: "#1F6AE1"
+            primaryColor: "var(--theme-primary)"
         },
         editableProps: {
             label: { type: "string", label: "Section Label", category: "content" },
@@ -4831,7 +4807,7 @@ export const components = [
             primaryButtonLink: "#contact",
             secondaryButtonText: "View Pricing",
             secondaryButtonLink: "#pricing",
-            primaryColor: "#1F6AE1"
+            primaryColor: "var(--theme-primary)"
         },
         editableProps: {
             title: { type: "string", label: "Title", category: "content" },
@@ -4855,7 +4831,7 @@ export const components = [
             image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDE31ZjJg750eZ_TuymJ5T_of55cBteBvRRx1pnVOPN9A8_-vfU3DFi2dfMSzXrkKQAcf8y8RJcRUx18Eu5JMgEBC-0Z8cD0h-0ifWaqQcjIfri5u5zQt-42ytuVyUWahVoaQfr_MkrGsY1HHTDHbuvcBRxT1c7enxBiIaZ90vDVmLxRfVJnr2Ip3VIPcQekNqHgQpegp_A16Yob9P26pIVNWBZzNuVNr3XtjSJYeBveM-MQI6mBQnA3CwgN6m2JWcmEKVl3_jekCo",
             label: "Product Design — 2024",
             title: "CarePlus\nDigital Hub",
-            primaryColor: "#1F6AE1"
+            primaryColor: "var(--theme-primary)"
         },
         editableProps: {
             image: { type: "image", label: "Hero Image", category: "content" },
@@ -4876,7 +4852,7 @@ export const components = [
                 { label: "Timeline", value: "6 Months Development" },
                 { label: "Industry", value: "Healthcare Tech" }
             ],
-            primaryColor: "#1F6AE1"
+            primaryColor: "var(--theme-primary)"
         },
         editableProps: {
             items: { type: "array-of-objects", label: "Meta Items", category: "content", fields: { label: { type: "string", label: "Label" }, value: { type: "string", label: "Value" } } },
@@ -4897,7 +4873,7 @@ export const components = [
                 { value: "120%", label: "Increase in User Engagement" },
                 { value: "0.4s", label: "Average Interaction Latency" }
             ],
-            primaryColor: "#1F6AE1"
+            primaryColor: "var(--theme-primary)"
         },
         editableProps: {
             sectionTitle: { type: "string", label: "Section Title", category: "content" },
@@ -4924,7 +4900,7 @@ export const components = [
             afterImage: "https://lh3.googleusercontent.com/aida-public/AB6AXuCYPd5lFTU9jLhlrK9sQw_H5TzuYq97awf4MoFl-nLw4vjuQgLlMTCycw17y1kVsmRud-bi8ef5mqY5likla5TYcyp8S-WN2XlGrT0QxuTkeRhYLkzN5Eq67b_vweNYDT-E6aPScxh-ogrzea0ECMgrkvErM4coFlsrxB_sTtA2v7C_eebd1lrUSDh9_629fQbr3_jBeVAYQBcQXMVrcQd7wIzsSFjveDUXRg7Zo9qV8qrZOqptBzP3COFWjq7w-BuEQYlO9Q2q76k",
             beforeLabel: "Initial Concept",
             afterLabel: "After Design",
-            primaryColor: "#1F6AE1"
+            primaryColor: "var(--theme-primary)"
         },
         editableProps: {
             title: { type: "string", label: "Section Title", category: "content" },
@@ -4957,7 +4933,7 @@ export const components = [
                 "https://lh3.googleusercontent.com/aida-public/AB6AXuAFVBHFoDxrUSSNg1gmXHNxSurfLtY1XUIRQUbI_tpNppu_woVG7ywlUVv6fz4WVLsoBPAxdYbej--id7btHXBVfKigo2EQp8Dj6t6vbkd154XTD7Vmh0TTwrEWJjMNtdg4AB8ZVrX5DJJdJRP90rlD4HFQ6Jyp8OEQ8wWUEFiSS9uKMJjd4QnzWxmn9BUa_EBMTHwUlCpuDjLBNXF5WXj9xjacLBPrpLb_LZWZp8yqdU9iVjWDdIDskb2bs-4UlWZbZDQSOS4UH0g",
                 "https://lh3.googleusercontent.com/aida-public/AB6AXuDuS5QYz3_h3OO-D1UBlaefs6gpbxyBOror7bp140kjNxJT6bH494r3iIrH0BAcJQX6ZItatUhs_vSPJCU8AxvxL695SCIvBiaXjYb-OpNcdZwT0N1qzJjqqjCap1XlIlTXxTcTmz-F9-381hwZk858hfcOc9zhhIdtjKQFnrhH3nZt6ejEnK2JdCDcZUUV26HWVwjnHOKw95qbHO_A-636QEmc2WYCsr9spHw2IZZP1By1_jg-1dD3WO-TvTPLptC3bYnWQE0vxoY"
             ],
-            primaryColor: "#1F6AE1"
+            primaryColor: "var(--theme-primary)"
         },
         editableProps: {
             sectionTitle: { type: "string", label: "Section Title", category: "content" },
@@ -4975,7 +4951,7 @@ export const components = [
         defaultProps: {
             prevProject: { label: "Previous Project", title: "Aether Brand", href: "#" },
             nextProject: { label: "Next Project", title: "Kinetic UI", href: "#" },
-            primaryColor: "#1F6AE1"
+            primaryColor: "var(--theme-primary)"
         },
         editableProps: {
             prevProject: { type: "object", label: "Previous Project", category: "content", fields: { label: { type: "string", label: "Label" }, title: { type: "string", label: "Title" }, href: { type: "link", label: "URL" } } },
@@ -5003,11 +4979,7 @@ export const components = [
                 { label: "Behance", href: "#" },
                 { label: "LinkedIn", href: "#" }
             ],
-            primaryColor: "#1F6AE1",
-            apiEndpoint: "",
-            googleSheetUrl: "",
-            successMessage: "Your message has been sent. We'll be in touch soon!",
-            errorMessage: "Something went wrong. Please try again."
+            primaryColor: "var(--theme-primary)"
         },
         editableProps: {
             title: { type: "string", label: "Title", category: "content" },
@@ -5018,10 +4990,6 @@ export const components = [
             buttonText: { type: "string", label: "Submit Button Text", category: "content" },
             socialTitle: { type: "string", label: "Social Section Title", category: "content" },
             socialLinks: { type: "array-of-objects", label: "Social Links", category: "content", fields: { label: { type: "string", label: "Label" }, href: { type: "link", label: "URL" } } },
-            apiEndpoint: { type: "url", label: "API Endpoint URL", category: "content" },
-            googleSheetUrl: { type: "url", label: "Google Sheet URL", category: "content" },
-            successMessage: { type: "string", label: "Success Message", category: "content", typography: false },
-            errorMessage: { type: "string", label: "Error Message", category: "content", typography: false },
             primaryColor: { type: "color", label: "Primary Color", category: "styles" }
         }
     },
@@ -5035,7 +5003,7 @@ export const components = [
         defaultProps: {
             label: "Index — 2024",
             title: "Featured\nProjects",
-            primaryColor: "#1F6AE1"
+            primaryColor: "var(--theme-primary)"
         },
         editableProps: {
             label: { type: "string", label: "Label", category: "content" },
@@ -5051,7 +5019,7 @@ export const components = [
         defaultProps: {
             categories: ["All Works", "Branding", "Digital", "Motion", "Editorial"],
             countLabel: "Showing 12 Selected Cases",
-            primaryColor: "#1F6AE1"
+            primaryColor: "var(--theme-primary)"
         },
         editableProps: {
             categories: { type: "string-array", label: "Categories", category: "content" },
@@ -5079,7 +5047,7 @@ export const components = [
                     description: "Web application architecture and UI design for a global logistics platform."
                 }
             ],
-            primaryColor: "#1F6AE1"
+            primaryColor: "var(--theme-primary)"
         },
         editableProps: {
             projects: {
@@ -5110,7 +5078,7 @@ export const components = [
                 { label: "LinkedIn", href: "#" },
                 { label: "Behance", href: "#" }
             ],
-            primaryColor: "#1F6AE1"
+            primaryColor: "var(--theme-primary)"
         },
         editableProps: {
             title: { type: "string", label: "Title", category: "content" },
@@ -5127,7 +5095,7 @@ export const components = [
         defaultProps: {
             title: "Timeline Header",
             description: "Process description goes here",
-            accentColor: "#16a34a",
+            accentColor: "var(--theme-primary)",
             connectorColor: "rgba(22, 163, 74, 0.2)",
             items: [
                 {
@@ -5187,7 +5155,7 @@ export const components = [
             title: "Real-time Tracking",
             showLiveIndicator: true,
             showExportButton: true,
-            accentColor: "#16a34a",
+            accentColor: "var(--theme-primary)",
             rows: [
                 { id: "#GH-9021", origin: "Sao Paulo, BR", destination: "Rotterdam, NL", status: "In Transit", statusType: "transit", temp: "2.0°", tempProgress: 15, eta: "Oct 24" }
             ]
@@ -5230,7 +5198,7 @@ export const components = [
             optimalUnits: 854,
             barData: [60, 80, 70, 95, 65, 85, 40, 75],
             timeLabels: ["00:00", "06:00", "12:00", "18:00", "Current"],
-            accentColor: "#16a34a"
+            accentColor: "var(--theme-primary)"
         },
         editableProps: {
             title: { type: "string", label: "Title", category: "content" },
@@ -5258,7 +5226,7 @@ export const components = [
                 { label: "Asia-Pacific Import Permits", value: 92 }
             ],
             ctaText: "View Full Compliance Vault",
-            accentColor: "#16a34a"
+            accentColor: "var(--theme-primary)"
         },
         editableProps: {
             title: { type: "string", label: "Title", category: "content" },
@@ -5291,7 +5259,7 @@ export const components = [
             title: "Metric Title",
             description: "Brief description of the metric.",
             accentColor: "#008080",
-            backgroundColor: "#FFFFFF",
+            backgroundColor: "var(--theme-background)",
             borderRadius: 24
         },
         editableProps: {
@@ -5317,10 +5285,10 @@ export const components = [
             title: "Progress Metric",
             description: "Progress reduction over time.",
             accentColor: "#008080",
-            backgroundColor: "#FFFFFF",
+            backgroundColor: "var(--theme-background)",
             borderRadius: 24,
             progressBars: [
-                { label: "Month 0", value: 100, color: "#94A3B8" },
+                { label: "Month 0", value: 100, color: "var(--theme-border)" },
                 { label: "Month 3", value: 50, color: "#008080" },
                 { label: "Month 6", value: 20, color: "#008080" }
             ]
@@ -5357,7 +5325,7 @@ export const components = [
             title: "Metric Title",
             description: "Brief description of the metric.",
             accentColor: "#008080",
-            backgroundColor: "#FFFFFF",
+            backgroundColor: "var(--theme-background)",
             borderRadius: 24
         },
         editableProps: {
@@ -5383,8 +5351,8 @@ export const components = [
                 { icon: "ShieldCheck", text: "CERTIFIED" },
                 { icon: "Award", text: "ACCREDITED" }
             ],
-            iconColor: "#64748B",
-            textColor: "#0F172A",
+            iconColor: "var(--theme-border)",
+            textColor: "var(--theme-text)",
             gap: 48,
             grayscale: true,
             hoverEffect: true
@@ -5450,8 +5418,8 @@ export const components = [
             title: "Step Title",
             description: "Step description goes here.",
             accentColor: "#008080",
-            textColor: "#0F172A",
-            subtitleColor: "#64748B",
+            textColor: "var(--theme-text)",
+            subtitleColor: "var(--theme-border)",
             backgroundColor: "transparent"
         },
         editableProps: {
@@ -5481,18 +5449,18 @@ export const components = [
             paddingY: { mobile: "64px", tablet: "80px", desktop: "120px" },
             badgeText: "High-Efficiency Solutions",
             badgeBackgroundColor: "rgba(255,255,255,0.1)",
-            badgeColor: "#FFFFFF",
+            badgeColor: "var(--theme-background)",
             badgeShowPing: true,
             badgePingColor: "#ed2626",
             headlineText: "GLOBAL FREIGHT\n[LOGISTICS SOLUTIONS](#ed2626)",
             headlineTag: "h1",
-            headlineColor: "#FFFFFF",
+            headlineColor: "var(--theme-background)",
             paragraphText: "Empowering your supply chain with precision, speed, and real-time visibility across the entire global network.",
             paragraphColor: "rgba(255,255,255,0.8)",
             paragraphSize: "lg",
             statusItems: [
-                { text: "01", subtext: "Swift Response", color: "#FFFFFF" },
-                { text: "02", subtext: "Global Reach", color: "#FFFFFF" }
+                { text: "01", subtext: "Swift Response", color: "var(--theme-background)" },
+                { text: "02", subtext: "Global Reach", color: "var(--theme-background)" }
             ]
         },
         editableProps: {
@@ -5540,8 +5508,8 @@ export const components = [
             padding: 40,
             columns: { desktop: 3, tablet: 2, mobile: 1 },
             accentColor: "#ed2626",
-            backgroundColor: "#ffffff",
-            textColor: "#111827",
+            backgroundColor: "var(--theme-background)",
+            textColor: "var(--theme-text)",
             labelColor: "#a1a1aa",
             metricColor: "#ed2626",
             items: [
@@ -5581,10 +5549,10 @@ export const components = [
             paddingY: 128,
             maxWidth: "1280px",
             accentColor: "#ed2626",
-            rowBackgroundColor: "#f9fafb",
-            titleColor: "#111827",
-            descriptionColor: "#4b5563",
-            headerTitleColor: "#111827",
+            rowBackgroundColor: "var(--theme-background)",
+            titleColor: "var(--theme-text)",
+            descriptionColor: "var(--theme-border)",
+            headerTitleColor: "var(--theme-text)",
             headerDescColor: "#71717a",
             sectionTitle: "Global Freight\nArchitecture",
             sectionDesc: "SwiftLogix provides a comprehensive suite of logistics services tailored to the unique needs of industrial clients.",
@@ -5722,7 +5690,7 @@ export const components = [
             title: "Job Title",
             buttonText: "Apply Now",
             buttonLink: "#",
-            backgroundColor: "#ffffff",
+            backgroundColor: "var(--theme-background)",
             borderColor: "#e4e4e7",
             hoverShadow: true,
             padding: 32,
@@ -5752,18 +5720,18 @@ export const components = [
             imageAlt: "Course Thumbnail",
             badge: "Bestseller",
             title: "Full Stack Development",
-            titleColor: "#1e293b",
+            titleColor: "var(--theme-text)",
             titleSize: "lg",
             description: "Learn modern web development from basics to advanced deployment",
             duration: "12 Weeks",
             students: "1.2k Students",
             buttonText: "Enroll Now",
-            backgroundColor: "#ffffff",
-            borderColor: "#e2e8f0",
-            badgeColor: "#ffffff",
+            backgroundColor: "var(--theme-background)",
+            borderColor: "var(--theme-border)",
+            badgeColor: "var(--theme-background)",
             badgeBgColor: "#0048B3",
             buttonColor: "#0048B3",
-            buttonTextColor: "#ffffff"
+            buttonTextColor: "var(--theme-background)"
         },
         editableProps: {
             image: { type: "image", label: "Course Image", category: "content" },
@@ -5797,10 +5765,10 @@ export const components = [
             buttonLink: "#",
             buttonColor: "#0048B3",
             buttonHoverColor: "#003399",
-            titleColor: "#0f172a",
-            textColor: "#0f172a",
-            backgroundColor: "#ffffff",
-            borderColor: "#e2e8f0",
+            titleColor: "var(--theme-text)",
+            textColor: "var(--theme-text)",
+            backgroundColor: "var(--theme-background)",
+            borderColor: "var(--theme-border)",
             shadowIntensity: "medium"
         },
         editableProps: {
@@ -5827,13 +5795,13 @@ export const components = [
             showTitle: false,
             title: "LIVE METRICS:",
             titleIcon: "BarChart3",
-            backgroundColor: "#ffffff",
-            darkBackgroundColor: "#1A1A1A",
+            backgroundColor: "var(--theme-background)",
+            darkBackgroundColor: "var(--theme-text)",
             textColor: "#101912",
-            darkTextColor: "#FFFFFF",
+            darkTextColor: "var(--theme-background)",
             labelColor: "rgba(16, 25, 18, 0.4)",
             darkLabelColor: "#999999",
-            accentColor: "#16a34a",
+            accentColor: "var(--theme-primary)",
             borderColor: "#e9f1eb",
             darkBorderColor: "#333333",
             speed: 30,
@@ -5887,15 +5855,15 @@ export const components = [
             padding: 32,
             boxShadow: "0 20px 60px rgba(0, 0, 0, 0.08)",
             title: "LIVE PULSE",
-            titleColor: "#6366f1",
+            titleColor: "var(--theme-primary)",
             subtitle: "AI Metrics",
-            subtitleColor: "#1f2937",
+            subtitleColor: "var(--theme-text)",
             progressBars: [
                 {
                     label: "System Efficiency",
                     value: 94,
                     percentage: 94,
-                    progressColor: "#6366f1"
+                    progressColor: "var(--theme-primary)"
                 },
                 {
                     label: "Neural Responses",
