@@ -1,4 +1,4 @@
-
+﻿
 import { sectionTemplates } from './sections.js';
 import { modernSaaSTemplate } from './templates/modern-saas/modern-saas-home.js';
 import { modernSaaSAbout } from './templates/modern-saas/modern-saas-about.js';
@@ -165,6 +165,24 @@ import { businessAbout } from './templates/business/business-about.js';
 import { businessServices } from './templates/business/business-services.js';
 import { businessContact } from './templates/business/business-contact.js';
 
+import itConsultingHomeModule from './templates/IT-consulting/it-consulting-home.cjs';
+const itConsultingHome = itConsultingHomeModule;
+import itConsultingAboutModule from './templates/IT-consulting/it-consulting-about.cjs';
+const itConsultingAbout = itConsultingAboutModule;
+import itConsultingContactModule from './templates/IT-consulting/it-consulting-contact.cjs';
+const itConsultingContact = itConsultingContactModule;
+import itConsultingServicesModule from './templates/IT-consulting/it-consulting-services.cjs';
+const itConsultingServices = itConsultingServicesModule;
+
+import startupMvpHomeModule from './templates/startup-mvp/startup-mvp-home.cjs';
+const startupMvpHome = startupMvpHomeModule;
+import startupMvpAboutModule from './templates/startup-mvp/startup-mvp-about.cjs';
+const startupMvpAbout = startupMvpAboutModule;
+import startupMvpPricingModule from './templates/startup-mvp/startup-mvp-pricing.cjs';
+const startupMvpPricing = startupMvpPricingModule;
+import startupMvpServicesModule from './templates/startup-mvp/startup-mvp-services.cjs';
+const startupMvpServices = startupMvpServicesModule;
+
 // ============================================================================
 // HELPERS
 // ============================================================================
@@ -250,9 +268,10 @@ export const websiteTemplates = [
         name: "Modern SaaS",
         slug: "modern-saas",
         description: "Vibrant blue/purple SaaS template with hero, features, and social proof",
-        category: "saas",
+        category: "IT & Software",
         thumbnail: "assets/templates/modern-saas.png",
         siteSchema: {
+            defaultTheme: { name: "Modern SaaS", colors: { primary: "#3B82F6", secondary: "#A855F7", accent: "#EC4899", background: "#030712", text: "#FFFFFF" } },
             themes: ALL_THEMES,
             globalSections: {
                 header: modernSaaSTemplate.header?.structure || {},
@@ -311,6 +330,7 @@ export const websiteTemplates = [
         category: "portfolio",
         thumbnail: "assets/templates/portfolio.png",
         siteSchema: {
+            defaultTheme: { name: "Portfolio", colors: { primary: "#3B82F6", secondary: "#1E293B", accent: "#3B82F6", background: "#FFFFFF", text: "#1E293B" } },
             themes: ALL_THEMES,
             globalSections: {
                 header: portfolioHome?.header?.structure || {},
@@ -331,9 +351,10 @@ export const websiteTemplates = [
         name: "TechNova",
         slug: "tech-innovation",
         description: "Modern tech innovation company homepage with sector showcase and enterprise solutions",
-        category: "tech-innovation",
+        category: "IT & Software",
         thumbnail: "assets/templates/tech-innovation.png",
         siteSchema: {
+            defaultTheme: { name: "Tech Innovation", colors: { primary: "#ec1313", secondary: "#9a4c4c", accent: "#ec1313", background: "#f8f6f6", text: "#1b0d0d" } },
             themes: ALL_THEMES,
             globalSections: {
                 header: techInnovationTemplate.header?.structure || {},
@@ -384,6 +405,7 @@ export const websiteTemplates = [
         industry: 'Creative / Design',
         thumbnail: 'assets/templates/design-studio.png',
         siteSchema: {
+            defaultTheme: { name: "Design Studio", colors: { primary: "#1F6AE1", secondary: "#1F6AE1", accent: "#1F6AE1", background: "#ffffff", text: "#000000" } },
             themes: ALL_THEMES,
             globalSections: {
                 header: designStudioHome.header?.structure || {},
@@ -433,6 +455,7 @@ export const websiteTemplates = [
         category: 'agriculture',
         industry: 'Agriculture / Agri-Tech',
         siteSchema: {
+            defaultTheme: { name: "GreenHarvest", colors: { primary: "#16a34a", secondary: "#101912", accent: "#16a34a", background: "#ffffff", text: "#101912" } },
             themes: ALL_THEMES,
             globalSections: {
                 header: greenHarvestHome.header?.structure || {},
@@ -483,6 +506,7 @@ export const websiteTemplates = [
         industry: 'Organic Agriculture / Sustainability',
         thumbnail: 'assets/templates/agri-ecosystem.png',
         siteSchema: {
+            defaultTheme: { name: "AgriEcosystem", colors: { primary: "#32a850", secondary: "#1a1a1a", accent: "#32a850", background: "#ffffff", text: "#1a1a1a" } },
             themes: ALL_THEMES,
             globalSections: {
                 header: agriEcosystemHome.header?.structure || {},
@@ -529,6 +553,7 @@ export const websiteTemplates = [
         industry: 'Healthcare / Medical',
         thumbnail: 'assets/templates/careplus.png',
         siteSchema: {
+            defaultTheme: { name: "CarePlus", colors: { primary: "#008080", secondary: "#004D4D", accent: "#008080", background: "#ffffff", text: "#0F172A" } },
             themes: ALL_THEMES,
             globalSections: {
                 header: careplusHome.header?.structure || {},
@@ -572,6 +597,7 @@ export const websiteTemplates = [
         industry: 'Transportation / Logistics',
         thumbnail: 'assets/templates/swiftlogix.png',
         siteSchema: {
+            defaultTheme: { name: "SwiftLogix", colors: { primary: "#ed2626", secondary: "#0f0f0f", accent: "#ed2626", background: "#ffffff", text: "#0f0f0f" } },
             themes: ALL_THEMES,
             globalSections: {
                 header: swiftlogixHome.header?.structure || {},
@@ -621,6 +647,7 @@ export const websiteTemplates = [
         category: 'education',
         industry: 'Education / EdTech',
         siteSchema: {
+            defaultTheme: { name: "Academiq", colors: { primary: "#0048B3", secondary: "#E0F2FE", accent: "#0048B3", background: "#ffffff", text: "#0f172a" } },
             themes: ALL_THEMES,
             globalSections: {
                 header: academiqHome.header?.structure || {},
@@ -667,10 +694,11 @@ export const websiteTemplates = [
         name: 'Tech Company',
         slug: 'tech-company',
         description: 'Modern tech/IT solutions company homepage with hero, social proof, and service showcase.',
-        category: 'tech-innovation',
+        category: 'IT & Software',
         industry: 'Technology / IT Solutions',
         thumbnail: 'assets/templates/tech-company.png',
         siteSchema: {
+            defaultTheme: { name: "Tech Company", colors: { primary: "#328CE6", secondary: "#000000", accent: "#328CE6", background: "#F8F8F6", text: "#000000" } },
             themes: ALL_THEMES,
             globalSections: {
                 header: techCompanyHome.header?.structure || {},
@@ -723,9 +751,10 @@ export const websiteTemplates = [
         name: 'TechNova Solutions',
         slug: 'tech-nova-solutions',
         description: 'Futuristic AI tech company template featuring cutting-edge design, portfolio showcase, and ecosystem services.',
-        category: 'tech-innovation',
+        category: 'IT & Software',
         industry: 'Technology / AI Solutions',
         siteSchema: {
+            defaultTheme: { name: "TechNova Solutions", colors: { primary: "#6366f1", secondary: "#a855f7", accent: "#6366f1", background: "#ffffff", text: "#1f2937" } },
             themes: ALL_THEMES,
             globalSections: {
                 header: techNova.header?.structure || {},
@@ -771,6 +800,7 @@ export const websiteTemplates = [
         category: 'architecture',
         industry: 'Real Estate / Architecture',
         siteSchema: {
+            defaultTheme: { name: "UrbanNest", colors: { primary: "#ecb613", secondary: "#1e293b", accent: "#ecb613", background: "#f8f8f6", text: "#1e293b" } },
             themes: ALL_THEMES,
             globalSections: {
                 header: urbanNestHome.header?.structure || {},
@@ -806,6 +836,7 @@ export const websiteTemplates = [
         category: 'education',
         industry: 'Education / eLearning',
         siteSchema: {
+            defaultTheme: { name: "EduPremium", colors: { primary: "#FF4500", secondary: "#FF4500", accent: "#FF4500", background: "#ffffff", text: "#111827" } },
             themes: ALL_THEMES,
             globalSections: {
                 header: educationHome.header?.structure || {},
@@ -855,6 +886,7 @@ export const websiteTemplates = [
         category: 'finance',
         industry: 'Finance / Banking',
         siteSchema: {
+            defaultTheme: { name: "FinancePro", colors: { primary: "#009e89", secondary: "#009e89", accent: "#009e89", background: "#ffffff", text: "#111827" } },
             themes: ALL_THEMES,
             globalSections: {
                 header: financeHero.header?.structure || {},
@@ -901,9 +933,10 @@ export const websiteTemplates = [
         name: 'Wanderlust Travel',
         slug: 'wanderlust-travel',
         description: 'Premium travel and tourism template with oceanic blue theme.',
-        category: 'travel',
+        category: 'tourism',
         industry: 'Travel / Tourism',
         siteSchema: {
+            defaultTheme: { name: "Wanderlust Travel", colors: { primary: "#1B4965", secondary: "#FF4D7C", accent: "#FF4D7C", background: "#ffffff", text: "#1B4965" } },
             themes: ALL_THEMES,
             globalSections: {
                 header: travelHome.header?.structure || {},
@@ -957,9 +990,10 @@ export const websiteTemplates = [
         name: 'Epilogue Culinary',
         slug: 'epilogue-culinary',
         description: 'Luxury culinary editorial template with deep purple and gold accents for premium food brands.',
-        category: 'food',
+        category: 'tourism',
         industry: 'Food / Culinary',
         siteSchema: {
+            defaultTheme: { name: "Epilogue Culinary", colors: { primary: "#2e0057", secondary: "#ebd800", accent: "#ebd800", background: "#ffffff", text: "#2e0057" } },
             themes: ALL_THEMES,
             globalSections: {
                 header: foodHome.header?.structure || {},
@@ -1013,9 +1047,10 @@ export const websiteTemplates = [
         name: 'Tech-Street',
         slug: 'tech-street',
         description: 'Premium streetwear e-commerce template with dark futuristic aesthetics.',
-        category: 'ecommerce',
+        category: 'e-commerce',
         industry: 'Fashion / E-Commerce',
         siteSchema: {
+            defaultTheme: { name: "Tech-Street", colors: { primary: "#D3ADFF", secondary: "#89D900", accent: "#89D900", background: "#ffffff", text: "#000000" } },
             themes: ALL_THEMES,
             globalSections: {
                 header: ecommerceHome.header?.structure || {},
@@ -1065,6 +1100,7 @@ export const websiteTemplates = [
         category: 'real-estate',
         industry: 'Real Estate / Architecture',
         siteSchema: {
+            defaultTheme: { name: "Apex Estates", colors: { primary: "#59184C", secondary: "#b0903e", accent: "#ffe39b", background: "#f7f7f7", text: "#59184C" } },
             themes: ALL_THEMES,
             globalSections: {
                 header: realEstateHome.header?.structure || {},
@@ -1110,10 +1146,11 @@ export const websiteTemplates = [
         name: 'Apex Structures',
         slug: 'construction',
         description: 'Industrial-grade template for construction and architecture firms with warm orange authority.',
-        category: 'construction',
+        category: 'real-estate',
         industry: 'Construction / Architecture',
         thumbnail: 'assets/templates/construction.png', // Placeholder
         siteSchema: {
+            defaultTheme: { name: "Apex Structures", colors: { primary: "#009DFF", secondary: "#FFE100", accent: "#FFE100", background: "#ffffff", text: "#111827" } },
             themes: ALL_THEMES,
             globalSections: {
                 header: constructionHome.header?.structure || {},
@@ -1167,9 +1204,10 @@ export const websiteTemplates = [
         name: 'Elite Business',
         slug: 'business',
         description: 'Premium service business template for high-end professional services with dark mode sophistication.',
-        category: 'business',
+        category: 'manufacturing',
         industry: 'Services / Construction',
         siteSchema: {
+            defaultTheme: { name: "Elite Business", colors: { primary: "#005eff", secondary: "#aeff00", accent: "#aeff00", background: "#ffffff", text: "#111827" } },
             themes: ALL_THEMES,
             globalSections: {
                 header: businessHome.header?.structure || {},
@@ -1203,6 +1241,102 @@ export const websiteTemplates = [
                     name: "Contact",
                     isHomePage: false,
                     blocks: businessContact.sections?.map(s => s.structure) || []
+                }
+            ]
+        }
+    },
+    // ========================================================================
+    // IT CONSULTING TEMPLATE
+    // ========================================================================
+    {
+        name: 'TechConsult Elite',
+        slug: 'it-consulting',
+        description: 'Premium IT consulting template for digital transformation firms, cybersecurity consultants, and enterprise technology advisors. Features professional blue/teal design with hero sections, service cards, case studies, timeline, contact forms, and FAQ.',
+        category: 'IT & Software',
+        industry: 'IT Consulting / Digital Transformation',
+        siteSchema: {
+            defaultTheme: { name: "TechConsult Elite", colors: { primary: "#0559b3", secondary: "#05B3AA", accent: "#05B3AA", background: "#ffffff", text: "#0f172a" } },
+            themes: ALL_THEMES,
+            globalSections: {
+                header: itConsultingHome.header?.structure || {},
+                footer: itConsultingHome.footer?.structure || {}
+            },
+            pages: [
+                {
+                    title: "Home",
+                    path: "/",
+                    name: "Home",
+                    isHomePage: true,
+                    blocks: itConsultingHome.sections?.map(s => s.structure) || []
+                },
+                {
+                    title: "About Us",
+                    path: "/about",
+                    name: "About",
+                    isHomePage: false,
+                    blocks: itConsultingAbout.sections?.map(s => s.structure) || []
+                },
+                {
+                    title: "Our Services",
+                    path: "/services",
+                    name: "Services",
+                    isHomePage: false,
+                    blocks: itConsultingServices.sections?.map(s => s.structure) || []
+                },
+                {
+                    title: "Contact",
+                    path: "/contact",
+                    name: "Contact",
+                    isHomePage: false,
+                    blocks: itConsultingContact.sections?.map(s => s.structure) || []
+                }
+            ]
+        }
+    },
+    // ========================================================================
+    // STARTUP MVP TEMPLATE
+    // ========================================================================
+    {
+        name: 'Startup MVP',
+        slug: 'startup-mvp',
+        description: 'Modern startup template with gradient branding, pricing tiers, team showcase, and high-performance services page. Perfect for SaaS products and tech startups.',
+        category: 'IT & Software',
+        industry: 'SaaS / Startup',
+        siteSchema: {
+            defaultTheme: { name: "Startup MVP", colors: { primary: "#902EFF", secondary: "#FF2EA4", accent: "#FF2EA4", background: "#ffffff", text: "#111827" } },
+            themes: ALL_THEMES,
+            globalSections: {
+                header: startupMvpHome.header?.structure || {},
+                footer: startupMvpHome.footer?.structure || {}
+            },
+            pages: [
+                {
+                    title: "Home",
+                    path: "/",
+                    name: "Home",
+                    isHomePage: true,
+                    blocks: startupMvpHome.sections?.map(s => s.structure) || []
+                },
+                {
+                    title: "About Us",
+                    path: "/about",
+                    name: "About",
+                    isHomePage: false,
+                    blocks: startupMvpAbout.sections?.map(s => s.structure) || []
+                },
+                {
+                    title: "Pricing",
+                    path: "/pricing",
+                    name: "Pricing",
+                    isHomePage: false,
+                    blocks: startupMvpPricing.sections?.map(s => s.structure) || []
+                },
+                {
+                    title: "Services",
+                    path: "/services",
+                    name: "Services",
+                    isHomePage: false,
+                    blocks: startupMvpServices.sections?.map(s => s.structure) || []
                 }
             ]
         }
