@@ -6,6 +6,7 @@ import { modernSaaSPricing } from './templates/modern-saas/modern-saas-pricing.j
 import { modernSaaSResources } from './templates/modern-saas/modern-saas-resources.js';
 import { modernSaaSContact } from './templates/modern-saas/modern-saas-contact.js';
 import { portfolioHome } from './templates/portfolio/portfolio-home.js';
+import { devPortfolioHome } from './templates/dev-portfolio/dev-portfolio-home.js';
 import techInnovationHomeModule from './templates/tech-innovation/tech-innovation-home.cjs';
 import techInnovationInfraModule from './templates/tech-innovation/tech-innovation-infrastructure.cjs';
 import techInnovationCareersModule from './templates/tech-innovation/tech-innovation-careers.cjs';
@@ -1395,6 +1396,45 @@ export const websiteTemplates = [
                     name: "Contact",
                     isHomePage: false,
                     blocks: luxaiContact.sections?.map(s => s.structure) || []
+                }
+            ]
+        }
+    },
+
+    // ==========================================================================
+    // DEV PORTFOLIO — Dark Theme Developer Portfolio
+    // ==========================================================================
+    {
+        id: genId('dev-portfolio-tpl'),
+        name: 'Dev Portfolio Dark',
+        slug: 'dev-portfolio',
+        description: 'Modern dark-theme developer portfolio with gradient accents, animated hero, and glassmorphism cards. Perfect for software engineers and product builders.',
+        category: 'portfolio',
+        industry: 'Technology / Software Engineering',
+        thumbnail: 'assets/templates/dev-portfolio.png',
+        siteSchema: {
+            defaultTheme: {
+                name: "Dev Portfolio Dark",
+                colors: {
+                    primary: "#22d3ee",
+                    secondary: "#f97316",
+                    accent: "#f97316",
+                    background: "#09090b",
+                    text: "#fafafa"
+                }
+            },
+            themes: ALL_THEMES,
+            globalSections: {
+                header: devPortfolioHome.header?.structure || {},
+                footer: devPortfolioHome.footer?.structure || {}
+            },
+            pages: [
+                {
+                    title: "Home",
+                    path: "/",
+                    name: "Home",
+                    isHomePage: true,
+                    blocks: devPortfolioHome.sections?.map(s => s.structure) || []
                 }
             ]
         }
