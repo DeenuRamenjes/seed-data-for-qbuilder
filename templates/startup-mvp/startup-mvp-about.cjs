@@ -168,6 +168,7 @@ const startupMvpAbout = {
                             title: "Meet the Visionaries",
                             subtitle: "A diverse team of engineers, designers, and former founders dedicated to your success.",
                             ctaText: "Join the Team",
+                            ctaLink: "/pricing",
                             members: [
                                 {
                                     id: "alex",

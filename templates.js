@@ -183,6 +183,15 @@ const startupMvpPricing = startupMvpPricingModule;
 import startupMvpServicesModule from './templates/startup-mvp/startup-mvp-services.cjs';
 const startupMvpServices = startupMvpServicesModule;
 
+import luxaiHomeModule from './templates/luxai/luxai-home.cjs';
+const luxaiHome = luxaiHomeModule;
+import luxaiAboutModule from './templates/luxai/luxai-about.cjs';
+const luxaiAbout = luxaiAboutModule;
+import luxaiContactModule from './templates/luxai/luxai-contact.cjs';
+const luxaiContact = luxaiContactModule;
+import luxaiCaseStudiesModule from './templates/luxai/luxai-casestudies.cjs';
+const luxaiCaseStudies = luxaiCaseStudiesModule;
+
 // ============================================================================
 // HELPERS
 // ============================================================================
@@ -1325,18 +1334,67 @@ export const websiteTemplates = [
                     blocks: startupMvpAbout.sections?.map(s => s.structure) || []
                 },
                 {
-                    title: "Pricing",
-                    path: "/pricing",
-                    name: "Pricing",
-                    isHomePage: false,
-                    blocks: startupMvpPricing.sections?.map(s => s.structure) || []
-                },
-                {
                     title: "Services",
                     path: "/services",
                     name: "Services",
                     isHomePage: false,
                     blocks: startupMvpServices.sections?.map(s => s.structure) || []
+                },
+                {
+                    title: "Pricing",
+                    path: "/pricing",
+                    name: "Pricing",
+                    isHomePage: false,
+                    blocks: startupMvpPricing.sections?.map(s => s.structure) || []
+                }
+            ]
+        }
+    },
+
+    // =========================================================================
+    // LUXAI PORTFOLIO TEMPLATE
+    // =========================================================================
+    {
+        name: 'LuxAI Portfolio',
+        slug: 'luxai-portfolio',
+        description: 'Premium enterprise AI portfolio template with gold and deep blue accents, case studies, and contact form.',
+        category: 'IT & Software',
+        industry: 'AI / Machine Learning',
+        siteSchema: {
+            defaultTheme: { name: "LuxAI Portfolio", colors: { primary: "#ffae00", secondary: "#001885", accent: "#ffae00", background: "#f8f7f5", text: "#0f172a" } },
+            themes: ALL_THEMES,
+            globalSections: {
+                header: luxaiHome.header?.structure || {},
+                footer: luxaiHome.footer?.structure || {}
+            },
+            pages: [
+                {
+                    title: "Home",
+                    path: "/",
+                    name: "Home",
+                    isHomePage: true,
+                    blocks: luxaiHome.sections?.map(s => s.structure) || []
+                },
+                {
+                    title: "About",
+                    path: "/about",
+                    name: "About",
+                    isHomePage: false,
+                    blocks: luxaiAbout.sections?.map(s => s.structure) || []
+                },
+                {
+                    title: "Case Studies",
+                    path: "/case-studies",
+                    name: "Case Studies",
+                    isHomePage: false,
+                    blocks: luxaiCaseStudies.sections?.map(s => s.structure) || []
+                },
+                {
+                    title: "Contact",
+                    path: "/contact",
+                    name: "Contact",
+                    isHomePage: false,
+                    blocks: luxaiContact.sections?.map(s => s.structure) || []
                 }
             ]
         }

@@ -43,11 +43,12 @@ const startupMvpHome = {
                         buttonStyle: "solid",
                         buttonBg: "#000000",
                         buttonColor: "#ffffff",
+                        buttonLink: "/pricing",
                         links: [
-                            { label: "Product", url: "/" },
-                            { label: "Features", url: "/" },
-                            { label: "Pricing", url: "/pricing" },
-                            { label: "About", url: "/about" }
+                            { label: "Home", url: "/" },
+                            { label: "About Us", url: "/about" },
+                            { label: "Services", url: "/services" },
+                            { label: "Pricing", url: "/pricing" }
                         ]
                     }
                 }]
@@ -595,9 +596,9 @@ const startupMvpHome = {
                             paddingTop: 20,
                             paddingBottom: 20,
                             primaryCtaText: "Start Free Trial",
-                            primaryCtaLink: "#",
+                            primaryCtaLink: "/pricing",
                             secondaryCtaText: "Schedule a Demo →",
-                            secondaryCtaLink: "#"
+                            secondaryCtaLink: "/pricing"
                         }
                     }]
                 }]

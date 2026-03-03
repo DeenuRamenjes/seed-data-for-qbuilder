@@ -304,8 +304,6 @@ const itConsultingAbout = {
                                 cardAlignment: "center",
                                 description: "We provide honest, transparent advice, even when it's not what people want to hear.",
                                 iconName: "ShieldCheck",
-                                linkText: "",
-                                link: "#"
                             }
                         }]
                     },
@@ -321,8 +319,6 @@ const itConsultingAbout = {
                                 cardAlignment: "center",
                                 description: "We don't just follow trends; we create them. Our R&D labs are constantly testing new frontiers.",
                                 iconName: "Lightbulb",
-                                linkText: "",
-                                link: "#"
                             }
                         }]
                     },
@@ -338,8 +334,6 @@ const itConsultingAbout = {
                                 cardAlignment: "center",
                                 description: "Technology is a tool for people. We design every solution with the end-user's experience at the core.",
                                 iconName: "Users",
-                                linkText: "",
-                                link: "#"
                             }
                         }]
                     },
@@ -355,8 +349,6 @@ const itConsultingAbout = {
                                 cardAlignment: "center",
                                 description: "We pursue relentless improvement, setting higher benchmarks with every project we deliver.",
                                 iconName: "Award",
-                                linkText: "",
-                                link: "#"
                             }
                         }]
                     }
