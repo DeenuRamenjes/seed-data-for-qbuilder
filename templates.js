@@ -193,6 +193,15 @@ const luxaiContact = luxaiContactModule;
 import luxaiCaseStudiesModule from './templates/luxai/luxai-casestudies.cjs';
 const luxaiCaseStudies = luxaiCaseStudiesModule;
 
+import techSupportHomeModule from './templates/tech-support/tech-support-home.cjs';
+const techSupportHome = techSupportHomeModule;
+import techSupportServicesModule from './templates/tech-support/tech-support-services.cjs';
+const techSupportServices = techSupportServicesModule;
+import techSupportAboutModule from './templates/tech-support/tech-support-about.cjs';
+const techSupportAbout = techSupportAboutModule;
+import techSupportContactModule from './templates/tech-support/tech-support-contact.cjs';
+const techSupportContact = techSupportContactModule;
+
 // ============================================================================
 // HELPERS
 // ============================================================================
@@ -1435,6 +1444,66 @@ export const websiteTemplates = [
                     name: "Home",
                     isHomePage: true,
                     blocks: devPortfolioHome.sections?.map(s => s.structure) || []
+                }
+            ]
+        }
+    },
+
+    // ==========================================================================
+    // NEXASUPPORT — Tech Support & Managed Services
+    // ==========================================================================
+    {
+        id: genId('tech-support-tpl'),
+        name: 'NexaSupport',
+        slug: 'tech-support',
+        description: 'Modern tech support and managed IT services template with knowledge base, FAQ, service comparison, and 24/7 support features.',
+        category: 'IT & Software',
+        industry: 'Technology / IT Support',
+        thumbnail: 'assets/templates/tech-support.png',
+        siteSchema: {
+            defaultTheme: {
+                name: "NexaSupport",
+                colors: {
+                    primary: "#60F21D",
+                    secondary: "#8100B8",
+                    accent: "#60F21D",
+                    background: "#ffffff",
+                    text: "#000000"
+                }
+            },
+            themes: ALL_THEMES,
+            globalSections: {
+                header: techSupportHome.header?.structure || {},
+                footer: techSupportHome.footer?.structure || {}
+            },
+            pages: [
+                {
+                    title: "Home",
+                    path: "/",
+                    name: "Home",
+                    isHomePage: true,
+                    blocks: techSupportHome.sections?.map(s => s.structure) || []
+                },
+                {
+                    title: "Services",
+                    path: "/services",
+                    name: "Services",
+                    isHomePage: false,
+                    blocks: techSupportServices.sections?.map(s => s.structure) || []
+                },
+                {
+                    title: "About",
+                    path: "/about",
+                    name: "About",
+                    isHomePage: false,
+                    blocks: techSupportAbout.sections?.map(s => s.structure) || []
+                },
+                {
+                    title: "Contact",
+                    path: "/contact",
+                    name: "Contact",
+                    isHomePage: false,
+                    blocks: techSupportContact.sections?.map(s => s.structure) || []
                 }
             ]
         }
