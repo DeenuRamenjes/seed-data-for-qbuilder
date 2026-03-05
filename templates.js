@@ -210,6 +210,15 @@ const techSupportAbout = techSupportAboutModule;
 import techSupportContactModule from './templates/tech-support/tech-support-contact.cjs';
 const techSupportContact = techSupportContactModule;
 
+import eliteHomeModule from './templates/doctorProfile/elite-home.cjs';
+const eliteHome = eliteHomeModule;
+import eliteAboutModule from './templates/doctorProfile/elite-about.cjs';
+const eliteAbout = eliteAboutModule;
+import eliteServicesModule from './templates/doctorProfile/elite-services.cjs';
+const eliteServices = eliteServicesModule;
+import eliteContactModule from './templates/doctorProfile/elite-contact.cjs';
+const eliteContact = eliteContactModule;
+
 // ============================================================================
 // HELPERS
 // ============================================================================
@@ -1563,6 +1572,56 @@ export const websiteTemplates = [
                     name: "Contact",
                     isHomePage: false,
                     blocks: techSupportContact.sections?.map(s => s.structure) || []
+                }
+            ]
+        }
+    },
+
+    // =========================================================================
+    // DOCTOR PROFILE TEMPLATE (Elite Private Clinic)
+    // =========================================================================
+    {
+        id: 'doctor-profile',
+        name: 'Elite Private Clinic',
+        slug: 'doctor-profile',
+        description: 'Premium private medical clinic template with glassmorphism hero, specialist profiles, and patient-centric design.',
+        category: 'medical',
+        industry: 'Healthcare / Medical',
+        siteSchema: {
+            defaultTheme: { name: "EliteClinic", colors: { primary: "#1FFFC0", secondary: "#1F5EFF", accent: "#1FCEFF", background: "#ffffff", text: "#0f172a" } },
+            themes: ALL_THEMES,
+            globalSections: {
+                header: eliteHome.header?.structure || {},
+                footer: eliteHome.footer?.structure || {}
+            },
+            pages: [
+                {
+                    title: "Home",
+                    path: "/",
+                    name: "Home",
+                    isHomePage: true,
+                    blocks: eliteHome.sections?.map(s => s.structure) || []
+                },
+                {
+                    title: "About",
+                    path: "/about",
+                    name: "About",
+                    isHomePage: false,
+                    blocks: eliteAbout.sections?.map(s => s.structure) || []
+                },
+                {
+                    title: "Our Services",
+                    path: "/services",
+                    name: "Services",
+                    isHomePage: false,
+                    blocks: eliteServices.sections?.map(s => s.structure) || []
+                },
+                {
+                    title: "Contact",
+                    path: "/contact",
+                    name: "Contact",
+                    isHomePage: false,
+                    blocks: eliteContact.sections?.map(s => s.structure) || []
                 }
             ]
         }
