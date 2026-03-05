@@ -49,6 +49,14 @@ import careplusDiagnosticsModule from './templates/hospital/careplus-diagnostics
 const careplusDiagnostics = careplusDiagnosticsModule;
 import careplusProgramsModule from './templates/hospital/careplus-programs.cjs';
 const careplusPrograms = careplusProgramsModule;
+import vitalisHomeModule from './templates/hospital-2/vitalis-home.cjs';
+const vitalisHome = vitalisHomeModule;
+import vitalisAboutModule from './templates/hospital-2/vitalis-about.cjs';
+const vitalisAbout = vitalisAboutModule;
+import vitalisDepartmentsModule from './templates/hospital-2/vitalis-departments.cjs';
+const vitalisDepartments = vitalisDepartmentsModule;
+import vitalisContactModule from './templates/hospital-2/vitalis-contact.cjs';
+const vitalisContact = vitalisContactModule;
 import swiftlogixHomeModule from './templates/logistics/swiftlogix-home.cjs';
 const swiftlogixHome = swiftlogixHomeModule;
 import swiftlogixOpsModule from './templates/logistics/swiftlogix-ops.cjs';
@@ -599,6 +607,57 @@ export const websiteTemplates = [
                     name: "Programs",
                     isHomePage: false,
                     blocks: careplusPrograms.sections?.map(s => s.structure) || []
+                }
+            ]
+        }
+    },
+
+    // =========================================================================
+    // VITALIS MEDICAL CENTER TEMPLATE (HOSPITAL-2)
+    // =========================================================================
+    {
+        id: genId('vitalis-tpl'),
+        name: 'Vitalis Medical Center',
+        slug: 'vitalis',
+        description: 'Modern healthcare template with emergency services, departments, and patient testimonials.',
+        category: 'medical',
+        industry: 'Healthcare / Medical',
+        thumbnail: 'assets/templates/vitalis.png',
+        siteSchema: {
+            defaultTheme: { name: "Vitalis", colors: { primary: "#e60000", secondary: "#00c9e3", accent: "#e60000", background: "#ffffff", text: "#0f172a" } },
+            themes: ALL_THEMES,
+            globalSections: {
+                header: vitalisHome.header?.structure || {},
+                footer: vitalisHome.footer?.structure || {}
+            },
+            pages: [
+                {
+                    title: "Home",
+                    path: "/",
+                    name: "Home",
+                    isHomePage: true,
+                    blocks: vitalisHome.sections?.map(s => s.structure) || []
+                },
+                {
+                    title: "About Us",
+                    path: "/about",
+                    name: "About",
+                    isHomePage: false,
+                    blocks: vitalisAbout.sections?.map(s => s.structure) || []
+                },
+                {
+                    title: "Departments",
+                    path: "/departments",
+                    name: "Departments",
+                    isHomePage: false,
+                    blocks: vitalisDepartments.sections?.map(s => s.structure) || []
+                },
+                {
+                    title: "Contact",
+                    path: "/contact",
+                    name: "Contact",
+                    isHomePage: false,
+                    blocks: vitalisContact.sections?.map(s => s.structure) || []
                 }
             ]
         }
