@@ -228,6 +228,15 @@ const diagnosticServices = diagnosticServicesModule;
 import diagnosticContactModule from './templates/diagnostic-lab/diagnostic-contact.cjs';
 const diagnosticContact = diagnosticContactModule;
 
+import teleHomeModule from './templates/tele-medicine/tele-medicine-home.cjs';
+const telemedicineHome = teleHomeModule;
+import teleAboutModule from './templates/tele-medicine/tele-medicine-about.cjs';
+const telemedicineAbout = teleAboutModule;
+import teleSpecialistsModule from './templates/tele-medicine/tele-medicine-specialists.cjs';
+const telemedicineSpecialists = teleSpecialistsModule;
+import telePricingModule from './templates/tele-medicine/tele-medicine-pricing.cjs';
+const telemedicinePricing = telePricingModule;
+
 // ============================================================================
 // HELPERS
 // ============================================================================
@@ -1681,6 +1690,56 @@ export const websiteTemplates = [
                     name: "Contact",
                     isHomePage: false,
                     blocks: diagnosticContact.sections?.map(s => s.structure) || []
+                }
+            ]
+        }
+    },
+
+    // =========================================================================
+    // TELEMEDICINE TEMPLATE (Ethos Health)
+    // =========================================================================
+    {
+        id: 'tele-medicine',
+        name: 'Ethos Health',
+        slug: 'tele-medicine',
+        description: 'Premium telemedicine template designed for high-performance health, exclusive medical access, and bespoke longevity protocols.',
+        category: 'medical',
+        industry: 'Healthcare / Telemedicine',
+        siteSchema: {
+            defaultTheme: { name: "EthosHealth", colors: { primary: "#FF3075", secondary: "#FFEA00", accent: "#5763FF", background: "#ffffff", text: "#1a1a1a" } },
+            themes: ALL_THEMES,
+            globalSections: {
+                header: telemedicineHome.header?.structure || {},
+                footer: telemedicineHome.footer?.structure || {}
+            },
+            pages: [
+                {
+                    title: "Home",
+                    path: "/",
+                    name: "Home",
+                    isHomePage: true,
+                    blocks: telemedicineHome.sections?.map(s => s.structure) || []
+                },
+                {
+                    title: "About",
+                    path: "/about",
+                    name: "About",
+                    isHomePage: false,
+                    blocks: telemedicineAbout.sections?.map(s => s.structure) || []
+                },
+                {
+                    title: "Specialists",
+                    path: "/specialists",
+                    name: "Specialists",
+                    isHomePage: false,
+                    blocks: telemedicineSpecialists.sections?.map(s => s.structure) || []
+                },
+                {
+                    title: "Pricing",
+                    path: "/pricing",
+                    name: "Pricing",
+                    isHomePage: false,
+                    blocks: telemedicinePricing.sections?.map(s => s.structure) || []
                 }
             ]
         }
