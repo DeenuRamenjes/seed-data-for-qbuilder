@@ -219,6 +219,15 @@ const eliteServices = eliteServicesModule;
 import eliteContactModule from './templates/doctorProfile/elite-contact.cjs';
 const eliteContact = eliteContactModule;
 
+import diagnosticHomeModule from './templates/diagnostic-lab/diagnostic-home.cjs';
+const diagnosticHome = diagnosticHomeModule;
+import diagnosticAboutModule from './templates/diagnostic-lab/diagnostic-about.cjs';
+const diagnosticAbout = diagnosticAboutModule;
+import diagnosticServicesModule from './templates/diagnostic-lab/diagnostic-services.cjs';
+const diagnosticServices = diagnosticServicesModule;
+import diagnosticContactModule from './templates/diagnostic-lab/diagnostic-contact.cjs';
+const diagnosticContact = diagnosticContactModule;
+
 // ============================================================================
 // HELPERS
 // ============================================================================
@@ -1622,6 +1631,56 @@ export const websiteTemplates = [
                     name: "Contact",
                     isHomePage: false,
                     blocks: eliteContact.sections?.map(s => s.structure) || []
+                }
+            ]
+        }
+    },
+
+    // =========================================================================
+    // DIAGNOSTIC LAB TEMPLATE (Helix Research)
+    // =========================================================================
+    {
+        id: 'diagnostic-lab',
+        name: 'Helix Research',
+        slug: 'diagnostic-lab',
+        description: 'Swiss minimalist diagnostic laboratory template with editorial typography, molecular imagery, and premium healthcare design.',
+        category: 'medical',
+        industry: 'Healthcare / Diagnostics',
+        siteSchema: {
+            defaultTheme: { name: "HelixResearch", colors: { primary: "#cf24ff", secondary: "#FF24C1", accent: "#6224ff", background: "#ffffff", text: "#0f172a" } },
+            themes: ALL_THEMES,
+            globalSections: {
+                header: diagnosticHome.header?.structure || {},
+                footer: diagnosticHome.footer?.structure || {}
+            },
+            pages: [
+                {
+                    title: "Home",
+                    path: "/",
+                    name: "Home",
+                    isHomePage: true,
+                    blocks: diagnosticHome.sections?.map(s => s.structure) || []
+                },
+                {
+                    title: "About",
+                    path: "/about",
+                    name: "About",
+                    isHomePage: false,
+                    blocks: diagnosticAbout.sections?.map(s => s.structure) || []
+                },
+                {
+                    title: "Services",
+                    path: "/services",
+                    name: "Services",
+                    isHomePage: false,
+                    blocks: diagnosticServices.sections?.map(s => s.structure) || []
+                },
+                {
+                    title: "Contact",
+                    path: "/contact",
+                    name: "Contact",
+                    isHomePage: false,
+                    blocks: diagnosticContact.sections?.map(s => s.structure) || []
                 }
             ]
         }
