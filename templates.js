@@ -237,6 +237,15 @@ const telemedicineSpecialists = teleSpecialistsModule;
 import telePricingModule from './templates/tele-medicine/tele-medicine-pricing.cjs';
 const telemedicinePricing = telePricingModule;
 
+import sereneOrganicHomeModule from './templates/serene-organic/serene-organic-home.cjs';
+const sereneOrganicHome = sereneOrganicHomeModule;
+import sereneOrganicJourneyModule from './templates/serene-organic/serene-organic-journey.cjs';
+const sereneOrganicJourney = sereneOrganicJourneyModule;
+import sereneOrganicServicesModule from './templates/serene-organic/serene-organic-services.cjs';
+const sereneOrganicServices = sereneOrganicServicesModule;
+import sereneOrganicContactModule from './templates/serene-organic/serene-organic-contact.cjs';
+const sereneOrganicContact = sereneOrganicContactModule;
+
 // ============================================================================
 // HELPERS
 // ============================================================================
@@ -1740,6 +1749,57 @@ export const websiteTemplates = [
                     name: "Pricing",
                     isHomePage: false,
                     blocks: telemedicinePricing.sections?.map(s => s.structure) || []
+                }
+            ]
+        }
+    },
+
+    // =========================================================================
+    // SERENE ORGANIC TEMPLATE
+    // =========================================================================
+    {
+        id: genId('serene-organic-tpl'),
+        name: 'Serene Organic',
+        slug: 'serene-organic',
+        description: 'A holistic wellness and spa template featuring nature-inspired design, gentle color palettes, and artisan therapy showcase.',
+        category: 'medical',
+        industry: 'Wellness / Spa',
+        thumbnail: 'assets/templates/serene-organic.png',
+        siteSchema: {
+            defaultTheme: { name: "Nature Form", colors: { primary: "#7bb16b", secondary: "#171c16", accent: "#b6d487", background: "#ffffff", text: "#50652e" } },
+            themes: ALL_THEMES,
+            globalSections: {
+                header: sereneOrganicHome.header?.structure || {},
+                footer: sereneOrganicHome.footer?.structure || {}
+            },
+            pages: [
+                {
+                    title: "Home",
+                    path: "/",
+                    name: "Home",
+                    isHomePage: true,
+                    blocks: sereneOrganicHome.sections?.map(s => s.structure) || []
+                },
+                {
+                    title: "Journey",
+                    path: "/journey",
+                    name: "Journey",
+                    isHomePage: false,
+                    blocks: sereneOrganicJourney.sections?.map(s => s.structure) || []
+                },
+                {
+                    title: "Treatments",
+                    path: "/treatments",
+                    name: "Treatments",
+                    isHomePage: false,
+                    blocks: sereneOrganicServices.sections?.map(s => s.structure) || []
+                },
+                {
+                    title: "Contact",
+                    path: "/contact",
+                    name: "Contact",
+                    isHomePage: false,
+                    blocks: sereneOrganicContact.sections?.map(s => s.structure) || []
                 }
             ]
         }
