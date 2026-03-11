@@ -246,6 +246,18 @@ const sereneOrganicServices = sereneOrganicServicesModule;
 import sereneOrganicContactModule from './templates/serene-organic/serene-organic-contact.cjs';
 const sereneOrganicContact = sereneOrganicContactModule;
 
+import coachingHomeModule from './templates/education-3/coaching-home.cjs';
+const coachingHome = coachingHomeModule;
+import coachingAboutModule from './templates/education-3/coaching-about.cjs';
+const coachingAbout = coachingAboutModule;
+import coachingCoursesModule from './templates/education-3/coaching-courses.cjs';
+const coachingCourses = coachingCoursesModule;
+import coachingContactModule from './templates/education-3/coaching-contact.cjs';
+const coachingContact = coachingContactModule;
+
+import tutorProfileModule from './templates/tutor/tutor-profile.cjs';
+const tutorProfile = tutorProfileModule;
+
 // ============================================================================
 // HELPERS
 // ============================================================================
@@ -332,7 +344,7 @@ export const websiteTemplates = [
         slug: "modern-saas",
         description: "Vibrant blue/purple SaaS template with hero, features, and social proof",
         category: "IT & Software",
-        thumbnail: "assets/templates/modern-saas.png",
+        thumbnail: "69b11e97d036376956185267",
         siteSchema: {
             defaultTheme: { name: "Modern SaaS", colors: { primary: "#3B82F6", secondary: "#A855F7", accent: "#EC4899", background: "#030712", text: "#FFFFFF" } },
             themes: ALL_THEMES,
@@ -1800,6 +1812,96 @@ export const websiteTemplates = [
                     name: "Contact",
                     isHomePage: false,
                     blocks: sereneOrganicContact.sections?.map(s => s.structure) || []
+                }
+            ]
+        }
+    },
+
+    // =========================================================================
+    // THE CATALYST (COACHING) TEMPLATE
+    // =========================================================================
+    {
+        id: genId('coaching-tpl'),
+        name: 'The Catalyst',
+        slug: 'education-3',
+        description: 'Elite executive coaching template with modern design and premium layout.',
+        category: 'education',
+        industry: 'Coaching / Executive',
+        thumbnail: 'assets/templates/education-3.png',
+        siteSchema: {
+            defaultTheme: { name: "Coaching", colors: { primary: "#e68600", secondary: "#121E6D", accent: "#590094", background: "#f8f7f5", text: "#121E6D" } },
+            themes: ALL_THEMES,
+            globalSections: {
+                header: coachingHome.header?.structure || {},
+                footer: coachingHome.footer?.structure || {}
+            },
+            pages: [
+                {
+                    title: "Home",
+                    path: "/",
+                    name: "Home",
+                    isHomePage: true,
+                    blocks: coachingHome.sections?.map(s => s.structure) || []
+                },
+                {
+                    title: "About",
+                    path: "/about",
+                    name: "About",
+                    isHomePage: false,
+                    blocks: coachingAbout.sections?.map(s => s.structure) || []
+                },
+                {
+                    title: "Courses",
+                    path: "/courses",
+                    name: "Courses",
+                    isHomePage: false,
+                    blocks: coachingCourses.sections?.map(s => s.structure) || []
+                },
+                {
+                    title: "Contact",
+                    path: "/contact",
+                    name: "Contact",
+                    isHomePage: false,
+                    blocks: coachingContact.sections?.map(s => s.structure) || []
+                }
+            ]
+        }
+    },
+
+    // =========================================================================
+    // TUTOR PROFILE TEMPLATE
+    // =========================================================================
+    {
+        id: genId('tutor-tpl'),
+        name: 'V&V Academy',
+        slug: 'tutor-profile',
+        description: 'Elite academic mentorship template with a high-energy, modern aesthetic.',
+        category: 'education',
+        industry: 'Education / Tutoring',
+        thumbnail: 'assets/templates/tutor.png',
+        siteSchema: {
+            defaultTheme: { 
+                name: "Emerald Neon", 
+                colors: { 
+                    primary: "#009C76", 
+                    secondary: "#005E4E", 
+                    accent: "#60FF54", 
+                    background: "#ffffff", 
+                    text: "#005E4E" 
+                } 
+            },
+            themes: ALL_THEMES,
+            globalSections: {
+                header: tutorProfile.header?.structure || {},
+                footer: tutorProfile.footer?.structure || {}
+            },
+            pages: [
+                {
+                    title: "Home",
+                    path: "/",
+                    name: "Home",
+                    isHomePage: true,
+                    blocks: tutorProfile.sections?.map(s => s.structure) || []
                 }
             ]
         }

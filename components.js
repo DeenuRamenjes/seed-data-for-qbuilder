@@ -6062,5 +6062,88 @@ export const components = [
     sidebarCardsComponent,
     imageWithFeaturesComponent,
     horizontalCarouselComponent,
-    techNovaContactFormComponent
+    techNovaContactFormComponent,
+
+    {
+        type: "SignSection",
+        category: "features",
+        name: "Sign Section",
+        description: "A two-column layout featuring overlapping images on the left and text with a signature on the right.",
+        defaultProps: {
+            subHeadline: "Small team,",
+            headline: "Big hearts.",
+            description1: "Themesberg is an experienced and passionate group of designers, developers, project managers, writers and artists. Every client we work with becomes a part of the team. Together we face the challenges and celebrate the victories.",
+            description2: "With a culture of collaboration, a roster of talent, and several office pooches, the Themesberg team is active in the creative community, endlessly interested in what's next, and generally pleasant to be around.",
+            image1: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+            image2: "https://images.unsplash.com/photo-1552581234-26160f608093?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+            signatureImage: "https://upload.wikimedia.org/wikipedia/commons/f/f9/Signature_of_John_Hancock.svg",
+            backgroundColor: "transparent",
+            textColor: "#374151",
+            headingColor: "#111827",
+            subHeadingColor: "#6B7280"
+        },
+        editableProps: {
+            subHeadline: { type: "string", label: "Sub-headline Text", category: "content" },
+            headline: { type: "string", label: "Headline Text", category: "content" },
+            description1: { type: "string", label: "Paragraph 1", category: "content" },
+            description2: { type: "string", label: "Paragraph 2", category: "content" },
+            image1: { type: "image", label: "Background Image", category: "content" },
+            image2: { type: "image", label: "Foreground Image", category: "content" },
+            signatureImage: { type: "image", label: "Signature Image", category: "content" },
+            backgroundColor: { type: "color", label: "Background Color", category: "styles" },
+            textColor: { type: "color", label: "Text Color", category: "styles" },
+            headingColor: { type: "color", label: "Headline Color", category: "styles" },
+            subHeadingColor: { type: "color", label: "Sub-headline Color", category: "styles" }
+        }
+    },
+
+    {
+        type: "CircleStats",
+        category: "features",
+        name: "Circle Stats",
+        description: "Animated circular statistic renderer with highly customizable props.",
+        defaultProps: {
+            percentage: 73.1,
+            label: "Non-Responsive Website",
+            primaryColor: "#d4d846",
+            labelColor: "#374151",
+            backgroundColor: "var(--theme-surface)"
+        },
+        editableProps: {
+            percentage: { type: "number", label: "Percentage (0-100)", category: "content" },
+            label: { type: "string", label: "Label Text", category: "content" },
+            primaryColor: { type: "color", label: "Ring & Number Color", category: "styles" },
+            labelColor: { type: "color", label: "Label Text Color", category: "styles" },
+            backgroundColor: { type: "color", label: "Background Color", category: "styles" }
+        }
+    },
+
+    {
+        type: "PhilosophyCard",
+        category: "features",
+        name: "Philosophy Card",
+        description: "A dual-variant feature card (solid/outlined) with prominent icon and styled borders.",
+        defaultProps: {
+            iconName: "Pickaxe",
+            title: "Land Mining",
+            description: "Professional land mining services to prepare your site for construction. Precision excavation and earthmoving handled by skilled experts for a solid foundation.",
+            variant: "solid",
+            primaryColor: "#FBBF24",
+            backgroundColor: "#FFFFFF",
+            textColor: "#1F2937",
+            descriptionColor: "#4B5563",
+            iconColor: "#1F2937"
+        },
+        editableProps: {
+            iconName: { type: "string", label: "Icon Name (Lucide)", category: "content" },
+            title: { type: "string", label: "Title", category: "content" },
+            description: { type: "rich-text", label: "Description", category: "content" },
+            variant: { type: "select", label: "Variant", options: ["solid", "outlined"], default: "solid", category: "styles" },
+            primaryColor: { type: "color", label: "Primary/Accent Color", category: "styles" },
+            backgroundColor: { type: "color", label: "Background Color (Outlined)", category: "styles" },
+            textColor: { type: "color", label: "Title Text Color", category: "styles" },
+            descriptionColor: { type: "color", label: "Description Text Color", category: "styles" },
+            iconColor: { type: "color", label: "Icon Color (Outlined)", category: "styles" }
+        }
+    }
 ];
