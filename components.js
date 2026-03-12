@@ -749,6 +749,37 @@ const simpleHeroComponent = {
     },
 };
 
+const eduHeroSectionComponent = {
+    type: "EduHeroSection",
+    category: "layout",
+    name: "Education Hero Section",
+    description: "Grid-based layout with deep purple background, floating shapes, and prominent left-aligned image.",
+    defaultProps: {
+        headlineTop: "International",
+        headlineMiddle: "Student",
+        headlineBottom: "Admission",
+        bottomBannerTitle: "The Best Choice For Your Education",
+        bottomBannerText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        websiteUrl: "www.ablazeacademy.com",
+        logoText: "Ablaze Academy",
+        image: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=2000&auto=format&fit=crop",
+        primaryColor: "#FFC900", // Yellow
+        secondaryColor: "#4B2E5D", // Purple
+    },
+    editableProps: {
+        headlineTop: { type: "string", label: "Top Headline", category: "content" },
+        headlineMiddle: { type: "string", label: "Middle Headline", category: "content" },
+        headlineBottom: { type: "string", label: "Bottom Headline", category: "content" },
+        bottomBannerTitle: { type: "string", label: "Bottom Banner Title", category: "content" },
+        bottomBannerText: { type: "string", label: "Bottom Banner Text", category: "content" },
+        websiteUrl: { type: "string", label: "Website URL", category: "content" },
+        logoText: { type: "string", label: "Top Right Logo Text", category: "content" },
+        image: { type: "image", label: "Main Image (Left)", category: "content" },
+        primaryColor: { type: "color", label: "Primary Color (Yellow/Orange)", category: "styles" },
+        secondaryColor: { type: "color", label: "Secondary Color (Purple Block)", category: "styles" },
+    }
+};
+
 const businessCardComponent = {
     type: "BusinessCard",
     category: "features",
@@ -801,6 +832,7 @@ export const components = [
     graHeroComponent,
     styleHeroComponent,
     simpleHeroComponent,
+    eduHeroSectionComponent,
     businessCardComponent,
     {
         type: "ButtonGroup",
@@ -6065,6 +6097,39 @@ export const components = [
     techNovaContactFormComponent,
 
     {
+        type: "ModernCtaSection",
+        category: "features",
+        name: "Modern CTA Section",
+        description: "A dark-themed call-to-action section with floating 3D elements, headline, and dual buttons.",
+        defaultProps: {
+            headline: "Prevent costly mistakes",
+            subHeadline: "Create pre-approved templates and lock all legal information",
+            primaryButtonText: "Start a free 7-day trial",
+            primaryButtonLink: "#",
+            secondaryButtonText: "Request a demo",
+            secondaryButtonLink: "#",
+            footerText: "14 days free trial. No credit card required.",
+            backgroundColor: "#1A104B",
+            primaryButtonColor: "#D9FC50",
+            secondaryButtonColor: "#2A1F6E",
+            textColor: "#FFFFFF"
+        },
+        editableProps: {
+            headline: { type: "string", label: "Headline Text", category: "content" },
+            subHeadline: { type: "string", label: "Sub-headline Text", category: "content" },
+            primaryButtonText: { type: "string", label: "Primary Button Text", category: "content" },
+            primaryButtonLink: { type: "url", label: "Primary Button Link", category: "content" },
+            secondaryButtonText: { type: "string", label: "Secondary Button Text", category: "content" },
+            secondaryButtonLink: { type: "url", label: "Secondary Button Link", category: "content" },
+            footerText: { type: "string", label: "Footer Note", category: "content" },
+            backgroundColor: { type: "color", label: "Background Color", category: "styles" },
+            primaryButtonColor: { type: "color", label: "Primary Button Color", category: "styles" },
+            secondaryButtonColor: { type: "color", label: "Secondary Button Color", category: "styles" },
+            textColor: { type: "color", label: "Text Color", category: "styles" }
+        }
+    },
+
+    {
         type: "SignSection",
         category: "features",
         name: "Sign Section",
@@ -6144,6 +6209,72 @@ export const components = [
             textColor: { type: "color", label: "Title Text Color", category: "styles" },
             descriptionColor: { type: "color", label: "Description Text Color", category: "styles" },
             iconColor: { type: "color", label: "Icon Color (Outlined)", category: "styles" }
+        }
+    },
+    {
+        type: "GridCards",
+        category: "features",
+        name: "Grid Cards",
+        description: "A flexible grid of feature cards with icons, titles, and descriptions.",
+        defaultProps: {
+            heading: "Ship Your Website Quickly with Frameblox",
+            description: "Use prebuilt templates and components for a professional, stunning look. Save time and focus on content with our user-friendly, customizable design solutions.",
+            headingColor: "var(--theme-text)",
+            descriptionColor: "var(--theme-text-muted)",
+            backgroundColor: "var(--theme-background)",
+            cardBorderRadius: 20,
+            gridGap: 16,
+            cardImageSize: 200,
+            cards: [
+                {
+                    title: "Ship Your Website Quickly",
+                    description: "Use our templates and components for a stunning, professional look.",
+                    icon: "Rocket",
+                    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&q=80",
+                    bgColor: "#2979FF",
+                    textColor: "#ffffff",
+                    linkText: "",
+                    linkUrl: "#",
+                    span: "wide"
+                },
+                {
+                    title: "Customizable Designs",
+                    description: "Save time with user-friendly, customizable design solutions.",
+                    icon: "MessageCircle",
+                    image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=300&q=80",
+                    bgColor: "#FF6D00",
+                    textColor: "#ffffff",
+                    linkText: "Visit site",
+                    linkUrl: "#",
+                    span: "normal"
+                }
+            ]
+        },
+        editableProps: {
+            heading: { type: "string", label: "Heading", category: "content" },
+            description: { type: "string", label: "Description", category: "content" },
+            headingColor: { type: "color", label: "Heading Color", category: "styles" },
+            descriptionColor: { type: "color", label: "Description Color", category: "styles" },
+            backgroundColor: { type: "color", label: "Background Color", category: "styles" },
+            cardBorderRadius: { type: "number", label: "Card Border Radius (px)", category: "styles" },
+            gridGap: { type: "number", label: "Grid Gap (px)", category: "styles" },
+            cardImageSize: { type: "number", label: "Card Image Size (px)", category: "styles" },
+            cards: {
+                type: "array-of-objects",
+                label: "Grid Cards",
+                category: "content",
+                fields: {
+                    title: { type: "string", label: "Card Title" },
+                    description: { type: "string", label: "Card Description" },
+                    icon: { type: "string", label: "Icon Name (Lucide)" },
+                    image: { type: "image", label: "Card Image" },
+                    bgColor: { type: "color", label: "Card Background Color" },
+                    textColor: { type: "color", label: "Card Text Color" },
+                    linkText: { type: "string", label: "Link Text" },
+                    linkUrl: { type: "link", label: "Link URL" },
+                    span: { type: "select", label: "Col Span", options: ["normal", "wide"] }
+                }
+            }
         }
     }
 ];

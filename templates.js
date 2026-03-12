@@ -1,4 +1,4 @@
-﻿
+
 import { sectionTemplates } from './sections.js';
 import { modernSaaSTemplate } from './templates/modern-saas/modern-saas-home.js';
 import { modernSaaSAbout } from './templates/modern-saas/modern-saas-about.js';
@@ -254,6 +254,18 @@ import coachingCoursesModule from './templates/education-3/coaching-courses.cjs'
 const coachingCourses = coachingCoursesModule;
 import coachingContactModule from './templates/education-3/coaching-contact.cjs';
 const coachingContact = coachingContactModule;
+
+// Nova Academy Template
+import novaAcademyHomeModule from './templates/nova-academy/nova-academy-home.cjs';
+const novaAcademyHome = novaAcademyHomeModule;
+import novaAcademyAboutModule from './templates/nova-academy/nova-academy-about.cjs';
+const novaAcademyAbout = novaAcademyAboutModule;
+import novaAcademyServicesModule from './templates/nova-academy/nova-academy-services.cjs';
+const novaAcademyServices = novaAcademyServicesModule;
+import novaAcademyContactModule from './templates/nova-academy/nova-academy-contact.cjs';
+const novaAcademyContact = novaAcademyContactModule;
+
+import crypto from 'crypto';
 
 import tutorProfileModule from './templates/tutor/tutor-profile.cjs';
 const tutorProfile = tutorProfileModule;
@@ -1902,6 +1914,60 @@ export const websiteTemplates = [
                     name: "Home",
                     isHomePage: true,
                     blocks: tutorProfile.sections?.map(s => s.structure) || []
+                }
+            ]
+        }
+    },
+
+    // =========================================================================
+    // NOVA ACADEMY TEMPLATE
+    // =========================================================================
+    {
+        id: genId('nova-tpl'),
+        name: 'Nova Academy',
+        slug: 'nova-academy',
+        description: 'Elite philosophy and leadership education template with deep, bold aesthetics.',
+        category: 'education',
+        industry: 'Higher Ed / Specialized Training',
+        thumbnail: 'assets/templates/nova-academy.png',
+        siteSchema: {
+            defaultTheme: { 
+                name: "Nova", 
+                colors: { primary: "#ff3d6a", secondary: "#872897", accent: "#FF7130", background: "#FFFEE0", text: "#0f172a" } 
+            },
+            themes: ALL_THEMES,
+            globalSections: {
+                header: novaAcademyHome.header?.structure || {},
+                footer: novaAcademyHome.footer?.structure || {}
+            },
+            pages: [
+                {
+                    title: "Home",
+                    path: "/",
+                    name: "Home",
+                    isHomePage: true,
+                    blocks: novaAcademyHome.sections?.map(s => s.structure) || []
+                },
+                {
+                    title: "About",
+                    path: "/about",
+                    name: "About",
+                    isHomePage: false,
+                    blocks: novaAcademyAbout.sections?.map(s => s.structure) || []
+                },
+                {
+                    title: "Services",
+                    path: "/services",
+                    name: "Services",
+                    isHomePage: false,
+                    blocks: novaAcademyServices.sections?.map(s => s.structure) || []
+                },
+                {
+                    title: "Contact",
+                    path: "/contact",
+                    name: "Contact",
+                    isHomePage: false,
+                    blocks: novaAcademyContact.sections?.map(s => s.structure) || []
                 }
             ]
         }

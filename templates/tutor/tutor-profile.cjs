@@ -24,14 +24,14 @@ const tutorProfile = {
                     className: "italic text-2xl flex items-center gap-2"
                 },
                 links: [
-                    { label: "Mission", href: "#mission", className: "text-sm font-bold uppercase tracking-widest hover:text-[#009C76] transition-colors" },
-                    { label: "Services", href: "#services", className: "text-sm font-bold uppercase tracking-widest hover:text-[#009C76] transition-colors" },
-                    { label: "Results", href: "#results", className: "text-sm font-bold uppercase tracking-widest hover:text-[#009C76] transition-colors" },
-                    { label: "Contact", href: "#contact", className: "text-sm font-bold uppercase tracking-widest hover:text-[#009C76] transition-colors" }
+                    { label: "Mission", href: "#section-mission", className: "text-sm font-bold uppercase tracking-widest hover:text-[#009C76] transition-colors" },
+                    { label: "Services", href: "#section-services", className: "text-sm font-bold uppercase tracking-widest hover:text-[#009C76] transition-colors" },
+                    { label: "Results", href: "#section-results", className: "text-sm font-bold uppercase tracking-widest hover:text-[#009C76] transition-colors" },
+                    { label: "Contact", href: "#section-contact", className: "text-sm font-bold uppercase tracking-widest hover:text-[#009C76] transition-colors" }
                 ],
                 ctaButton: {
                     text: "JOIN NOW",
-                    href: "#contact",
+                    href: "#section-contact",
                     variant: "primary",
                     backgroundColor: "#009C76",
                     textColor: "#ffffff",
@@ -145,9 +145,9 @@ const tutorProfile = {
                     backgroundColor: "#005E4E", // Deep Green
                     accentColor: "#60FF54", // Neon Green
                     textColor: "#ffffff"
-                }
-            },
-            id: "mission"
+                },
+                id: "mission"
+            }
         },
 
         // --------------------------------------------------------------------------
@@ -363,88 +363,6 @@ const tutorProfile = {
             }
         },
         // --------------------------------------------------------------------------
-        // PROCESS SECTION
-        // --------------------------------------------------------------------------
-        {
-            key: "tutor-process",
-            name: "Process",
-            structure: {
-                type: "Section",
-                defaultProps: {
-                    backgroundColor: "#ffffff",
-                    paddingY: 96,
-                    paddingX: 24,
-                    fullWidth: false
-                },
-                columns: [
-                    {
-                        width: "100%",
-                        elements: [
-                            {
-                                type: "Headline",
-                                props: {
-                                    text: "3 STEPS TO EXCELLENCE",
-                                    tag: "h2",
-                                    size: "5xl",
-                                    color: "#005E4E",
-                                    fontWeight: "black",
-                                    className: "text-center mb-16"
-                                }
-                            }
-                        ]
-                    },
-                    {
-                        width: "100%",
-                        layout: "grid",
-                        columns: 3,
-                        gap: 32,
-                        elements: [
-                            {
-                                type: "BusinessCard",
-                                props: {
-                                    numberText: "1",
-                                    title: "AUDIT",
-                                    description: "Deep dive into your current knowledge, learning style, and academic goals.",
-                                    primaryColor: "#009C76",
-                                    backgroundColor: "#ffffff",
-                                    textColor: "#005E4E",
-                                    accentColor: "#60FF54",
-                                    className: "text-center shadow-lg p-8"
-                                }
-                            },
-                            {
-                                type: "BusinessCard",
-                                props: {
-                                    numberText: "2",
-                                    title: "ARCHITECT",
-                                    description: "Bespoke learning architecture and cognitive strategy tailored to your needs.",
-                                    primaryColor: "#0056AD",
-                                    backgroundColor: "#ffffff",
-                                    textColor: "#005E4E",
-                                    accentColor: "#60FF54",
-                                    className: "text-center shadow-lg p-8"
-                                }
-                            },
-                            {
-                                type: "BusinessCard",
-                                props: {
-                                    numberText: "3",
-                                    title: "ACHIEVE",
-                                    description: "Relentless pursuit of your academic peak with constant expert support.",
-                                    primaryColor: "#005E4E",
-                                    backgroundColor: "#ffffff",
-                                    textColor: "#005E4E",
-                                    accentColor: "#60FF54",
-                                    className: "text-center shadow-lg p-8"
-                                }
-                            }
-                        ]
-                    }
-                ]
-            }
-        },
-
-        // --------------------------------------------------------------------------
         // CONTACT SECTION
         // --------------------------------------------------------------------------
         {
@@ -453,61 +371,79 @@ const tutorProfile = {
             structure: {
                 type: "Section",
                 defaultProps: {
-                    backgroundColor: "#005E4E",
-                    paddingY: 96,
-                    paddingX: 24,
+                    backgroundColor: "#005E4E", // Deep green background consistent with theme
+                    paddingY: 0,
+                    paddingX: 0,
                     fullWidth: true
                 },
                 columns: [
                     {
-                        width: "50%",
+                        width: "100%",
                         elements: [
                             {
-                                type: "Headline",
+                                type: "ModernCtaSection",
                                 props: {
-                                    text: "START YOUR \n TRANSFORMATION",
-                                    tag: "h2",
-                                    size: "7xl",
-                                    color: "#ffffff",
-                                    fontWeight: "black",
-                                    className: "leading-none mb-8 italic"
-                                }
-                            },
-                            {
-                                type: "Paragraph",
-                                props: {
-                                    text: "Ready to break your plateau? Fill out the form below and we'll reach out within 24 hours to schedule your strategy session.",
-                                    color: "rgba(255, 255, 255, 0.7)",
-                                    size: "xl",
-                                    className: "mb-12"
-                                }
-                            }
-                        ]
-                    },
-                    {
-                        width: "50%",
-                        elements: [
-                            {
-                                type: "NewsletterSignup",
-                                props: {
-                                    title: "SUBMIT APPLICATION",
-                                    titleColor: "#005E4E",
-                                    placeholder: "Enter Your Email",
-                                    buttonText: "START NOW",
-                                    buttonBg: "#009C76",
-                                    buttonTextColor: "#ffffff",
-                                    inputBg: "#f3f4f6",
-                                    description: "Schedule your free academic strategy session.",
-                                    descriptionColor: "rgba(0, 94, 78, 0.6)",
-                                    backgroundColor: "#ffffff",
-                                    className: "p-12 shadow-2xl"
+                                    headline: "START YOUR TRANSFORMATION",
+                                    subHeadline: "Ready to break your academic plateau? Schedule your free strategy session today.",
+                                    primaryButtonText: "START NOW",
+                                    primaryButtonLink: "#",
+                                    secondaryButtonText: "Learn More",
+                                    secondaryButtonLink: "#",
+                                    footerText: "We'll reach out within 24 hours.",
+                                    backgroundColor: "#005E4E", // Theme deep green
+                                    primaryButtonColor: "#60FF54", // Theme neon green accent
+                                    secondaryButtonColor: "#009C76", // Theme mid-green accent
+                                    textColor: "#ffffff"
                                 }
                             }
                         ]
                     }
                 ],
-                id: "contact"
             }
+        },
+
+        // --------------------------------------------------------------------------
+        // ENQUIRY FORM SECTION
+        // --------------------------------------------------------------------------
+        {
+            key: "tutor-enquiry-form",
+            name: "Enquiry Form",
+            structure: {
+                type: "Section",
+                defaultProps: {
+                    backgroundColor: "#f9fafb",
+                    paddingY: 0,
+                    paddingX: 0,
+                    fullWidth: true
+                },
+                columns: [
+                    {
+                        width: "100%",
+                        elements: [
+                            {
+                                type: "ModernForm",
+                                props: {
+                                    subtitle: "GET IN TOUCH",
+                                    title: "Schedule Your Strategy Session",
+                                    description: "Fill out the form and our academic advisor will reach out within 24 hours to discuss a personalized learning plan.",
+                                    email: "hello@vvacademy.com",
+                                    phone: "+44 20 7946 0958",
+                                    nameLabel: "Full Name",
+                                    namePlaceholder: "John Doe",
+                                    emailLabel: "Email Address",
+                                    emailPlaceholder: "john@example.com",
+                                    selectLabel: "Subject Area",
+                                    selectOptions: "Select...,STEM Mastery,Velocity Prep,Cognitive Strategy,University Admissions,General Enquiry",
+                                    messageLabel: "Tell Us About Your Goals",
+                                    messagePlaceholder: "Describe your academic goals and current challenges...",
+                                    submitText: "Book My Session"
+                                }
+                            }
+                        ]
+                    }
+                ],
+            id: "contact"
+        }
         }
     ],
 
@@ -520,52 +456,32 @@ const tutorProfile = {
         category: "footer",
         name: "Tutor Footer",
         structure: {
-            type: "Footer",
+            type: "Section",
             defaultProps: {
-                backgroundColor: "#ffffff",
-                paddingY: 64,
-                paddingX: 24,
+                backgroundColor: "var(--theme-background)",
+                paddingY: 0,
+                paddingX: 0,
                 fullWidth: true
             },
             columns: [
                 {
-                    id: "footer-brand",
-                    width: "50%",
+                    width: "100%",
                     elements: [
                         {
-                            type: "Headline",
+                            type: "MinimalFooter",
                             props: {
-                                text: "V&V ACADEMY",
-                                tag: "h4",
-                                color: "#009C76",
-                                className: "font-black text-3xl mb-4 italic"
-                            }
-                        },
-                        {
-                            type: "Paragraph",
-                            props: {
-                                text: "© 2024 V&V Academy. No limits, just velocity.",
-                                color: "rgba(0, 94, 78, 0.4)",
-                                size: "sm"
-                            }
-                        }
-                    ]
-                },
-                {
-                    id: "footer-socials",
-                    width: "50%",
-                    elements: [
-                        {
-                            type: "SocialLinks",
-                            props: {
+                                brandName: "V&V ACADEMY",
+                                badgeText: "V",
+                                badgeColor: "#009C76", // theme green
                                 links: [
-                                    { platform: "instagram", url: "#" },
-                                    { platform: "youtube", url: "#" },
-                                    { platform: "linkedin", url: "#" }
+                                    { label: "Instagram", url: "#" },
+                                    { label: "YouTube", url: "#" },
+                                    { label: "LinkedIn", url: "#" }
                                 ],
-                                iconColor: "#005E4E",
-                                size: "lg",
-                                className: "justify-end"
+                                copyright: "© 2024 V&V Academy. No limits, just velocity.",
+                                backgroundColor: "#ffffff",
+                                borderColor: "#005E4E",
+                                textColor: "rgba(0, 94, 78, 0.6)"
                             }
                         }
                     ]

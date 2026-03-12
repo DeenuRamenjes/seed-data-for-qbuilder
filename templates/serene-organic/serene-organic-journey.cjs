@@ -18,7 +18,7 @@ const sereneOrganicJourney = {
                     primaryCtaText: "EXPLORE THE COLLECTION",
                     primaryCtaLink: "/treatments",
                     secondaryCtaText: "OUR PHILOSOPHY",
-                    secondaryCtaLink: "#application",
+                    secondaryCtaLink: "/about",
                     accentColor: "#7bb16b",
                     textColor: "#50652e",
                     image: "https://lh3.googleusercontent.com/aida-public/AB6AXuD_qVUpd1uOHix_TO8Ae0Lge15LgB0ZrH6wp084vOQJVw6SxEi5RCvu5oxgUWQOx3rtkmDbVOyflB2fIpHYbNyoWzuiJbIKuTDeXvuGCKTnFx57wPWXBOAid_31NhPDVC4yXhmsc5NKCyOerlRSmseYqSY8wrrCmJ8ulpTa_6YzhrItNQ5rtenyvuZcKCV4qcXkYSQFE4jc2h4VFCQz0bWXRgxBpVpNZW4AS2x8JfhzG7jOAVmd8Dd6dI0wbRefqJIRa9eZranGlaO9",
