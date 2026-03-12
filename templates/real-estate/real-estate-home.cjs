@@ -114,20 +114,16 @@ const realEstateHome = {
       name: "Featured Properties",
       structure: {
         type: "Section",
-        props: {
+        defaultProps: {
           backgroundColor: "#f7f7f7",
           fullWidth: true,
-          fontFamily: "Outfit",
           paddingY: 100,
           paddingX: 48,
-          layout: "flex",
-          flexDirection: "row",
-          flexWrap: "wrap",
-          gap: 48,
+          justifyContent: "center",
+          gap: 24,
           "@media (max-width: 768px)": {
             paddingY: 60,
-            paddingX: 24,
-            gap: 24
+            paddingX: 24
           }
         },
         columns: [
@@ -136,175 +132,184 @@ const realEstateHome = {
             id: "prop-header",
             width: "100%",
             elements: [
-              { id: "prop-badge", type: "Paragraph", props: { text: "CURATED", size: "xs", fontWeight: "bold", color: "var(--theme-border)", letterSpacing: 3, marginBottom: 12, width: "100%" } },
-              { id: "prop-heading", type: "Heading", props: { text: "The Collection", tag: "h2", size: "4xl", fontWeight: "bold", color: "#59184C", marginBottom: 0, width: "100%" } }
+              { id: "prop-badge", type: "Badge", props: { text: "CURATED", align: "center", marginBottom: 12 } },
+              { id: "prop-heading", type: "Heading", props: { text: "The Collection", tag: "h2", size: "4xl", fontWeight: "bold", color: "#59184C", marginBottom: 16, align: "center", width: "100%" } },
+              { id: "prop-desc", type: "Paragraph", props: { text: "Experience the pinnacle of luxury real estate with our curated collection of elite properties globally.", size: "lg", color: "#6B7280", lineHeight: 1.7, marginBottom: 48, align: "center", width: "100%" } }
             ]
           },
           // Property 1
           {
             id: "prop-1",
-            width: "calc(33.33% - 32px)",
+            width: "calc(25% - 32px)",
             props: {
               "@media (max-width: 1024px)": { width: "calc(50% - 24px)" },
               "@media (max-width: 768px)": { width: "100%" }
             },
             elements: [{
               id: "prop-card-1",
-              type: "FeaturedCard2",
+              type: "FeatureCard",
               props: {
-                image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDWyUouTIsGu-qL5IxzlU1N7uBgdhmhyafUOXX7YF8muOy6rq7UjkUj1uqLlqDQzGLFerkamcnVYjy7GSKkvT9ZqXz07zlVJyt5A6P4wjFjwxZ-CktRLpA9FDy6UVlzutk6fBTdUQ9ap7amFMlXjT929yNvDL7CpUdTrozooY4p7UGW7RKiajMJAg7mTEnQMEUg-hddM_2S_65_SDR7gzptUTG42-jFeRcr-cyQt_3D233JLBiZC8bCvvf_-IUeHYr5ibfhPh0wa-4",
-                imageAspectRatio: "4/5",
-                badge: "Residential",
                 title: "The Glass Pavilion",
                 description: "Los Angeles, CA — $12,500,000",
-                badgeColor: "#ffe39b",
-                badgeBg: "rgba(89,24,76,0.7)",
-                titleColor: "var(--theme-background)",
-                descriptionColor: "#6B7280",
-                backgroundColor: "transparent",
-                borderRadius: "16px",
-                showArrow: true,
-                textAlign: "left"
+                image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDWyUouTIsGu-qL5IxzlU1N7uBgdhmhyafUOXX7YF8muOy6rq7UjkUj1uqLlqDQzGLFerkamcnVYjy7GSKkvT9ZqXz07zlVJyt5A6P4wjFjwxZ-CktRLpA9FDy6UVlzutk6fBTdUQ9ap7amFMlXjT929yNvDL7CpUdTrozooY4p7UGW7RKiajMJAg7mTEnQMEUg-hddM_2S_65_SDR7gzptUTG42-jFeRcr-cyQt_3D233JLBiZC8bCvvf_-IUeHYr5ibfhPh0wa-4",
+                imageAspectRatio: "16/9",
+                textAlign: "left",
+                borderRadius: "12px",
+                padding: "0"
               }
             }]
           },
           // Property 2
           {
             id: "prop-2",
-            width: "calc(33.33% - 32px)",
+            width: "calc(25% - 32px)",
             props: {
               "@media (max-width: 1024px)": { width: "calc(50% - 24px)" },
               "@media (max-width: 768px)": { width: "100%" }
             },
             elements: [{
               id: "prop-card-2",
-              type: "FeaturedCard2",
+              type: "FeatureCard",
               props: {
-                image: "https://lh3.googleusercontent.com/aida-public/AB6AXuB3QSWYbVPb1RkF3szHAQf1fyJ4uPPvIGQMs98R5EBEw00trZay9GLACFxdAdVKKw53x9jq5oqGMDCG9DfUhV0Vv0LwbTDI28HpnAqIxVWWffLWbLw1xySuncreXG0QxVZwy5HhkeScgqHSx9xbd3TkSY7yUvf687lUMdqS2CtQR89NeBvom1v8DvGx4kN51_lJ3zZZOIOPJg6yTJcWdDDMjDiHrH_oej-csIH5099vqKbfKx5o0iKNl8odBJHFRrtIHbzIf1HoSrw",
-                imageAspectRatio: "4/5",
-                badge: "Waterfront",
                 title: "Azure Waterfront",
                 description: "Miami, FL — $8,200,000",
-                badgeColor: "#ffe39b",
-                badgeBg: "rgba(89,24,76,0.7)",
-                titleColor: "var(--theme-background)",
-                descriptionColor: "#6B7280",
-                backgroundColor: "transparent",
-                borderRadius: "16px",
-                showArrow: true,
-                textAlign: "left"
+                image: "https://lh3.googleusercontent.com/aida-public/AB6AXuB3QSWYbVPb1RkF3szHAQf1fyJ4uPPvIGQMs98R5EBEw00trZay9GLACFxdAdVKKw53x9jq5oqGMDCG9DfUhV0Vv0LwbTDI28HpnAqIxVWWffLWbLw1xySuncreXG0QxVZwy5HhkeScgqHSx9xbd3TkSY7yUvf687lUMdqS2CtQR89NeBvom1v8DvGx4kN51_lJ3zZZOIOPJg6yTJcWdDDMjDiHrH_oej-csIH5099vqKbfKx5o0iKNl8odBJHFRrtIHbzIf1HoSrw",
+                imageAspectRatio: "16/9",
+                textAlign: "left",
+                borderRadius: "12px",
+                padding: "0"
               }
             }]
           },
           // Property 3
           {
             id: "prop-3",
-            width: "calc(33.33% - 32px)",
+            width: "calc(25% - 32px)",
             props: {
               "@media (max-width: 1024px)": { width: "calc(50% - 24px)" },
               "@media (max-width: 768px)": { width: "100%" }
             },
             elements: [{
               id: "prop-card-3",
-              type: "FeaturedCard2",
+              type: "FeatureCard",
               props: {
-                image: "https://lh3.googleusercontent.com/aida-public/AB6AXuCXf91hmu4UBAHVF_7z9GGZ-XeCMVxtO5fozgB7Z1hWsOFVSsjXDqWCbcI-zgY83498Zfq4PVFZeIGdzxyLws3HITMOszcs25jagHBvgg9jMW9f1oBLA5eZv1oVZHfULQcWJ5N1JbS_W5bNh5xMEjInfHGLcHvBK7wN_ufiVHkKhiRgRRKgK0-ZQ7IFhvrmSKfQChPaJuMs_XGMppEGnuZqJ35whdTSJ_iFv8fc3o2IWqD-DucyvUQ1L_nmMOxNOXenWIr1ZtZtt7Y",
-                imageAspectRatio: "4/5",
-                badge: "Modern",
                 title: "Minimalist Manor",
                 description: "Austin, TX — $4,800,000",
-                badgeColor: "#ffe39b",
-                badgeBg: "rgba(89,24,76,0.7)",
-                titleColor: "var(--theme-background)",
-                descriptionColor: "#6B7280",
-                backgroundColor: "transparent",
-                borderRadius: "16px",
-                showArrow: true,
-                textAlign: "left"
+                image: "https://lh3.googleusercontent.com/aida-public/AB6AXuCXf91hmu4UBAHVF_7z9GGZ-XeCMVxtO5fozgB7Z1hWsOFVSsjXDqWCbcI-zgY83498Zfq4PVFZeIGdzxyLws3HITMOszcs25jagHBvgg9jMW9f1oBLA5eZv1oVZHfULQcWJ5N1JbS_W5bNh5xMEjInfHGLcHvBK7wN_ufiVHkKhiRgRRKgK0-ZQ7IFhvrmSKfQChPaJuMs_XGMppEGnuZqJ35whdTSJ_iFv8fc3o2IWqD-DucyvUQ1L_nmMOxNOXenWIr1ZtZtt7Y",
+                imageAspectRatio: "16/9",
+                textAlign: "left",
+                borderRadius: "12px",
+                padding: "0"
               }
             }]
           },
           // Property 4
           {
             id: "prop-4",
-            width: "calc(33.33% - 32px)",
+            width: "calc(25% - 32px)",
             props: {
               "@media (max-width: 1024px)": { width: "calc(50% - 24px)" },
               "@media (max-width: 768px)": { width: "100%" }
             },
             elements: [{
               id: "prop-card-4",
-              type: "FeaturedCard2",
+              type: "FeatureCard",
               props: {
-                image: "https://lh3.googleusercontent.com/aida-public/AB6AXuCQ3hU0bgyukegwaqImejYYEMQJ3GGrR97qt7sL2sBJzMVhI0dU3-raTNRBhznaa0mcioHuecNWzwOLg6TIz7ljZeANXZjYsJnNl-efBKvARUA52bYJpjOyGzxciRZZiJsAUKYzLDhvbz1URzPk4i7yQ_r09FPgVSFUIiCMB_UANH5dgNCvgrH2YL_QvvCjGnfHhWLleyiVKZE55Xp-62FFGmC93IgsBbwCsgtARcHIp4XRHZj3DItsh3W4XW5uecpc_Y8v1dxOLxI",
-                imageAspectRatio: "4/5",
-                badge: "Mountain",
                 title: "Obsidian Retreat",
                 description: "Aspen, CO — $18,900,000",
-                badgeColor: "#ffe39b",
-                badgeBg: "rgba(89,24,76,0.7)",
-                titleColor: "var(--theme-background)",
-                descriptionColor: "#6B7280",
-                backgroundColor: "transparent",
-                borderRadius: "16px",
-                showArrow: true,
-                textAlign: "left"
+                image: "https://lh3.googleusercontent.com/aida-public/AB6AXuCQ3hU0bgyukegwaqImejYYEMQJ3GGrR97qt7sL2sBJzMVhI0dU3-raTNRBhznaa0mcioHuecNWzwOLg6TIz7ljZeANXZjYsJnNl-efBKvARUA52bYJpjOyGzxciRZZiJsAUKYzLDhvbz1URzPk4i7yQ_r09FPgVSFUIiCMB_UANH5dgNCvgrH2YL_QvvCjGnfHhWLleyiVKZE55Xp-62FFGmC93IgsBbwCsgtARcHIp4XRHZj3DItsh3W4XW5uecpc_Y8v1dxOLxI",
+                imageAspectRatio: "16/9",
+                textAlign: "left",
+                borderRadius: "12px",
+                padding: "0"
               }
             }]
           },
           // Property 5
           {
             id: "prop-5",
-            width: "calc(33.33% - 32px)",
+            width: "calc(25% - 32px)",
             props: {
               "@media (max-width: 1024px)": { width: "calc(50% - 24px)" },
               "@media (max-width: 768px)": { width: "100%" }
             },
             elements: [{
               id: "prop-card-5",
-              type: "FeaturedCard2",
+              type: "FeatureCard",
               props: {
-                image: "https://lh3.googleusercontent.com/aida-public/AB6AXuAa4f9-NXnMj-GFdFl5BYvbNMlvwpvZIKH2YQHRGCsmMqW0beGizPmqmzm1hjhpUpiThP9gB8OYVcfqqzgf2uaq2nXdvrzRue1YRgjF9h4MYXGmWfbm0pvKjeiQKHmAVdEiP3rMKVNjiyluT7TWIIDVw2qaXE-MlICvSgAQgePvwCleB4TvD-WpjMUVqmeyuNs6rpTQ-qzd-WF3vg_m6zGSOVkr7Lu_hwMi8rkIIFDygSnJ5YEimWmH-UHVwMTMzMN3ZaOV8tBhCbM",
-                imageAspectRatio: "4/5",
-                badge: "Skyline",
                 title: "Emerald Skygarden",
                 description: "Singapore — $24,500,000",
-                badgeColor: "#ffe39b",
-                badgeBg: "rgba(89,24,76,0.7)",
-                titleColor: "var(--theme-background)",
-                descriptionColor: "#6B7280",
-                backgroundColor: "transparent",
-                borderRadius: "16px",
-                showArrow: true,
-                textAlign: "left"
+                image: "https://lh3.googleusercontent.com/aida-public/AB6AXuAa4f9-NXnMj-GFdFl5BYvbNMlvwpvZIKH2YQHRGCsmMqW0beGizPmqmzm1hjhpUpiThP9gB8OYVcfqqzgf2uaq2nXdvrzRue1YRgjF9h4MYXGmWfbm0pvKjeiQKHmAVdEiP3rMKVNjiyluT7TWIIDVw2qaXE-MlICvSgAQgePvwCleB4TvD-WpjMUVqmeyuNs6rpTQ-qzd-WF3vg_m6zGSOVkr7Lu_hwMi8rkIIFDygSnJ5YEimWmH-UHVwMTMzMN3ZaOV8tBhCbM",
+                imageAspectRatio: "16/9",
+                textAlign: "left",
+                borderRadius: "12px",
+                padding: "0"
               }
             }]
           },
           // Property 6
           {
             id: "prop-6",
-            width: "calc(33.33% - 32px)",
+            width: "calc(25% - 32px)",
             props: {
               "@media (max-width: 1024px)": { width: "calc(50% - 24px)" },
               "@media (max-width: 768px)": { width: "100%" }
             },
             elements: [{
               id: "prop-card-6",
-              type: "FeaturedCard2",
+              type: "FeatureCard",
               props: {
-                image: "https://lh3.googleusercontent.com/aida-public/AB6AXuAsCfSySrCxzme8RtykErRAKIFCO19ELElx4XeSqAeo1fln3B49B_qqbtU4EygU-RHX9NOHvsHG0dOw1wnvpw_HStplRhY8E7DrhNCKYG-cGAH1kOiLq3xiCrO30nNpnyDpQGz1g4vbAGe7pyAxR9GZzZP0PdBGKD5-GrPghrGwl3kMsMdz0BDScaHiWToY52bEg5lRkRbCjp4OzaiF1YO-EiPZ0K0WP4aoJrTutwAjB3dzny6cXKF6Nh0U3q_d3j76F6qMMUogCHE",
-                imageAspectRatio: "4/5",
-                badge: "Urban",
                 title: "The Ivory Loft",
                 description: "New York, NY — $9,200,000",
-                badgeColor: "#ffe39b",
-                badgeBg: "rgba(89,24,76,0.7)",
-                titleColor: "var(--theme-background)",
-                descriptionColor: "#6B7280",
-                backgroundColor: "transparent",
-                borderRadius: "16px",
-                showArrow: true,
-                textAlign: "left"
+                image: "https://lh3.googleusercontent.com/aida-public/AB6AXuAsCfSySrCxzme8RtykErRAKIFCO19ELElx4XeSqAeo1fln3B49B_qqbtU4EygU-RHX9NOHvsHG0dOw1wnvpw_HStplRhY8E7DrhNCKYG-cGAH1kOiLq3xiCrO30nNpnyDpQGz1g4vbAGe7pyAxR9GZzZP0PdBGKD5-GrPghrGwl3kMsMdz0BDScaHiWToY52bEg5lRkRbCjp4OzaiF1YO-EiPZ0K0WP4aoJrTutwAjB3dzny6cXKF6Nh0U3q_d3j76F6qMMUogCHE",
+                imageAspectRatio: "16/9",
+                textAlign: "left",
+                borderRadius: "12px",
+                padding: "0"
+              }
+            }]
+          },
+          // Property 7
+          {
+            id: "prop-7",
+            width: "calc(25% - 32px)",
+            props: {
+              "@media (max-width: 1024px)": { width: "calc(50% - 24px)" },
+              "@media (max-width: 768px)": { width: "100%" }
+            },
+            elements: [{
+              id: "prop-card-7",
+              type: "FeatureCard",
+              props: {
+                title: "Sapphire Shores",
+                description: "Miami, FL — $15,400,000",
+                image: "https://lh3.googleusercontent.com/aida-public/AB6AXuAsCfSySrCxzme8RtykErRAKIFCO19ELElx4XeSqAeo1fln3B49B_qqbtU4EygU-RHX9NOHvsHG0dOw1wnvpw_HStplRhY8E7DrhNCKYG-cGAH1kOiLq3xiCrO30nNpnyDpQGz1g4vbAGe7pyAxR9GZzZP0PdBGKD5-GrPghrGwl3kMsMdz0BDScaHiWToY52bEg5lRkRbCjp4OzaiF1YO-EiPZ0K0WP4aoJrTutwAjB3dzny6cXKF6Nh0U3q_d3j76F6qMMUogCHE",
+                imageAspectRatio: "16/9",
+                textAlign: "left",
+                borderRadius: "12px",
+                padding: "0"
+              }
+            }]
+          },
+          // Property 8
+          {
+            id: "prop-8",
+            width: "calc(25% - 32px)",
+            props: {
+              "@media (max-width: 1024px)": { width: "calc(50% - 24px)" },
+              "@media (max-width: 768px)": { width: "100%" }
+            },
+            elements: [{
+              id: "prop-card-8",
+              type: "FeatureCard",
+              props: {
+                title: "Zenith Penthouse",
+                description: "New York, NY — $28,900,000",
+                image: "https://lh3.googleusercontent.com/aida-public/AB6AXuAsCfSySrCxzme8RtykErRAKIFCO19ELElx4XeSqAeo1fln3B49B_qqbtU4EygU-RHX9NOHvsHG0dOw1wnvpw_HStplRhY8E7DrhNCKYG-cGAH1kOiLq3xiCrO30nNpnyDpQGz1g4vbAGe7pyAxR9GZzZP0PdBGKD5-GrPghrGwl3kMsMdz0BDScaHiWToY52bEg5lRkRbCjp4OzaiF1YO-EiPZ0K0WP4aoJrTutwAjB3dzny6cXKF6Nh0U3q_d3j76F6qMMUogCHE",
+                imageAspectRatio: "16/9",
+                textAlign: "left",
+                borderRadius: "12px",
+                padding: "0"
               }
             }]
           }
@@ -356,18 +361,14 @@ const realEstateHome = {
             },
             elements: [{
               id: "feat-card-1",
-              type: "ServiceCardV2",
+              type: "NumCard",
               props: {
-                number: "01",
+                number: 1,
+                icon: "ShieldCheck",
                 title: "Discretion",
                 description: "We prioritize your privacy above all else through confidential consultations and private listings.",
-                backgroundColor: "#f7f7f7",
-                textColor: "#59184C",
                 accentColor: "#59184C",
-                descriptionColor: "var(--theme-border)",
-                variant: "light",
-                showDivider: true,
-                borderRadius: "8px"
+                cardBorderRadius: 12
               }
             }]
           },
@@ -381,18 +382,14 @@ const realEstateHome = {
             },
             elements: [{
               id: "feat-card-2",
-              type: "ServiceCardV2",
+              type: "NumCard",
               props: {
-                number: "02",
+                number: 2,
+                icon: "Key",
                 title: "Exclusivity",
                 description: "Gain access to off-market listings and the most sought-after zip codes worldwide.",
-                backgroundColor: "#f7f7f7",
-                textColor: "#59184C",
                 accentColor: "#59184C",
-                descriptionColor: "var(--theme-border)",
-                variant: "light",
-                showDivider: true,
-                borderRadius: "8px"
+                cardBorderRadius: 12
               }
             }]
           },
@@ -406,18 +403,14 @@ const realEstateHome = {
             },
             elements: [{
               id: "feat-card-3",
-              type: "ServiceCardV2",
+              type: "NumCard",
               props: {
-                number: "03",
+                number: 3,
+                icon: "Ruler",
                 title: "Architectural Integrity",
                 description: "Every property in our collection is hand-selected for its design excellence and craftsmanship.",
-                backgroundColor: "#f7f7f7",
-                textColor: "#59184C",
                 accentColor: "#59184C",
-                descriptionColor: "var(--theme-border)",
-                variant: "light",
-                showDivider: true,
-                borderRadius: "8px"
+                cardBorderRadius: 12
               }
             }]
           },
