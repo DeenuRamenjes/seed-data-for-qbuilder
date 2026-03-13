@@ -127,7 +127,7 @@ const realEstateContact = {
             elements: [
               { id: "cd-badge", type: "Paragraph", props: { text: "REACH US", size: "xs", fontWeight: "bold", color: "#b0903e", letterSpacing: 4, marginBottom: 16 } },
               { id: "cd-heading", type: "Heading", props: { text: "Let's Start a\nConversation.", tag: "h2", size: "4xl", fontWeight: "bold", color: "#59184C", marginBottom: 24 } },
-              { id: "cd-desc", type: "Paragraph", props: { text: "Our senior advisors are available for private consultations. Every inquiry is handled with the utmost discretion.", size: "md", color: "var(--theme-border)", lineHeight: 1.7, marginBottom: 48 } },
+              { id: "cd-desc", type: "Paragraph", props: { text: "Our senior advisors are available for private consultations. Every inquiry is handled with the utmost discretion.", size: "md", color: "var(--theme-text)", lineHeight: 1.7, marginBottom: 48 } },
               {
                 id: "contact-details",
                 type: "ContactDetails",
@@ -192,7 +192,7 @@ const realEstateContact = {
                   backgroundColor: "var(--theme-background)",
                   textColor: "#59184C",
                   primaryColor: "#59184C",
-                  secondaryColor: "#9649a2ff",
+                  secondaryColor: "#b0903e",
                   accentColor: "#b0903e",
                   inputBackgroundColor: "#f7f7f7",
                   inputBorderColor: "#e5e5e5",

@@ -24,70 +24,20 @@ const realEstateBlogs = {
       key: "blogs-hero",
       name: "Journal Hero",
       structure: {
-        type: "Section",
-        defaultProps: {
-          backgroundColor: "#59184C",
-          fullWidth: true,
-          fontFamily: "Outfit",
-          paddingY: 120,
-          paddingX: 48,
-          layout: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          justifyContent: "center",
-          textAlign: "center",
-          "@media (max-width: 768px)": {
-            paddingY: 80,
-            paddingX: 24
-          }
-        },
-        columns: [{
-          id: "blog-hero-col",
-          width: "100%",
-          props: { maxWidth: "800px" },
-          elements: [
-            {
-              id: "blog-badge",
-              type: "Paragraph",
-              props: {
-                text: "THE JOURNAL",
-                size: "xs",
-                fontWeight: "bold",
-                color: "#b0903e",
-                letterSpacing: 3,
-                marginBottom: 20,
-                align: "center",
-                width: "100%"
-              }
-            },
-            {
-              id: "blog-headline",
-              type: "Heading",
-              props: {
-                text: "Architecture, Design & Living",
-                tag: "h1",
-                size: "5xl",
-                fontWeight: "extrabold",
-                color: "#b0903e",
-                marginBottom: 20,
-                align: "center",
-                width: "100%"
-              }
-            },
-            {
-              id: "blog-subtitle",
-              type: "Paragraph",
-              props: {
-                text: "Insights from the intersection of luxury living, contemporary architecture, and the global property market.",
-                size: "lg",
-                color: "rgba(255,255,255,0.6)",
-                lineHeight: 1.7,
-                align: "center",
-                width: "100%"
-              }
-            }
-          ]
-        }]
+        type: "CenterHero",
+        props: {
+          badgeText: "THE JOURNAL",
+          title: "Architecture, Design & Living",
+          lead: "Insights from the intersection of luxury living, contemporary architecture, and the global property market.",
+          primaryCtaText: "Latest Stories",
+          primaryCtaLink: "#blogs-grid",
+          secondaryCtaText: "About Apex",
+          secondaryCtaLink: "#",
+          image: "https://lh3.googleusercontent.com/aida-public/AB6AXuCQ3hU0bgyukegwaqImejYYEMQJ3GGrR97qt7sL2sBJzMVhI0dU3-raTNRBhznaa0mcioHuecNWzwOLg6TIz7ljZeANXZjYsJnNl-efBKvARUA52bYJpjOyGzxciRZZiJsAUKYzLDhvbz1URzPk4i7yQ_r09FPgVSFUIiCMB_UANH5dgNCvgrH2YL_QvvCjGnfHhWLleyiVKZE55Xp-62FFGmC93IgsBbwCsgtARcHIp4XRHZj3DItsh3W4XW5uecpc_Y8v1dxOLxI",
+          accentColor: "#b0903e",
+          textColor: "#ffffff",
+          backgroundColor: "#59184C"
+        }
       }
     },
 
@@ -193,150 +143,132 @@ const realEstateBlogs = {
           // Article 1
           {
             id: "article-1",
-            width: "calc(33.33% - 16px)",
-            props: {
-              "@media (max-width: 1024px)": { width: "calc(50% - 12px)" },
-              "@media (max-width: 768px)": { width: "100%" }
-            },
+            width: "100%",
             elements: [{
-              id: "article-card-1",
-              type: "FeatureCard",
+              id: "article-list-1",
+              type: "FeatureList",
               props: {
                 image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDWyUouTIsGu-qL5IxzlU1N7uBgdhmhyafUOXX7YF8muOy6rq7UjkUj1uqLlqDQzGLFerkamcnVYjy7GSKkvT9ZqXz07zlVJyt5A6P4wjFjwxZ-CktRLpA9FDy6UVlzutk6fBTdUQ9ap7amFMlXjT929yNvDL7CpUdTrozooY4p7UGW7RKiajMJAg7mTEnQMEUg-hddM_2S_65_SDR7gzptUTG42-jFeRcr-cyQt_3D233JLBiZC8bCvvf_-IUeHYr5ibfhPh0wa-4",
-                imageAspectRatio: "16/9",
                 title: "Glass Houses: Transparency as Luxury",
-                description: "How floor-to-ceiling glass walls are redefining the boundaries between indoor and outdoor living in hillside estates.",
-                titleColor: "var(--theme-text)",
-                descriptionColor: "#6B7280",
-                backgroundColor: "var(--theme-background)",
-                borderRadius: "12px",
-                textAlign: "left",
-                titleSize: "lg"
+                price: "12 min read",
+                rating: "4.9",
+                reviewsCount: "1.2k",
+                tagText: "ARCHITECTURE",
+                tagColor: "#b0903e",
+                subtext: "Featured Story",
+                features: "Modern Design,Eco-Friendly,Hillside Views",
+                ctaText: "Read Article",
+                accentColor: "#b0903e"
               }
             }]
           },
           // Article 2
           {
             id: "article-2",
-            width: "calc(33.33% - 16px)",
-            props: {
-              "@media (max-width: 1024px)": { width: "calc(50% - 12px)" },
-              "@media (max-width: 768px)": { width: "100%" }
-            },
+            width: "100%",
             elements: [{
-              id: "article-card-2",
-              type: "FeatureCard",
+              id: "article-list-2",
+              type: "FeatureList",
               props: {
                 image: "https://lh3.googleusercontent.com/aida-public/AB6AXuB3QSWYbVPb1RkF3szHAQf1fyJ4uPPvIGQMs98R5EBEw00trZay9GLACFxdAdVKKw53x9jq5oqGMDCG9DfUhV0Vv0LwbTDI28HpnAqIxVWWffLWbLw1xySuncreXG0QxVZwy5HhkeScgqHSx9xbd3TkSY7yUvf687lUMdqS2CtQR89NeBvom1v8DvGx4kN51_lJ3zZZOIOPJg6yTJcWdDDMjDiHrH_oej-csIH5099vqKbfKx5o0iKNl8odBJHFRrtIHbzIf1HoSrw",
-                imageAspectRatio: "16/9",
                 title: "Waterfront Premium: The New Gold Standard",
-                description: "Why waterfront properties in Miami, Dubai, and Monaco consistently outperform market averages by 15-25%.",
-                titleColor: "var(--theme-text)",
-                descriptionColor: "#6B7280",
-                backgroundColor: "var(--theme-background)",
-                borderRadius: "12px",
-                textAlign: "left",
-                titleSize: "lg"
+                price: "10 min read",
+                rating: "4.8",
+                reviewsCount: "850",
+                tagText: "INVESTMENT",
+                subtext: "Market Insight",
+                tagColor: "#b0903e",
+                features: "Beachfront,Global Market,High ROI",
+                ctaText: "View Analysis",
+                accentColor: "#b0903e"
               }
             }]
           },
           // Article 3
           {
             id: "article-3",
-            width: "calc(33.33% - 16px)",
-            props: {
-              "@media (max-width: 1024px)": { width: "calc(50% - 12px)" },
-              "@media (max-width: 768px)": { width: "100%" }
-            },
+            width: "100%",
             elements: [{
-              id: "article-card-3",
-              type: "FeatureCard",
+              id: "article-list-3",
+              type: "FeatureList",
               props: {
                 image: "https://lh3.googleusercontent.com/aida-public/AB6AXuCXf91hmu4UBAHVF_7z9GGZ-XeCMVxtO5fozgB7Z1hWsOFVSsjXDqWCbcI-zgY83498Zfq4PVFZeIGdzxyLws3HITMOszcs25jagHBvgg9jMW9f1oBLA5eZv1oVZHfULQcWJ5N1JbS_W5bNh5xMEjInfHGLcHvBK7wN_ufiVHkKhiRgRRKgK0-ZQ7IFhvrmSKfQChPaJuMs_XGMppEGnuZqJ35whdTSJ_iFv8fc3o2IWqD-DucyvUQ1L_nmMOxNOXenWIr1ZtZtt7Y",
-                imageAspectRatio: "16/9",
                 title: "Sustainable Luxury: Beyond the Buzzword",
-                description: "How carbon-neutral certifications are becoming a non-negotiable for high-end buyers in northern Europe.",
-                titleColor: "var(--theme-text)",
-                descriptionColor: "#6B7280",
-                backgroundColor: "var(--theme-background)",
-                borderRadius: "12px",
-                textAlign: "left",
-                titleSize: "lg"
+                price: "15 min read",
+                rating: "5.0",
+                reviewsCount: "2.1k",
+                tagText: "SUSTAINABILITY",
+                tagColor: "#b0903e",
+                subtext: "Expert Opinion",
+                features: "Carbon Neutral,Solar Power,Smart Tech",
+                ctaText: "Read Report",
+                accentColor: "#b0903e"
               }
             }]
           },
           // Article 4
           {
             id: "article-4",
-            width: "calc(33.33% - 16px)",
-            props: {
-              "@media (max-width: 1024px)": { width: "calc(50% - 12px)" },
-              "@media (max-width: 768px)": { width: "100%" }
-            },
+            width: "100%",
             elements: [{
-              id: "article-card-4",
-              type: "FeatureCard",
+              id: "article-list-4",
+              type: "FeatureList",
               props: {
                 image: "https://lh3.googleusercontent.com/aida-public/AB6AXuAsCfSySrCxzme8RtykErRAKIFCO19ELElx4XeSqAeo1fln3B49B_qqbtU4EygU-RHX9NOHvsHG0dOw1wnvpw_HStplRhY8E7DrhNCKYG-cGAH1kOiLq3xiCrO30nNpnyDpQGz1g4vbAGe7pyAxR9GZzZP0PdBGKD5-GrPghrGwl3kMsMdz0BDScaHiWToY52bEg5lRkRbCjp4OzaiF1YO-EiPZ0K0WP4aoJrTutwAjB3dzny6cXKF6Nh0U3q_d3j76F6qMMUogCHE",
-                imageAspectRatio: "16/9",
                 title: "The Art of the Private Sale",
-                description: "Inside the world of off-market transactions where discretion is the ultimate currency and deals happen behind closed doors.",
-                titleColor: "var(--theme-text)",
-                descriptionColor: "#6B7280",
-                backgroundColor: "var(--theme-background)",
-                borderRadius: "12px",
-                textAlign: "left",
-                titleSize: "lg"
+                price: "8 min read",
+                rating: "4.7",
+                reviewsCount: "640",
+                tagText: "STRATEGY",
+                tagColor: "#b0903e",
+                subtext: "Exclusive Access",
+                features: "Off-Market,Confidential,Elite Deals",
+                ctaText: "Explore Secrets",
+                accentColor: "#b0903e"
               }
             }]
           },
           // Article 5
           {
             id: "article-5",
-            width: "calc(33.33% - 16px)",
-            props: {
-              "@media (max-width: 1024px)": { width: "calc(50% - 12px)" },
-              "@media (max-width: 768px)": { width: "100%" }
-            },
+            width: "100%",
             elements: [{
-              id: "article-card-5",
-              type: "FeatureCard",
+              id: "article-list-5",
+              type: "FeatureList",
               props: {
                 image: "https://lh3.googleusercontent.com/aida-public/AB6AXuAa4f9-NXnMj-GFdFl5BYvbNMlvwpvZIKH2YQHRGCsmMqW0beGizPmqmzm1hjhpUpiThP9gB8OYVcfqqzgf2uaq2nXdvrzRue1YRgjF9h4MYXGmWfbm0pvKjeiQKHmAVdEiP3rMKVNjiyluT7TWIIDVw2qaXE-MlICvSgAQgePvwCleB4TvD-WpjMUVqmeyuNs6rpTQ-qzd-WF3vg_m6zGSOVkr7Lu_hwMi8rkIIFDygSnJ5YEimWmH-UHVwMTMzMN3ZaOV8tBhCbM",
-                imageAspectRatio: "16/9",
                 title: "Interior Minimalism: Less Is More",
-                description: "A curated guide to achieving the perfect balance between empty space and functional design in luxury residences.",
-                titleColor: "var(--theme-text)",
-                descriptionColor: "#6B7280",
-                backgroundColor: "var(--theme-background)",
-                borderRadius: "12px",
-                textAlign: "left",
-                titleSize: "lg"
+                price: "7 min read",
+                rating: "4.9",
+                reviewsCount: "980",
+                tagText: "INTERIOR",
+                tagColor: "#b0903e",
+                subtext: "Design Guide",
+                features: "Functional,Clean,Natural Light",
+                ctaText: "Read Guide",
+                accentColor: "#b0903e"
               }
             }]
           },
           // Article 6
           {
             id: "article-6",
-            width: "calc(33.33% - 16px)",
-            props: {
-              "@media (max-width: 1024px)": { width: "calc(50% - 12px)" },
-              "@media (max-width: 768px)": { width: "100%" }
-            },
+            width: "100%",
             elements: [{
-              id: "article-card-6",
-              type: "FeatureCard",
+              id: "article-list-6",
+              type: "FeatureList",
               props: {
                 image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDP6f6ah6o01AngyOUX-gofS97l3rvjiFmxq8tRtpjxInPeGmivRtSIIBxZtjDCnkcjruzWRsx5G12-O7MQa5KuPztJ9kR3PpCqaLLVgKCNIQaet3wFXPbMUDYnlC--2PSjEvgl7lR2xRDEt-UQoS1DiGT6bsJ8vqRBQZ2J3u-_Kj4_9zfr3cTlICWAdlfqXcZWmT6ysJFBU35Iog8RCW1TxmlQcdTY3WMYLH_e5Ix3XgUWth29h2GkF7Gz5KkaS6uAD0re3DK-kZo",
-                imageAspectRatio: "16/9",
                 title: "Market Forecast 2025: Where to Invest",
-                description: "Our annual report on the top 10 emerging luxury property markets and the macroeconomic forces driving demand.",
-                titleColor: "var(--theme-text)",
-                descriptionColor: "#6B7280",
-                backgroundColor: "var(--theme-background)",
-                borderRadius: "12px",
-                textAlign: "left",
-                titleSize: "lg"
+                price: "20 min read",
+                rating: "5.0",
+                reviewsCount: "3.5k",
+                tagText: "FORECAST",
+                tagColor: "#b0903e",
+                subtext: "Major Report",
+                features: "Emerging Markets,Analytics,Trends",
+                ctaText: "Read Report",
+                accentColor: "#b0903e"
               }
             }]
           }
@@ -371,7 +303,7 @@ const realEstateBlogs = {
                 minHeight: "600px",
                 maxWidth: "100%",
                 align: "center",
-                headlineText: "Your Next Acquisition Awaits [Consultation](linear-gradient(to right, #aa8135, #ffe39b).",
+                headlineText: "Your Next Acquisition Awaits [Consultation](linear-gradient(to right, #b0903e, #FFF98A)).",
                 headlineColor: "var(--theme-background)",
                 headlineTag: "h2",
                 paragraphText: "",

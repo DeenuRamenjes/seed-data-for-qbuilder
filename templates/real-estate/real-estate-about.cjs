@@ -44,12 +44,12 @@ const realEstateAbout = {
                 minHeight: "85vh",
                 maxWidth: "100%",
                 badgeText: "Established 1994",
-                badgeColor: "#ffe39b",
+                badgeColor: "#b0903e",
                 badgeBackgroundColor: "rgba(255,255,255,0.1)",
                 badgeBorder: "1px solid rgba(255,255,255,0.2)",
                 badgeShowPing: false,
                 align: "center",
-                headlineText: "Crafting Spaces Where Art Meets [Architecture](linear-gradient(to right, #aa8135, #ffe39b))",
+                headlineText: "Crafting Spaces Where Art Meets [Architecture](linear-gradient(to right, #b0903e, #FFF98A))",
                 headlineColor: "var(--theme-background)",
                 headlineTag: "h1",
               }
@@ -71,7 +71,7 @@ const realEstateAbout = {
           backgroundColor: "#59184C",
           fullWidth: true,
           fontFamily: "Outfit",
-          paddingY: 48,
+          paddingY: 50,
           paddingX: 48,
           borderBottom: "1px solid #e5e5e5",
           layout: "flex",
@@ -90,8 +90,8 @@ const realEstateAbout = {
             width: "calc(25% - 24px)",
             props: { "@media (max-width: 768px)": { width: "calc(50% - 16px)" } },
             elements: [
-              { id: "stat-1-label", type: "Paragraph", props: { text: "EXCELLENCE", size: "xs", fontWeight: "bold", color: "#ffe39b", letterSpacing: 3, marginBottom: 8 } },
-              { id: "stat-1-value", type: "Heading", props: { text: "30+ Years", tag: "h3", size: "3xl", fontWeight: "extrabold", color: "#ffe39b" } }
+              { id: "stat-1-label", type: "Paragraph", props: { text: "EXCELLENCE", size: "xs", fontWeight: "bold", color: "#b0903e", letterSpacing: 3, marginBottom: 8 } },
+              { id: "stat-1-value", type: "Heading", props: { text: "30+ Years", tag: "h3", size: "3xl", fontWeight: "extrabold", color: "#FFF98A" } }
             ]
           },
           {
@@ -137,7 +137,7 @@ const realEstateAbout = {
           backgroundColor: "#f7f5f8",
           fullWidth: true,
           fontFamily: "Playfair Display",
-          paddingY: 96,
+          paddingY: 50,
           paddingX: 48,
           layout: "flex",
           flexDirection: "row",
@@ -160,7 +160,7 @@ const realEstateAbout = {
             },
             elements: [{
               id: "source-img",
-              type: "FeatureCard",
+              type: "Image",
               props: {
                 image: "https://lh3.googleusercontent.com/aida-public/AB6AXuCpjy07GCgWwbnzrHLDhVpIaPH4Y4z9ltWK-b_THMzF_W80YCWYyBWCFJl2ZsbJKBQEn7HhQZGqxbih3Ys71nRhKwXbEDWcO7eNzc6c7hBjbjfAtdRwqjwQ-lRFeNk7MLnCrTNzp7AbdEj12Q5inEV4vvxLJfBU9ieMPookWq8hzx_OQt7xeXgqrfwz1AMdhs8Dr-xVjZ0GV58OwGXIfhBvVEGgNBX-GCRmK_j2Eyd0C29KC1JPN2ZOZP5ae4BzQqf9C2c_sIeqAAs",
                 imageAspectRatio: "16/9",
@@ -201,7 +201,7 @@ const realEstateAbout = {
           backgroundColor: "var(--theme-background)",
           fullWidth: true,
           fontFamily: "Outfit",
-          paddingY: 100,
+          paddingY: 50,
           paddingX: 48,
           layout: "flex",
           flexDirection: "row",
@@ -249,7 +249,7 @@ const realEstateAbout = {
             elements: [
               {
                 id: "val-1",
-                type: "ServiceCardV2",
+                type: "ServiceCard",
                 props: {
                   number: "01",
                   title: "Sustainability",
@@ -266,7 +266,7 @@ const realEstateAbout = {
               { id: "val-1-spacer", type: "Box", props: { height: 24, backgroundColor: "transparent", width: "100%" } },
               {
                 id: "val-2",
-                type: "ServiceCardV2",
+                type: "ServiceCard",
                 props: {
                   number: "02",
                   title: "Innovation",
@@ -292,7 +292,7 @@ const realEstateAbout = {
             elements: [
               {
                 id: "val-3",
-                type: "ServiceCardV2",
+                type: "ServiceCard",
                 props: {
                   number: "03",
                   title: "Heritage",
@@ -309,7 +309,7 @@ const realEstateAbout = {
               { id: "val-3-spacer", type: "Box", props: { height: 24, backgroundColor: "transparent", width: "100%" } },
               {
                 id: "val-4",
-                type: "ServiceCardV2",
+                type: "ServiceCard",
                 props: {
                   number: "04",
                   title: "Precision",
@@ -341,7 +341,7 @@ const realEstateAbout = {
           backgroundColor: "#f7f7f7",
           fullWidth: true,
           fontFamily: "Outfit",
-          paddingY: 100,
+          paddingY: 50,
           paddingX: 48,
           layout: "flex",
           flexDirection: "row",
@@ -373,20 +373,14 @@ const realEstateAbout = {
             },
             elements: [{
               id: "partner-card-1",
-              type: "FeaturedCard2",
+              type: "FeatureCard",
               props: {
                 image: "https://lh3.googleusercontent.com/aida-public/AB6AXuAVv03XNtrYWyOSv18c9R05XoAfhbhihkcwuAiNTypfop8wrqbAgbWFZ66QIjq4h-MM3v_NPcLu_KPa8ZqPpuLmvAc6OKK2cyxELM5cSKgWuc95ZbsHgnSxLsk8nfH93DPC3_zk3H-U9atf9AveC1KQtCu3lM2CqCcphoUh98JrZ-eRflf4Onh7PavMfy4hffciTth0WsLf9eVACLflgtFvvMiNT0waEoM98mIePAMmXE6fHaogdusCF8TSMS87khBgl8_klRQbTmQ",
                 imageAspectRatio: "3/4",
-                badge: "Founder",
                 title: "Marcus Thorne",
                 description: "Founder & Lead Architect",
-                badgeColor: "#ffe39b",
-                badgeBg: "rgba(89,24,76,0.7)",
-                titleColor: "var(--theme-background)",
-                descriptionColor: "var(--theme-border)",
                 backgroundColor: "var(--theme-background)",
                 borderRadius: "16px",
-                showArrow: true,
                 textAlign: "left"
               }
             }]
@@ -401,20 +395,14 @@ const realEstateAbout = {
             },
             elements: [{
               id: "partner-card-2",
-              type: "FeaturedCard2",
+              type: "FeatureCard",
               props: {
                 image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDbRoofRSX4BF8g52CzSKUYKYMHmQsnzJQOFxJh2GM2LZR-leOyT4EEojf_KQQjeHd1KvdGxwsFqWV6UrFaBoTZ6FM5YBLp99fgKScaAdB6XMpGCX5NELrhWjHa4usZ0UEC32FUTXWmx9-eyykGSWVvtPmV-4a6tJcob7rp2iDjSkjwNJh4RcdsmjUILO8nOc58lvuxhQN_DFhYtY3jf8_OG_cAGqUvU-JlBWaMFCuy9cyjOsyBzswv_Mw-TjCibzFxD7P5Hur_iDc",
                 imageAspectRatio: "3/4",
-                badge: "Design",
                 title: "Elena Vance",
                 description: "Design Director",
-                badgeColor: "#ffe39b",
-                badgeBg: "rgba(89,24,76,0.7)",
-                titleColor: "var(--theme-background)",
-                descriptionColor: "var(--theme-border)",
                 backgroundColor: "var(--theme-background)",
                 borderRadius: "16px",
-                showArrow: true,
                 textAlign: "left"
               }
             }]
@@ -429,20 +417,14 @@ const realEstateAbout = {
             },
             elements: [{
               id: "partner-card-3",
-              type: "FeaturedCard2",
+              type: "FeatureCard",
               props: {
                 image: "https://lh3.googleusercontent.com/aida-public/AB6AXuAGywHuMKjtuM29KgwDdlU2ao13NlZE04loaTGpFRX9T7uUk_EvXSeEk478IDPtGCKVtPNNkLse1LVb0vlWQGUOykax9YbZtrSyju8h_L7gJ_l-J4po-klw9tdEEVN1ky9n5NX7bZr2gGqDgik5C1NeSXlboD4PYhHoVjMFJ3a8q5V6tofs_Lpk-g_M-g_qbWiWa2757w3DoUEieOpStoZpPeT2Jf8jSOWRPDQslxEEccJvTkKOqdhx3Zc_qvfOSAab_QSk68KYdzQ",
                 imageAspectRatio: "3/4",
-                badge: "Structure",
                 title: "David Chen",
                 description: "Structural Director",
-                badgeColor: "#ffe39b",
-                badgeBg: "rgba(89,24,76,0.7)",
-                titleColor: "var(--theme-background)",
-                descriptionColor: "var(--theme-border)",
                 backgroundColor: "var(--theme-background)",
                 borderRadius: "16px",
-                showArrow: true,
                 textAlign: "left"
               }
             }]
@@ -457,20 +439,14 @@ const realEstateAbout = {
             },
             elements: [{
               id: "partner-card-4",
-              type: "FeaturedCard2",
+              type: "FeatureCard",
               props: {
                 image: "https://lh3.googleusercontent.com/aida-public/AB6AXuAWRfMdcMWxtMDz6dW0s2lQ2XHGQY5Vg2QLerBPsVtf56HkpVXFm3qA1X-NANXY7zChhsvLzFwLQUd363ixUwBAFuwglHGyjyrEerDrKAF6VwQz4V-Sh8iLX6E2e9_N-gjogHwgO2f5K3T9QoO-DbNvriHdSFM_RxPWGVT516ipe82Na9lD4L4zW59qGIsLgajMWrtYbKq0ngwkaUyIcqJ_c_-wWBTh7oK56DkwQp48TckZNkv83kSC-LVUAFeMQ0rAk5ah9DPNAYk",
                 imageAspectRatio: "3/4",
-                badge: "Green",
                 title: "Sophia Loren",
                 description: "Sustainability Lead",
-                badgeColor: "#ffe39b",
-                badgeBg: "rgba(89,24,76,0.7)",
-                titleColor: "var(--theme-background)",
-                descriptionColor: "var(--theme-border)",
                 backgroundColor: "var(--theme-background)",
                 borderRadius: "16px",
-                showArrow: true,
                 textAlign: "left"
               }
             }]
@@ -491,7 +467,7 @@ const realEstateAbout = {
           backgroundColor: "#59184C",
           fullWidth: true,
           fontFamily: "Outfit",
-          paddingY: 120,
+          paddingY: 50,
           paddingX: 48,
           layout: "flex",
           flexDirection: "column",

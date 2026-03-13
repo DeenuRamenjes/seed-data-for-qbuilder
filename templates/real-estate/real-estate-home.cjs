@@ -37,17 +37,17 @@ const realEstateHome = {
           textTransform: "uppercase"
         },
         links: [
-          { label: "Buy", href: "#" },
-          { label: "Rent", href: "#" },
-          { label: "Sell", href: "#" },
-          { label: "About", href: "#" }
+          { label: "Home", href: "/" },
+          { label: "About", href: "/about" },
+          { label: "Journal", href: "/journal" },
+          { label: "Contact", href: "/contact" }
         ],
         ctaButton: {
           text: "Contact Us",
-          href: "#",
+          href: "/contact",
           variant: "primary",
           backgroundColor: "var(--theme-text)",
-          textColor: "var(--theme-text)",
+          textColor: "var(--theme-accent)",
           borderRadius: "lg",
           height: "42px"
         }
@@ -86,11 +86,11 @@ const realEstateHome = {
                 minHeight: "90vh",
                 maxWidth: "100%",
                 badgeText: "Luxury Real Estate",
-                badgeColor: "#ffe39b",
+                badgeColor: "#b0903e",
                 badgeBackgroundColor: "rgba(255,255,255,0.15)",
                 badgeShowPing: false,
                 align: "center",
-                headlineText: "Architecture\nFor [Living.](linear-gradient(to right, #aa8135, #ffe39b)",
+                headlineText: "Architecture\nFor [Living.](linear-gradient(to right, #b0903e, #FFF98A)",
                 headlineColor: "var(--theme-background)",
                 headlineTag: "h1",
                 paragraphText: "Experience the pinnacle of luxury real estate with our curated collection of elite properties globally.",
@@ -117,7 +117,7 @@ const realEstateHome = {
         defaultProps: {
           backgroundColor: "#f7f7f7",
           fullWidth: true,
-          paddingY: 100,
+          paddingY: 50,
           paddingX: 48,
           justifyContent: "center",
           gap: 24,
@@ -329,7 +329,7 @@ const realEstateHome = {
           backgroundColor: "var(--theme-background)",
           fullWidth: true,
           fontFamily: "Outfit",
-          paddingY: 100,
+          paddingY: 50,
           paddingX: 48,
           layout: "flex",
           flexDirection: "row",
@@ -365,6 +365,7 @@ const realEstateHome = {
               props: {
                 number: 1,
                 icon: "ShieldCheck",
+                iconColor: "var(--theme-accent)",
                 title: "Discretion",
                 description: "We prioritize your privacy above all else through confidential consultations and private listings.",
                 accentColor: "#59184C",
@@ -386,6 +387,7 @@ const realEstateHome = {
               props: {
                 number: 2,
                 icon: "Key",
+                iconColor: "var(--theme-accent)",
                 title: "Exclusivity",
                 description: "Gain access to off-market listings and the most sought-after zip codes worldwide.",
                 accentColor: "#59184C",
@@ -407,6 +409,7 @@ const realEstateHome = {
               props: {
                 number: 3,
                 icon: "Ruler",
+                iconColor: "var(--theme-accent)",
                 title: "Architectural Integrity",
                 description: "Every property in our collection is hand-selected for its design excellence and craftsmanship.",
                 accentColor: "#59184C",
@@ -430,7 +433,7 @@ const realEstateHome = {
         defaultProps: {
           backgroundColor: "#59184C",
           fontFamily: "Outfit",
-          paddingY: 120,
+          paddingY: 50,
           paddingX: 48,
           fullWidth: true,
           layout: "flex",
@@ -486,7 +489,7 @@ const realEstateHome = {
       type: "Footer",
       defaultProps: {
         backgroundColor: "#f7f7f7",
-        paddingY: 80,
+        paddingY: 50,
         paddingX: 80,
         fontFamily: "Outfit",
         fullWidth: true

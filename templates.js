@@ -158,6 +158,9 @@ const realEstateContact = realEstateContactModule;
 import realEstateBlogsModule from './templates/real-estate/real-estate-blogs.cjs';
 const realEstateBlogs = realEstateBlogsModule;
 
+import agentProfileModule from './templates/real-estate-agent/agent-profile.cjs';
+const agentProfile = agentProfileModule;
+
 import constructionHomeModule from './templates/construction/construction-home.cjs';
 const constructionHome = constructionHomeModule;
 import constructionAboutModule from './templates/construction/construction-about.cjs';
@@ -344,7 +347,7 @@ const ALL_THEMES = [
             background: "#0f172a",
             text: "#f8fafc"
         }
-    }
+    },
 ];
 
 // ============================================================================
@@ -1238,7 +1241,7 @@ export const websiteTemplates = [
         category: 'real-estate',
         industry: 'Real Estate / Architecture',
         siteSchema: {
-            defaultTheme: { name: "Apex Estates", colors: { primary: "#59184C", secondary: "#b0903e", accent: "#ffe39b", background: "#f7f7f7", text: "#59184C" } },
+            defaultTheme: { name: "Apex Estates", colors: { primary: "#59184C", secondary: "#FFF98A", accent: "#b0903e", background: "#f7f7f7", text: "#59184C" } },
             themes: ALL_THEMES,
             globalSections: {
                 header: realEstateHome.header?.structure || {},
@@ -1968,6 +1971,38 @@ export const websiteTemplates = [
                     name: "Contact",
                     isHomePage: false,
                     blocks: novaAcademyContact.sections?.map(s => s.structure) || []
+                },
+            ]
+        }
+    },
+    // =========================================================================
+    // TUTOR PROFILE TEMPLATE
+    // =========================================================================
+    {
+        id: genId('agent-profile-tpl'),
+        name: 'Local Scout Agent',
+        slug: 'real-estate-agent',
+        description: 'Elite real estate agent profile template with friendly, neighborhood-focused aesthetics.',
+        category: 'real-estate',
+        industry: 'Real Estate / Agent',
+        thumbnail: 'assets/templates/real-estate-agent.png',
+        siteSchema: {
+            defaultTheme: { 
+                name: "Local Scout", 
+                colors: { primary: "#0094BA", secondary: "#00067A", accent: "#00AD81", background: "#E3FFFA", text: "#004A3C" } 
+            },
+            themes: ALL_THEMES,
+            globalSections: {
+                header: agentProfile.header?.structure || {},
+                footer: agentProfile.footer?.structure || {}
+            },
+            pages: [
+                {
+                    title: "Home",
+                    path: "/",
+                    name: "Home",
+                    isHomePage: true,
+                    blocks: agentProfile.sections?.map(s => s.structure) || []
                 }
             ]
         }
