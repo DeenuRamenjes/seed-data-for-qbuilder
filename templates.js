@@ -359,7 +359,7 @@ export const websiteTemplates = [
         slug: "modern-saas",
         description: "Vibrant blue/purple SaaS template with hero, features, and social proof",
         category: "IT & Software",
-        thumbnail: "69b11e97d036376956185267",
+        thumbnail: "69ca1b3f20f5bc535fe57c75",
         siteSchema: {
             defaultTheme: { name: "Modern SaaS", colors: { primary: "#3B82F6", secondary: "#A855F7", accent: "#EC4899", background: "#030712", text: "#FFFFFF" } },
             themes: ALL_THEMES,
@@ -418,7 +418,7 @@ export const websiteTemplates = [
         slug: "portfolio",
         description: "Clean light mode portfolio template for designers and developers",
         category: "portfolio",
-        thumbnail: "assets/templates/portfolio.png",
+        thumbnail: "69ca14b37f967d05feef6608",
         siteSchema: {
             defaultTheme: { name: "Portfolio", colors: { primary: "#3B82F6", secondary: "#1E293B", accent: "#3B82F6", background: "#FFFFFF", text: "#1E293B" } },
             themes: ALL_THEMES,
@@ -442,7 +442,7 @@ export const websiteTemplates = [
         slug: "tech-innovation",
         description: "Modern tech innovation company homepage with sector showcase and enterprise solutions",
         category: "IT & Software",
-        thumbnail: "assets/templates/tech-innovation.png",
+        thumbnail: "69ca166d7f967d05feef664e",
         siteSchema: {
             defaultTheme: { name: "Tech Innovation", colors: { primary: "#ec1313", secondary: "#9a4c4c", accent: "#ec1313", background: "#f8f6f6", text: "#1b0d0d" } },
             themes: ALL_THEMES,
@@ -493,7 +493,7 @@ export const websiteTemplates = [
         description: 'A minimal yet bold template for creative agencies and design studios',
         category: 'agency',
         industry: 'Creative / Design',
-        thumbnail: 'assets/templates/design-studio.png',
+        thumbnail: '69ca1a0e7f967d05feef6669',
         siteSchema: {
             defaultTheme: { name: "Design Studio", colors: { primary: "#1F6AE1", secondary: "#1F6AE1", accent: "#1F6AE1", background: "#ffffff", text: "#000000" } },
             themes: ALL_THEMES,
@@ -544,6 +544,7 @@ export const websiteTemplates = [
         description: 'Professional agriculture and agri-tech template for farms, supply chain, and sustainability',
         category: 'agriculture',
         industry: 'Agriculture / Agri-Tech',
+        thumbnail: '69ca173d7f967d05feef6658',
         siteSchema: {
             defaultTheme: { name: "GreenHarvest", colors: { primary: "#16a34a", secondary: "#101912", accent: "#16a34a", background: "#ffffff", text: "#101912" } },
             themes: ALL_THEMES,
@@ -594,7 +595,7 @@ export const websiteTemplates = [
         description: 'Organic agriculture template featuring sustainable practices, harvest calendars, and regenerative farming philosophy',
         category: 'agriculture',
         industry: 'Organic Agriculture / Sustainability',
-        thumbnail: 'assets/templates/agri-ecosystem.png',
+        thumbnail: '69ca1a2b7f967d05feef666e',
         siteSchema: {
             defaultTheme: { name: "AgriEcosystem", colors: { primary: "#32a850", secondary: "#1a1a1a", accent: "#32a850", background: "#ffffff", text: "#1a1a1a" } },
             themes: ALL_THEMES,
@@ -641,7 +642,7 @@ export const websiteTemplates = [
         description: 'Comprehensive healthcare redefined with innovative medical solutions.',
         category: 'medical',
         industry: 'Healthcare / Medical',
-        thumbnail: 'assets/templates/careplus.png',
+        thumbnail: '69ca1a607f967d05feef6673',
         siteSchema: {
             defaultTheme: { name: "CarePlus", colors: { primary: "#008080", secondary: "#004D4D", accent: "#008080", background: "#ffffff", text: "#0F172A" } },
             themes: ALL_THEMES,
@@ -685,7 +686,7 @@ export const websiteTemplates = [
         description: 'Modern healthcare template with emergency services, departments, and patient testimonials.',
         category: 'medical',
         industry: 'Healthcare / Medical',
-        thumbnail: 'assets/templates/vitalis.png',
+        thumbnail: '69ca1ac520f5bc535fe57c63',
         siteSchema: {
             defaultTheme: { name: "Vitalis", colors: { primary: "#e60000", secondary: "#00c9e3", accent: "#e60000", background: "#ffffff", text: "#0f172a" } },
             themes: ALL_THEMES,
@@ -736,7 +737,7 @@ export const websiteTemplates = [
         description: 'Bold industrial logistics template with red accent and modern typography.',
         category: 'logistics',
         industry: 'Transportation / Logistics',
-        thumbnail: 'assets/templates/swiftlogix.png',
+        thumbnail: '69ca1aee20f5bc535fe57c68',
         siteSchema: {
             defaultTheme: { name: "SwiftLogix", colors: { primary: "#ed2626", secondary: "#0f0f0f", accent: "#ed2626", background: "#ffffff", text: "#0f0f0f" } },
             themes: ALL_THEMES,
@@ -787,6 +788,7 @@ export const websiteTemplates = [
         description: 'Modern online learning platform template with professional design and course showcase.',
         category: 'education',
         industry: 'Education / EdTech',
+        thumbnail: '69ca1b1720f5bc535fe57c6d',
         siteSchema: {
             defaultTheme: { name: "Academiq", colors: { primary: "#0048B3", secondary: "#E0F2FE", accent: "#0048B3", background: "#ffffff", text: "#0f172a" } },
             themes: ALL_THEMES,
@@ -837,7 +839,7 @@ export const websiteTemplates = [
         description: 'Modern tech/IT solutions company homepage with hero, social proof, and service showcase.',
         category: 'IT & Software',
         industry: 'Technology / IT Solutions',
-        thumbnail: 'assets/templates/tech-company.png',
+        thumbnail: '69ca1b7420f5bc535fe57c7a',
         siteSchema: {
             defaultTheme: { name: "Tech Company", colors: { primary: "#328CE6", secondary: "#000000", accent: "#328CE6", background: "#F8F8F6", text: "#000000" } },
             themes: ALL_THEMES,
@@ -894,6 +896,7 @@ export const websiteTemplates = [
         description: 'Futuristic AI tech company template featuring cutting-edge design, portfolio showcase, and ecosystem services.',
         category: 'IT & Software',
         industry: 'Technology / AI Solutions',
+        thumbnail: '69ca1c007f967d05feef6697',
         siteSchema: {
             defaultTheme: { name: "TechNova Solutions", colors: { primary: "#6366f1", secondary: "#a855f7", accent: "#6366f1", background: "#ffffff", text: "#1f2937" } },
             themes: ALL_THEMES,
@@ -940,6 +943,7 @@ export const websiteTemplates = [
         description: 'Architectural excellence template featuring smart living ecosystems, sustainable infrastructure, and luxury developments.',
         category: 'architecture',
         industry: 'Real Estate / Architecture',
+        thumbnail: '69ca1c777f967d05feef669f',
         siteSchema: {
             defaultTheme: { name: "UrbanNest", colors: { primary: "#ecb613", secondary: "#1e293b", accent: "#ecb613", background: "#f8f8f6", text: "#1e293b" } },
             themes: ALL_THEMES,
@@ -976,6 +980,7 @@ export const websiteTemplates = [
         description: 'Elite education template with premium purple design for institutions and masterclasses.',
         category: 'education',
         industry: 'Education / eLearning',
+        thumbnail: '69ca1d077f967d05feef66a4',
         siteSchema: {
             defaultTheme: { name: "EduPremium", colors: { primary: "#FF4500", secondary: "#FF4500", accent: "#FF4500", background: "#ffffff", text: "#111827" } },
             themes: ALL_THEMES,
@@ -1026,6 +1031,7 @@ export const websiteTemplates = [
         description: 'Premium financial institution template representing trust, heritage, and stability.',
         category: 'finance',
         industry: 'Finance / Banking',
+        thumbnail: '69ca1f017f967d05feef66ac',
         siteSchema: {
             defaultTheme: { name: "FinancePro", colors: { primary: "#009e89", secondary: "#009e89", accent: "#009e89", background: "#ffffff", text: "#111827" } },
             themes: ALL_THEMES,
@@ -1076,6 +1082,7 @@ export const websiteTemplates = [
         description: 'Premium travel and tourism template with oceanic blue theme.',
         category: 'tourism',
         industry: 'Travel / Tourism',
+        thumbnail: '69ca201020f5bc535fe57c99',
         siteSchema: {
             defaultTheme: { name: "Wanderlust Travel", colors: { primary: "#1B4965", secondary: "#FF4D7C", accent: "#FF4D7C", background: "#ffffff", text: "#1B4965" } },
             themes: ALL_THEMES,
@@ -1133,6 +1140,7 @@ export const websiteTemplates = [
         description: 'Luxury culinary editorial template with deep purple and gold accents for premium food brands.',
         category: 'tourism',
         industry: 'Food / Culinary',
+        thumbnail: '69ca208220f5bc535fe57ca1',
         siteSchema: {
             defaultTheme: { name: "Epilogue Culinary", colors: { primary: "#2e0057", secondary: "#ebd800", accent: "#ebd800", background: "#ffffff", text: "#2e0057" } },
             themes: ALL_THEMES,
@@ -1190,6 +1198,7 @@ export const websiteTemplates = [
         description: 'Premium streetwear e-commerce template with dark futuristic aesthetics.',
         category: 'e-commerce',
         industry: 'Fashion / E-Commerce',
+        thumbnail: '69ca20fd7f967d05feef66d0',
         siteSchema: {
             defaultTheme: { name: "Tech-Street", colors: { primary: "#D3ADFF", secondary: "#89D900", accent: "#89D900", background: "#ffffff", text: "#000000" } },
             themes: ALL_THEMES,
@@ -1240,6 +1249,7 @@ export const websiteTemplates = [
         description: 'Ultra-luxury real estate template featuring architectural elegance with modern dark sophistication.',
         category: 'real-estate',
         industry: 'Real Estate / Architecture',
+        thumbnail: '69ca22107f967d05feef66e1', 
         siteSchema: {
             defaultTheme: { name: "Apex Estates", colors: { primary: "#59184C", secondary: "#FFF98A", accent: "#b0903e", background: "#f7f7f7", text: "#59184C" } },
             themes: ALL_THEMES,
@@ -1289,7 +1299,7 @@ export const websiteTemplates = [
         description: 'Industrial-grade template for construction and architecture firms with warm orange authority.',
         category: 'real-estate',
         industry: 'Construction / Architecture',
-        thumbnail: 'assets/templates/construction.png', // Placeholder
+        thumbnail: '69ca22a97f967d05feef66e6', // Placeholder
         siteSchema: {
             defaultTheme: { name: "Apex Structures", colors: { primary: "#009DFF", secondary: "#FFE100", accent: "#FFE100", background: "#ffffff", text: "#111827" } },
             themes: ALL_THEMES,
@@ -1347,6 +1357,7 @@ export const websiteTemplates = [
         description: 'Premium service business template for high-end professional services with dark mode sophistication.',
         category: 'manufacturing',
         industry: 'Services / Construction',
+        thumbnail: '69ca23957f967d05feef66ee',
         siteSchema: {
             defaultTheme: { name: "Elite Business", colors: { primary: "#005eff", secondary: "#aeff00", accent: "#aeff00", background: "#ffffff", text: "#111827" } },
             themes: ALL_THEMES,
@@ -1395,6 +1406,7 @@ export const websiteTemplates = [
         description: 'Premium IT consulting template for digital transformation firms, cybersecurity consultants, and enterprise technology advisors. Features professional blue/teal design with hero sections, service cards, case studies, timeline, contact forms, and FAQ.',
         category: 'IT & Software',
         industry: 'IT Consulting / Digital Transformation',
+        thumbnail: '69ca240f7f967d05feef66f3',
         siteSchema: {
             defaultTheme: { name: "TechConsult Elite", colors: { primary: "#0559b3", secondary: "#05B3AA", accent: "#05B3AA", background: "#ffffff", text: "#0f172a" } },
             themes: ALL_THEMES,
@@ -1443,6 +1455,7 @@ export const websiteTemplates = [
         description: 'Modern startup template with gradient branding, pricing tiers, team showcase, and high-performance services page. Perfect for SaaS products and tech startups.',
         category: 'IT & Software',
         industry: 'SaaS / Startup',
+        thumbnail: '69ca24d37f967d05feef66fb',
         siteSchema: {
             defaultTheme: { name: "Startup MVP", colors: { primary: "#902EFF", secondary: "#FF2EA4", accent: "#FF2EA4", background: "#ffffff", text: "#111827" } },
             themes: ALL_THEMES,
@@ -1492,6 +1505,7 @@ export const websiteTemplates = [
         description: 'Premium enterprise AI portfolio template with gold and deep blue accents, case studies, and contact form.',
         category: 'IT & Software',
         industry: 'AI / Machine Learning',
+        thumbnail: '69ca265f7f967d05feef6708',
         siteSchema: {
             defaultTheme: { name: "LuxAI Portfolio", colors: { primary: "#ffae00", secondary: "#001885", accent: "#ffae00", background: "#f8f7f5", text: "#0f172a" } },
             themes: ALL_THEMES,
@@ -1542,7 +1556,7 @@ export const websiteTemplates = [
         description: 'Modern dark-theme developer portfolio with gradient accents, animated hero, and glassmorphism cards. Perfect for software engineers and product builders.',
         category: 'portfolio',
         industry: 'Technology / Software Engineering',
-        thumbnail: 'assets/templates/dev-portfolio.png',
+        thumbnail: '69ca26f17f967d05feef670d',
         siteSchema: {
             defaultTheme: {
                 name: "Dev Portfolio Dark",
@@ -1581,7 +1595,7 @@ export const websiteTemplates = [
         description: 'Modern tech support and managed IT services template with knowledge base, FAQ, service comparison, and 24/7 support features.',
         category: 'IT & Software',
         industry: 'Technology / IT Support',
-        thumbnail: 'assets/templates/tech-support.png',
+        thumbnail: '69ca2a177f967d05feef671a',
         siteSchema: {
             defaultTheme: {
                 name: "NexaSupport",
@@ -1641,6 +1655,7 @@ export const websiteTemplates = [
         description: 'Premium private medical clinic template with glassmorphism hero, specialist profiles, and patient-centric design.',
         category: 'medical',
         industry: 'Healthcare / Medical',
+        thumbnail: '69ca2a9f7f967d05feef671f',
         siteSchema: {
             defaultTheme: { name: "EliteClinic", colors: { primary: "#1FFFC0", secondary: "#1F5EFF", accent: "#1FCEFF", background: "#ffffff", text: "#0f172a" } },
             themes: ALL_THEMES,
@@ -1691,6 +1706,7 @@ export const websiteTemplates = [
         description: 'Swiss minimalist diagnostic laboratory template with editorial typography, molecular imagery, and premium healthcare design.',
         category: 'medical',
         industry: 'Healthcare / Diagnostics',
+        thumbnail: '69ca2b0d7f967d05feef6727',
         siteSchema: {
             defaultTheme: { name: "HelixResearch", colors: { primary: "#cf24ff", secondary: "#FF24C1", accent: "#6224ff", background: "#ffffff", text: "#0f172a" } },
             themes: ALL_THEMES,
@@ -1741,6 +1757,7 @@ export const websiteTemplates = [
         description: 'Premium telemedicine template designed for high-performance health, exclusive medical access, and bespoke longevity protocols.',
         category: 'medical',
         industry: 'Healthcare / Telemedicine',
+        thumbnail: '69ca2b9b7f967d05feef672c',
         siteSchema: {
             defaultTheme: { name: "EthosHealth", colors: { primary: "#FF3075", secondary: "#FFEA00", accent: "#5763FF", background: "#ffffff", text: "#1a1a1a" } },
             themes: ALL_THEMES,
@@ -1791,7 +1808,7 @@ export const websiteTemplates = [
         description: 'A holistic wellness and spa template featuring nature-inspired design, gentle color palettes, and artisan therapy showcase.',
         category: 'medical',
         industry: 'Wellness / Spa',
-        thumbnail: 'assets/templates/serene-organic.png',
+        thumbnail: '69ca2bf57f967d05feef6731',
         siteSchema: {
             defaultTheme: { name: "Nature Form", colors: { primary: "#7bb16b", secondary: "#171c16", accent: "#b6d487", background: "#ffffff", text: "#50652e" } },
             themes: ALL_THEMES,
@@ -1842,7 +1859,7 @@ export const websiteTemplates = [
         description: 'Elite executive coaching template with modern design and premium layout.',
         category: 'education',
         industry: 'Coaching / Executive',
-        thumbnail: 'assets/templates/education-3.png',
+        thumbnail: '69ca2c627f967d05feef6739',
         siteSchema: {
             defaultTheme: { name: "Coaching", colors: { primary: "#e68600", secondary: "#121E6D", accent: "#590094", background: "#f8f7f5", text: "#121E6D" } },
             themes: ALL_THEMES,
@@ -1893,7 +1910,7 @@ export const websiteTemplates = [
         description: 'Elite academic mentorship template with a high-energy, modern aesthetic.',
         category: 'education',
         industry: 'Education / Tutoring',
-        thumbnail: 'assets/templates/tutor.png',
+        thumbnail: '69ca2cbc7f967d05feef673e',
         siteSchema: {
             defaultTheme: { 
                 name: "Emerald Neon", 
@@ -1932,7 +1949,7 @@ export const websiteTemplates = [
         description: 'Elite philosophy and leadership education template with deep, bold aesthetics.',
         category: 'education',
         industry: 'Higher Ed / Specialized Training',
-        thumbnail: 'assets/templates/nova-academy.png',
+        thumbnail: '69ca2d037f967d05feef6743',
         siteSchema: {
             defaultTheme: { 
                 name: "Nova", 

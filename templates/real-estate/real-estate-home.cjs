@@ -81,7 +81,7 @@ const realEstateHome = {
             {
               type: "IndustrialHero",
               props: {
-                backgroundImage: "https://lh3.googleusercontent.com/aida-public/AB6AXuCQ3hU0bgyukegwaqImejYYEMQJ3GGrR97qt7sL2sBJzMVhI0dU3-raTNRBhznaa0mcioHuecNWzwOLg6TIz7ljZeANXZjYsJnNl-efBKvARUA52bYJpjOyGzxciRZZiJsAUKYzLDhvbz1URzPk4i7yQ_r09FPgVSFUIiCMB_UANH5dgNCvgrH2YL_QvvCjGnfHhWLleyiVKZE55Xp-62FFGmC93IgsBbwCsgtARcHIp4XRHZj3DItsh3W4XW5uecpc_Y8v1dxOLxI",
+                backgroundImage: "https://img.freepik.com/premium-photo/house-model-with-real-estate-agent-customer-discussing-contract-buy-house_1418-2335.jpg",
                 backgroundOverlay: "rgba(0,0,0,0.3)",
                 minHeight: "90vh",
                 maxWidth: "100%",
@@ -217,7 +217,7 @@ const realEstateHome = {
               props: {
                 title: "Obsidian Retreat",
                 description: "Aspen, CO — $18,900,000",
-                image: "https://lh3.googleusercontent.com/aida-public/AB6AXuCQ3hU0bgyukegwaqImejYYEMQJ3GGrR97qt7sL2sBJzMVhI0dU3-raTNRBhznaa0mcioHuecNWzwOLg6TIz7ljZeANXZjYsJnNl-efBKvARUA52bYJpjOyGzxciRZZiJsAUKYzLDhvbz1URzPk4i7yQ_r09FPgVSFUIiCMB_UANH5dgNCvgrH2YL_QvvCjGnfHhWLleyiVKZE55Xp-62FFGmC93IgsBbwCsgtARcHIp4XRHZj3DItsh3W4XW5uecpc_Y8v1dxOLxI",
+                image: "https://img.freepik.com/premium-photo/house-model-with-real-estate-agent-customer-discussing-contract-buy-house_1418-2335.jpg",
                 imageAspectRatio: "16/9",
                 textAlign: "left",
                 borderRadius: "12px",
